@@ -3,11 +3,11 @@ import Footer from "@/components/Footer";
 
 function IndexLayout({children}) {
   return (
-    <>
+    <div className="main-layout">
       <Header/>
         {children}
       <Footer/>
-    </>
+    </div>
   )
 }
 

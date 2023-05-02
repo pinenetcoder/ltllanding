@@ -1,9 +1,15 @@
-import Link from "next/link";
+import IndexLayout from "@/Layouts/IndexLayout"
 
 export default function Home() {
   return (
     <>
-      <div>I am Index Page</div>
+    <IndexLayout>
+      <main>
+        <section>
+          <div>I am Index Page</div>
+        </section>
+      </main>
+    </IndexLayout>
     </>
   )
 }
