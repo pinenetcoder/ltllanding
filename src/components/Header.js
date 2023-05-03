@@ -1,9 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-
 import lt from '@/locales/lt'
 import en from '@/locales/en'
 

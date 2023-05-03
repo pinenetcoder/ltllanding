@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   headerNavLinks: {
     private: 'Private',
@@ -8,6 +9,29 @@ export default {
     contacts: 'Contacts',
     login: 'Log In',
     openAccount: 'Open account'
+  },
+  footerNavLinks: {
+    usefulLinks: 'Useful links',
+    priceList: 'Price list',
+    termsAndCond: 'Terms & Conditions',
+    ppAndCookies: 'Privacy policy & Cookies',
+    security: 'Security',
+    support: 'Support & Complaints',
+    aboutUs: 'About Us',
+    management: 'Management',
+    shareholders: 'For Shareholders',
+    news: 'News',
+    accountability: "Accountability",
+    financialAccountability: 'Financial accountability',
+    esg: 'ESG',
+    license: 'License',
+    moneyLoundering:'Money laundering prevention',
+    possibilities: "Possibilities",
+    partner: 'Become a partner',
+    api: 'API',
+    career: 'Career',
+    contacts: 'Contacts',
+    address: 'Sporto st. 18, LT- 09238 Vilnius'
   },
   indexPage: {
     slideOne: {
