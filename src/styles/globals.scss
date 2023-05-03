@@ -112,6 +112,14 @@ header {
       line-height: 24px;
     }
   }
+
+  .change-language-link {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 footer {

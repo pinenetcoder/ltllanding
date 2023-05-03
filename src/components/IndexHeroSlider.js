@@ -1,10 +1,16 @@
 import React from "react";
 import Slider from "react-slick";
 import styles from '@/styles/IndexHeroSlider.module.scss'
+import { useRouter } from "next/router"
 import Link from "next/link";
-
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function SimpleSlider() {
+  const router = useRouter();
+  const t = router.locale === 'lt' ? lt : en
+
+
   const settings = {
     dots: true,
     arrows: false,
@@ -26,14 +32,10 @@ export default function SimpleSlider() {
       <div className={styles.slickSlide}>
         <div className="container">
           <div className={styles.slideContent}>
-            <h1>Making the dream <br /> possible at a fraction <br /> of the price</h1>
-            <p>
-              With Kocomo, a home is co-owned by no more than eight families 
-              while we act as a neutral third-party administrator to ensure transparency and fairness
-            </p>
-
+            <h1>{ t.indexPage.slideOne.heroBlockH1 }</h1>
+            <p>{ t.indexPage.slideOne.heroBlockText }</p>
             <div className="action-button-block">
-              <Link className="light-green-action-button" href="/">Learn more</Link>
+              <Link className="light-green-action-button" href="/">{ t.indexPage.slideOne.learnMoreButton }</Link>
             </div>
           </div>
         </div>
@@ -41,14 +43,10 @@ export default function SimpleSlider() {
       <div className={styles.slickSlide}>
         <div className="container">
           <div className={styles.slideContent}>
-            <h1>Making the dream <br /> possible at a fraction <br /> of the price</h1>
-            <p>
-              With Kocomo, a home is co-owned by no more than eight families 
-              while we act as a neutral third-party administrator to ensure transparency and fairness
-            </p>
-
+            <h1>{ t.indexPage.slideOne.heroBlockH1 }</h1>
+            <p>{ t.indexPage.slideOne.heroBlockText }</p>
             <div className="action-button-block">
-              <Link className="light-green-action-button" href="/">Learn more</Link>
+              <Link className="light-green-action-button" href="/">{ t.indexPage.slideOne.learnMoreButton }</Link>
             </div>
           </div>
         </div>
@@ -56,18 +54,14 @@ export default function SimpleSlider() {
       <div className={styles.slickSlide}>
         <div className="container">
           <div className={styles.slideContent}>
-            <h1>Making the dream <br /> possible at a fraction <br /> of the price</h1>
-            <p>
-              With Kocomo, a home is co-owned by no more than eight families 
-              while we act as a neutral third-party administrator to ensure transparency and fairness
-            </p>
-
+            <h1>{ t.indexPage.slideOne.heroBlockH1 }</h1>
+            <p>{ t.indexPage.slideOne.heroBlockText }</p>
             <div className="action-button-block">
-              <Link className="light-green-action-button" href="/">Learn more</Link>
+              <Link className="light-green-action-button" href="/">{ t.indexPage.slideOne.learnMoreButton }</Link>
             </div>
           </div>
         </div>
-      </div>            
+      </div>
     </Slider>
   );
 }
