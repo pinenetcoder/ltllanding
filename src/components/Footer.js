@@ -1,44 +1,48 @@
 import Link from "next/link"
 import Image from "next/image"
-
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 function Footer() {
+  const router = useRouter();
+  const t = router.locale === 'lt' ? lt : en
+
   return (
     <footer>
       <div className="footer-navigation-section">
-        <h4 className="footer-navigation-section-title">Useful links</h4>
-        <Link className="footer-navigation-link" href="/pricelist">Price list</Link>
-        <Link className="footer-navigation-link" href="/pricelist">Terms & Conditions</Link>
-        <Link className="footer-navigation-link" href="/pricelist">Privacy policy & Cookies</Link>
-        <Link className="footer-navigation-link" href="/pricelist">Security</Link>
-        <Link className="footer-navigation-link" href="/pricelist">Support & Complaints</Link>
+        <h4 className="footer-navigation-section-title">{t.footerNavLinks.usefulLinks}</h4>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.priceList}</Link>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.termsAndCond}</Link>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.ppAndCookies}</Link>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.security}</Link>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.support}</Link>
       </div>
 
       <div className="footer-navigation-section">
-        <h4 className="footer-navigation-section-title">Apie mus</h4>
-        <Link className="footer-navigation-link" href="/pricelist">Valdymas</Link>
-        <Link className="footer-navigation-link" href="/pricelist">Akcininkams</Link>
-        <Link className="footer-navigation-link" href="/pricelist">Naujienos</Link>
+        <h4 className="footer-navigation-section-title">{t.footerNavLinks.aboutUs}</h4>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.management}</Link>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.shareholders}</Link>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.news}</Link>
       </div>
 
       <div className="footer-navigation-section">
-        <h4 className="footer-navigation-section-title">Atskaitomybė</h4>
-        <Link className="footer-navigation-link" href="/pricelist">Finansinė atskaitomybė</Link>
-        <Link className="footer-navigation-link" href="/pricelist">ESG</Link>
-        <Link className="footer-navigation-link" href="/pricelist">Licencija</Link>
-        <Link className="footer-navigation-link" href="/pricelist">Pinigų plovimo prevencija</Link>
+        <h4 className="footer-navigation-section-title">{t.footerNavLinks.accountability}</h4>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.financialAccountability}</Link>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.esg}</Link>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.license}</Link>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.moneyLoundering}</Link>
       </div>     
 
       <div className="footer-navigation-section">
-        <h4 className="footer-navigation-section-title">Galimybės</h4>
-        <Link className="footer-navigation-link" href="/pricelist">Tapk partneriu</Link>
-        <Link className="footer-navigation-link" href="/pricelist">API</Link>
-        <Link className="footer-navigation-link" href="/pricelist">Karjera</Link>
+        <h4 className="footer-navigation-section-title">{t.footerNavLinks.possibilities}</h4>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.partner}</Link>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.api}</Link>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.career}</Link>
       </div>       
 
       <div className="footer-navigation-section">
-        <h4 className="footer-navigation-section-title">Kontaktai</h4>
-        <Link className="footer-navigation-link" href="/pricelist">Kontaktai</Link>
-        <Link className="footer-navigation-link" href="/pricelist"> Sporto g. 18, LT- 09238 Vilnius  </Link>
+        <h4 className="footer-navigation-section-title">{t.footerNavLinks.contacts}</h4>
+        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.address}</Link>
         <div className="social-links-block">
           <Link className="social-link" href="/pricelist">
             <Image width={8}  height={18} alt="fb-icon" src="/assets/images/fb-icon.svg"/>
@@ -50,16 +54,17 @@ function Footer() {
       </div>  
 
       <div className="footer-navigation-section">
-        <Image
-          src="/assets/images/ltl-logo-white.svg"
-          alt="Picture of the author"
-          width={90}
-          height={46}
-        />
+        <Link className="social-link" href="/">
+          <Image
+            src="/assets/images/ltl-logo-white.svg"
+            alt="Picture of the author"
+            width={90}
+            height={46}
+          />
+        </Link>  
       </div>               
     </footer>
   )
 }
-
 
 export default Footer
