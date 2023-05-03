@@ -7,7 +7,7 @@ function Header() {
       <header>
         <div className="logo-block">
           <Image
-            src="/assets/images/Layer_1.svg"
+            src="/assets/images/ltl-logo.svg"
             alt="Picture of the author"
             width={90}
             height={46}
