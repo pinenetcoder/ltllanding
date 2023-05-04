@@ -1,0 +1,67 @@
+// SINGLE NEWS PAGE
+
+.newsPageMain {
+  padding: 92px 0 132px 0;
+
+
+  h1 { 
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+    color: #0D222E;
+    margin-bottom: 60px; 
+  }
+
+  .yearlyLinksBlock {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    margin-bottom: 56px;
+  }
+
+  .yearlyLink {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #0D222E;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration-line: underline;
+      }
+  }
+
+  .newsDate {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+
+  .newsTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;    
+    margin-bottom: 16px;
+  }
+
+  .newsText {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    white-space: pre-line;
+    margin-bottom: 16px;
+  }
+
+  .backToNewsLink {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #000000;
+  }
+}

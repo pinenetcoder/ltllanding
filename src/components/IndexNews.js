@@ -24,7 +24,7 @@ export default function IndexNews() {
         <div className={styles.newsItem}  key={idx}>
           <h3>{news.title}</h3>
           <p>{news.previewText}</p>
-          <Link href={`/newspage/${news.id}`}>Read More &gt;</Link>
+          <Link href={`/news/${news.id}`}>Read More &gt;</Link>
         </div>
     )
   } )
