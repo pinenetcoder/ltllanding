@@ -76,7 +76,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.newsSection}>
+        <section id='news' className={styles.newsSection}>
           <IndexNews/>
         </section>
       </main>
