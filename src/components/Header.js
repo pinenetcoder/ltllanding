@@ -1,16 +1,16 @@
-import Image from "next/image"
-import Link from "next/link"
-import { useRouter } from "next/router"
-import { useEffect, useState } from "react"
-import lt from '@/locales/lt'
-import en from '@/locales/en'
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import lt from '@/locales/lt';
+import en from '@/locales/en';
 
 function Header() {
   const [langBtnState, setLangBtnState] = useState('ENG');
 
   const router = useRouter();
   const { locale } = router;
-  const t = locale === 'lt' ? lt : en
+  const t = locale === 'lt' ? lt : en;
 
   useEffect(()=> {
     if (locale === 'lt') {
@@ -30,12 +30,14 @@ function Header() {
     <>
       <header>
         <div className="logo-block">
-          <Image
-            src="/assets/images/ltl-logo.svg"
-            alt="Picture of the author"
-            width={90}
-            height={46}
-          />
+          <Link href="/">
+            <Image
+              src="/assets/images/ltl-logo.svg"
+              alt="Picture of the author"
+              width={90}
+              height={46}
+            />
+          </Link>
         </div>
         <div className="bussiness-type-block">
           <Link className="header-bussinness-type-nav-link" href="/About">{t.headerNavLinks.private}</Link>
