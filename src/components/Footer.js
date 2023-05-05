@@ -14,7 +14,7 @@ function Footer() {
         <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.priceList}</Link>
         <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.termsAndCond}</Link>
         <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.ppAndCookies}</Link>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.security}</Link>
+        <Link className="footer-navigation-link" href="/security">{t.footerNavLinks.security}</Link>
         <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.support}</Link>
       </div>
 

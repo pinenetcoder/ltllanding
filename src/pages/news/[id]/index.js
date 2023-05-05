@@ -29,12 +29,12 @@ export default function NewsPage() {
 
   }, [router.isReady])
 
-  return (
+  return ( 
     <>
     <IndexLayout>
       <main className={styles.newsPageMain}>
           <div className={styles.silngleNewsWrapper}>
-            <h1>News</h1>
+            <h1 className='page-title'>News</h1>
 
             <div className={styles.yearlyLinksBlock}>
               <span data-idx="0" className={styles.yearlyLink} onClick={(e)=>backToYearHandler(e)}>2023</span>

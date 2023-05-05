@@ -1,0 +1,55 @@
+//  Accordion Component
+
+.accordionWrapper {
+  .ac {
+    padding: 16px 0;
+    border-bottom: 1px solid #ACACAC;
+  }
+  
+  .acHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .accHeaderTitle {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+      cursor: pointer;
+    }
+    
+    .accOpenBtn {
+      cursor: pointer;
+      height: 20px;
+      width: 25px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  .acPanel {
+    height: 1px;
+    visibility: hidden;
+    overflow: hidden;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    transition-duration: 150ms;
+    
+    &.opened {
+      margin-top: 40px;
+      height: auto;
+      transition-duration: 500ms;
+      visibility: visible; 
+    }
+  }
+
+
+  &.muiltiLevel {
+    .acHeader {
+      font-size: 18px !important;
+    }
+  }
+}

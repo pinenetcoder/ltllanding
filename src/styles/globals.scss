@@ -183,3 +183,89 @@ footer {
 .slick-dots {
   bottom: -56px !important;
 }
+
+
+//  Accordion Component
+.accordionWrapper {
+  border-top: 1px solid #ACACAC;
+
+  .ac {
+    padding: 16px 0;
+    border-bottom: 1px solid #ACACAC;
+  }
+  
+  .acHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .accHeaderTitle {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+      cursor: pointer;
+      flex: 1;
+    }
+    
+    .accOpenBtn {
+      height: 20px;
+      width: 25px;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+  
+  .acPanel {
+    height: 1px;
+    visibility: hidden;
+    overflow: hidden;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    transition-duration: 150ms;
+    
+    &.opened {
+      margin-top: 40px;
+      height: auto;
+      transition-duration: 500ms;
+      visibility: visible; 
+    }
+  }
+
+
+  &.muiltiLevel {
+    .acHeader .accHeaderTitle{
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    & > .ac > .acPanel > .ac {
+      padding: 16px 0 16px 42px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .acPanel {
+        padding-right: 30px;
+      }
+
+      .acHeader .accHeaderTitle{
+        font-size: 16px;
+        text-transform: unset;
+      }
+    }
+  }
+}
+
+.page-title { 
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 62px;
+  text-align: center;
+  color: #0D222E;
+  margin-bottom: 60px; 
+}
