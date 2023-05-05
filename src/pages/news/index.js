@@ -61,7 +61,7 @@ export default function News() {
       <IndexLayout>
         <main className={styles.newsListBlock}>
           <div className={styles.newsListWrapper}>
-            <h1>NEWS</h1>
+            <h1 className='page-title'>News</h1>
             <div className={styles.yearlyLinksBlock}>
               {yearVocab.map((link, idx) => {
                 return (
