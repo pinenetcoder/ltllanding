@@ -30,7 +30,7 @@ export const ac1 = [
     hasInnerChildren: false,
     header: 'Ar būtina pinigines lėšas įnešti grynais pinigais, ar pavedimu?',
     opened: false,
-    body: 'Kreditą išmokėsime į paraiškos metu nurodytą banko sąskaitą, po to, kai pilnai užpildysi kredito paraiškai reikalingą informaciją, mes patikrinsime ar galim tau išduoti kreditą ir pasirašysi kredito sutartis.',
+    body: 'Labas Marius, Kreditą išmokėsime į paraiškos metu nurodytą banko sąskaitą, po to, kai pilnai užpildysi kredito paraiškai reikalingą informaciją, mes patikrinsime ar galim tau išduoti kreditą ir pasirašysi kredito sutartis.',
   },     
 ]
 
