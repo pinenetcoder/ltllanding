@@ -8,7 +8,7 @@ function Footer() {
   const t = router.locale === 'lt' ? lt : en
 
   return (
-    <footer>
+    <footer id="footer">
       <div className="footer-navigation-section">
         <h4 className="footer-navigation-section-title">{t.footerNavLinks.usefulLinks}</h4>
         <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.priceList}</Link>
