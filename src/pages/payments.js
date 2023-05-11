@@ -121,8 +121,6 @@ export default function Payments() {
                         </div>
                      </div>
                   </div>
-
-
                </section>
                <section id="after" className={styles.infoSection}>
                   <div className={styles.infoWrapper}>
