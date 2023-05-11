@@ -1,0 +1,146 @@
+//LLP-16 Page - Payments Page
+
+.paymentsHeroSection {
+   padding: 136px 0 58px 0;
+   .paymentsHeroWrapper {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 15px 0 15px;
+   }
+
+   .paymentsHeroList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .paymentsImg {
+         width: 430px;
+         height: 430px;
+         background-color: var(--theme-color1);
+      }
+
+      .paymentsCurrencyConverter {
+         width: 580px;
+         display: flex;
+         flex-direction: column;
+
+         .paymentsCurrencyConverterTitle {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 62px;
+            color: var(--main-text-color);
+            margin-bottom: 30px;
+         }
+         .paymentsCurrencyConeverterBlock {
+            width: 438px;
+            .paymentsCurrency {
+               display: flex;
+               gap: 13px;
+               margin-bottom: 13px;
+               justify-content: space-between;
+               .inputConverter {
+                  width: 252px;
+                  padding: 8px 0 8px 14px;
+                  font-size: 16px;
+                  font-weight: 300;
+                  line-height: 28px;
+                  border: 1px solid #C6C4C7;
+                  border-radius: 5px;
+                  background-color: transparent;
+                  &:focus {
+                     outline: none;
+                  }
+               }
+               .paymentsCurrencySelector {
+                  width: 178px;
+                  padding: 8px 0 8px 14px;
+                  font-weight: 300;
+                  font-size: 16px;
+                  line-height: 28px;
+                  background-color: transparent;
+                  border: 1px solid #C6C4C7;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  &:focus {
+                     outline: none;
+                  }
+               }
+            }
+            .paymentsCurrencyOutputBlock {
+               padding: 8px 15px 8px 14px;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               background: #E7E5E5;
+               border-radius: 5px;
+               margin-bottom: 13px;
+               .paymentCurrencyOutputValue {
+                  
+                  font-size: 16px;
+                  font-weight: 300;
+                  line-height: 28px;
+               }
+               .paymentsCurrencyQuestion {
+                  width: 17px;
+                  height: 17px;
+                  padding: 4px 4px 4px 6px;
+                  border: solid 1px #000000;
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  cursor: pointer;
+               }
+            }
+            .paymentsCurrencyDescription {
+               font-size: 14px;
+               font-weight: 300;
+               line-height: 28px;
+               margin-bottom: 30px;
+               color: #939096;
+            }
+            .paymentsButton {
+               width: 194px;
+               padding: 9px 0 9px 0;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background-color: #12D8E4;
+               border-radius: 27px;
+               color: var(--white-text-color);
+               cursor: pointer;
+            }
+         }
+      }
+   }
+}
+.paymentsArticeWrapper {
+   max-width: 1060px;
+   padding: 58px 15px 138px 15px;
+   margin: 0 auto;
+   .paymentsArticleBlock {
+      .paymentsArticeBlockList {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 104px;
+         .paymentsArticeBlockItem {
+            width: 438px;
+         }
+      }
+      .paymentsArticleTitle {
+         font-size: 35px;
+         font-weight: 700;
+         line-height: 43px;
+         color: var(--main-text-color);
+         margin-bottom: 34px;
+      }
+      .paymentsArticleDescription {
+         font-size: 16px;
+         font-weight: 300;
+         line-height: 20px;
+      }
+      li {
+         list-style-position: inside;
+      }
+   }
+}
