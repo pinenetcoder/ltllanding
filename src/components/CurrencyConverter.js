@@ -1,51 +1,33 @@
 import React, { useState, useEffect } from "react";
-import styles from "@/styles/LLP-16.module.scss"
-
-
+import styles from "@/styles/converter.module.scss"
 
 export default function CurrencyConverter() {
+   const [currencyList, setCurrencyList] = useState([])
+   const [baseAmount, setBaseAmount] = useState({name: 'EUR', value: ''})
+   const [secondBase, setSecondBase] = useState({name: 'USD', value: '', rate: ''})
 
    useEffect(() => {
-      const getCurrenciesRates = async () => {
-         const resp = await fetch(`https://api.freecurrencyapi.com/v1/latest?apikey=bDLb8GUJk128HeaNTCtKJTjpAo0ESlUBcQAM5x34&currencies=&base_currency=EUR`);
+      const getCurrenciesRates = async (name) => {
+         const resp = await fetch(`https://api.freecurrencyapi.com/v1/latest?apikey=bDLb8GUJk128HeaNTCtKJTjpAo0ESlUBcQAM5x34&currencies=&base_currency=${name}`);
          const data = await resp.json();
          let allCurrNames = Object.keys(data.data);
          let list = allCurrNames.map((curr) => {
             return {
                   name: curr,
-                  selectedAsBase: false,
-                  disabled: false,
+                  selectedAsBase: curr === name ? true : false,
                   rate: data.data[curr]
             }
          })
-         list.unshift(      {
-            name: "Select Currency",
-            selectedAsBase: false,
-            disabled: false,
-         })
+         let currencyRate = list.filter(curr => curr.name === secondBase.name)[0].rate;
          setCurrencyList(list)
+         setSecondBase({...secondBase, value: (+baseAmount.value * +currencyRate).toFixed(3), rate: +list.filter(curr => curr.name === secondBase.name)[0].rate.toFixed(3)})
       }
 
-      getCurrenciesRates()
-   }, [])
-
-
-
-
-   const [currencyList, setCurrencyList] = useState([])
-   const [baseAmount, setBaseAmount] = useState({name: 'EUR', value: '1'})
-   const [secondBase, setSecondBase] = useState({name: '', value: ''})
-   
-
+      getCurrenciesRates(baseAmount.name)
+   }, [baseAmount.name])
 
    function baseCurrencySelectHandler(e) {
-      let currencyName = e.target.value;
-      let index = currencyList.findIndex((el) => el.name === currencyName)
-      const temp = [...currencyList];
-      temp.forEach((currency) => currency.selectedAsBase = false);
-      temp[index].selectedAsBase = true;
-      setCurrencyList(temp)
-      setBaseAmount({...baseAmount, name: currencyName});
+      setBaseAmount({...baseAmount, name: e.target.value});  
    }
 
    function secondBaseCurrencySelectHandler(e) {      
@@ -54,20 +36,26 @@ export default function CurrencyConverter() {
       if (baseAmount.name === '') alert("Select Base Currency")
       let secondCurrValue = +baseAmount.value * +currencyRate
 
-      setSecondBase({name: currencyName, value: secondCurrValue})
+      if (baseAmount.value === '') {
+         setSecondBase({name: currencyName, value: '', rate: +currencyRate.toFixed(3)})
+      } else {
+         setSecondBase({name: currencyName, value: secondCurrValue, rate: +currencyRate.toFixed(3)})
+      }
    }
 
    function setBaseValueHandler(e) {
-      setBaseAmount({...baseAmount, value: e.target.value});
+      var digits = e.target.value.replace(/\D/g, "");
+      setBaseAmount({...baseAmount, value: digits});
       let currencyRate = '';
       if (secondBase.name !== '' && secondBase.name !== 'Select Currencty') {
          currencyRate = currencyList.filter(curr => curr.name === secondBase.name)[0].rate;
-         let secondCurrValue = +baseAmount.value * +currencyRate
-         setSecondBase({...secondBase, value: secondCurrValue})
+         let secondCurrValue = +digits * +currencyRate
+         setSecondBase({...secondBase, value: secondCurrValue.toFixed(3)})
       }
-
+      if (e.target.value === '') {
+         setSecondBase({...secondBase, value: ''})
+      }
    }
-
 
    return (
       <>
@@ -75,7 +63,7 @@ export default function CurrencyConverter() {
             <div className={styles.paymentsCurrencyConverterTitle}>Mokėjimai visame pasaulyje</div>
             <div className={styles.paymentsCurrencyConeverterBlock}>
                <div className={styles.paymentsCurrency}>
-                  <input placeholder="Konvertuoti" type="number" value={+baseAmount.value} className={styles.inputConverter} onChange={(e) => setBaseValueHandler(e)} />
+                  <input placeholder="Konvertuoti" type="text" value={baseAmount.value} className={styles.inputConverter} onChange={(e) => setBaseValueHandler(e)} />
                   
                   <select 
                      className={styles.paymentsCurrencySelector} 
@@ -94,25 +82,24 @@ export default function CurrencyConverter() {
                      placeholder="Į valiutą" 
                      className={styles.inputConverter} 
                      disabled
-                     value={+secondBase.value} 
-                      
+                     value={secondBase.value}
                   />
 
                   <select 
                      className={styles.paymentsCurrencySelector} 
-                     defaultValue="Select Currency" 
+                     value={secondBase.name} 
                      onInput={(e) => secondBaseCurrencySelectHandler(e)}
                   >
                      {currencyList.map((currency, idx) => {
                         return (
-                           !currency.selectedAsBase && <option disabled={currency.disabled} value={currency.name} key={idx}>{currency.name}</option>
+                           !currency.selectedAsBase && <option value={currency.name} key={idx}>{currency.name}</option>
                         )
                      })}
                   </select>
                </div>
                <div className={styles.paymentsCurrencyOutputBlock}>
                   <div className={styles.paymentCurrencyOutputValue}>
-                     {secondBase.name !== '' && secondBase.name !== 'Select Currencty' &&  `${baseAmount.value} ${baseAmount.name} = ${secondBase.value} ${secondBase.name}`}
+                     {secondBase.name !== '' && secondBase.name !== 'Select Currencty' &&  `1 ${baseAmount.name} = ${secondBase.rate} ${secondBase.name}`}
                   </div>
                   <div className={styles.paymentsCurrencyQuestion}>?</div>
                </div>

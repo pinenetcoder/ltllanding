@@ -1,4 +1,4 @@
-import styles from "@/styles/payments.module.scss"
+import styles from "@/styles/product.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Link from "next/link"
 import Accordion from "@/components/Accordion"

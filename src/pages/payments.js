@@ -1,4 +1,4 @@
-import styles from "@/styles/LLP-16.module.scss"
+import styles from "@/styles/payments.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import CurrencyConverter from "@/components/CurrencyConverter"
 
