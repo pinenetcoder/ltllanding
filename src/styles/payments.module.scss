@@ -1,300 +1,52 @@
-//  Payments PAGE
+// Payments Page
 
-.paymentsPageWrapper {
-  padding: 66px 0 78px 0;
-  background-color: var(--ligh-grey-background);
+.paymentsHeroSection {
+   padding: 136px 0 58px 0;
+   .paymentsHeroWrapper {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 15px 0 15px;
+   }
 
-  .paymentsPageList {
-    padding-left: 312px;
-
-    .paymentsHeroItem {
-      width: 474px;
-    }
-
-    .paymentsTitle {
-      font-size: 30px;
-      margin-bottom: 35px;
-    }
-  }
-
-  .paymentsPageDescription {
-    font-weight: 400;
-    font-size: 18px;
-    color: #000000;
-
-    li {
-      list-style-type: none;
-      padding-left: 26px;
-      background: url(/assets/images/check2.svg) no-repeat left center;
-      margin-bottom: 8px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    p {
-      margin-bottom: 30px;
-    }
-
-    .CheckText {
-      font-weight: 300;
-      font-size: 16px;
-    }
-  }
-}
-
-.innerNavigationBlock {
-  padding: 30px 0 48px 0;
-
-  .innerNavigationLinkList {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .innerNavLink {
-    font-family: 'Lexend';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--main-text-color);
-    text-decoration: none;
-    margin-right: 30px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    &.change-language-link {
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-  }
-}
-
-.privateClientSection {
-  padding: 48px 0 66px 0;
-
-  .motyvationWrapper {
-    max-width: 1060px;
-    padding: 0 15px 0 15px;
-    margin: 0 auto;
-
-    .motyvationList {
+   .paymentsHeroList {
       display: flex;
-      justify-content: center;
-      gap: 46px;
-    }
+      flex-wrap: wrap;
+      justify-content: space-between;
 
-    .motyvationItem {
-      flex: 1;
-    }
-
-    .motyvationItemTitle {
-      font-family: Lexend;
-      font-weight: 700;
-      font-size: 20px;
-      margin-bottom: 34px;
-    }
-
-    .motyvationItemDescription {
-      font-family: Lexend;
-      font-weight: 300;
-      font-size: 17px;
-    }
-  }
+      .paymentsImg {
+         width: 430px;
+         height: 430px;
+         background-color: var(--theme-color1);
+      }
+   }
 }
-
-.paymentStepsSection {
-  padding: 66px 0 54px 0;
-
-  .paymentsStepsWrapper {
-    max-width: 765px;
-    padding: 0 15px 0 15px;
-    margin: 0 auto;
-
-    .stepsHeader {
-      font-family: Lexend;
-      font-size: 25px;
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 54px;
-    }
-
-    .stepsItem {
-      display: flex;
-      gap: 60px;
-      margin-bottom: 49px;
-
-      .stepsNumber {
-        background-color: var(--theme-color1);
-        color: var(--white-text-color);
-        font-size: 23px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 51px;
-        height: 51px;
+.paymentsArticeWrapper {
+   max-width: 1060px;
+   padding: 58px 15px 138px 15px;
+   margin: 0 auto;
+   .paymentsArticleBlock {
+      .paymentsArticeBlockList {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 104px;
+         .paymentsArticeBlockItem {
+            width: 438px;
+         }
       }
-
-      .stepsText {
-        display: flex;
-        flex-direction: column;
-
-        .stepsTitle {
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 25px;
-          margin-bottom: 20px;
-        }
-
-        .stepsDescription {
-          font-size: 17px;
-          font-weight: 300;
-          line-height: 21px;
-          width: 624px;
-        }
+      .paymentsArticleTitle {
+         font-size: 35px;
+         font-weight: 700;
+         line-height: 43px;
+         color: var(--main-text-color);
+         margin-bottom: 34px;
       }
-    }
-  }
-}
-
-.infoSection {
-  padding: 54px 0 40px 0;
-
-  .infoWrapper {
-    max-width: 870px;
-    margin: 0 auto;
-    padding: 0 15px 0 15px;
-
-    .infoHeader {
-      font-size: 25px;
-      font-weight: 700;
-      line-height: 30px;
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .infoList {
-      display: flex;
-      gap: 46px;
-
-      .infoTitle {
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 25px;
-        margin-bottom: 34px;
+      .paymentsArticleDescription {
+         font-size: 16px;
+         font-weight: 300;
+         line-height: 20px;
       }
-
-      .infoDescription {
-        font-size: 17px;
-        font-weight: 300;
-        line-height: 21px;
+      li {
+         list-style-position: inside;
       }
-    }
-  }
-}
-
-.priceListSection {
-  padding: 40px 0 80px 0;
-
-  .priceWrapper {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 0 15px 0 15px;
-
-    .priceHeader {
-      font-size: 25px;
-      font-weight: 700;
-      line-height: 31px;
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .priceList {
-
-      &:last-child {
-        border-bottom: solid 1px #ACACAC;
-      }
-
-      .priceItem {
-        border-top: solid 1px #ACACAC;
-        padding: 16px 0;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 42px;
-
-        &.priceTitle {
-          font-size: 18px;
-          font-weight: 500;
-          line-height: 22px;
-          padding-left: 0;
-        }
-
-        .priceDescription {
-          font-size: 20px;
-          font-weight: 300;
-          line-height: 25px;
-          padding-right: 22px;
-        }
-
-        .priceDescriptionLeft {
-          font-size: 16px;
-          font-weight: 300;
-          line-height: 25px;
-        }
-      }
-    }
-  }
-}
-
-.clientSuportSection {
-  padding: 80px 0 22px 0;
-
-  .clientSuportWrapper {
-    max-width: 890px;
-    margin: 0 auto;
-    padding: 0 15px 0 15px;
-
-    .clientSuportHeader {
-      font-size: 25px;
-      font-weight: 700;
-      line-height: 31px;
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .clientSuportDescription {
-      font-size: 17px;
-      font-weight: 300;
-      line-height: 21px;
-      text-align: center;
-    }
-  }
-}
-
-.faqSection {
-  padding: 22px 0 60px 0;
-
-  .faqWrapper {
-    max-width: 1060px;
-    padding: 0 15px 0 15px;
-    margin: 0 auto;
-
-    .faqHeader {
-      font-size: 25px;
-      font-weight: 700;
-      line-height: 31px;
-      margin-bottom: 56px;
-      text-align: center;
-    }
-
-    .faqList {
-      padding: 71px 105px 70px 105px;
-      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
-      background-color: #F9F8F7;
-    }
-  }
+   }
 }
