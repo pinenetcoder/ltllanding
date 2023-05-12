@@ -1,24 +1,25 @@
-
 :root {
   --main-text-color: #0D222E;
   --light-color: #535353;
   --black-text-color: #000000;
   --white-text-color: #ffffff;
 
+  --main-background: #F4F4F4;
   --creame-background: #D7D7D7;
   --white-background: #ffffff;
   --ligh-grey-background: rgba(217, 217, 217, 0.49);
 
   --theme-color1: #08173E;
-  --theme-color2: #12D8E4
+  --theme-color2: #12D8E4;
   --theme-color3: rgba(217, 217, 217, 0.49);
+  --theme-color4: #939096;
 
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: #F4F4F4;
+  background: var(--main-background);
 
   * {
     font-family: 'Lexend', sans-serif;
@@ -30,7 +31,11 @@ body {
 
 
 .main-layout {
-  header, main, footer {
+  position: relative;
+
+  header,
+  main,
+  footer {
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -38,20 +43,23 @@ body {
 
 header {
   padding: 40px 0 37px 0;
-  background: #F4F4F4;
+  background: var(--main-background);
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
   .logo-block {
     margin-right: 90px;
     height: 46px;
   }
-  
-  
+
+
   .bussiness-type-block {
     margin-right: 48px;
-  
+
     .header-bussinness-type-nav-link {
       font-weight: 600;
       font-size: 16px;
@@ -59,17 +67,17 @@ header {
       color: var(--black-text-color);
       text-transform: uppercase;
       text-decoration: none;
-    
+
       &:first-of-type {
         margin-right: 30px;
       }
     }
   }
-  
-  
+
+
   .header-navigation {
     margin-right: 48px;
-  
+
     .header-nav-link {
       font-family: 'Lexend';
       font-weight: 400;
@@ -78,23 +86,23 @@ header {
       color: var(--main-text-color);
       text-decoration: none;
       margin-right: 30px;
-      
+
       &:last-child {
         margin-right: 0;
       }
-    
+
       &.change-language-link {
         text-transform: uppercase;
         font-weight: 600;
       }
     }
   }
-  
-  
+
+
   .header-action-buttons-block {
     display: flex;
     gap: 16px;
-  
+
     .header-action-button {
       display: flex;
       flex-direction: row;
@@ -175,9 +183,13 @@ footer {
   line-height: 24px;
   color: #FFFFFF;
   text-decoration: none;
+
+  &.long {
+    width: 252px;
+  }
 }
 
-.slick-active > .index-page-hero-slider-dot {
+.slick-active>.index-page-hero-slider-dot {
   background: #B5B5B5 !important;
 }
 
@@ -194,12 +206,12 @@ footer {
     padding: 16px 0;
     border-bottom: 1px solid #ACACAC;
   }
-  
+
   .acHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+
     .accHeaderTitle {
       font-weight: 300;
       font-size: 16px;
@@ -208,7 +220,7 @@ footer {
       cursor: pointer;
       flex: 1;
     }
-    
+
     .accOpenBtn {
       height: 20px;
       width: 25px;
@@ -217,7 +229,7 @@ footer {
       cursor: pointer;
     }
   }
-  
+
   .acPanel {
     height: 1px;
     visibility: hidden;
@@ -227,23 +239,23 @@ footer {
     line-height: 18px;
     color: #000000;
     transition-duration: 150ms;
-    
+
     &.opened {
       margin-top: 40px;
       height: auto;
       transition-duration: 500ms;
-      visibility: visible; 
+      visibility: visible;
     }
   }
 
 
   &.muiltiLevel {
-    .acHeader .accHeaderTitle{
+    .acHeader .accHeaderTitle {
       font-size: 18px;
       text-transform: uppercase;
     }
 
-    & > .ac > .acPanel > .ac {
+    &>.ac>.acPanel>.ac {
       padding: 16px 0 16px 42px;
 
       &:last-child {
@@ -254,7 +266,7 @@ footer {
         padding-right: 30px;
       }
 
-      .acHeader .accHeaderTitle{
+      .acHeader .accHeaderTitle {
         font-size: 16px;
         text-transform: unset;
       }
@@ -262,11 +274,11 @@ footer {
   }
 }
 
-.page-title { 
+.page-title {
   font-weight: 700;
   font-size: 50px;
   line-height: 62px;
   text-align: center;
   color: #0D222E;
-  margin-bottom: 60px; 
+  margin-bottom: 60px;
 }

@@ -46,7 +46,7 @@ function Header() {
 
         <nav className="header-navigation">
           <Link className="header-nav-link" href="/payments">{ t.headerNavLinks.payments }</Link>
-          <Link className="header-nav-link" href="/loans">{ t.headerNavLinks.credit }</Link>
+          <Link className="header-nav-link" href="/credits">{ t.headerNavLinks.credit }</Link>
           <Link className="header-nav-link" href="/deposits">{ t.headerNavLinks.deposit }</Link>
           <Link className="header-nav-link" href="/contacts">{ t.headerNavLinks.contacts }</Link>
           <span className="header-nav-link change-language-link" onClick={setLanguage} href="/eng">{langBtnState}</span>
