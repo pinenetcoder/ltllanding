@@ -39,61 +39,39 @@ export default function Credits() {
                   </div>
                </section>
                <section className={styles.monthlyPaymentSection}>
-                  <div className={styles.monthlyPaymentBlock}>
-                     <div className={styles.monthlyPaymentList}>
-                        <div className={styles.monthlyPaymentItem}>
-                           <div className={styles.calculator}>
-                              <div className={styles.calculatorItem}>
-                                 <div className={styles.calculatorDescription}>Kokią sumą skolinatės?</div>
-                                 <div className={styles.inputBlock}>
-                                    <input type="tex" placeholder="10000" className={styles.calculatorInput} />
-                                    <div className={styles.inputRightSide}>€</div>
-                                 </div>
-                              </div>
-                              <div className={styles.calculatorItem}>
-                                 <div className={styles.calculatorDescription}>Pradinė įmoka</div>
-                                 <div className={styles.inputBlock}>
-                                    <input type="tex" placeholder="0" className={styles.calculatorInput} />
-                                    <div className={styles.inputRightSide}>€</div>
-                                 </div>
-                              </div>
-                              <div className={styles.calculatorItem}>
-                                 <div className={styles.calculatorDescription}></div>
-                                 <div className={styles.inputBlock}>
-                                    <input type="tex" placeholder="0" className={styles.calculatorInput} />
-                                    <div className={styles.inputRightSide}>%</div>
-                                 </div>
-                              </div>
-                              <div className={styles.inputPeriodBlock}>
-                                 <div className={styles.inputPeriodTitle}>Laikotarpis</div>
-                                 <div className={styles.inputPeriodDays}>
-                                    <select type="day" placeholder="30" className={styles.calculatorDayInput} >
-                                       {createSelectOptions(30)}
-                                    </select>
-                                    <div className={styles.inputRightSide}>mėn.</div>
-                                 </div>
-                              </div>
-                              <div className={styles.calculatorItem}>
-                                 <div className={styles.calculatorDescription}>Palūkanų norma</div>
-                                 <div className={styles.inputBlock}>
-                                    <input type="tex" placeholder="5" className={styles.calculatorInput} />
-                                    <div className={styles.inputRightSide}>%</div>
-                                 </div>
-                              </div>
-
-
-
+                  <div className={styles.calculatorWrapper}>
+                     <div className={styles.calculatorBlock}>
+                        <div className={styles.borderCorner}></div>
+                        <div className={styles.calculatorLine}>
+                           <div className={styles.label}>Kokią sumą skolinatės?</div>
+                           <input type="text" placeholder="10000" />
+                        </div>
+                        <div className={styles.calculatorLine}>
+                           <div className={styles.label}>Pradine imoka</div>
+                           <input type="text" placeholder="0" />
+                        </div>
+                        <div className={styles.calculatorLine}>
+                           <div className={styles.label}>
                            </div>
-                           <div className={styles.border}>
-                              <div className={styles.borderCorner}></div>
+                           <input type="text" placeholder="0" className={styles.procent}/>
+                        </div>
+                        <div className={styles.calculatorLine}>
+                           <div className={styles.label}>Laikotarpis</div>
+                           <div className={styles.select}>
+                              <select>{createSelectOptions(30)}</select>
+                              <span>mėn.</span>
                            </div>
-                           <div className={styles.sum}>
-                              <div className={styles.sumTitle}>Mėnesinė įmoka</div>
-                              <div className={styles.sumOutputValue}>27.76€</div>
-                              <div className="actionButtonBlock">
-                              <Link className="light-green-action-button" href="/">Pasiskolinti</Link>
-                              </div>
-                           </div>
+                        </div>
+                        <div className={styles.calculatorLine}>
+                           <div className={styles.label}>Palukanu norma</div>
+                           <input type="text" placeholder="5" />
+                        </div>
+                     </div>
+                     <div className={styles.resultBlock}>
+                        <h3>Mėnesinė įmoka</h3>
+                        <div className={styles.resultBlockTitle}>27.76€</div>
+                        <div className="light-green-action-button">
+                           <Link className="light-green-action-button" href="/">Pasiskolinti</Link>
                         </div>
                      </div>
                   </div>
@@ -117,24 +95,24 @@ export default function Credits() {
                <section className={styles.monthlyPaymentDescription}>
                   <div className={styles.monthlyPaymentDescriptionList}>
                      <div className={styles.monthlyPaymentDescriptionItem}>
-                        <div className={styles.monthlyPaymentTitle}>Pamiršk laikus, kai skolintis buvo sudėtinga</div>
-                        <div className={styles.monthlyPaymentDescription}>Banko skyriams laiko randa tik bankininkai.
+                        <h3 className={styles.monthlyPaymentTitle}>Pamiršk laikus, kai skolintis buvo sudėtinga</h3>
+                        <div className={styles.monthlyPaymentDesc}>Banko skyriams laiko randa tik bankininkai.
                            Mes patys skolinamės internetu, todėl ir tau suteikiame tokią galimybę. Net jei dar nesi
                            mūsų klientas! Nors veikiame pagal bankinius standartus, pinigai tavo sąskaitoje atsidurs
                            kur kas greičiau nei tikiesi. Nuo paraiškos teikimo iki tapatybės nustatymo bei paskolos
                            sutarčių pasirašymo – visas procesas vyksta internetu.</div>
                      </div>
                      <div className={styles.monthlyPaymentDescriptionItem}>
-                        <div className={styles.monthlyPaymentTitle}>Padedame įgyvendinti tavo tikslus</div>
-                        <div className={styles.monthlyPaymentDescription}>Gyvenimas kupinas didelių užmojų bei
+                        <h3 className={styles.monthlyPaymentTitle}>Padedame įgyvendinti tavo tikslus</h3>
+                        <div className={styles.monthlyPaymentDesc}>Gyvenimas kupinas didelių užmojų bei
                            netikėtumų. Finansų trūkumas neturėtų trukdyti pasiekti tikslų. Protingas ir gerai
                            suplanuotas vartojimo kreditas padeda įgyvendinti planus neatsisakant įpročių ar gyvenimo
                            būdo!Nuo netikėtai sudužusio telefono iki povestuvinės kelionės. Suteiktas kreditas yra tavo,
                            todėl jį panaudoti gali taip, kaip tik nori!</div>
                      </div>
                      <div className={styles.monthlyPaymentDescriptionItem}>
-                        <div className={styles.monthlyPaymentTitle}>3 sutarties pasirašymo būdai</div>
-                        <div className={styles.monthlyPaymentDescription}>Pasirink būdą, kuriuo pasirašyti sutartį tau
+                        <h3 className={styles.monthlyPaymentTitle}>3 sutarties pasirašymo būdai</h3>
+                        <div className={styles.monthlyPaymentDesc}>Pasirink būdą, kuriuo pasirašyti sutartį tau
                            patogiausia:
                            <ul>
                               <li>Mobiliuoju parašu arba išplėstiniu „Smart-ID“. Procesas užtruks vos kelias minutes tau
@@ -154,8 +132,8 @@ export default function Credits() {
                         </div>
                      </div>
                      <div className={styles.monthlyPaymentDescriptionItem}>
-                        <div className={styles.monthlyPaymentTitle}>Skolinkis atsakingai</div>
-                        <div className={styles.monthlyPaymentDescription}>Jei gali, dar nereiškia, kad turėtum. Šie
+                        <h3 className={styles.monthlyPaymentTitle}>Skolinkis atsakingai</h3>
+                        <div className={styles.monthlyPaymentDesc}>Jei gali, dar nereiškia, kad turėtum. Šie
                            klausimai padės apsispręsti ar vartojimo kreditas išties gera mintis:
                            Kaip skubiai reikia įsigyti norimą daiktą / paslaugą?
                            <ul>

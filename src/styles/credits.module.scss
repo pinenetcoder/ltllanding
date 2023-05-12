@@ -46,7 +46,7 @@
    .actionButtonBlock {
       width: 251px;
       height: 42px;
-      background: #12D8E4;
+      background: var(--theme-color2);
       border-radius: 33px;
       display: flex;
       justify-content: center;
@@ -54,7 +54,7 @@
       font-weight: 600;
       font-size: 16px;
       line-height: 24px;
-      color: #FFFFFF;
+      color: var(--white-text-color);
       text-decoration: none;
    }
 }
@@ -62,156 +62,147 @@
 .monthlyPaymentSection {
    padding: 46px 0 64px 0;
 
-
-   .monthlyPaymentBlock {
-      max-width: 820px;
-      padding: 0 15px 0 15px;
+   .calculatorWrapper {
+      width: 790px;
       margin: 0 auto;
       padding: 0 15px 0 15px;
+      display: flex;
+      justify-content: center;
+      gap: 46px;
+   }
 
-      .monthlyPaymentItem {
-         display: flex;
-         gap: 49px;
+   .calculatorBlock {
+      width: 460px;
+      border-right: solid 1px var(--theme-color4);
+      padding-right: 49px;
+      position: relative;
+   }
 
-         .calculator {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 460px;
+   .calculatorLine {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 15px;
+   }
 
-            .calculatorItem {
-               display: flex;
-               justify-content: space-between;
-               margin-bottom: 15px;
+   .label {
+      width: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      color: var(--theme-color4);
+   }
 
-               .calculatorDescription {
-                  font-size: 16px;
-                  font-weight: 300;
-                  line-height: 20px;
-                  color: #939096;
-                  width: 180px;
-                  text-align: right;
-               }
-            }
+   input {
+      width: 235px;
+      height: 30px;
+      background: url(/assets/images/euro.svg) no-repeat right center;
+      border: none;
+      border-bottom: 1px solid #939096;
+      color: var(--black-text-color);
+      padding-right: 20px;
 
-            .inputBlock {
-               border: none;
-               border-bottom: 1px solid #939096;
-               display: flex;
-               padding-bottom: 9px;
-            }
+      &:focus {
+         outline: none;
+      }
 
-            .inputPeriodBlock {
-               display: flex;
-               margin-bottom: 15px;
+      &::placeholder {
+         color: var(--black-text-color);
+      }
+   }
 
-               .inputPeriodTitle {
-                  width: 180px;
-                  font-size: 16px;
-                  font-weight: 300;
-                  line-height: 20px;
-                  color: #939096;
-                  text-align: right;
-                  margin-right: 100px;
-               }
+   .procent {
+      background: url(/assets/images/procent.svg) no-repeat right center;
+   }
 
-               .inputPeriodDays {
-                  display: flex;
-                  border-bottom: 1px solid #939096;
+   .select {
+      width: 242px;
+      &::after {
+         content: "";
+         display: block;
+         position: relative;
+         width: 63%;
+         height: 1px;
+         background-color: var(--theme-color4);
+         margin-top: 6px;
+      }
 
-               }
-            }
+      select {
+         border: none;
+         background: transparent;
+         cursor: pointer;
+         padding-right: 20px;
 
-            .inputRightSide {
-               color: #939096;
-            }
-
-            input {
-               background: transparent;
-               border: none;
-
-               &:focus {
-                  outline: none;
-               }
-
-               &::placeholder {
-                  color: var(--black-text-color);
-               }
-            }
-
-            select {
-               cursor: pointer;
-               background: transparent;
-               border: var(--black-text-color);
-
-               &:focus {
-                  outline: none;
-               }
-            }
-
-            .calculatorDayInput {
-               background: transparent;
-               border: none;
-               margin-right: 20px;
-            }
-         }
-
-         .border {
-            border-right: solid 1px #939096;
-            position: relative;
-
-            .borderCorner {
-               width: 15px;
-               height: 15px;
-               z-index: 1;
-               border-top: solid 1px #939096;
-               border-right: solid 1px #939096;
-               background-color: #F4F4F4;
-               transform:
-                  rotate(45deg) translate(81px, 70px)
-            }
-         }
-
-         .sum {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 30px;
-
-            .sumTitle {
-               font-size: 16px;
-               font-weight: 300;
-               line-height: 20px;
-               margin-bottom: 8px;
-               color: var(--black-text-color);
-            }
-
-            .sumOutputValue {
-               font-size: 40px;
-               font-weight: 700;
-               line-height: 50px;
-               margin-bottom: 30px;
-            }
+         &:focus {
+            outline: none;
          }
       }
+
+      span {
+         color: var(--theme-color4);
+         padding-left: 20px;
+         font-size: 16px;
+         font-weight: 300;
+         line-height: 20px;
+      }
+   }
+
+   h3 {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      margin-bottom: 8px;
+   }
+
+   .resultBlock {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .resultBlockTitle {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 30px;
+   }
+
+   .borderCorner {
+      width: 15px;
+      height: 15px;
+      z-index: 1;
+      border-top: solid 1px var(--theme-color4);
+      border-right: solid 1px var(--theme-color4);
+      background-color: var(--main-background);
+      transform:
+         rotate(45deg) translate(399px, -241px);
    }
 }
 
+
+
+
+
+
 .monthlyPaymentCrediancials {
-   max-width: 1440;
    padding: 64px 0 60px 0;
    background-color: var(--theme-color1);
 
    .monthlyPaymentCrediancialsList {
-
-      padding: 0 218px 0 347px;
-      margin: 0 auto;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 36px;
-      color: var(--white-text-color);
-      display: flex;
-      justify-content: space-between;
+   padding: 0 0 0 347px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    color: var(--white-text-color);
+    display: flex;
+    gap: 110px;
+    li {
+      list-style-position: inside;
+    }
    }
 }
 
@@ -229,15 +220,14 @@
 
    .monthlyPaymentDescriptionItem {
       width: 462px;
-
-
       .monthlyPaymentTitle {
          font-size: 35px;
          font-weight: 700;
          line-height: 44px;
+         margin-bottom: 34px;
       }
 
-      .monthlyPaymentDescription {
+      .monthlyPaymentDesc {
          font-size: 19px;
          font-weight: 300;
          line-height: 28px;
