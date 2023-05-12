@@ -1,47 +1,48 @@
 .creditsPageWrapper {
    padding: 66px 0 46px 0;
    background-color: var(--ligh-grey-background);
- 
+
    .creditsPageList {
-     padding-left: 312px;
- 
-     .creditsHeroItem {
-       width: 474px;
-     }
- 
-     .creditssTitle {
-       font-size: 30px;
-       margin-bottom: 35px;
-     }
+      padding-left: 312px;
+
+      .creditsHeroItem {
+         width: 474px;
+      }
+
+      .creditssTitle {
+         font-size: 30px;
+         margin-bottom: 35px;
+      }
    }
- 
+
    .creditsPageDescription {
-     font-weight: 400;
-     font-size: 18px;
-     color: #000000;
-     margin-bottom: 35px;
- 
-     li {
-       list-style-type: none;
-       padding-left: 26px;
-       background: url(/assets/images/check2.svg) no-repeat left center;
-       margin-bottom: 8px;
- 
-       &:last-child {
-         margin-bottom: 0;
-       }
-     }
- 
-     p {
-       margin-bottom: 30px;
-     }
- 
-     .CheckText {
-       font-weight: 300;
-       font-size: 16px;
-     }
-     
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+      margin-bottom: 35px;
+
+      li {
+         list-style-type: none;
+         padding-left: 26px;
+         background: url(/assets/images/check2.svg) no-repeat left center;
+         margin-bottom: 8px;
+
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+
+      p {
+         margin-bottom: 30px;
+      }
+
+      .CheckText {
+         font-weight: 300;
+         font-size: 16px;
+      }
+
    }
+
    .actionButtonBlock {
       width: 251px;
       height: 42px;
@@ -55,19 +56,19 @@
       line-height: 24px;
       color: #FFFFFF;
       text-decoration: none;
-     }
- }
+   }
+}
 
- .monthlyPaymentSection {
-   padding: 46px 0  64px 0;
-   
+.monthlyPaymentSection {
+   padding: 46px 0 64px 0;
 
-   .monthlyPaymentBlock{
+
+   .monthlyPaymentBlock {
       max-width: 820px;
       padding: 0 15px 0 15px;
       margin: 0 auto;
       padding: 0 15px 0 15px;
-      
+
       .monthlyPaymentItem {
          display: flex;
          gap: 49px;
@@ -82,6 +83,7 @@
                display: flex;
                justify-content: space-between;
                margin-bottom: 15px;
+
                .calculatorDescription {
                   font-size: 16px;
                   font-weight: 300;
@@ -91,17 +93,18 @@
                   text-align: right;
                }
             }
-            
+
             .inputBlock {
                border: none;
                border-bottom: 1px solid #939096;
                display: flex;
                padding-bottom: 9px;
             }
+
             .inputPeriodBlock {
                display: flex;
                margin-bottom: 15px;
-               
+
                .inputPeriodTitle {
                   width: 180px;
                   font-size: 16px;
@@ -111,53 +114,64 @@
                   text-align: right;
                   margin-right: 100px;
                }
+
                .inputPeriodDays {
                   display: flex;
                   border-bottom: 1px solid #939096;
-                 
+
                }
             }
+
             .inputRightSide {
                color: #939096;
             }
+
             input {
                background: transparent;
                border: none;
+
                &:focus {
                   outline: none;
                }
+
                &::placeholder {
                   color: var(--black-text-color);
                }
             }
+
             select {
                cursor: pointer;
                background: transparent;
                border: var(--black-text-color);
+
                &:focus {
                   outline: none;
                }
             }
+
             .calculatorDayInput {
                background: transparent;
                border: none;
                margin-right: 20px;
             }
          }
+
          .border {
             border-right: solid 1px #939096;
             position: relative;
+
             .borderCorner {
-               width: 30px;
-               height: 30px;
+               width: 15px;
+               height: 15px;
                z-index: 1;
                border-top: solid 1px #939096;
                border-right: solid 1px #939096;
                background-color: #F4F4F4;
-               transform: rotate(45deg) translateX(20px);
-               
+               transform:
+                  rotate(45deg) translate(81px, 70px)
             }
          }
+
          .sum {
             display: flex;
             flex-direction: column;
@@ -171,6 +185,7 @@
                margin-bottom: 8px;
                color: var(--black-text-color);
             }
+
             .sumOutputValue {
                font-size: 40px;
                font-weight: 700;
@@ -180,15 +195,15 @@
          }
       }
    }
- }
- 
- .monthlyPaymentCrediancials {
+}
+
+.monthlyPaymentCrediancials {
    max-width: 1440;
-   padding: 64px 0  60px 0;
+   padding: 64px 0 60px 0;
    background-color: var(--theme-color1);
-   
+
    .monthlyPaymentCrediancialsList {
-      
+
       padding: 0 218px 0 347px;
       margin: 0 auto;
       font-size: 18px;
@@ -198,51 +213,55 @@
       display: flex;
       justify-content: space-between;
    }
- }
+}
 
- .monthlyPaymentDescription {
+.monthlyPaymentDescription {
    padding: 60px 0 64px 0;
+
    .monthlyPaymentDescriptionList {
       max-width: 1030px;
       padding: 0 15px 0 15px;
-      margin:  auto;
+      margin: auto;
       display: flex;
       flex-wrap: wrap;
       gap: 67px;
    }
+
    .monthlyPaymentDescriptionItem {
       width: 462px;
-      
-      
+
+
       .monthlyPaymentTitle {
-          font-size: 35px;
-          font-weight: 700;
-          line-height: 44px;
+         font-size: 35px;
+         font-weight: 700;
+         line-height: 44px;
       }
+
       .monthlyPaymentDescription {
          font-size: 19px;
          font-weight: 300;
          line-height: 28px;
-         
+
          li {
             list-style-position: inside;
             padding-left: 15px;
          }
       }
    }
- }
+}
 
- .faqSection {
+.faqSection {
    padding: 22px 0 60px 0;
- 
+
    .faqWrapper {
-     max-width: 1060px;
-     padding: 0 15px 0 15px;
-     margin: 0 auto;
-     .faqList {
-       padding: 71px 105px 70px 105px;
-       box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
-       background-color: #F9F8F7;
-     }
+      max-width: 1060px;
+      padding: 0 15px 0 15px;
+      margin: 0 auto;
+
+      .faqList {
+         padding: 71px 105px 70px 105px;
+         box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+         background-color: #F9F8F7;
+      }
    }
- }
+}

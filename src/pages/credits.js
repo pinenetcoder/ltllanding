@@ -33,7 +33,7 @@ export default function Credits() {
                            </ul>
                         </div>
                         <div>
-                              <Link className={styles.actionButtonBlock} href="/">Pateikti indėlio paraišką</Link>
+                              <Link className="light-green-action-button long" href="/">Pateikti indėlio paraišką</Link>
                         </div>
                      </div>
                   </div>
