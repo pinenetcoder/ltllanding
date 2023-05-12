@@ -87,16 +87,12 @@ export default function Payments() {
                                     viena raide ar simboliu.
                                  </li>
                               </ul>
-
-
                            </div>
                         </div>
                      </div>
                   </div>
                </section>
-
             </main>
-
          </IndexLayout>
       </>
    )

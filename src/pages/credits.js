@@ -3,14 +3,11 @@ import IndexLayout from "@/Layouts/IndexLayout"
 import Accordion from "@/components/Accordion"
 import Link from "next/link"
 
-
-
-
 export default function Credits() {
    function createSelectOptions(number) {
       let arr = []
       for (let i = 1; i <= number; i++) arr.push(i)
-      return arr.map(el => <option>{el}</option>)
+      return arr.map((el, idx) => <option key={idx}>{el}</option>)
    }
    return (
       <>
@@ -20,7 +17,6 @@ export default function Credits() {
                   <div className={styles.creditsPageList}>
                      <div className={styles.creditsHeroItem}>
                         <h1 className={styles.creditsTitle}>Einamoji sąskaita</h1>
-
                         <div className={styles.creditsPageDescription}>
                            <p>With Kocomo, a home is co-owned by no more than eight families while we act as a
                               neutral third-party administrator to ensure transparency and fairness a home is
@@ -33,7 +29,7 @@ export default function Credits() {
                            </ul>
                         </div>
                         <div>
-                              <Link className="light-green-action-button long" href="/">Pateikti indėlio paraišką</Link>
+                           <Link className="light-green-action-button long" href="/">Pateikti indėlio paraišką</Link>
                         </div>
                      </div>
                   </div>
@@ -53,7 +49,7 @@ export default function Credits() {
                         <div className={styles.calculatorLine}>
                            <div className={styles.label}>
                            </div>
-                           <input type="text" placeholder="0" className={styles.procent}/>
+                           <input type="text" placeholder="0" className={styles.procent} />
                         </div>
                         <div className={styles.calculatorLine}>
                            <div className={styles.label}>Laikotarpis</div>
@@ -127,8 +123,6 @@ export default function Credits() {
                                  darbo dieną
                               </li>
                            </ul>
-
-
                         </div>
                      </div>
                      <div className={styles.monthlyPaymentDescriptionItem}>
