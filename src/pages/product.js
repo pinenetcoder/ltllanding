@@ -36,7 +36,6 @@ export default function Payments() {
                      <Link className={styles.innerNavLink} href="#clientSuport">Client Support</Link>
                      <Link className={styles.innerNavLink} href="#faq">FAQ</Link>
                   </div>
-
                </section>
                <section id="privetClient" className={styles.privateClientSection}>
                   <div className={styles.motyvationWrapper}>
