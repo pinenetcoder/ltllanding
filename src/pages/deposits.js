@@ -148,22 +148,3 @@ export default function Deposit() {
     </>
   )
 }
-
-//style {
-
-//   ratesTableWrapper {
-//      width: 840px
-//      <font></font>
-//      lineHeigh
-//   }
-//   column1 {
-//      width: 228
-//   }
-//   column2 {
-//      width: 335
-//   }
-
-//   column3 {
-//      width: 227
-//   }
-//}
