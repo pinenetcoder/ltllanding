@@ -1,0 +1,70 @@
+.termsAndConditionsSection {
+   padding: 26px 0 90px 0;
+
+   .termsAndConditionsBlock {
+      width: 920px;
+      margin: 0 auto;
+      padding: 15px 0 15px 0;
+   }
+
+   h1 {
+      text-align: center;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 62px;
+      margin-bottom: 34px;
+   }
+
+  .innerNavigationLinkList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+  }
+
+  .innerNavLink {
+    font-family: 'Lexend';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--main-text-color);
+    text-decoration: none;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.change-language-link {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  .termsAndConditionsLinks {
+   width: 710px;
+   padding: 0 15px 0 15px;
+   margin: 0 auto;
+   display: flex;
+   gap: 43px;
+
+   ul {
+      width: 323px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      color: var( --light-color);
+
+      li {
+         list-style: none;
+         background: url(/assets/images/ArrowRight.svg) no-repeat left center;
+         padding-left: 35px;
+         margin-bottom: 17px;
+         
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+  }
+}
