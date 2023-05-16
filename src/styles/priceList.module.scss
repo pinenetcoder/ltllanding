@@ -1,0 +1,129 @@
+.priceListHero {
+   padding: 40px 0 30px 0;
+   position: sticky;
+   top: 0%;
+   background-color: var(--main-background);
+
+   .innerNavigationLinkList {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .innerNavLink {
+         font-family: 'Lexend';
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 24px;
+         color: var(--main-text-color);
+         text-decoration: none;
+         margin-right: 30px;
+
+         &:last-child {
+            margin-right: 0;
+         }
+
+         &.change-language-link {
+            text-transform: uppercase;
+            font-weight: 600;
+         }
+      }
+   }
+
+   .priceHeaderTitle {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 62px;
+      text-align: center;
+      margin-bottom: 34px;
+   }
+}
+
+.priceHeader {
+   font-size: 25px;
+   font-weight: 700;
+   line-height: 31px;
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+.priceListRates {
+   padding: 20px 0 46px 0;
+}
+
+
+.priceWrapper {
+   max-width: 850px;
+   margin: 0 auto;
+   padding: 0 15px 0 15px;
+
+   .priceList {
+
+      &:last-child {
+         border-bottom: solid 1px #ACACAC;
+      }
+
+      .priceItem {
+         border-top: solid 1px #ACACAC;
+         padding: 16px 0;
+         display: flex;
+         justify-content: space-between;
+         padding-left: 42px;
+
+         &.priceTitle {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            padding-left: 0;
+         }
+
+         .priceDescription {
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 25px;
+            padding-right: 22px;
+         }
+
+         .priceDescriptionLeft {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 25px;
+         }
+      }
+   }
+}
+
+.priceListForIndividuals {
+   padding: 46px 0 46px 0;
+
+   .priceHeader {
+      margin-bottom: 60px;
+   }
+}
+
+.priceListForCorparate {
+   padding: 46px 0 46px 0;
+}
+
+.faqSection {
+   padding: 22px 0 86px 0;
+
+   .faqWrapper {
+      max-width: 1060px;
+      padding: 0 15px 0 15px;
+      margin: 0 auto;
+
+      .faqHeader {
+         font-size: 25px;
+         font-weight: 700;
+         line-height: 31px;
+         margin-bottom: 56px;
+         text-align: center;
+      }
+
+      .faqList {
+         padding: 71px 105px 70px 105px;
+         box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+         background-color: #F9F8F7;
+      }
+   }
+}
