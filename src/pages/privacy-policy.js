@@ -1,10 +1,10 @@
 import styles from "@/styles/privacy-policy.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
-import { useEffect,  useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 
 
-export default function privacyPolicy() {
+export default function PrivacyPolicy() {
    const [links, setLinks] = useState([]);
 
    useEffect(() => {

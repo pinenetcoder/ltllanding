@@ -3,7 +3,7 @@ import IndexLayout from "@/Layouts/IndexLayout"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
-export default function temrsAndComditions() {
+export default function TemrsAndConditions() {
    const [links, setLinks] = useState([]);
    const [activeTabLinks, setActiveTabLinks] = useState([]);
 
