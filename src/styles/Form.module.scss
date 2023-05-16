@@ -1,0 +1,62 @@
+
+.formInputBlock {
+   width: 468px;
+   display: flex;
+   flex-direction: column;
+
+
+  
+   input {
+      border: none;
+      border-bottom: 1px solid #C6C4C7;
+      background-color: transparent;
+      margin-bottom: 28px;
+      padding: 0 15px 9px 0;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      color: var(--theme-color4);
+
+      &:focus {
+         outline: none;
+      }
+
+      &:last-child {
+         margin-bottom: 60px;
+      }
+   }
+
+   textarea {
+      height: 89px;
+      border: none;
+      resize: none;
+      border-bottom: 1px solid #C6C4C7;
+      background-color: transparent;
+      margin-bottom: 28px;
+      padding: 0 15px 9px 0;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      color: var(--theme-color4);
+
+      &:focus {
+         outline: none;
+      }
+   }
+}
+.formBlock {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.formButton {
+   width: 194px;
+   padding: 9px 0 9px 0;
+   display: flex;
+   justify-content: center;
+   background-color: var(--theme-color4);
+   border-radius: 27px;
+   color: var(--white-text-color);
+   cursor: pointer;
+}
+
