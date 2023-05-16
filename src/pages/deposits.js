@@ -14,22 +14,37 @@ export default function Deposit() {
   let ratesList = [
     {
       term: 1,
-      rate: 1,
+      rate: 1.00,
     },
     {
       term: 3,
       rate: 1.75,
     },
+    {
+      term: 6,
+      rate: 2.00,
+    },
+    {
+      term: 12,
+      rate: 2.50,
+    },
+    {
+      term: 18,
+      rate: 3.10,
+    },            
   ]
   function createSelectOptions() {
-
     return ratesList.map((el, idx) => <option data-rate={el.rate} key={idx}>{el.term}</option>)
   }
 
   function selectTerm(e) {
     let selectedRate = +Array.from(e.target.options).filter(opt => opt.value == e.target.value)[0].getAttribute('data-rate')
     setCalc({ ...calc, term: +e.target.value, selectedRate: selectedRate })
-    console.log(calc)
+  }
+
+  function amountHandler(e) {
+    var digits = e.target.value.replace(/\D/g, "");
+    setCalc({ ...calc, amount: +digits }) 
   }
   return (
     <>
@@ -70,7 +85,7 @@ export default function Deposit() {
                 <div className={styles.borderCorner}></div>
                 <div className={styles.calculatorLine}>
                   <div className={styles.label}>Indėlio dydis</div>
-                  <input type="text" value={calc.amount} onChange={(e) => { setCalc({ ...calc, amount: +e.target.value }) }} placeholder="Enter amount" />
+                  <input type="text" value={calc.amount} pattern="[0-9\.\-]*"  onChange={(e) => {amountHandler(e)}} placeholder="Enter amount" />
                 </div>
                 <div className={styles.calculatorLine}>
                   <div className={styles.label}>Indelio terminas</div>
@@ -87,7 +102,7 @@ export default function Deposit() {
                   </div>
                   <div className={styles.resultBlockItem}>
                     <div className={styles.left}>Iš viso:</div>
-                    <div className={styles.right}>{(+calc.amount / 100 * +calc.selectedRate / 12 * calc.term + calc.amount).toFixed(0)}€</div>
+                    <div className={styles.right}>{(+calc.amount / 100 * +calc.selectedRate / 12 * calc.term + calc.amount).toFixed(2)}€</div>
                   </div>
                   <div className={styles.resultBlockItem}>
                     <div className={styles.left}>Palūkanų suma:</div>
