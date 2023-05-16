@@ -5,19 +5,19 @@ export const links = [
       uid: 0,
       links: [
          {
-            linkName: "General provisions",
+            linkName: "1General provisions",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {
-            linkName: "Identification and representation",
+            linkName: "2Identification and representation",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {
-            linkName: "Banking secret and processing customer data",
+            linkName: "3Banking secret and processing customer data",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {
-            linkName: "Entry into agreements",
+            linkName: "4Entry into agreements",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {
@@ -60,7 +60,7 @@ export const links = [
       uid: 1,
       links: [
          {
-            linkName: "General provisions",
+            linkName: "2General provisions",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {
@@ -115,7 +115,7 @@ export const links = [
       uid: 2,
       links: [
          {
-            linkName: "General provisions",
+            linkName: "3General provisions",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {
@@ -170,7 +170,7 @@ export const links = [
       uid: 3,
       links: [
          {
-            linkName: "General provisions",
+            linkName: "4General provisions",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {
@@ -225,7 +225,7 @@ export const links = [
       uid: 4,
       links: [
          {
-            linkName: "General provisions",
+            linkName: "5General provisions",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {

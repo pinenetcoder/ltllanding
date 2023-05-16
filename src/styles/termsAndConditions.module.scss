@@ -1,5 +1,5 @@
 .termsAndConditionsSection {
-   padding: 26px 0 90px 0;
+   padding: 26px 0 180px 0;
 
    .termsAndConditionsBlock {
       width: 920px;
@@ -15,56 +15,65 @@
       margin-bottom: 34px;
    }
 
-  .innerNavigationLinkList {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 80px;
-  }
+   .innerNavigationLinkList {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 80px;
+      gap: 30px;
+      cursor: pointer;
+      color: var(--main-text-color);
+   }
 
-  .innerNavLink {
-    font-family: 'Lexend';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--main-text-color);
-    text-decoration: none;
-    margin-right: 30px;
 
-    &:last-child {
-      margin-right: 0;
-    }
-
-    &.change-language-link {
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-  }
-
-  .termsAndConditionsLinks {
-   width: 710px;
-   padding: 0 15px 0 15px;
-   margin: 0 auto;
-   display: flex;
-   gap: 43px;
-
-   ul {
-      width: 323px;
+   .innerNavLink {
+      font-family: 'Lexend';
+      font-weight: 400;
       font-size: 16px;
-      font-weight: 300;
-      line-height: 20px;
-      color: var( --light-color);
+      line-height: 24px;
+      color: var(--main-text-color);
+      text-decoration: none;
+      margin-right: 30px;
 
-      li {
-         list-style: none;
-         background: url(/assets/images/ArrowRight.svg) no-repeat left center;
-         padding-left: 35px;
-         margin-bottom: 17px;
-         
-         &:last-child {
-            margin-bottom: 0;
+
+
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+
+   .termsAndConditionsLinks {
+      max-width: 710px;
+      padding: 0 15px 0 15px;
+      margin: 0 auto;
+
+
+      ul {
+         width: 690px;
+         height: 300px;
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+
+         li {
+            width: 323px;
+            list-style: none;
+            background: url(/assets/images/ArrowRight.svg) no-repeat left center;
+            padding-left: 35px;
+            margin-bottom: 17px;
+
+            &:last-child {
+               margin-bottom: 0;
+            }
+
+            .linkStyle {
+               font-size: 16px;
+               font-weight: 300;
+               line-height: 20px;
+               color: var(--light-color);
+               text-decoration: none;
+            }
          }
       }
    }
-  }
 }

@@ -4,68 +4,57 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 
 export default function temrsAndComditions() {
-   const [links, setLinks] = useState([])
+   const [links, setLinks] = useState([]);
+   const [activeTabLinks, setActiveTabLinks] = useState([]);
 
    useEffect(() => {
       const getLinks = async () => {
          const resp = await fetch(`/api/tnc`)
          const data = await resp.json();
          setLinks(data)
+         setActiveTabLinks(data[0].links)
       }
       getLinks()
    }, [])
 
-   function kuzia(e) {
-      let uid = e.target.dataset.uid;
-      const idx = links.findIndex(link => link.uid == uid)
-      console.log(idx)
+   function tabHandler(e) {
+      let idx = links.findIndex((tab) => tab.uid == e.target.dataset.id)
+      let temp = [...links]
+      temp.forEach((tab, index) => {
+         if (idx == index) tab.active = true
+         else tab.active = false
+      })
+      setLinks(temp)
+      setActiveTabLinks(temp[idx].links)
    }
 
-   const tabs = links.map((tab, idx) => {
-      return (
-         <div data-id={tab.uid} onClick={(e) => { kuzia(e) }} key={idx} className={tab.active ? 'active' : ''}>{tab.tabName}</div>
-      )
-   })
-
    return (
-      <>
-         <IndexLayout>
-            <main>
-               {tabs}
-            </main>
-            {/*<main>
-               <section className={styles.termsAndConditionsSection}>
-                  <div className={styles.termsAndConditionsBlock}>
-                     <h1>Terms & Conditions</h1>
-                  </div>
-                  <div className={styles.innerNavigationLinkList}>
-                     <Link className={styles.innerNavLink} href="/paccounts">Accounts</Link>
-                     <Link className={styles.innerNavLink} href="/termsdeposit">Term deposits</Link>
-                     <Link className={styles.innerNavLink} href="/payments">Payments</Link>
-                     <Link className={styles.innerNavLink} href="/">Loans to private individuals</Link>
-                     <Link className={styles.innerNavLink} href="/">Loans to corporates</Link>
-                  </div>
-                  <div className={styles.termsAndConditionsLinks}>
-                     <ul>
-                        <li><Link  target="_blank" href="https://www.handbook.fca.org.uk/handbook/GEN.pdf">General provisions</Link></li>
-                        <li>Identification and representation</li>
-                        <li>Banking secret and processing customer data</li>
-                        <li>Entry into agreements</li>
-                        <li>Exchange of information between bank and customer</li>
-                        <li>Information about accounts and transactions</li>
-                     </ul>
-                     <ul>
-                        <li>General provisions</li>
-                        <li>Identification and representation</li>
-                        <li>Banking secret and processing customer data</li>
-                        <li>Entry into agreements</li>
-                        <li>Exchange of information between bank and customer</li>
-                        <li>Information about accounts and transactions</li>
-                     </ul>
-                  </div>
-               </section>
-            </main>*/}
-         </IndexLayout>
-      </>
+      <IndexLayout>
+         <main>
+            <section className={styles.termsAndConditionsSection}>
+               <div className={styles.termsAndConditionsBlock}>
+                  <h1>Terms & Conditions</h1>
+               </div>
+               <div className={styles.innerNavigationLinkList}>
+                  {links.map((tab, idx) => {
+                     return (
+                        <div data-id={tab.uid} onClick={(e) => { tabHandler(e) }} key={idx} className={tab.active ? 'active-tnc-tab' : ''}>{tab.tabName}</div>
+                     )
+                  })}
+               </div>
+               <div className={styles.termsAndConditionsLinks}>
+                  <ul>
+                     {activeTabLinks.map((link, idx) => {
+                        return (
+                           <li key={idx}>
+                              <Link target="_blank" href={link.linkUrl} className={styles.linkStyle}>{link.linkName}</Link>
+                           </li>
+                        )
+                     })}
+                  </ul>
+               </div>
+            </section>
+         </main>
+      </IndexLayout>
    )
 }
