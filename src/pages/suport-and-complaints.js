@@ -1,7 +1,7 @@
 import styles from "@/styles/suport-and-complaints.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Link from "next/link"
-import Form from "@/components/Form"
+import ContactForm from "@/components/ContactForm"
 import Accordion from "@/components/Accordion"
 
 export default function SuportAndComplaints() {
@@ -25,7 +25,7 @@ export default function SuportAndComplaints() {
             </section>
             <section className={styles.formSection}>
                   <div className={styles.formTitleBlock}>
-                     <Form formTitle={true}
+                     <ContactForm formTitle={true}
                      />
                   </div>
             </section>

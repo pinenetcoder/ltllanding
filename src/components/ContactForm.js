@@ -1,6 +1,6 @@
-import styles from "@/styles/Form.module.scss"
+import styles from "@/styles/ContactForm.module.scss"
 
-function Form(props) {
+function ContactForm(props) {
    
    return (
       <div className={styles.formTitleBlock}>
@@ -35,4 +35,4 @@ function Form(props) {
    )
 }
 
-export default Form;
+export default ContactForm;
