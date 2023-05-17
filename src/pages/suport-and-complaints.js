@@ -19,18 +19,14 @@ export default function SuportAndComplaints() {
                         services, enabling them to build a brighter future for themselves and their 
                         communities. We strive to unlock financial inclusion by empowering individuals.
                      </p>
-                     <Link href="" >Ream More &gt;</Link>
+                     <Link href="/">Ream More &gt;</Link>
                   </div>
                </div>
             </section>
             <section className={styles.formSection}>
                   <div className={styles.formTitleBlock}>
-                     <h3>Your opinion is important to us</h3>
-                     <p>Our vision is to create a world where everyone has access to financial 
-                        services, enabling them to build a brighter future for themselves and their
-                        communities. 
-                     </p>
-                     <Form />
+                     <Form formTitle={true}
+                     />
                   </div>
             </section>
             <section className={styles.settlementSection}>

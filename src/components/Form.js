@@ -1,7 +1,18 @@
 import styles from "@/styles/Form.module.scss"
 
-function Form() {
+function Form(props) {
+   
    return (
+      <div className={styles.formTitleBlock}>
+         {props.formTitle && 
+         <div>
+            <h3>Your opinion is important to us</h3>
+            <p>Our vision is to create a world where everyone has access to financial 
+               services, enabling them to build a brighter future for themselves and their
+               communities. 
+            </p>
+         </div>
+         }  
          <form className={styles.formBlock}>
             <div className={styles.formInputBlock}>
             <input type="text" 
@@ -20,7 +31,8 @@ function Form() {
             </div>
             <div className={styles.formButton}>Send</div>
          </form>
+      </div>
    )
 }
 
-export default Form
+export default Form;
