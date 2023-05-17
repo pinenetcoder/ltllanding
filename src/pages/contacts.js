@@ -19,7 +19,7 @@ export default function Contacts() {
                 </div>
               </div>
               <div className={styles.contactsHeroItem}>
-                <h1 className={styles.contactsTitle}>Įmonės rekvizitai</h1>
+                <h3 className={styles.contactsTitle}>Įmonės rekvizitai</h3>
                 <div className={styles.contactsPageDescription}>
                   <p>LTL Kredito unija
                      Įmonės kodas: 302791356
@@ -32,7 +32,7 @@ export default function Contacts() {
           </section>
           <section className={styles.contactsCustomerServiceSection}>
             <div className={styles.contactsCustomerServiceWrapper}>
-               <h2>Klientų aptarnavimas būstinėje</h2>
+               <h3>Klientų aptarnavimas būstinėje</h3>
                <div className={styles.contactsCustomerServiceWorkingDays}>
                   <div className={styles.contactsCustomerServiceSimpleDays}>
                      <p className={styles.workDays}>Pirmadienį - Ketvirtadienį</p>
