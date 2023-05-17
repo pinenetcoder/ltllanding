@@ -11,7 +11,7 @@ export default function Esg() {
       const getLinks = async () => {
          const resp = await fetch(`/api/annualReports`)
          const data = await resp.json();
-         setAnnualLinks(data)
+         setAnnualLinks(data.reverse())
          setActiveLinks(data[0].links)
       }
       getLinks()
@@ -116,7 +116,7 @@ export default function Esg() {
                            {year.year}
                            </li>
                         )
-                     }).reverse()}
+                     })}
                </ul>
                <div className={styles.annualLintsReport}>
                   {activeAnnualLinks.map((link, idx) => {
