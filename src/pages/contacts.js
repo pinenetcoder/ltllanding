@@ -10,7 +10,7 @@ export default function Contacts() {
          <section className={styles.contactsPageWrapper}>
             <div className={styles.contactsPageList}>
               <div className={styles.contactsHeroItem}>
-                <h1 className={styles.contactsTitle}>Kontaktai</h1>
+                <h3 className={styles.contactsTitle}>Kontaktai</h3>
                 <div className={styles.contactsPageDescription}>
                   <p>Sporto g. 18 LT-09238 Vilnius
                      Telefonas: +370 5 205 5240
