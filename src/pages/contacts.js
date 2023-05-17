@@ -1,6 +1,6 @@
 import styles from "@/styles/contacts.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
-import ContactsForm from "@/components/ContactsForm"
+import ContactForm from "@/components/ContactForm"
 
 export default function Contacts() {
    
@@ -47,7 +47,7 @@ export default function Contacts() {
             </div>
           </section>
           <section className={styles.contactsForm}>
-            <ContactsForm />
+            <ContactForm formTitle={false}/>
           </section>
          </main>
       </IndexLayout>
