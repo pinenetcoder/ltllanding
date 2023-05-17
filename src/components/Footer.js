@@ -12,10 +12,10 @@ function Footer() {
       <div className="footer-navigation-section">
         <h4 className="footer-navigation-section-title">{t.footerNavLinks.usefulLinks}</h4>
         <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.priceList}</Link>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.termsAndCond}</Link>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.ppAndCookies}</Link>
+        <Link className="footer-navigation-link" href="/terms-and-conditions">{t.footerNavLinks.termsAndCond}</Link>
+        <Link className="footer-navigation-link" href="/privacy-policy">{t.footerNavLinks.ppAndCookies}</Link>
         <Link className="footer-navigation-link" href="/security">{t.footerNavLinks.security}</Link>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.support}</Link>
+        <Link className="footer-navigation-link" href="/suport-and-complaints">{t.footerNavLinks.support}</Link>
       </div>
 
       <div className="footer-navigation-section">
