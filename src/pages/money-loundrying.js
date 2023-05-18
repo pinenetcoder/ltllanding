@@ -1,8 +1,35 @@
 import styles from "@/styles/money-loundrying.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Link from "next/link"
+import { useEffect, useState } from "react"
 
 export default function MoneyLoundrying() {
+
+   const [links, setLinks] = useState([]);
+   const [activeTabLinks, setActiveTabLinks] = useState([]);
+
+   useEffect(() => {
+      const getLinks = async () => {
+         const resp = await fetch(`/api/moneyLoundrying`)
+         const data = await resp.json();
+         setLinks(data)
+         setActiveTabLinks(data[0].links)
+         console.log(data)
+      }
+      getLinks()
+   }, [])
+
+   function TabHanler(e) {
+      let idx = links.findIndex((tab) => tab.uid == e.target.dataset.id)
+      let temp = [...links]
+      temp.forEach((tab, index) => {
+         if (idx == index) tab.active = true
+         else tab.active = false
+      })
+      setLinks(temp)
+      setActiveTabLinks(temp[idx].links)
+   }
+
    return (
       <IndexLayout>
          <main>
@@ -10,12 +37,24 @@ export default function MoneyLoundrying() {
                <div className={styles.moneyLoundryingWrapper}>
                   <h3>Pinigų plovimo prevencija</h3>
                   <div className={styles.innerNavigationLinkList}>
-                     <Link className={styles.innerNavLink} href="#">Ketvirčio ataskaita</Link>
-                     <Link className={styles.innerNavLink} href="#">Metinė ataskaita</Link>
-                     <Link className={styles.innerNavLink} href="#">Factsheet</Link>
-                     <Link className={styles.innerNavLink} href="#">Prezentacijos</Link>
-                     <Link className={styles.innerNavLink} href="#">Kontaktai</Link>
-                     <Link className={styles.innerNavLink} href="#">Finansinis kalendorius</Link>
+                  {links.map((tab, idx) => {
+                     return (
+                        <div data-id={tab.uid} onClick={(e) => { TabHanler(e) }} key={idx} className={tab.active ? 'active-tnc-tab' : ''}>{tab.tabName}</div>
+                     )
+                  })}
+                  </div>
+                  <div className={styles.moneyLoundryingBlock}>
+                     <div className={styles.moneyLoundryingLinks}>
+                        <ul>
+                        {activeTabLinks.map((link, idx) => {
+                           return (
+                              <li key={idx}>
+                                 <Link target="_blank" href={link.linkUrl} className={styles.linkStyle}>{link.linkName}</Link>
+                              </li>
+                           )
+                        })}
+                        </ul>
+                     </div>
                   </div>
                </div>
             </section>
