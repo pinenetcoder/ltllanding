@@ -87,7 +87,7 @@ export default function About() {
             <div className={styles.valuesBlock}>
               <h3>Transparency & accountability</h3>
               <p>We are aiming to provide access to fair and affordable banking services. We are transparent 
-                and accountable in our decisions, and take into account the impact of our actions on people's
+                and accountable in our decisions, and take into account the impact of our actions on people&apos;s
                  daily lives.
               </p>
             </div>
