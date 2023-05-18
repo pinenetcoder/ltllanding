@@ -1,0 +1,271 @@
+.aboutUsSection {
+   padding: 100px 0 30px 0;
+   background-color: var(--theme-color3);
+
+   .aboutUsWrapper {
+      max-width: 820px;
+      margin: 0 auto;
+   }
+
+   .aboutUsHeroBlock {
+      display: flex;
+      justify-content: center;
+      gap: 70px;
+      margin-bottom: 90px;
+   }
+
+   .aboutUsHeroTitle {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 62px;
+      text-align: center;
+      margin-bottom: 90px;
+   }
+  
+   .missionTitle {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 20px;
+   }
+
+   .missionDescription {
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 32px;
+      max-width: 280px;
+   }
+
+   .aboutUsHeroVision {
+      width: 474px;
+   }
+
+   .visionTitle {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 20px;
+   }
+
+   .visionDescription {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+   }
+}
+
+.innerNavigationBlock {
+   padding: 30px 0 48px 0;
+   position: sticky;
+   z-index: 11;
+   top: 90px;
+   background-color: var(--main-background);
+
+   .innerNavigationLinkList {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   .innerNavLink {
+      font-family: 'Lexend';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--main-text-color);
+      text-decoration: none;
+      margin-right: 30px;
+
+      &:last-child {
+         margin-right: 0;
+      }
+
+      &.change-language-link {
+         text-transform: uppercase;
+         font-weight: 600;
+      }
+   }
+}
+
+.teamSection {
+   padding: 30px 0 48px 0;
+
+   .teamWrapper {
+      max-width: 1050px;
+      padding: 0 15px 0 15px;
+      margin: 0 auto;
+   }
+
+   h3 {
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 44px;
+      text-align: center;
+      margin-bottom: 40px;
+   }
+
+   .teamDescription {
+      display: flex;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      text-align: center;
+      margin-bottom: 40px;
+   }
+
+   .teamBlock {
+      max-width: 868px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .teamMembers {
+      width: 154px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .membersPhoto {
+      width: 154px;
+      height: 154px;
+      background-color: var(--theme-color1);
+      margin-bottom: 18px;
+   }
+
+   .membersName {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      margin-bottom: 16px;
+   }
+}
+
+.jobsSection, .sponsorshipMirror {
+   padding: 40px 0 48px 0;
+   background-color: var(--white-background);
+
+   .jobsWrapper {
+      padding: 42px 15px 42px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 120px;
+   }
+
+   .img {
+      width: 430px;
+      height: 375px;
+      background-color: var(--theme-color1);
+   }
+   .jobsCrediantials {
+      width: 580px;
+
+      h3 {
+         font-size: 35px;
+         font-weight: 700;
+         line-height: 44px;
+         margin-bottom: 34px;
+      }
+      p {
+         font-size: 16px;
+         font-weight: 300;
+         line-height: 20px;
+         margin-bottom: 34px;
+      }
+
+      a {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 20px;
+         text-decoration-line: underline;
+         color: var(--main-text-color);
+      }
+   }
+}
+
+.valuesSection {
+   padding: 168px 0 168px 0;
+
+   .valuesWrapper {
+      display: flex;
+      padding-left: 206px;
+      gap: 64px;
+   }
+
+   .valuesBlock {
+      width: 320px;
+
+      h3 {
+         font-size: 25px;
+         font-weight: 700;
+         line-height: 32px;
+         margin-bottom: 20px;
+      }
+
+      p {
+         font-size: 16px;
+         font-weight: 300;
+         line-height: 20px;
+      }
+   }
+}
+
+.sponsorshipMirror {
+   .img {
+      order: 1;
+   }
+}
+
+.historySection {
+   padding: 73px 0 162px 0;
+
+   .historyWrapper {
+      max-width: 1056px;
+      padding: 0 15px 0 15px;
+      margin: 0 auto;
+
+      h3 {
+         font-size: 35px;
+         font-weight: 700;
+         line-height: 44px;
+         text-align: center;
+         margin-bottom: 40px;
+      }
+
+      p {
+         display: flex;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 20px;
+         text-align: center;
+         margin-bottom: 40px;
+      }
+   }
+
+   .historyYearList {
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+   }
+
+   .historyYearItem {
+      width: 300px;
+      padding: 22px 22px 22px 22px;
+
+      h4 {
+         font-size: 24px;
+         font-weight: 700;
+         line-height: 32px;
+         margin-bottom: 20px;
+      }
+
+      p {
+         font-size: 16px;
+         font-weight: 300;
+         line-height: 20px;
+         text-align: left;
+      }
+   }
+}
+
