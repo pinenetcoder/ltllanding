@@ -114,9 +114,10 @@
    }
 
    .teamBlock {
+      max-width: 868px;
+      margin: 0 auto;
       display: flex;
-      gap: 78px;
-      padding: 0 90px 0 90px;
+      justify-content: space-between;
    }
 
    .teamMembers {
