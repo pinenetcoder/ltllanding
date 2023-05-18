@@ -1,10 +1,9 @@
 .shareHoldersSection {
-   padding: 128px 0 0 0;
+   padding: 100px 0 58px 0;
 
    .shareHoldersWrapper {
       max-width: 890px;
       margin: 0 auto;
-      border: solid 1px red;
 
       h2 {
          font-size: 50px;
@@ -26,7 +25,107 @@
          font-size: 25px;
          font-weight: 700;
          line-height: 32px;
+         text-align: center;
          margin-bottom: 30px;
       }
+   }
+
+   ul {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      list-style: none;
+      border-bottom: solid 1px var(--table-border-color);
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+   }
+
+   .linkStyle {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      color: var(--light-color);
+      text-decoration: none;
+   }
+
+   .agendaBlock {
+      margin-bottom: 50px;
+
+      h4 {
+         font-size: 20px;
+         font-weight: 700;
+         line-height: 25px;
+         margin-bottom: 20px;
+      }
+
+      li {
+         font-size: 17px;
+         font-weight: 300;
+         line-height: 26px;
+         list-style-type: decimal;
+      }
+   }
+   .pdfBlock {
+      width: 820px;
+      background-color: var(--white-background);
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+      padding: 30px 0 30px 30px;
+      
+      li {
+         background: url(/assets/images/Pdficon.svg) no-repeat left center; 
+         list-style: none;
+         padding-left: 30px;
+         margin-bottom: 18px;
+       }
+   }
+}
+
+.contactsSection {
+   padding: 58px 0 120px 0;
+
+   .contactsWrapper {
+      max-width: 742px;
+      margin: 0 auto;
+   }
+
+   h3 {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 32px;
+      text-align: center;
+      border-bottom: solid 1px var(--table-border-color);
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+   }
+
+   .contactsBlock {
+      display: flex;
+      justify-content: center;
+      gap: 64px;
+   }
+
+   .img {
+      width: 127px;
+      height: 135px;
+      background-color: var(--theme-color1);
+   }
+
+   .contactsInfo {
+      width: 265px;
+      display: flex;
+      flex-direction: column;
+   }
+   h4 {
+
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      margin-bottom: 16px;
+   }
+
+   p {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
    }
 }
