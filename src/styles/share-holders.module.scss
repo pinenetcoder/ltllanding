@@ -30,14 +30,14 @@
       }
    }
 
-   ul {
+   ul.tabsList {
       display: flex;
       justify-content: center;
       gap: 30px;
       list-style: none;
       border-bottom: solid 1px var(--table-border-color);
       padding-bottom: 30px;
-      margin-bottom: 40px;
+      margin-bottom: 90px;
    }
 
    .linkStyle {
@@ -57,12 +57,16 @@
          line-height: 25px;
          margin-bottom: 20px;
       }
+      ul {
+         list-style-position: inside;
+      }
 
       li {
          font-size: 17px;
          font-weight: 300;
          line-height: 26px;
          list-style-type: decimal;
+         background-size: contain;
       }
    }
    .pdfBlock {
@@ -76,6 +80,7 @@
          list-style: none;
          padding-left: 30px;
          margin-bottom: 18px;
+         background-size: contain;
        }
    }
 }

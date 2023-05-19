@@ -43,33 +43,35 @@ export default function ShareHolders() {
                      decisions about their financial wellbeing.
                   </p>
                   <h3>Akcininkų susirinkimai</h3>
-                  <div>
+                  <ul className={styles.tabsList}>
+                     {links.map((tab, idx) => {
+                        return (
+                           <li data-id={tab.uid} onClick={(e) => { tabHandler(e) }} key={idx} className={tab.active ? 'active-tnc-tab' : ''}>{tab.year}</li>
+                        )
+                     })}
+                  </ul>
+                  <div className={styles.agendaBlock}>
+                     <h4>Agenda</h4>
                      <ul>
-                        {links.map((tab, idx) => {
+                        {activeAgendaList.map((agenda, idx) => {
                            return (
-                              <li data-id={tab.uid} onClick={(e) => { tabHandler(e) }} key={idx} className={tab.active ? 'active-tnc-tab' : ''}>{tab.year}</li>
+                              <li key={idx}>
+                                 {agenda.agendaName}
+                              </li>
                            )
                         })}
                      </ul>
                   </div>
-                  <div className={styles.agendaBlock}>
-                     <h4>Agenda</h4>
-                     {activeAgendaList.map((agenda, idx) => {
-                        return (
-                           <li key={idx}>
-                              {agenda.agendaName}
-                           </li>
-                        )
-                     })}
-                  </div>
                   <div className={styles.pdfBlock}>
-                     {activeTabLinks.map((link, idx) => {
-                        return (
-                           <li key={idx}>
-                              <Link target="_blank" href={link.linkUrl} className={styles.linkStyle}>{link.linkName}</Link>
-                           </li>
-                        )
-                     })}
+                     <ul className={styles.reportsList}>
+                        {activeTabLinks.map((link, idx) => {
+                           return (
+                              <li key={idx}>
+                                 <Link target="_blank" href={link.linkUrl} className={styles.linkStyle}>{link.linkName}</Link>
+                              </li>
+                           )
+                        })}
+                     </ul>
                   </div>
                </div>
             </section>
