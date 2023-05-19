@@ -21,23 +21,23 @@ function Footer() {
       <div className="footer-navigation-section">
         <h4 className="footer-navigation-section-title">{t.footerNavLinks.aboutUs}</h4>
         <Link className="footer-navigation-link" href="/management">{t.footerNavLinks.management}</Link>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.shareholders}</Link>
+        <Link className="footer-navigation-link" href="/share-holders">{t.footerNavLinks.shareholders}</Link>
         <Link className="footer-navigation-link" href="/news">{t.footerNavLinks.news}</Link>
       </div>
 
       <div className="footer-navigation-section">
         <h4 className="footer-navigation-section-title">{t.footerNavLinks.accountability}</h4>
         <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.financialAccountability}</Link>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.esg}</Link>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.license}</Link>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.moneyLoundering}</Link>
+        <Link className="footer-navigation-link" href="/esg">{t.footerNavLinks.esg}</Link>
+        <Link className="footer-navigation-link" href="/licence">{t.footerNavLinks.license}</Link>
+        <Link className="footer-navigation-link" href="/money-loundrying">{t.footerNavLinks.moneyLoundering}</Link>
       </div>     
 
       <div className="footer-navigation-section">
         <h4 className="footer-navigation-section-title">{t.footerNavLinks.possibilities}</h4>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.partner}</Link>
+        <Link className="footer-navigation-link" href="/partnership">{t.footerNavLinks.partner}</Link>
         <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.api}</Link>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.career}</Link>
+        <Link className="footer-navigation-link" href="/career">{t.footerNavLinks.career}</Link>
       </div>       
 
       <div className="footer-navigation-section">
