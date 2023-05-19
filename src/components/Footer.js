@@ -20,7 +20,7 @@ function Footer() {
 
       <div className="footer-navigation-section">
         <h4 className="footer-navigation-section-title">{t.footerNavLinks.aboutUs}</h4>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.management}</Link>
+        <Link className="footer-navigation-link" href="/management">{t.footerNavLinks.management}</Link>
         <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.shareholders}</Link>
         <Link className="footer-navigation-link" href="/news">{t.footerNavLinks.news}</Link>
       </div>
