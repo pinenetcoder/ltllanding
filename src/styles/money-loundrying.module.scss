@@ -24,8 +24,6 @@
       cursor: pointer;
       color: var(--main-text-color);
       border-bottom: solid 1px var(--table-border-color);
-   
-
 
       .innerNavLink {
          font-family: 'Lexend';
@@ -46,6 +44,7 @@
          }
       }
    }
+
    .moneyLoundryingBlock {
       margin: 0 auto;
       max-width: 380px;
@@ -63,7 +62,6 @@
       align-items: center;
       gap: 20px;
       
-
       li {
          list-style: none;
          background: url(/assets/images/Pdficon.svg) no-repeat left center;
