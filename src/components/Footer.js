@@ -27,7 +27,7 @@ function Footer() {
 
       <div className="footer-navigation-section">
         <h4 className="footer-navigation-section-title">{t.footerNavLinks.accountability}</h4>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.financialAccountability}</Link>
+        <Link className="footer-navigation-link" href="/financial-reporting">{t.footerNavLinks.financialAccountability}</Link>
         <Link className="footer-navigation-link" href="/esg">{t.footerNavLinks.esg}</Link>
         <Link className="footer-navigation-link" href="/licence">{t.footerNavLinks.license}</Link>
         <Link className="footer-navigation-link" href="/money-loundrying">{t.footerNavLinks.moneyLoundering}</Link>
