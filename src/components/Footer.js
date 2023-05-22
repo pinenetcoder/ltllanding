@@ -36,7 +36,7 @@ function Footer() {
       <div className="footer-navigation-section">
         <h4 className="footer-navigation-section-title">{t.footerNavLinks.possibilities}</h4>
         <Link className="footer-navigation-link" href="/partnership">{t.footerNavLinks.partner}</Link>
-        <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.api}</Link>
+        <Link className="footer-navigation-link" href="/open-banking">{t.footerNavLinks.api}</Link>
         <Link className="footer-navigation-link" href="/career">{t.footerNavLinks.career}</Link>
       </div>       
 
