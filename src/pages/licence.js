@@ -1,17 +1,21 @@
 import styles from "@/styles/licence.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function Licence() {
+   const router = useRouter();
+   const t = router.locale === 'lt' ? lt : en
+
    return (
       <IndexLayout>
          <main>
             <section className={styles.licenceSection}>
                <div className={styles.licenceWrapper}>
-                  <h3>Licencija</h3>
-                  <p>Operating under the legal name of LTL Kredito unija, the company is registered 
-                     in Lithuania (No. 302791356), licensed and supervised as the credit union by
-                      the Bank of Lithuania (license No. 80).
-                  </p>
+                  <h3>{t.licence.pageTitle}</h3>
+                  <p>{t.licence.description}</p>
+                  
                   
                </div>
             </section>

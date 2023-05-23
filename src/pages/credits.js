@@ -16,7 +16,7 @@ export default function Credits() {
                <section className={styles.creditsPageWrapper}>
                   <div className={styles.creditsPageList}>
                      <div className={styles.creditsHeroItem}>
-                        <h1 className={styles.creditsTitle}>Einamoji sąskaita</h1>
+                        <h2>Vartojimo paskola</h2>
                         <div className={styles.creditsPageDescription}>
                            <p>With Kocomo, a home is co-owned by no more than eight families while we act as a
                               neutral third-party administrator to ensure transparency and fairness a home is

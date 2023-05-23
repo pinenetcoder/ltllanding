@@ -53,7 +53,7 @@ export default function Deposit() {
           <section className={styles.depositPageWrapper}>
             <div className={styles.depositPageList}>
               <div className={styles.depositHeroItem}>
-                <h1 className={styles.depositTitle}>Einamoji sąskaita</h1>
+                <h1 className={styles.depositTitle}>Terminuoti indėliai</h1>
                 <div className={styles.depositPageDescription}>
                   <p>With Kocomo, a home is co-owned by no more than eight families while we act as a
                     neutral third-party administrator to ensure transparency and fairness a home is
