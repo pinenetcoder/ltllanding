@@ -129,6 +129,14 @@ export default {
       bullet2: "Lengvai siųskite ir gaukite jūsų lėšas",
       bullet3: "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
     },
+    innerLinkBlock: {
+      privateClient: "Privatus klientas",
+      steps: "Žingsniai",
+      afterYouOpened: "Jums atidarius",
+      priceList: "Kainoraštis",
+      clientSupport: "Klientų palaikymas",
+      faq: "Duk"
+    },
     articleBlock: {
       article1: {
         title: "Banko sąskaitos atidarymas",
@@ -144,13 +152,22 @@ export default {
       }
     },
     accOpeningProcess: {
+      blockTitle: "Žingsniai",
       step1: {
         title: "Užpildykite sąskaitos atidarymo formą",
         text: "Užpildykite paraišką"
       },
-      steap2: {
+      step2: {
         title: "Identifikuokite save",
         text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+      },
+      step3: {
+        title: "Pateikite dokumentus",
+        bulletBlock: {
+          bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
+          bullet2: "Prašymas įstoti į kredito uniją",
+          bullet3: "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+        }
       },
       step4: {
         title: "Pasirašykite banko sąskaitos sutartį",
@@ -164,7 +181,8 @@ export default {
     clientSuport: {
       title: "Pagalba klientams",
       description: "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt."
-    }
+    },
+    faq: "DUK"
   },
   businessCurrentAccount: {
     pageTitle: "Einamoji sąskaita",

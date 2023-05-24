@@ -24,7 +24,8 @@
       li {
          list-style-type: none;
          padding-left: 26px;
-         background: url(/assets/images/check2.svg) no-repeat left center;
+         background: url(/assets/images/check2.svg) no-repeat left top;
+         background-position-y: 5px;
          margin-bottom: 8px;
 
          &:last-child {

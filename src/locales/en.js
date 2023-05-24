@@ -129,6 +129,14 @@ export default {
       bullet2: "Move your inbound and outbound funds effortlessly",
       bullet3: "Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring"
     },
+    innerLinkBlock: {
+      privateClient: "Private client",
+      steps: "Steps",
+      afterYouOpened: "After you opened",
+      priceList: "Price list",
+      clientSupport: "Client Support",
+      faq: "FAQ"
+    },
     articleBlock: {
       article1: {
         title: "Open account",
@@ -144,6 +152,7 @@ export default {
       }
     },
     accOpeningProcess: {
+      blockTitle: "Steps",
       step1: {
         title: "Fill in an account opening form",
         text: "Please fill in the application"
@@ -154,8 +163,12 @@ export default {
       },
       step3: {
         title: "Submit the documents",
-        text: "Please send us: Copy of passport, ID or residence permit Application to join the union A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)"
-      },
+        bulletBlock: {
+          bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
+          bullet2: "Prašymas įstoti į kredito uniją",
+          bullet3: "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+        }
+      }, 
       step4: {
         title: "Sign the bank account agreement",
         text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
@@ -169,6 +182,7 @@ export default {
       title: "Client support",
       description: "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt."
     },
+    faq: "FAQ"
   },
   businessCurrentAccount: {
     pageTitle: "Current Account",
