@@ -84,7 +84,14 @@ export default {
   },
   termConditions: {
     pageTitle: "Term & Conditions",
-    description: "Please explore the service you are interested in and get familiar with general terms and conditions as well as other related documents of service use by clicking on the relevant link in the navigation panel provided below."
+    description: "Please explore the service you are interested in and get familiar with general terms and conditions as well as other related documents of service use by clicking on the relevant link in the navigation panel provided below.",
+    innerLinkBlock: {
+      accounts: "Accounts",
+      termDeposits: "Term deposits",
+      payments: "Payments",
+      loansToPrivateIndividuals: "Loans to private individuals",
+      loansToCorporates: "Loans to corporates"
+    },
   },
   openBanking: {
     pageTitle: "Open banking",
@@ -286,7 +293,7 @@ export default {
     pageTitle: "Partnership",
     subTitle: "Partnerships: You don‘t have to be big to be a partner.",
     description: "Our commitment lies in ensuring accessibility and reliability of financial services for everyone. The goal is to foster global financial inclusion by removing barriers and promoting ease of use. In this mission, partnerships play a crucial role, inviting businesses of all sizes and backgrounds to join us. We value the unique strengths and perspectives that each of our partners brings to the table. Together, we work closely to develop customized solutions that cater to the specific needs of your customers.  With a strong focus on fostering an inclusive ecosystem, businesses of all types are welcome to join us. This includes small startups, large corporations, technology companies, and sales affiliates.  Our aim is to create an environment that promotes growth and innovation for all. Building strong relationships is important to us.  Let's explore how we can collaborate to unlock financial inclusion and create a better future. If you're interested in a partnership, please get in touch by filling out the form below or calling us at +3700000000."
-    },
+  },
   housingLoan: {
     pageTitle: "Housing loan",
     subTitle: "You don‘t have to be big to get a loan.",

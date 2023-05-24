@@ -1,6 +1,6 @@
 export const links = [
    {
-      tabName: 'Accounts',
+      tabName: 'accounts',
       active: true,
       uid: 0,
       links: [
@@ -55,7 +55,7 @@ export const links = [
       ]
    },
    {
-      tabName: 'Term deposits',
+      tabName: 'termDeposits',
       active: false,
       uid: 1,
       links: [
@@ -110,7 +110,7 @@ export const links = [
       ]
    },
    {
-      tabName: 'Payments',
+      tabName: 'payments',
       active: false,
       uid: 2,
       links: [
@@ -165,7 +165,7 @@ export const links = [
       ]
    },
    {
-      tabName: 'Loans to private individuals',
+      tabName: 'loansToPrivateIndividuals',
       active: false,
       uid: 3,
       links: [
@@ -220,7 +220,7 @@ export const links = [
       ]
    },
    {
-      tabName: 'Loans to corporates',
+      tabName: 'loansToCorporates',
       active: false,
       uid: 4,
       links: [

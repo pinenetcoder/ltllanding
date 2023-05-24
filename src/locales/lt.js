@@ -25,7 +25,7 @@ export default {
     financialAccountability: 'Finansinė atskaitomybė',
     esg: 'ESG',
     license: 'Licencija',
-    moneyLoundering:'Pinigų plovimo prevencija',
+    moneyLoundering: 'Pinigų plovimo prevencija',
     possibilities: "Galimybės",
     partner: 'Tapk partneriu',
     api: 'API',
@@ -84,7 +84,14 @@ export default {
   },
   termConditions: {
     pageTitle: "Bendrosios sąlygos",
-    description: "Kviečiame jus išsamiau išnagrinėti jus dominančią paslaugą ir susipažinti su bendromis sąlygomis bei kitais susijusiais paslaugų naudojimo dokumentais spustelėdami atitinkamą nuorodą žemiau."
+    description: "Kviečiame jus išsamiau išnagrinėti jus dominančią paslaugą ir susipažinti su bendromis sąlygomis bei kitais susijusiais paslaugų naudojimo dokumentais spustelėdami atitinkamą nuorodą žemiau.",
+    innerLinkBlock: {
+      accounts: "Sąskaitos",
+      termDeposits: "Terminuoti indėliai",
+      payments: "Mokėjimai",
+      loansToPrivateIndividuals: "Paskolos privatiems asmenims",
+      loansToCorporates: "Paskolos įmonėms"
+    },
   },
   openBanking: {
     pageTitle: "Atviroji bankininkystė",
