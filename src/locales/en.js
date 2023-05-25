@@ -346,5 +346,46 @@ export default {
   },
   privacyPolicy: {
     pageTitle: "Privacy Policy & Cookies",
+  },
+  suportsComplaints: {
+    pageTitle: "Support & Complaints",
+    heroBlock: {
+      description: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals."
+    },
+    articleBlock: {
+      article1: {
+        title: "Support & Complaints",
+        description: "We are dedicated to delivering excellent and hassle-free services to our customers. In order to continuously improve, we rely on your feedback and opinions. Please take a moment to fill out the feedback form (standard form have to be added on the web) below or call us at +37000000000. We will respond within 30 days and work towards a solution for any issues you may have. We also welcome positive feedback if our people and services exceeded your expectations!"
+      },
+      article2: {
+        title: "Resolution of Disputes",
+        description: "If, after our mutual discussion, you still believe that the right balance of interests has not been reached and we have violated your rights or legitimate interests, we recommend that you contact the Bank of Lithuania, which deals with disputes between consumers and financial market participants arising from the provision of financial services. You can find more detailed information by clicking on this link: https://www.lb.lt/en/sfi-disputes-between-consumers-and-financial-market-participants"
+      }
+    },
+    readMore: "Skaityti daugiau",
+    faq: "FAQ"
+  },
+  contacts: {
+    heroBlock: {
+      coantacts: "Contacts",
+      adress: "Sporto g. 18 LT-09238 Vilnius Phone: +370 5 205 5240 Email e-mail: info@ltlku.lt",
+      companyDetails: "Company details",
+      companyDetailsDescription: "TL Credit Union Company code: 302791356 VAT payer code: none SWIFT code (BIC): LTKULT21XXX"
+    },
+    articleBlock: {
+      title: "Customer service at headquarters",
+      mondayThursday: "Monday - Thursday",
+      friday: "On Friday",
+      description: "Come at your convenient time, no pre-registration is required."
+    }
+  },
+  inputForm: {
+    title: "Your opinion is important to us",
+    description: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities.",
+    topic: "Topic",
+    feedback: "Feedback",
+    name: "Name",
+    email: "E-mail address",
+    button: "Send"
   }
 }

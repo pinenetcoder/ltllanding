@@ -343,5 +343,46 @@ export default {
   },
   privacyPolicy: {
     pageTitle: "Privatumo politika ir slapukai",
+  },
+  suportsComplaints: {
+    pageTitle: "Atsiliepimai ir skundai",
+    heroBlock: {
+      description: "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansinę įtrauktį įgalindami asmenis."
+    },
+    articleBlock: {
+      article1: {
+        title: "Atsiliepimai ir skundai",
+        description: "Mūsų vizijos dalis ir siekis yra teikti puikias paslaugas, kurios nekelia rūpesčių mūsų klientams. Siekdami nuolat tobulėti, pasitikime jūsų atsiliepimais ir nuomonėmis. Prašome jūsų skirti šiek tiek laiko ir esant progai užpildyti žemiau esančią atsiliepimų formą arba tiesiog paskambinkite mums +37000000000. Į jūsų paklausimą atsakysime per 30 dienų ir stengsimės išspręsti visas iškilusias problemas. Taip pat laukiame jūsų teigiamų atsiliepimų, jei mūsų darbuotojai ir paslaugos viršijo jūsų lūkesčius!"
+      },
+      article2: {
+        title: "Ginčų sprendimas",
+        description: "Jeigu po mūsų tarpusavio aptarimo dėl iškilusių atvirų klausimų vis dar manote, kad mes nepasiekėme interesų balanso ir mes pažeidžiame jūsų teises ar teisėtus interesus, rekomenduojame jums kreiptis į Lietuvos banką, kuris nagrinėja vartotojų ir finansų rinkos dalyvių ginčus, kylančius iš finansinių paslaugų teikimo. Išsamesnę informaciją galėtumėte rasti spusteldami šią nuorodą: https://www.lb.lt/lt/vartotoju-ir-finansu-rinkos-dalyviu-gincai"
+      }
+    },
+    readMore: "Skaityti daugiau",
+    faq: "D.U.K."
+  },
+  contacts: {
+    heroBlock: {
+      coantacts: "Kontaktai",
+      adress: "Sporto g. 18 LT-09238 Vilnius Telefonas: +370 5 205 5240 El. paštas: info@ltlku.lt",
+      companyDetails: "Įmonės rekvizitai",
+      companyDetailsDescription: "LTL Kredito unija Įmonės kodas: 302791356 PVM mokėtojo kodas: nėra SWIFT kodas (BIC): LTKULT21XXX"
+    },
+    articleBlock: {
+      title: "Klientų aptarnavimas būstinėje",
+      mondayThursday: "Pirmadienį - Ketvirtadienį",
+      friday: "Penktadienį",
+      description: "Atvykite jums patogiu metu, išankstinė registracija nėra reikalinga."
+    }
+  },
+  inputForm: {
+    title: "Mums svarbi Jūsų nuomonė",
+    description: "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms.",
+    topic: "Tema",
+    feedback: "Atsiliepimas",
+    name: "Vardas",
+    email: "Elektroninio pašto adresas",
+    button: "Siųsti"
   }
 }

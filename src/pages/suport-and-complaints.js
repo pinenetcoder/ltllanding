@@ -3,23 +3,26 @@ import IndexLayout from "@/Layouts/IndexLayout"
 import Link from "next/link"
 import ContactForm from "@/components/ContactForm"
 import Accordion from "@/components/Accordion"
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function SuportAndComplaints() {
+   const router = useRouter();
+   const t = router.locale === 'lt' ? lt : en
+
    return (
       <IndexLayout>
          <main>
             <section className={styles.SuportAndComplaintsHeroPage}>
                <div className={styles.SuportAndComplaintsHeroTitle}>
-                  <h1 className="page-title">Support & Complaints</h1>
+                  <h1 className="page-title">{t.suportsComplaints.pageTitle}</h1>
                </div>
                <div className={styles.SuportAndComplaintsHeroBlock}>
                   <div className={styles.imgBlock}>img</div>
                   <div className={styles.SuportAndComplaintsHeroBlockCredencials}>
-                     <p>Our vision is to create a world where everyone has access to financial 
-                        services, enabling them to build a brighter future for themselves and their 
-                        communities. We strive to unlock financial inclusion by empowering individuals.
-                     </p>
-                     <Link href="/">Ream More &gt;</Link>
+                     <p>{t.suportsComplaints.heroBlock.description}</p>
+                     <Link href="/">{t.suportsComplaints.readMore} &gt;</Link>
                   </div>
                </div>
             </section>
@@ -30,33 +33,21 @@ export default function SuportAndComplaints() {
                   </div>
             </section>
             <section className={styles.settlementSection}>
-               <h1>Settlement of complaints</h1>
+               <h1>{t.suportsComplaints.pageTitle}</h1>
                <div className={styles.settlementsWrapper}>
                   <div className={styles.settlementBlock}>
-                     <h3>Term for proceedings</h3>
-                     <p>Banko skyriams laiko randa tik bankininkai. Mes patys skolinamės internetu, todėl ir 
-                        tau suteikiame tokią galimybę. Net jei dar nesi mūsų klientas! Nors veikiame pagal 
-                        bankinius standartus, pinigai tavo sąskaitoje atsidurs kur kas greičiau nei tikiesi. 
-                        Banko skyriams laiko randa tik bankininkai. Mes patys skolinamės internetu, todėl ir 
-                        tau suteikiame tokią galimybę. Net jei dar nesi mūsų klientas! Nors veikiame pagal 
-                        bankinius standartus, pinigai tavo sąskaitoje atsidurs kur kas greičiau nei tikiesi.
-                     </p>
+                     <h3>{t.suportsComplaints.articleBlock.article1.title}</h3>
+                     <p>{t.suportsComplaints.articleBlock.article1.description}</p>
                   </div>
                   <div className={styles.settlementBlock}>
-                     <h3>Appeal</h3>
-                     <p>Banko skyriams laiko randa tik bankininkai. Mes patys skolinamės internetu, todėl ir 
-                        tau suteikiame tokią galimybę. Net jei dar nesi mūsų klientas! Nors veikiame pagal 
-                        bankinius standartus, pinigai tavo sąskaitoje atsidurs kur kas greičiau nei tikiesi. 
-                        Banko skyriams laiko randa tik bankininkai. Mes patys skolinamės internetu, todėl ir 
-                        tau suteikiame tokią galimybę. Net jei dar nesi mūsų klientas! Nors veikiame pagal 
-                        bankinius standartus, pinigai tavo sąskaitoje atsidurs kur kas greičiau nei tikiesi.
-                     </p>
+                     <h3>{t.suportsComplaints.articleBlock.article2.title}</h3>
+                     <p>{t.suportsComplaints.articleBlock.article2.description}</p>
                   </div>
                </div>
             </section>
             <section id="faq" className={styles.faqSection}>
             <div className={styles.faqWrapper}>
-              <h3 className={styles.faqHeader}>FAQ</h3>
+              <h3 className={styles.faqHeader}>{t.suportsComplaints.faq}</h3>
               <div className={styles.faqList}>
                 <Accordion accId="1" singleLevel="true" />
               </div>
