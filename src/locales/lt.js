@@ -252,11 +252,23 @@ export default {
       bullet3: "Patrauklus lojalumo atlygis ir nauda",
       bullet4: "Gaukite individualius pasiūlymus",
       bullet5: "Indėlių terminas nuo 3 iki 60 mėnesių",
-      bullet6: "Paskolos palūkanos nuo 3.50%"
+      bullet6: "Paskolos palūkanos nuo 3.50%",
+      button: "Pateikti indėlio paraišką"
     },
-    calculatorBlock: {
-      title: "Naudokite mūsų įrankį, kad apskaičiuotumėte palūkanas, kurias uždirbsite"
-    }
+    innerLinkBlock: {
+      calculator: "Skaičiuoklė",
+      interestRates: "Palūkanų normos",
+    },
+    calcBlock: {
+      title: "Naudokite mūsų įrankį, kad apskaičiuotumėte palūkanas, kurias uždirbsite",
+      ammoutOfDeposit: "Indėlio dydis",
+      term: "Indelio terminas",
+      interestRate: "Palūkanų norma",
+      altogether: "Iš viso",
+      amountOfInterest: "Palūkanų suma",
+      button: "Pateikti indėlio paraišką"
+    },
+    faq: "D.U.K."
   },
   investmentLoan: {
     pageTitle: "Investicinė paskola",
@@ -271,7 +283,7 @@ export default {
       bullet6: "Paskolos palūkanos nuo 3.50%"
     }
   },
-  investmentLoan: {
+  workingCapitalLoan: {
     pageTitle: "Paskola apyvartiniam kapitalui",
     description: "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
     heroBlock: {
@@ -285,24 +297,14 @@ export default {
     },
     article: "Norėdami pateikti paskolos paraišką, atsiųskite mums praėjusių finansinių metų metinės ataskaitos, balanso ir pelno (nuostolių) ataskaitos kopiją bei analogiškas pastarojo ketvirčio ataskaitas adresu info@ltlku.lt"
   },
-  termDeposit: {
-    pageTitle: "Terminuotas indėlis",
-    description: "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
-    heroBlock: {
-      description: "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas – nemokama dabar yra galingesnė nei bet kada anksčiau",
-      bullet1: "Gaukite geriausias palūkanų normas rinkoje",
-      bullet2: "Jūsų indėliai yra apsaugoti indėlių draudimu. Sužinokite daugiau",
-      bullet3: "Patrauklus lojalumo atlygis ir nauda",
-      bullet4: "Gaukite individualius pasiūlymus",
-      bullet5: "Indėlių terminas nuo 3 iki 60 mėnesių",
-      bullet6: "Paskolos palūkanos nuo 3.50%"
-    },
-    article: "Naudokite mūsų įrankį, kad apskaičiuotumėte palūkanas, kurias uždirbsite"
-  },
   partnership: {
     pageTitle: "Tapkime partneriais",
-    subTitle: "Tapkime partneriais: Nebereikia būti dideliam, kad būtume partneriais.",
-    description: "Esame įsipareigoję užtikrinti finansinių paslaugų prieinamumą ir patikimumą kiekvienam. Tikslas – skatinti žmonių įsitraukimą, pašalinant kliūtis ir užtikrinant finansinių paslaugų naudojimo paprastumą. Vykdant šią misiją partnerystė vaidina lemiamą vaidmenį, todėl kviečiame bet kokio dydžio ir verslo sričių įmones prisijungti prie mūsų. Suprantame, kad kiekvienas iš mūsų partnerių pateikia unikalių privalumų ir perspektyvų, todėl esame įsipareigoję dirbti su jumis kurdami individualius sprendimus, atitinkančius konkrečius klientų poreikius. Nesvarbu, ar esate mažas startuolis, ar didelė korporacija, technologijų įmonė, norinti integruotis su mūsų platforma, ar pardavimų tarpininkas, siekiantis išplėsti savo verslą, esame pasiryžę kurti prieinamą ir integruotą ekosistemą, skatinančią augimą ir naujoves. Mums svarbu kurti tvirtus dalykinius santykius. Panagrinėkime kartu, kaip galime bendradarbiauti, kad atvertume prieigą prie finansų ir sukurtume geresnę ateitį. Jei jus domina partnerystė, susisiekite prašome su mumis užpildydami žemiau esančią formą arba paskambindami telefonu +3700000000."
+    description: "Nebereikia būti dideliam, kad būtume partneriais.",
+    articleBlock: {
+      article1: "Esame įsipareigoję užtikrinti finansinių paslaugų prieinamumą ir patikimumą kiekvienam. Tikslas – skatinti žmonių įsitraukimą, pašalinant kliūtis ir užtikrinant finansinių paslaugų naudojimo paprastumą. Vykdant šią misiją partnerystė vaidina lemiamą vaidmenį, todėl kviečiame bet kokio dydžio ir verslo sričių įmones prisijungti prie mūsų.",
+      article2: "Suprantame, kad kiekvienas iš mūsų partnerių pateikia unikalių privalumų ir perspektyvų, todėl esame įsipareigoję dirbti su jumis kurdami individualius sprendimus, atitinkančius konkrečius klientų poreikius. Nesvarbu, ar esate mažas startuolis, ar didelė korporacija, technologijų įmonė, norinti integruotis su mūsų platforma, ar pardavimų tarpininkas, siekiantis išplėsti savo verslą, esame pasiryžę kurti prieinamą ir integruotą ekosistemą, skatinančią augimą ir naujoves.",
+      article3: "Mums svarbu kurti tvirtus dalykinius santykius. Panagrinėkime kartu, kaip galime bendradarbiauti, kad atvertume prieigą prie finansų ir sukurtume geresnę ateitį. Jei jus domina partnerystė, susisiekite prašome su mumis užpildydami žemiau esančią formą arba paskambindami telefonu +3700000000."
+    }
   },
   housingLoan: {
     pageTitle: "Būsto paskola",
@@ -338,5 +340,8 @@ export default {
         text: "Su mūsų būsto paskolos produktu siūlomos konkurencingos palūkanų normos, leidžiančios sutaupyti pinigų per visą paskolos laikotarpį. Siūlome konkurencingas palūkanas ir individualų klientų aptarnavimą, kad gautumėte geriausią įmanomą būsto paskolos pasiūlymą."
       }
     }
+  },
+  privacyPolicy: {
+    pageTitle: "Privatumo politika ir slapukai",
   }
 }

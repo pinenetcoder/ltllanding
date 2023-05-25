@@ -2,9 +2,15 @@ import styles from "@/styles/partnership.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Link from "next/link"
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 
 export default function Partnership() {
+   const router = useRouter();
+   const t = router.locale === 'lt' ? lt : en
+ 
 
    const [links, setLinks] = useState([]);
    const [activeTabLinks, setActiveTabLinks] = useState([]);
@@ -36,27 +42,15 @@ export default function Partnership() {
          <main>
             <section className={styles.partnershipSection}>
                <div className={styles.partnershipWrapper}>
-                  <h3>Tapk partneriu</h3>
-                  <div className={styles.innerNavigationLinkList}>
-                     {links.map((tab, idx) => {
-                        return (
-                           <div data-id={tab.uid} onClick={(e) => { TabHanler(e) }} key={idx} className={tab.active ? 'active-tnc-tab' : ''}>{tab.tabName}</div>
-                        )
-                     })}
-                  </div>
-                  <div className={styles.partnershipBlock}>
-                     <div className={styles.partnershipLinks}>
-                        <ul>
-                           {activeTabLinks.map((link, idx) => {
-                              return (
-                                 <li key={idx}>
-                                    <Link target="_blank" href={link.linkUrl} className={styles.linkStyle}>{link.linkName}</Link>
-                                 </li>
-                              )
-                           })}
-                        </ul>
-                     </div>
-                  </div>
+                  <h1>{t.partnership.pageTitle}</h1>
+                     <p>{t.partnership.description}</p>
+               </div>
+            </section>
+            <section className={styles.articleSection}>
+               <div className={styles.articleBlock}>
+                  <p>{t.partnership.articleBlock.article1}</p>
+                  <p>{t.partnership.articleBlock.article2}</p>
+                  <p>{t.partnership.articleBlock.article3}</p>
                </div>
             </section>
          </main>

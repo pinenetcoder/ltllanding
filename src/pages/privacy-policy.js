@@ -2,9 +2,15 @@ import styles from "@/styles/privacy-policy.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 
 export default function PrivacyPolicy() {
+   const router = useRouter();
+   const t = router.locale === 'lt' ? lt : en
+
    const [links, setLinks] = useState([]);
 
    useEffect(() => {
@@ -21,7 +27,7 @@ export default function PrivacyPolicy() {
          <main>
          <section className={styles.privacyPolicySection}>
             <div className={styles.privacyPolicyBlock}>
-               <h1>Privacy policy & Cookies</h1>
+               <h1>{t.privacyPolicy.pageTitle}</h1>
             </div>
             <div className={styles.privacyPolicyLinks}>
                <ul>

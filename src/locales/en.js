@@ -256,11 +256,23 @@ export default {
       bullet3: "Attractive loyalty rewards and benefits",
       bullet4: "Get individual offers",
       bullet5: "Deposit terms from 3 to 60 months are available",
-      bullet6: "Interest rates up to 3.95%"
+      bullet6: "Interest rates up to 3.95%",
+      button: "Submit a deposit application"
     },
-    calculatorBlock: {
-      title: "Use our tool to calculate the interest you'll earn"
-    }
+    innerLinkBlock: {
+      calculator: "Calculator",
+      interestRates: "Interest rates",
+    },
+    calcBlock: {
+      title: "Use our tool to calculate the interest you'll earn",
+      ammoutOfDeposit: "Amount of deposit",
+      term: "Term of Deposit",
+      interestRate: "Interest rate",
+      altogether: "Altogether",
+      amountOfInterest: "Amount of interest",
+      button: "Submit a deposit application"
+    },
+    faq: "FAQ"
   },
   investmentLoan: {
     pageTitle: "Investment loan",
@@ -289,24 +301,14 @@ export default {
     },
     article: "To apply for the loan, please send us a copy of the annual report, balance sheet and profit (loss) statement of the previous financial year, as well as similar reports of the last quarter to info@ltlku.lt"
   },
-  termDeposit: {
-    pageTitle: "Term deposit",
-    description: "You don‘t have to be big to make a fortune/your fortune grow",
-    heroBlock: {
-      description: "Save your own money and watch your wealth grow — free is now more powerful than ever!",
-      bullet1: "Get the best (top) interest rates on the market",
-      bullet2: "Your deposits are protected by deposit insurance. Learn more",
-      bullet3: "Attractive loyalty rewards and benefits",
-      bullet4: "Get individual offers",
-      bullet5: "Deposit terms from 3 to 60 months are available",
-      bullet6: "Interest rates up to 3.95%"
-    },
-    article: "Use our tool to calculate the interest you'll earn"
-  },
   partnership: {
     pageTitle: "Partnership",
-    subTitle: "Partnerships: You don‘t have to be big to be a partner.",
-    description: "Our commitment lies in ensuring accessibility and reliability of financial services for everyone. The goal is to foster global financial inclusion by removing barriers and promoting ease of use. In this mission, partnerships play a crucial role, inviting businesses of all sizes and backgrounds to join us. We value the unique strengths and perspectives that each of our partners brings to the table. Together, we work closely to develop customized solutions that cater to the specific needs of your customers.  With a strong focus on fostering an inclusive ecosystem, businesses of all types are welcome to join us. This includes small startups, large corporations, technology companies, and sales affiliates.  Our aim is to create an environment that promotes growth and innovation for all. Building strong relationships is important to us.  Let's explore how we can collaborate to unlock financial inclusion and create a better future. If you're interested in a partnership, please get in touch by filling out the form below or calling us at +3700000000."
+    description: "Partnerships: You don‘t have to be big to be a partner.",
+    articleBlock: {
+      article1: "Our commitment lies in ensuring accessibility and reliability of financial services for everyone. The goal is to foster global financial inclusion by removing barriers and promoting ease of use. In this mission, partnerships play a crucial role, inviting businesses of all sizes and backgrounds to join us.",
+      article2: "We value the unique strengths and perspectives that each of our partners brings to the table. Together, we work closely to develop customized solutions that cater to the specific needs of your customers.  With a strong focus on fostering an inclusive ecosystem, businesses of all types are welcome to join us. This includes small startups, large corporations, technology companies, and sales affiliates.  Our aim is to create an environment that promotes growth and innovation for all.",
+      article3: "Building strong relationships is important to us.  Let's explore how we can collaborate to unlock financial inclusion and create a better future. If you're interested in a partnership, please get in touch by filling out the form below or calling us at +3700000000."
+    }
   },
   housingLoan: {
     pageTitle: "Housing loan",
@@ -341,5 +343,8 @@ export default {
         text: "Competitive interest rates are offered with our housing loan product, allowing you to save money over the life of the loan. We offer competitive interest rates and personalized customer service to ensure that you get the best possible deal on your housing loan."
       }
     }
+  },
+  privacyPolicy: {
+    pageTitle: "Privacy Policy & Cookies",
   }
 }
