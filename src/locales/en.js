@@ -93,6 +93,34 @@ export default {
       loansToCorporates: "Loans to corporates"
     },
   },
+  termDeposit: {
+    pageTitle: "Term deposit",
+    description: "You don‘t have to be big to make a fortune/your fortune grow",
+    heroBlock: {
+      description: "Save your own money and watch your wealth grow — free is now more powerful than ever!",
+      bullet1: "Get the best (top) interest rates on the market",
+      bullet2: "Your deposits are protected by deposit insurance. Learn more",
+      bullet3: "Attractive loyalty rewards and benefits",
+      bullet4: "Get individual offers",
+      bullet5: "Deposit terms from 3 to 60 months are available",
+      bullet6: "Interest rates up to 3.95%",
+      button: "Submit a deposit application"
+    },
+    innerLinkBlock: {
+      calculator: "Calculator",
+      interestRates: "Interest rates",
+    },
+    calcBlock: {
+      title: "Use our tool to calculate the interest you'll earn",
+      ammoutOfDeposit: "Amount of deposit",
+      term: "Term of Deposit",
+      interestRate: "Interest rate",
+      altogether: "Altogether",
+      amountOfInterest: "Amount of interest",
+      button: "Submit a deposit application"
+    },
+    faq: "FAQ"
+  },
   openBanking: {
     pageTitle: "Open banking",
     description: "Open banking: You don‘t have to be big to get plugged in. Trusted only.",
@@ -185,8 +213,8 @@ export default {
     faq: "FAQ"
   },
   businessCurrentAccount: {
-    pageTitle: "Current Account",
     heroBlock: {
+      title: "Current account: You don‘t have to be big to be international",
       description: "Open IBAN account with us, make and receive payments from all over Euro area",
       bullet1: "Bank on-the-go with our 24/7 online banking services",
       bullet2: "Move your inbound and outbound funds effortlessly",
@@ -228,6 +256,33 @@ export default {
         text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
       }
     },
+    articleBlock2: {
+      title: "After you have opened an account",
+      article1: {
+        title: "For private individual",
+        description: "1. Open a personal bank account with us and enjoy zero monthly fees and unlimited transactions.\n 2. Save more with our high-interest personal bank account.3. Bank on-the-go with our 24/7 online and mobile banking services. 4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring. 5. Get a cash bonus of up to $200 when you open a personal bank account with us today."
+      },
+      article2: {
+        title: "For corporate accounts",
+        description: "1. Take your business to the next level with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Access exclusive banking services and account management tools tailored to your business needs.\n4. Enjoy advanced security features such as two-factor authentication and fraud monitoring to keep your account safe.\n5. Open a corporate bank account with us today and receive a cash bonus of up to $500."
+      },
+      article3: {
+        title: "For personal checking accounts",
+        description: "1. Get the most out of your money with our personal checking account, featuring no monthly fees and unlimited transactions.\n 2. Earn high interest on your savings with our premium personal checking account.\n3. Enjoy convenient access to your money with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal checking account with us today and receive a cash bonus of up to $200."
+      },
+      article4: {
+        title: "For business checking accounts",
+        description: "1. Simplify your business finances with our business checking account, featuring easy online management and no monthly fees.\n2. Access exclusive banking services and account management tools tailored to your business needs.\n3. Stay on top of your finances with 24/7 online banking services.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a business checking account with us today and receive a cash bonus of up to $500."
+      },
+      article5: {
+        title: "For corporate accounts",
+        description: "1. Streamline your business finances with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Get access to exclusive banking services and account management tools tailored to your business needs.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
+      },
+      article6: {
+        title: "For corporate accounts",
+        description: "1. Enjoy no monthly fees and unlimited transactions with our bank account product.\n2. Earn high interest rates on your savings with our premium bank account product.\n3. Our bank account product offers convenient access to your money with 24/7 online banking and mobile app.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
+      },
+    },
     clientSuport: {
       title: "Client support",
       description: "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt."
@@ -245,34 +300,6 @@ export default {
       bullet6: "Loan terms of up to 84 months are available",
       bullet7: "Interest rates starting from 3.50%"
     },
-  },
-  termDeposit: {
-    pageTitle: "Term deposit",
-    description: "You don‘t have to be big to make a fortune/your fortune grow",
-    heroBlock: {
-      description: "Save your own money and watch your wealth grow — free is now more powerful than ever!",
-      bullet1: "Get the best (top) interest rates on the market",
-      bullet2: "Your deposits are protected by deposit insurance. Learn more",
-      bullet3: "Attractive loyalty rewards and benefits",
-      bullet4: "Get individual offers",
-      bullet5: "Deposit terms from 3 to 60 months are available",
-      bullet6: "Interest rates up to 3.95%",
-      button: "Submit a deposit application"
-    },
-    innerLinkBlock: {
-      calculator: "Calculator",
-      interestRates: "Interest rates",
-    },
-    calcBlock: {
-      title: "Use our tool to calculate the interest you'll earn",
-      ammoutOfDeposit: "Amount of deposit",
-      term: "Term of Deposit",
-      interestRate: "Interest rate",
-      altogether: "Altogether",
-      amountOfInterest: "Amount of interest",
-      button: "Submit a deposit application"
-    },
-    faq: "FAQ"
   },
   investmentLoan: {
     pageTitle: "Investment loan",
@@ -300,15 +327,6 @@ export default {
       bullet6: "Interest rates starting from 3.50%"
     },
     article: "To apply for the loan, please send us a copy of the annual report, balance sheet and profit (loss) statement of the previous financial year, as well as similar reports of the last quarter to info@ltlku.lt"
-  },
-  partnership: {
-    pageTitle: "Partnership",
-    description: "Partnerships: You don‘t have to be big to be a partner.",
-    articleBlock: {
-      article1: "Our commitment lies in ensuring accessibility and reliability of financial services for everyone. The goal is to foster global financial inclusion by removing barriers and promoting ease of use. In this mission, partnerships play a crucial role, inviting businesses of all sizes and backgrounds to join us.",
-      article2: "We value the unique strengths and perspectives that each of our partners brings to the table. Together, we work closely to develop customized solutions that cater to the specific needs of your customers.  With a strong focus on fostering an inclusive ecosystem, businesses of all types are welcome to join us. This includes small startups, large corporations, technology companies, and sales affiliates.  Our aim is to create an environment that promotes growth and innovation for all.",
-      article3: "Building strong relationships is important to us.  Let's explore how we can collaborate to unlock financial inclusion and create a better future. If you're interested in a partnership, please get in touch by filling out the form below or calling us at +3700000000."
-    }
   },
   housingLoan: {
     pageTitle: "Housing loan",
@@ -342,6 +360,15 @@ export default {
         title: "Rates",
         text: "Competitive interest rates are offered with our housing loan product, allowing you to save money over the life of the loan. We offer competitive interest rates and personalized customer service to ensure that you get the best possible deal on your housing loan."
       }
+    }
+  },
+  partnership: {
+    pageTitle: "Partnership",
+    description: "Partnerships: You don‘t have to be big to be a partner.",
+    articleBlock: {
+      article1: "Our commitment lies in ensuring accessibility and reliability of financial services for everyone. The goal is to foster global financial inclusion by removing barriers and promoting ease of use. In this mission, partnerships play a crucial role, inviting businesses of all sizes and backgrounds to join us.",
+      article2: "We value the unique strengths and perspectives that each of our partners brings to the table. Together, we work closely to develop customized solutions that cater to the specific needs of your customers.  With a strong focus on fostering an inclusive ecosystem, businesses of all types are welcome to join us. This includes small startups, large corporations, technology companies, and sales affiliates.  Our aim is to create an environment that promotes growth and innovation for all.",
+      article3: "Building strong relationships is important to us.  Let's explore how we can collaborate to unlock financial inclusion and create a better future. If you're interested in a partnership, please get in touch by filling out the form below or calling us at +3700000000."
     }
   },
   privacyPolicy: {

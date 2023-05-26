@@ -93,6 +93,34 @@ export default {
       loansToCorporates: "Paskolos įmonėms"
     },
   },
+  termDeposit: {
+    pageTitle: "Terminuotas indėlis",
+    description: "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
+    heroBlock: {
+      description: "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas – nemokama dabar yra galingesnė nei bet kada anksčiau",
+      bullet1: "Gaukite geriausias palūkanų normas rinkoje",
+      bullet2: "Jūsų indėliai yra apsaugoti indėlių draudimu. Sužinokite daugiau",
+      bullet3: "Patrauklus lojalumo atlygis ir nauda",
+      bullet4: "Gaukite individualius pasiūlymus",
+      bullet5: "Indėlių terminas nuo 3 iki 60 mėnesių",
+      bullet6: "Paskolos palūkanos nuo 3.50%",
+      button: "Pateikti indėlio paraišką"
+    },
+    innerLinkBlock: {
+      calculator: "Skaičiuoklė",
+      interestRates: "Palūkanų normos",
+    },
+    calcBlock: {
+      title: "Naudokite mūsų įrankį, kad apskaičiuotumėte palūkanas, kurias uždirbsite",
+      ammoutOfDeposit: "Indėlio dydis",
+      term: "Indelio terminas",
+      interestRate: "Palūkanų norma",
+      altogether: "Iš viso",
+      amountOfInterest: "Palūkanų suma",
+      button: "Pateikti indėlio paraišką"
+    },
+    faq: "D.U.K."
+  },
   openBanking: {
     pageTitle: "Atviroji bankininkystė",
     subTitle: "Atviroji bankininkystė: Nebereikia būti dideliam, kad galėtum prisijungti. Tik patikimiems.",
@@ -185,8 +213,8 @@ export default {
     faq: "DUK"
   },
   businessCurrentAccount: {
-    pageTitle: "Einamoji sąskaita",
     heroBlock: {
+      title: "Einamoji sąskaita: Nebereikia būti dideliam, kad ... ",
       description: "Atidarykite IBAN sąskaitą pas mus, atlikite ir gaukite mokėjimus iš visos Euro zonos",
       bullet1: "24/7 internetinė bankininkystė jūsų paslaugoms",
       bullet2: "Lengvai siųskite ir gaukite jūsų lėšas",
@@ -224,6 +252,33 @@ export default {
         text: "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, kurioje galėsite naudotis mūsų mokėjimo paslaugomis, tvarkyti terminuotųjų indėlių sutartis, peržiūrėti informaciją apie savo kreditus (jei taikoma) ir kt."
       }
     },
+    articleBlock2: {
+      title: "After you have opened an account",
+      article1: {
+        title: "For private individual",
+        description: "1. Open a personal bank account with us and enjoy zero monthly fees and unlimited transactions.\n 2. Save more with our high-interest personal bank account.3. Bank on-the-go with our 24/7 online and mobile banking services. 4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring. 5. Get a cash bonus of up to $200 when you open a personal bank account with us today."
+      },
+      article2: {
+        title: "For corporate accounts",
+        description: "1. Take your business to the next level with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Access exclusive banking services and account management tools tailored to your business needs.\n4. Enjoy advanced security features such as two-factor authentication and fraud monitoring to keep your account safe.\n5. Open a corporate bank account with us today and receive a cash bonus of up to $500."
+      },
+      article3: {
+        title: "For personal checking accounts",
+        description: "1. Get the most out of your money with our personal checking account, featuring no monthly fees and unlimited transactions.\n 2. Earn high interest on your savings with our premium personal checking account.\n3. Enjoy convenient access to your money with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal checking account with us today and receive a cash bonus of up to $200."
+      },
+      article4: {
+        title: "For business checking accounts",
+        description: "1. Simplify your business finances with our business checking account, featuring easy online management and no monthly fees.\n2. Access exclusive banking services and account management tools tailored to your business needs.\n3. Stay on top of your finances with 24/7 online banking services.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a business checking account with us today and receive a cash bonus of up to $500."
+      },
+      article5: {
+        title: "For corporate accounts",
+        description: "1. Streamline your business finances with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Get access to exclusive banking services and account management tools tailored to your business needs.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
+      },
+      article6: {
+        title: "For corporate accounts",
+        description: "1. Enjoy no monthly fees and unlimited transactions with our bank account product.\n2. Earn high interest rates on your savings with our premium bank account product.\n3. Our bank account product offers convenient access to your money with 24/7 online banking and mobile app.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
+      },
+    },
     clientSuport: {
       title: "Pagalba klientams",
       description: "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt."
@@ -241,34 +296,6 @@ export default {
       bullet6: "Paskolos terminas iki 84 mėnesių",
       bullet7: "Paskolos palūkanos nuo 3.50%"
     },
-  },
-  termDeposit: {
-    pageTitle: "Terminuotas indėlis",
-    description: "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
-    heroBlock: {
-      description: "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas – nemokama dabar yra galingesnė nei bet kada anksčiau",
-      bullet1: "Gaukite geriausias palūkanų normas rinkoje",
-      bullet2: "Jūsų indėliai yra apsaugoti indėlių draudimu. Sužinokite daugiau",
-      bullet3: "Patrauklus lojalumo atlygis ir nauda",
-      bullet4: "Gaukite individualius pasiūlymus",
-      bullet5: "Indėlių terminas nuo 3 iki 60 mėnesių",
-      bullet6: "Paskolos palūkanos nuo 3.50%",
-      button: "Pateikti indėlio paraišką"
-    },
-    innerLinkBlock: {
-      calculator: "Skaičiuoklė",
-      interestRates: "Palūkanų normos",
-    },
-    calcBlock: {
-      title: "Naudokite mūsų įrankį, kad apskaičiuotumėte palūkanas, kurias uždirbsite",
-      ammoutOfDeposit: "Indėlio dydis",
-      term: "Indelio terminas",
-      interestRate: "Palūkanų norma",
-      altogether: "Iš viso",
-      amountOfInterest: "Palūkanų suma",
-      button: "Pateikti indėlio paraišką"
-    },
-    faq: "D.U.K."
   },
   investmentLoan: {
     pageTitle: "Investicinė paskola",
@@ -296,15 +323,6 @@ export default {
       bullet6: "Paskolos palūkanos nuo 3.50%"
     },
     article: "Norėdami pateikti paskolos paraišką, atsiųskite mums praėjusių finansinių metų metinės ataskaitos, balanso ir pelno (nuostolių) ataskaitos kopiją bei analogiškas pastarojo ketvirčio ataskaitas adresu info@ltlku.lt"
-  },
-  partnership: {
-    pageTitle: "Tapkime partneriais",
-    description: "Nebereikia būti dideliam, kad būtume partneriais.",
-    articleBlock: {
-      article1: "Esame įsipareigoję užtikrinti finansinių paslaugų prieinamumą ir patikimumą kiekvienam. Tikslas – skatinti žmonių įsitraukimą, pašalinant kliūtis ir užtikrinant finansinių paslaugų naudojimo paprastumą. Vykdant šią misiją partnerystė vaidina lemiamą vaidmenį, todėl kviečiame bet kokio dydžio ir verslo sričių įmones prisijungti prie mūsų.",
-      article2: "Suprantame, kad kiekvienas iš mūsų partnerių pateikia unikalių privalumų ir perspektyvų, todėl esame įsipareigoję dirbti su jumis kurdami individualius sprendimus, atitinkančius konkrečius klientų poreikius. Nesvarbu, ar esate mažas startuolis, ar didelė korporacija, technologijų įmonė, norinti integruotis su mūsų platforma, ar pardavimų tarpininkas, siekiantis išplėsti savo verslą, esame pasiryžę kurti prieinamą ir integruotą ekosistemą, skatinančią augimą ir naujoves.",
-      article3: "Mums svarbu kurti tvirtus dalykinius santykius. Panagrinėkime kartu, kaip galime bendradarbiauti, kad atvertume prieigą prie finansų ir sukurtume geresnę ateitį. Jei jus domina partnerystė, susisiekite prašome su mumis užpildydami žemiau esančią formą arba paskambindami telefonu +3700000000."
-    }
   },
   housingLoan: {
     pageTitle: "Būsto paskola",
@@ -339,6 +357,15 @@ export default {
         title: "Tarifai",
         text: "Su mūsų būsto paskolos produktu siūlomos konkurencingos palūkanų normos, leidžiančios sutaupyti pinigų per visą paskolos laikotarpį. Siūlome konkurencingas palūkanas ir individualų klientų aptarnavimą, kad gautumėte geriausią įmanomą būsto paskolos pasiūlymą."
       }
+    }
+  },
+  partnership: {
+    pageTitle: "Tapkime partneriais",
+    description: "Nebereikia būti dideliam, kad būtume partneriais.",
+    articleBlock: {
+      article1: "Esame įsipareigoję užtikrinti finansinių paslaugų prieinamumą ir patikimumą kiekvienam. Tikslas – skatinti žmonių įsitraukimą, pašalinant kliūtis ir užtikrinant finansinių paslaugų naudojimo paprastumą. Vykdant šią misiją partnerystė vaidina lemiamą vaidmenį, todėl kviečiame bet kokio dydžio ir verslo sričių įmones prisijungti prie mūsų.",
+      article2: "Suprantame, kad kiekvienas iš mūsų partnerių pateikia unikalių privalumų ir perspektyvų, todėl esame įsipareigoję dirbti su jumis kurdami individualius sprendimus, atitinkančius konkrečius klientų poreikius. Nesvarbu, ar esate mažas startuolis, ar didelė korporacija, technologijų įmonė, norinti integruotis su mūsų platforma, ar pardavimų tarpininkas, siekiantis išplėsti savo verslą, esame pasiryžę kurti prieinamą ir integruotą ekosistemą, skatinančią augimą ir naujoves.",
+      article3: "Mums svarbu kurti tvirtus dalykinius santykius. Panagrinėkime kartu, kaip galime bendradarbiauti, kad atvertume prieigą prie finansų ir sukurtume geresnę ateitį. Jei jus domina partnerystė, susisiekite prašome su mumis užpildydami žemiau esančią formą arba paskambindami telefonu +3700000000."
     }
   },
   privacyPolicy: {
