@@ -406,10 +406,10 @@ export default {
   inputForm: {
     title: "Mums svarbi Jūsų nuomonė",
     description: "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms.",
-    topic: "Tema",
-    feedback: "Atsiliepimas",
-    name: "Vardas",
-    email: "Elektroninio pašto adresas",
+    topicPlaceholder: "Tema",
+    feedbackPlaceholder: "Atsiliepimas",
+    namePlaceholder: "Vardas",
+    emailPlaceholder: "Elektroninio pašto adresas",
     button: "Siųsti"
   }
 }

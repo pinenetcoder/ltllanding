@@ -20,17 +20,17 @@ function ContactForm(props) {
          <form className={styles.formBlock}>
             <div className={styles.formInputBlock}>
             <input type="text" 
-            placeholder={t.inputForm.topic}
+            placeholder={t.inputForm.topicPlaceholder}
             />
             <textarea  
-            placeholder={t.inputForm.feedbackText}
+            placeholder={t.inputForm.feedbackPlaceholder}
             className={styles.feedbackInput}
             />
             <input type="text" 
-            placeholder={t.inputForm.name}
+            placeholder={t.inputForm.namePlaceholder}
             />
             <input type="text" 
-            placeholder={t.inputForm.email}
+            placeholder={t.inputForm.emailPlaceholder}
             />
             </div>
             <div className={styles.formButton}>{t.inputForm.button}</div>
