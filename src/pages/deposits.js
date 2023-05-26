@@ -7,7 +7,6 @@ import { useRouter } from "next/router"
 import lt from '@/locales/lt'
 import en from '@/locales/en'
 
-
 export default function Deposit() {
   const router = useRouter();
   const t = router.locale === 'lt' ? lt : en

@@ -6,7 +6,6 @@ import { useRouter } from "next/router"
 import lt from '@/locales/lt'
 import en from '@/locales/en'
 
-
 export default function PrivacyPolicy() {
    const router = useRouter();
    const t = router.locale === 'lt' ? lt : en

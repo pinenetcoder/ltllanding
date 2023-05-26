@@ -6,11 +6,9 @@ import { useRouter } from "next/router"
 import lt from '@/locales/lt'
 import en from '@/locales/en'
 
-
 export default function Partnership() {
    const router = useRouter();
    const t = router.locale === 'lt' ? lt : en
- 
 
    const [links, setLinks] = useState([]);
    const [activeTabLinks, setActiveTabLinks] = useState([]);
