@@ -15,7 +15,7 @@ export default function Contacts() {
          <section className={styles.contactsPageWrapper}>
             <div className={styles.contactsPageList}>
               <div className={styles.contactsHeroItem}>
-                <h3 className={styles.contactsTitle}>{t.contacts.heroBlock.coantacts}</h3>
+                <h3 className={styles.contactsTitle}>{t.contacts.heroBlock.coantactsTitle}</h3>
                 <div className={styles.contactsPageDescription}>
                   <p>{t.contacts.heroBlock.adress}</p>
                 </div>
