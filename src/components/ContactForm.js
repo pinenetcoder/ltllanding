@@ -13,27 +13,27 @@ function ContactForm(props) {
       <div className={styles.formTitleBlock}>
          {props.formTitle && 
          <div>
-            <h3>{t.inputForm.title}</h3>
-            <p>{t.inputForm.description}</p>
+            <h3>{t.contactForm.title}</h3>
+            <p>{t.contactForm.description}</p>
          </div>
          }  
          <form className={styles.formBlock}>
             <div className={styles.formInputBlock}>
             <input type="text" 
-            placeholder={t.inputForm.topicPlaceholder}
+            placeholder={t.contactForm.topicPlaceholder}
             />
             <textarea  
-            placeholder={t.inputForm.feedbackPlaceholder}
+            placeholder={t.contactForm.feedbackPlaceholder}
             className={styles.feedbackInput}
             />
             <input type="text" 
-            placeholder={t.inputForm.namePlaceholder}
+            placeholder={t.contactForm.namePlaceholder}
             />
             <input type="text" 
-            placeholder={t.inputForm.emailPlaceholder}
+            placeholder={t.contactForm.emailPlaceholder}
             />
             </div>
-            <div className={styles.formButton}>{t.inputForm.button}</div>
+            <div className={styles.formButton}>{t.contactForm.button}</div>
          </form>
       </div>
    )

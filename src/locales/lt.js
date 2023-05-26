@@ -391,7 +391,7 @@ export default {
   },
   contacts: {
     heroBlock: {
-      coantactsTitle: "Kontaktai",
+      contactsTitle: "Kontaktai",
       adress: "Sporto g. 18 LT-09238 Vilnius Telefonas: +370 5 205 5240 El. paštas: info@ltlku.lt",
       companyDetails: "Įmonės rekvizitai",
       companyDetailsDescription: "LTL Kredito unija Įmonės kodas: 302791356 PVM mokėtojo kodas: nėra SWIFT kodas (BIC): LTKULT21XXX"
@@ -403,7 +403,7 @@ export default {
       description: "Atvykite jums patogiu metu, išankstinė registracija nėra reikalinga."
     }
   },
-  inputForm: {
+  contactForm: {
     title: "Mums svarbi Jūsų nuomonė",
     description: "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms.",
     topicPlaceholder: "Tema",

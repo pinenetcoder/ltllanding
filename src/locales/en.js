@@ -394,7 +394,7 @@ export default {
   },
   contacts: {
     heroBlock: {
-      coantactsTitle: "Contacts", 
+      contactsTitle: "Contacts", 
       adress: "Sporto g. 18 LT-09238 Vilnius Phone: +370 5 205 5240 Email e-mail: info@ltlku.lt",
       companyDetails: "Company details",
       companyDetailsDescription: "TL Credit Union Company code: 302791356 VAT payer code: none SWIFT code (BIC): LTKULT21XXX"
@@ -406,7 +406,7 @@ export default {
       description: "Come at your convenient time, no pre-registration is required."
     }
   },
-  inputForm: {
+  contactForm: {
     title: "Your opinion is important to us",
     description: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities.",
     topicPlaceholder: "Topic",
