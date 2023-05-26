@@ -1,35 +1,39 @@
 import styles from "@/styles/ContactForm.module.scss"
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
+
 
 function ContactForm(props) {
+   const router = useRouter();
+   const t = router.locale === 'lt' ? lt : en
+
    
    return (
       <div className={styles.formTitleBlock}>
          {props.formTitle && 
          <div>
-            <h3>Your opinion is important to us</h3>
-            <p>Our vision is to create a world where everyone has access to financial 
-               services, enabling them to build a brighter future for themselves and their
-               communities. 
-            </p>
+            <h3>{t.contactForm.title}</h3>
+            <p>{t.contactForm.description}</p>
          </div>
          }  
          <form className={styles.formBlock}>
             <div className={styles.formInputBlock}>
             <input type="text" 
-            placeholder="Topic"
+            placeholder={t.contactForm.topicPlaceholder}
             />
             <textarea  
-            placeholder="Feedback"
+            placeholder={t.contactForm.feedbackPlaceholder}
             className={styles.feedbackInput}
             />
             <input type="text" 
-            placeholder="Name"
+            placeholder={t.contactForm.namePlaceholder}
             />
             <input type="text" 
-            placeholder="E-mail address"
+            placeholder={t.contactForm.emailPlaceholder}
             />
             </div>
-            <div className={styles.formButton}>Send</div>
+            <div className={styles.formButton}>{t.contactForm.button}</div>
          </form>
       </div>
    )

@@ -2,8 +2,14 @@ import styles from "@/styles/esg.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function Esg() {
+   const router = useRouter();
+   const t = router.locale === 'lt' ? lt : en
+ 
    const [annualLink, setAnnualLinks] = useState([]);
    const [activeAnnualLinks, setActiveLinks] = useState([]);
 
@@ -33,30 +39,26 @@ export default function Esg() {
          <main>
             <section className={styles.esgHeroPage}>
                <div className={styles.container}>
-                  <h1 className={styles.egsHeroTitle}>ESG</h1>
+                  <h1 className={styles.egsHeroTitle}>{t.esg.pageTitle}</h1>
                   <div className={styles.esgHeroBlock}>
                      <div className={styles.esgHeroMission}>
-                        <div className={styles.missionTitle}>Mission</div>
-                        <div className={styles.missionDescription}>Unlocking Financial Inclusion - Our Mission, Your Future.
-                        </div>
+                        <div className={styles.missionTitle}>{t.esg.heroBlock.title1}</div>
+                        <div className={styles.missionDescription}>{t.esg.heroBlock.description1}</div>
                      </div>
                      <div className={styles.esgHeroVision}>
-                        <div className={styles.visionTitle}>Vision</div>
-                        <div className={styles.visionDescription}>Our vision is to create a world where everyone has access
-                        to financial services, enabling them to build a brighter future for themselves and their 
-                        communities. We strive to unlock financial inclusion by empowering individuals to make informed 
-                        decisions about their financial wellbeing.
-                        </div>
+                        <div className={styles.visionTitle}>{t.esg.heroBlock.title2}</div>
+                        <div className={styles.visionDescription}>{t.esg.heroBlock.description2}</div>
                      </div>
                   </div>
                </div>
             </section>
             <section className={styles.innerNavigationSection}>
                <div className={styles.innerNavigationLinkList}>
-                  <Link className={styles.innerNavLink} href="#enviromentalProtection">Aplinkosauga</Link>
-                  <Link className={styles.innerNavLink} href="#socialPolitics">Socialine politika</Link>
-                  <Link className={styles.innerNavLink} href="#managment">Valdymas</Link>
-                  <Link className={styles.innerNavLink} href="#reports">ESG ataskaitos</Link>
+                  <Link className={styles.innerNavLink} href="#enviromentalProtection">{t.esg.innerLinkBlock.link1}</Link>
+                  <Link className={styles.innerNavLink} href="#socialPolitics">{t.esg.innerLinkBlock.link2}</Link>
+                  <Link className={styles.innerNavLink} href="#managment">{t.esg.innerLinkBlock.link3}</Link>
+                  <Link className={styles.innerNavLink} href="#esgPolicy">{t.esg.innerLinkBlock.link4}</Link>
+                  <Link className={styles.innerNavLink} href="#reports">{t.esg.innerLinkBlock.link5}</Link>
                </div>
           </section>
           <section className={styles.enviromentalProtectionSection}>
@@ -64,25 +66,19 @@ export default function Esg() {
                <div id="enviromentalProtection" className={styles.enviromentalProtectionBlock}>
                   <div className={styles.enviromentalProtectionImg}></div>
                   <div className={styles.enviromentalProtectionArticle}>
-                     <h3>Aplinkosauga</h3>
-                     <p>We are striving to create a more equitable financial system that balances the interests of 
-                        our company, our customers and our society. We allocate resources and provide education to 
-                        empower customers to understand the banking system and make informed decisions.
-                     </p>
+                     <h3>{t.esg.articleBlock.article2.title}</h3>
+                     <p>{t.esg.articleBlock.article2.text}</p>
                      <div className="actionButtonBlock">
-                        <Link href="/" className="light-green-action-button">Learn more</Link> 
+                        <Link href="/" className="light-green-action-button">{t.esg.learnMoreButton}</Link> 
                      </div>
                   </div>
                </div>
                <div id="socialPolitics" className={styles.enviromentalProtectionBlock}>
                   <div className={styles.enviromentalProtectionArticle}>
-                     <h3>Socialine politika</h3>
-                     <p>We are striving to create a more equitable financial system that balances the interests of 
-                        our company, our customers and our society. We allocate resources and provide education to 
-                        empower customers to understand the banking system and make informed decisions.
-                     </p>
+                     <h3>{t.esg.articleBlock.article3.title}</h3>
+                     <p>{t.esg.articleBlock.article3.text}</p>
                      <div className="actionButtonBlock">
-                        <Link href="/" className="light-green-action-button">Learn more</Link> 
+                        <Link href="/" className="light-green-action-button">{t.esg.learnMoreButton}</Link> 
                      </div>
                   </div>
                   <div className={styles.enviromentalProtectionImg}></div>
@@ -90,21 +86,28 @@ export default function Esg() {
                <div id="managment" className={styles.enviromentalProtectionBlock}>
                   <div className={styles.enviromentalProtectionImg}></div>
                   <div className={styles.enviromentalProtectionArticle}>
-                     <h3>Valdymas</h3>
-                     <p>We are striving to create a more equitable financial system that balances the interests of 
-                        our company, our customers and our society. We allocate resources and provide education to 
-                        empower customers to understand the banking system and make informed decisions.
-                     </p>
+                     <h3>{t.esg.articleBlock.article4.title}</h3>
+                     <p>{t.esg.articleBlock.article4.text}</p>
                      <div className="actionButtonBlock">
-                        <Link href="/" className="light-green-action-button">Learn more</Link> 
+                        <Link href="/" className="light-green-action-button">{t.esg.learnMoreButton}</Link> 
                      </div>
                   </div>
+               </div>
+               <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
+                  <div className={styles.enviromentalProtectionArticle}>
+                     <h3>{t.esg.articleBlock.article1.title}</h3>
+                     <p>{t.esg.articleBlock.article1.text}</p>
+                     <div className="actionButtonBlock">
+                        <Link href="/" className="light-green-action-button">{t.esg.learnMoreButton}</Link> 
+                     </div>
+                  </div>
+                  <div className={styles.enviromentalProtectionImg}></div>
                </div>
             </div>
           </section>
           <section id="reports" className={styles.annualReportsSection}>
             <div className={styles.annualReportsWrapper}>
-               <h3>Metinės ESG ataskaitos</h3>
+               <h3>{t.esg.annualEsgReport.title}</h3>
                <ul className={styles.annualReportsLinks}>
                      {annualLink.map((year, idx) => {
                         return (

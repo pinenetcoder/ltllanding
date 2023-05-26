@@ -2,8 +2,14 @@ import styles from "@/styles/product.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Link from "next/link"
 import Accordion from "@/components/Accordion"
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function Payments() {
+   const router = useRouter();
+   const t = router.locale === 'lt' ? lt : en
+
    return (
       <>
          <IndexLayout>
@@ -11,17 +17,14 @@ export default function Payments() {
                <section className={styles.paymentsPageWrapper}>
                   <div className={styles.paymentsPageList}>
                      <div className={styles.paymentsHeroItem}>
-                        <h1 className={styles.paymentsTitle}>Einamoji sąskaita</h1>
+                        <h1 className={styles.paymentsTitle}>{t.privetCurrentAccount.pageTitle}</h1>
 
                         <div className={styles.paymentsPageDescription}>
-                           <p>With Kocomo, a home is co-owned by no more than eight families while we act as a
-                              neutral third-party administrator to ensure transparency and fairness a home is
-                              co-owned by no more than eight families while we act as a neutral third-party
-                           </p>
+                           <p>{t.privetCurrentAccount.heroBlock.description}</p>
                            <ul>
-                              <li>Trečias bulletpoint tekstinis</li>
-                              <li>Trečias bulletpoint tekstinis</li>
-                              <li>Trečias bulletpoint tekstinis</li>
+                              <li>{t.privetCurrentAccount.heroBlock.bullet1}</li>
+                              <li>{t.privetCurrentAccount.heroBlock.bullet2}</li>
+                              <li>{t.privetCurrentAccount.heroBlock.bullet3}</li>
                            </ul>
                         </div>
                      </div>
@@ -29,38 +32,33 @@ export default function Payments() {
                </section>
                <section className={styles.innerNavigationBlock}>
                   <div className={styles.innerNavigationLinkList}>
-                     <Link className={styles.innerNavLink} href="#privetClient">Private client</Link>
-                     <Link className={styles.innerNavLink} href="#steps">Steps</Link>
-                     <Link className={styles.innerNavLink} href="#after">After you opened</Link>
-                     <Link className={styles.innerNavLink} href="#priceList">Price list</Link>
-                     <Link className={styles.innerNavLink} href="#clientSuport">Client Support</Link>
-                     <Link className={styles.innerNavLink} href="#faq">FAQ</Link>
+                     <Link className={styles.innerNavLink} href="#privetClient">{t.privetCurrentAccount.innerLinkBlock.privateClient}</Link>
+                     <Link className={styles.innerNavLink} href="#steps">{t.privetCurrentAccount.innerLinkBlock.steps}</Link>
+                     <Link className={styles.innerNavLink} href="#after">{t.privetCurrentAccount.innerLinkBlock.afterYouOpened}</Link>
+                     <Link className={styles.innerNavLink} href="#priceList">{t.privetCurrentAccount.innerLinkBlock.priceList}</Link>
+                     <Link className={styles.innerNavLink} href="#clientSuport">{t.privetCurrentAccount.innerLinkBlock.clientSupport}</Link>
+                     <Link className={styles.innerNavLink} href="#faq">{t.privetCurrentAccount.innerLinkBlock.faq}</Link>
                   </div>
                </section>
                <section id="privetClient" className={styles.privateClientSection}>
                   <div className={styles.motyvationWrapper}>
                      <div className={styles.motyvationList}>
                         <div className={styles.motyvationItem}>
-                           <h2 className={styles.motyvationItemTitle}>Pamiršk laikus, kai skolintis buvo sudėtinga</h2>
-                           <div className={styles.motyvationItemDescription}>Banko skyriams laiko randa tik bankininkai. Mes
-                              patys skolinamės internetu, todėl ir tau suteikiame tokią galimybę. Net jei dar nesi mūsų klientas!
-                              Nors veikiame pagal bankinius standartus, pinigai tavo sąskaitoje atsidurs kur kas greičiau nei
-                              tikiesi.
+                           <h2 className={styles.motyvationItemTitle}>{t.privetCurrentAccount.articleBlock.article1.title}</h2>
+                           <div className={styles.motyvationItemDescription}>
+                              {t.privetCurrentAccount.articleBlock.article1.text}
                            </div>
                         </div>
                         <div className={styles.motyvationItem}>
-                           <h2 className={styles.motyvationItemTitle}>Pamiršk laikus, kai skolintis buvo sudėtinga</h2>
-                           <div className={styles.motyvationItemDescription}>Banko skyriams laiko randa tik bankininkai. Mes
-                              patys skolinamės internetu, todėl ir tau suteikiame tokią galimybę. Net jei dar nesi mūsų klientas!
-                              Nors veikiame pagal bankinius standartus, pinigai tavo sąskaitoje atsidurs kur kas greičiau nei
-                              tikiesi.
+                           <h2 className={styles.motyvationItemTitle}>{t.privetCurrentAccount.articleBlock.article2.title}</h2>
+                           <div className={styles.motyvationItemDescription}>
+                              {t.privetCurrentAccount.articleBlock.article2.text}   
                            </div>
                         </div>
                         <div className={styles.motyvationItem}>
-                           <h2 className={styles.motyvationItemTitle}>Pamiršk laikus, kai skolintis buvo sudėtinga</h2>
-                           <div className={styles.motyvationItemDescription}>Banko skyriams laiko randa tik bankininkai.
-                              Mes patys skolinamės internetu, todėl ir tau suteikiame tokią galimybę. Net jei dar nesi mūsų
-                              klientas! Nors veikiame pagal bankinius standartus.
+                           <h2 className={styles.motyvationItemTitle}>{t.privetCurrentAccount.articleBlock.article3.title}</h2>
+                           <div className={styles.motyvationItemDescription}>
+                              {t.privetCurrentAccount.articleBlock.article3.text}
                            </div>
                         </div>
                      </div>
@@ -69,52 +67,55 @@ export default function Payments() {
                <section id="steps" className={styles.paymentStepsSection}>
                   <div className={styles.paymentsStepsWrapper}>
                      <div className={styles.stepsHeader}>
-                        <h3>Steps</h3>
+                        <h3>{t.privetCurrentAccount.accOpeningProcess.blockTitle}</h3>
                      </div>
                      <div className={styles.stepsList}>
                         <div className={styles.stepsItem}>
                            <div className={styles.stepsNumber}>1</div>
                            <div className={styles.stepsText}>
-                              <h2 className={styles.stepsTitle}>An account opening application form</h2>
-                              <div className={styles.stepsDescription}>Fill in an account opening application form.
-                                 In case you are a citizen of Russia or Belarus, please read more.
+                              <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step1.title}</h2>
+                              <div className={styles.stepsDescription}>
+                                 {t.privetCurrentAccount.accOpeningProcess.step1.text}
                               </div>
                            </div>
                         </div>
                         <div className={styles.stepsItem}>
                            <div className={styles.stepsNumber}>2</div>
                            <div className={styles.stepsText}>
-                              <h2 className={styles.stepsTitle}>Documents</h2>
+                              <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step2.title}</h2>
                               <div className={styles.stepsDescription}>
-                                 <ul>
-                                    <li>a copy of your identity document</li>
-                                    <li>documents that prove your connection to EstoniaExamples of suitable documents:</li>
-                                    <li>signed residential lease agreement</li>
-                                    <li>signed employment contract</li>
-                                    <li>certificate from an educational institution regarding enrolment</li>
-                                    <li>document substantiating connection to enterprise</li>
-                                 </ul>
+                                 {t.privetCurrentAccount.accOpeningProcess.step2.text}
                               </div>
                            </div>
                         </div>
                         <div className={styles.stepsItem}>
                            <div className={styles.stepsNumber}>3</div>
                            <div className={styles.stepsText}>
-                              <h2 className={styles.stepsTitle}>Decision on your application</h2>
-                              <div className={styles.stepsDescription}>Once we have received your application for opening
-                                 an account and documents, we will contact you shortly.
+                              <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step3.title}</h2>
+                              <div className={styles.stepsDescription}>
+                                 <ul>
+                                    <li>{t.privetCurrentAccount.accOpeningProcess.step3.bulletBlock.bullet1}</li>
+                                    <li>{t.privetCurrentAccount.accOpeningProcess.step3.bulletBlock.bullet2}</li>
+                                    <li>{t.privetCurrentAccount.accOpeningProcess.step3.bulletBlock.bullet3}</li>
+                                 </ul>
                               </div>
                            </div>
                         </div>
                         <div className={styles.stepsItem}>
                            <div className={styles.stepsNumber}>4</div>
                            <div className={styles.stepsText}>
-                              <h2 className={styles.stepsTitle}>Identification</h2>
-                              <div className={styles.stepsDescription}>If we approve your application to open an account,
-                                 you will be asked to come to an LHV office for face-to-face identification and signing the
-                                 client agreement. If you have already identified yourself at LHV, you will not have to
-                                 come to the office again. In that case, we will e-mail the client agreement to you and
-                                 you can sign it digitally using your e-resident’s digital ID.
+                              <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step4.title}</h2>
+                              <div className={styles.stepsDescription}>
+                                 {t.privetCurrentAccount.accOpeningProcess.step4.text}
+                              </div>
+                           </div>
+                        </div>
+                        <div className={styles.stepsItem}>
+                           <div className={styles.stepsNumber}>5</div>
+                           <div className={styles.stepsText}>
+                              <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step5.title}</h2>
+                              <div className={styles.stepsDescription}>
+                                 {t.privetCurrentAccount.accOpeningProcess.step5.text}
                               </div>
                            </div>
                         </div>
@@ -191,17 +192,15 @@ export default function Payments() {
                </section>
                <section id="clientSuport" className={styles.clientSuportSection}>
                   <div className={styles.clientSuportWrapper}>
-                     <h3 className={styles.clientSuportHeader}>Client Suport</h3>
-                     <div className={styles.clientSuportDescription}>Banko skyriams laiko randa tik bankininkai.
-                        Mes patys skolinamės internetu, todėl ir tau suteikiame tokią galimybę. Net jei dar nesi mūsų
-                        klientas! Nors veikiame pagal bankinius standartus, pinigai tavo sąskaitoje atsidurs kur kas
-                        greičiau nei tikiesi.
+                     <h3 className={styles.clientSuportHeader}>{t.privetCurrentAccount.clientSuport.title}</h3>
+                     <div className={styles.clientSuportDescription}>
+                        {t.privetCurrentAccount.clientSuport.description}
                      </div>
                   </div>
                </section>
                <section id="faq" className={styles.faqSection}>
                   <div className={styles.faqWrapper}>
-                     <h3 className={styles.faqHeader}>FAQ</h3>
+                     <h3 className={styles.faqHeader}>{t.privetCurrentAccount.faq}</h3>
                      <div className={styles.faqList}>
                         <Accordion accId="1" singleLevel="true" />
                      </div>

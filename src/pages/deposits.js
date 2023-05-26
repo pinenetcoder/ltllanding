@@ -3,9 +3,14 @@ import IndexLayout from "@/Layouts/IndexLayout"
 import Accordion from "@/components/Accordion"
 import Link from "next/link"
 import { useState } from "react"
-
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function Deposit() {
+  const router = useRouter();
+  const t = router.locale === 'lt' ? lt : en
+
   const [calc, setCalc] = useState({
     amount: 10000,
     term: 3,
@@ -53,42 +58,44 @@ export default function Deposit() {
           <section className={styles.depositPageWrapper}>
             <div className={styles.depositPageList}>
               <div className={styles.depositHeroItem}>
-                <h1 className={styles.depositTitle}>Einamoji sąskaita</h1>
+                <h1 className={styles.depositTitle}>{t.termDeposit.pageTitle}</h1>
                 <div className={styles.depositPageDescription}>
-                  <p>With Kocomo, a home is co-owned by no more than eight families while we act as a
-                    neutral third-party administrator to ensure transparency and fairness a home is
-                    co-owned by no more than eight families while we act as a neutral third-party
+                  <p>
+                    {t.termDeposit.heroBlock.description}
                   </p>
                   <ul>
-                    <li>Trečias bulletpoint tekstinis</li>
-                    <li>Trečias bulletpoint tekstinis</li>
-                    <li>Trečias bulletpoint tekstinis</li>
+                    <li>{t.termDeposit.heroBlock.bullet1}</li>
+                    <li>{t.termDeposit.heroBlock.bullet2}</li>
+                    <li>{t.termDeposit.heroBlock.bullet3}</li>
+                    <li>{t.termDeposit.heroBlock.bullet4}</li>
+                    <li>{t.termDeposit.heroBlock.bullet5}</li>
+                    <li>{t.termDeposit.heroBlock.bullet6}</li>
                   </ul>
                 </div>
                 <div>
-                  <Link className="light-green-action-button long" href="/">Pateikti indėlio paraišką</Link>
+                  <Link className="light-green-action-button long" href="/">{t.termDeposit.heroBlock.button}</Link>
                 </div>
               </div>
             </div>
           </section>
           <section className={styles.innerNavigationBlock}>
             <div className={styles.innerNavigationLinkList}>
-              <Link className={styles.innerNavLink} href="#calculator">Calculator</Link>
-              <Link className={styles.innerNavLink} href="#interestRate">Interest rates</Link>
-              <Link className={styles.innerNavLink} href="#faq">FAQ</Link>
+              <Link className={styles.innerNavLink} href="#calculator">{t.termDeposit.innerLinkBlock.calculator}</Link>
+              <Link className={styles.innerNavLink} href="#interestRate">{t.termDeposit.innerLinkBlock.interestRates}</Link>
+              <Link className={styles.innerNavLink} href="#faq">{t.termDeposit.faq}</Link>
             </div>
           </section>
           <section id="calculator" className={styles.depositSection}>
-            <h2>Calculate how much interest will you accumulate</h2>
+            <h2>{t.termDeposit.calcBlock.title}</h2>
             <div className={styles.calculatorWrapper}>
               <div className={styles.calculatorBlock}>
                 <div className={styles.borderCorner}></div>
                 <div className={styles.calculatorLine}>
-                  <div className={styles.label}>Indėlio dydis</div>
+                  <div className={styles.label}>{t.termDeposit.calcBlock.ammoutOfDeposit}</div>
                   <input type="text" value={calc.amount} pattern="[0-9\.\-]*"  onChange={(e) => {amountHandler(e)}} placeholder="Enter amount" />
                 </div>
                 <div className={styles.calculatorLine}>
-                  <div className={styles.label}>Indelio terminas</div>
+                  <div className={styles.label}>{t.termDeposit.calcBlock.term}</div>
                   <div className={styles.select}>
                     <select value={calc.term} onChange={(e) => { selectTerm(e) }}>{createSelectOptions()}</select>
                   </div>
@@ -97,22 +104,22 @@ export default function Deposit() {
               <div className={styles.resultBlock}>
                 <div className={styles.resultBlockList}>
                   <div className={styles.resultBlockItem}>
-                    <div className={styles.left}>Palūkanų norma:</div>
+                    <div className={styles.left}>{t.termDeposit.calcBlock.interestRate}:</div>
                     <div className={styles.right}>{calc.selectedRate}%</div>
                   </div>
                   <div className={styles.resultBlockItem}>
-                    <div className={styles.left}>Iš viso:</div>
+                    <div className={styles.left}>{t.termDeposit.calcBlock.altogether}:</div>
                     <div className={styles.right}>{(+calc.amount / 100 * +calc.selectedRate / 12 * calc.term + calc.amount).toFixed(2)}€</div>
                   </div>
                   <div className={styles.resultBlockItem}>
-                    <div className={styles.left}>Palūkanų suma:</div>
+                    <div className={styles.left}>{t.termDeposit.calcBlock.amountOfInterest}:</div>
                     <div className={styles.right}>{(+calc.amount / 100 * +calc.selectedRate / 12 * calc.term).toFixed(2)}€</div>
                   </div>
                 </div>
               </div>
             </div>
             <div className={styles.depositSectionButton}>
-              <Link className="light-green-action-button long" href="/">Pateikti indėlio paraišką</Link>
+              <Link className="light-green-action-button long" href="/">{t.termDeposit.calcBlock.button}</Link>
             </div>
           </section>
           <section id="interestRate" className={styles.ratesTableSection}>
@@ -152,7 +159,7 @@ export default function Deposit() {
           </section>
           <section id="faq" className={styles.faqSection}>
             <div className={styles.faqWrapper}>
-              <h3 className={styles.faqHeader}>FAQ</h3>
+              <h3 className={styles.faqHeader}>{t.termDeposit.faq}</h3>
               <div className={styles.faqList}>
                 <Accordion accId="1" singleLevel="true" />
               </div>

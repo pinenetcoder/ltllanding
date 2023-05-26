@@ -2,30 +2,39 @@ import styles from "@/styles/credits.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Accordion from "@/components/Accordion"
 import Link from "next/link"
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function Credits() {
+   const router = useRouter();
+   const t = router.locale === 'lt' ? lt : en
+
    function createSelectOptions(number) {
       let arr = []
       for (let i = 1; i <= number; i++) arr.push(i)
       return arr.map((el, idx) => <option key={idx}>{el}</option>)
    }
    return (
-      <>
          <IndexLayout>
             <main className={styles.creditsPage}>
                <section className={styles.creditsPageWrapper}>
                   <div className={styles.creditsPageList}>
                      <div className={styles.creditsHeroItem}>
-                        <h1 className={styles.creditsTitle}>Einamoji sąskaita</h1>
+                        <h2>{t.consumerLoan.heroBlockTitle}</h2>
                         <div className={styles.creditsPageDescription}>
-                           <p>With Kocomo, a home is co-owned by no more than eight families while we act as a
-                              neutral third-party administrator to ensure transparency and fairness a home is
-                              co-owned by no more than eight families while we act as a neutral third-party
+                           <p>
+                              {t.consumerLoan.heroBlock.description}
                            </p>
                            <ul>
-                              <li>Trečias bulletpoint tekstinis</li>
-                              <li>Trečias bulletpoint tekstinis</li>
-                              <li>Trečias bulletpoint tekstinis</li>
+                              <li>{t.consumerLoan.heroBlock.bullet1}</li>
+                              <li>{t.consumerLoan.heroBlock.bullet2}</li>
+                              <li>{t.consumerLoan.heroBlock.bullet3}</li>
+                              <li>{t.consumerLoan.heroBlock.bullet4}</li>
+                              <li>{t.consumerLoan.heroBlock.bullet5}</li>
+                              <li>{t.consumerLoan.heroBlock.bullet6}</li>
+                              <li>{t.consumerLoan.heroBlock.bullet7}</li>
+
                            </ul>
                         </div>
                         <div>
@@ -112,12 +121,10 @@ export default function Credits() {
                            patogiausia:
                            <ul>
                               <li>Mobiliuoju parašu arba išplėstiniu „Smart-ID“. Procesas užtruks vos kelias minutes tau
-                                 net
-                                 nepakilus nuo sofos! Pinigus pervesime pasirašius sutartį
+                                 net nepakilus nuo sofos! Pinigus pervesime pasirašius sutartį
                               </li>
                               <li>Per pašto kurjerį, kuris tau patogiu laiku atvyks į pasirinktą vietą. Pinigus
-                                 perversime
-                                 per 48 val. po sutarties pasirašymo
+                                 perversime per 48 val. po sutarties pasirašymo
                               </li>
                               <li>Aplankyk mus Vilniuje ir pasirašyk sutartį tau patogiu laiku. Paskolą išmokėsime kitą
                                  darbo dieną
@@ -153,6 +160,5 @@ export default function Credits() {
                </section>
             </main>
          </IndexLayout>
-      </>
    )
 }
