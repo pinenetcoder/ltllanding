@@ -12,6 +12,19 @@ function Header() {
   const { locale } = router;
   const t = locale === 'lt' ? lt : en;
 
+  const [paymentSubMenu, setPaymentSubMenu] = useState(false);
+  const [creditSubMenu, setCreditSubMenu] = useState(false);
+
+  const toggleSubMenu = (type) => {
+    if (type === 'open') setPaymentSubMenu(true);
+    else setPaymentSubMenu(false);
+  }
+  
+  const toggleSubMenuCredit = (type) => {
+    if (type === 'open') setCreditSubMenu(true);
+    else setCreditSubMenu(false);
+  }
+
   useEffect(()=> {
     if (locale === 'lt') {
       setLangBtnState('ENG')
@@ -19,7 +32,6 @@ function Header() {
       setLangBtnState('LT')
     }
   }, [locale])
-
 
   function setLanguage() {
     if (langBtnState === 'ENG') router.push('/', '/', {locale: 'en'})
@@ -43,15 +55,44 @@ function Header() {
           <Link className="header-bussinness-type-nav-link" href="/About">{t.headerNavLinks.private}</Link>
           <Link className="header-bussinness-type-nav-link" href="/About">{t.headerNavLinks.business}</Link>
         </div>
-
-        <nav className="header-navigation">
-          <Link className="header-nav-link" href="/payments">{ t.headerNavLinks.payments }</Link>
-          <Link className="header-nav-link" href="/credits">{ t.headerNavLinks.credit }</Link>
-          <Link className="header-nav-link" href="/deposits">{ t.headerNavLinks.deposit }</Link>
-          <Link className="header-nav-link" href="/contacts">{ t.headerNavLinks.contacts }</Link>
-          <span className="header-nav-link change-language-link" onClick={setLanguage} href="/eng">{langBtnState}</span>
-        </nav>
-
+        <div className="menubar">
+          <nav className="header-navigation">
+            <div className="navigation-parent-link" onMouseEnter={ () => {toggleSubMenu('open')} } onMouseLeave={() => {toggleSubMenu('close')}}>
+              {t.headerNavLinks.payments}
+              {
+                paymentSubMenu &&
+                <div className="dropDownPayments">
+                  <div className="toggleSubMenu">
+                    <Link className="header-nav-link" href="/product">{t.headerNavLinks.currentAccount}</Link>
+                  </div>
+                  <div className="toggleSubMenu">
+                    <Link className="header-nav-link" href="/payments">{t.headerNavLinks.payments}</Link>
+                  </div>
+                </div>
+              }
+            </div>
+            <div className="navigation-parent-link-credit" onMouseEnter={ () => {toggleSubMenuCredit('open')} } onMouseLeave={() => {toggleSubMenuCredit('close')}}>
+              { t.headerNavLinks.credit }
+              {
+                creditSubMenu &&
+                <div className="dropDownCredit">
+                  <div className="toggleSubMenu">
+                    <Link className="header-nav-link" href="/credits">{t.headerNavLinks.mortgageLoan}</Link>
+                  </div>
+                  <div className="toggleSubMenu">
+                    <Link className="header-nav-link" href="/credits">{t.headerNavLinks.consumerLoan}</Link>
+                  </div>
+                  <div className="toggleSubMenu">
+                    <Link className="header-nav-link" href="/contacts">{t.headerNavLinks.equityLoan}</Link>
+                  </div>
+                </div>
+              }
+            </div>
+            <Link className="header-nav-link" href="/deposits">{ t.headerNavLinks.deposit }</Link>
+            <Link className="header-nav-link" href="/contacts">{ t.headerNavLinks.contacts }</Link>
+            <span className="header-nav-link change-language-link" onClick={setLanguage} href="/eng">{langBtnState}</span>
+          </nav>
+        </div>
         <div className="header-action-buttons-block">
           <Link className="header-action-button" href="/login">{ t.headerNavLinks.login }</Link>
           <Link className="header-action-button" href="/open-account">{ t.headerNavLinks.openAccount }</Link>          

@@ -78,9 +78,27 @@ header {
     }
   }
 
-
   .header-navigation {
     margin-right: 48px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .navigation-parent-link {
+      position: relative;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      cursor: default;
+    }
+
+    .navigation-parent-link-credit {
+      position: relative;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      cursor: default;
+    }
 
     .header-nav-link {
       font-family: 'Lexend';
@@ -89,7 +107,6 @@ header {
       line-height: 24px;
       color: var(--main-text-color);
       text-decoration: none;
-      margin-right: 30px;
 
       &:last-child {
         margin-right: 0;
@@ -102,6 +119,59 @@ header {
     }
   }
 
+  .menubar {
+    position: relative;
+
+    .dropDownPayments {
+      width: 160px;
+      background-color: #F4F4F4;
+      padding: 10px;
+      box-shadow: 3px 10px 5px -4px rgba(0,0,0,0.75);
+      opacity: 1;
+      position: absolute;
+      top: 40px;
+      left: -10px;
+      z-index: 9;
+      transition: 250ms ease-in-out;
+
+      .toggleSubMenu {
+        margin-bottom: 5px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a:hover {
+          color: var(--theme-color2);
+        }
+      }
+    }
+
+    .dropDownCredit {
+      width: 270px;
+      background-color: #F4F4F4;
+      padding: 10px;
+      box-shadow: 3px 10px 5px -4px rgba(0,0,0,0.75);
+      opacity: 1;
+      position: absolute;
+      top: 40px;
+      left: -10px;
+      z-index: 9;
+      transition: 2050ms ease-in-out;
+
+      .toggleSubMenu {
+        margin-bottom: 5px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a:hover {
+          color: var(--theme-color2);
+        }
+      }
+    }
+  }
 
   .header-action-buttons-block {
     display: flex;
