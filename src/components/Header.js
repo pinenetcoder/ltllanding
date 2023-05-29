@@ -12,17 +12,17 @@ function Header() {
   const { locale } = router;
   const t = locale === 'lt' ? lt : en;
 
-  const [paymentSubMenuShow, setPaymentSubMenuShow] = useState(false);
-  const [creditSubMenuShow, setCreditSubMenuShow] = useState(false);
+  const [paymentSubMenu, setPaymentSubMenu] = useState(false);
+  const [creditSubMenu, setCreditSubMenu] = useState(false);
 
   const toggleSubMenu = (type) => {
-    if (type === 'open') setPaymentSubMenuShow(true);
-    else setPaymentSubMenuShow(false);
+    if (type === 'open') setPaymentSubMenu(true);
+    else setPaymentSubMenu(false);
   }
   
   const toggleSubMenuCredit = (type) => {
-    if (type === 'open') setCreditSubMenuShow(true);
-    else setCreditSubMenuShow(false);
+    if (type === 'open') setCreditSubMenu(true);
+    else setCreditSubMenu(false);
   }
 
   useEffect(()=> {
@@ -60,7 +60,7 @@ function Header() {
             <div className="navigation-parent-link" onMouseEnter={ () => {toggleSubMenu('open')} } onMouseLeave={() => {toggleSubMenu('close')}}>
               {t.headerNavLinks.payments}
               {
-                paymentSubMenuShow &&
+                paymentSubMenu &&
                 <div className="dropDownPayments">
                   <div className="toggleSubMenu">
                     <Link className="header-nav-link" href="/product">{t.headerNavLinks.currentAccount}</Link>
@@ -74,7 +74,7 @@ function Header() {
             <div className="navigation-parent-link-credit" onMouseEnter={ () => {toggleSubMenuCredit('open')} } onMouseLeave={() => {toggleSubMenuCredit('close')}}>
               { t.headerNavLinks.credit }
               {
-                creditSubMenuShow &&
+                creditSubMenu &&
                 <div className="dropDownCredit">
                   <div className="toggleSubMenu">
                     <Link className="header-nav-link" href="/credits">{t.headerNavLinks.mortgageLoan}</Link>
