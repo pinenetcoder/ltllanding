@@ -15,16 +15,18 @@ function Header() {
   const [paymentSubMenu, setPaymentSubMenu] = useState(false);
   const [creditSubMenu, setCreditSubMenu] = useState(false);
 
-  const toggleSubMenu = (type) => {
-    if (type === 'open') setPaymentSubMenu(true);
-    else setPaymentSubMenu(false);
+  const toggleSubMenu = (type, parentLink) => {
+    if (parentLink == 'payment') {
+      if (type === 'open') setPaymentSubMenuShow(true);
+      else setPaymentSubMenuShow(false);
+      return
+    }
+
+    if (type === 'open') setCreditSubMenuShow(true);
+    else setCreditSubMenuShow(false);
+    
   }
   
-  const toggleSubMenuCredit = (type) => {
-    if (type === 'open') setCreditSubMenu(true);
-    else setCreditSubMenu(false);
-  }
-
   useEffect(()=> {
     if (locale === 'lt') {
       setLangBtnState('ENG')
@@ -57,7 +59,7 @@ function Header() {
         </div>
         <div className="menubar">
           <nav className="header-navigation">
-            <div className="navigation-parent-link" onMouseEnter={ () => {toggleSubMenu('open')} } onMouseLeave={() => {toggleSubMenu('close')}}>
+            <div className="navigation-parent-link" onMouseEnter={ () => {toggleSubMenu('open', 'payment')} } onMouseLeave={() => {toggleSubMenu('close', 'payment')}}>
               {t.headerNavLinks.payments}
               {
                 paymentSubMenu &&
@@ -71,7 +73,7 @@ function Header() {
                 </div>
               }
             </div>
-            <div className="navigation-parent-link-credit" onMouseEnter={ () => {toggleSubMenuCredit('open')} } onMouseLeave={() => {toggleSubMenuCredit('close')}}>
+            <div className="navigation-parent-link-credit" onMouseEnter={ () => {toggleSubMenu('open')} } onMouseLeave={() => {toggleSubMenu('close')}}>
               { t.headerNavLinks.credit }
               {
                 creditSubMenu &&
