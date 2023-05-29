@@ -63,10 +63,10 @@ function Header() {
                 paymentSubMenuShow &&
                 <div className="dropDownPayments">
                   <div className="toggleSubMenu">
-                    <Link className="header-nav-link" href="/contacts">{t.headerNavLinks.currentAccount}</Link>
+                    <Link className="header-nav-link" href="/product">{t.headerNavLinks.currentAccount}</Link>
                   </div>
                   <div className="toggleSubMenu">
-                    <Link className="header-nav-link" href="/contacts">{t.headerNavLinks.payments}</Link>
+                    <Link className="header-nav-link" href="/payments">{t.headerNavLinks.payments}</Link>
                   </div>
                 </div>
               }
@@ -77,10 +77,10 @@ function Header() {
                 creditSubMenuShow &&
                 <div className="dropDownCredit">
                   <div className="toggleSubMenu">
-                    <Link className="header-nav-link" href="/contacts">{t.headerNavLinks.mortgageLoan}</Link>
+                    <Link className="header-nav-link" href="/credits">{t.headerNavLinks.mortgageLoan}</Link>
                   </div>
                   <div className="toggleSubMenu">
-                    <Link className="header-nav-link" href="/contacts">{t.headerNavLinks.consumerLoan}</Link>
+                    <Link className="header-nav-link" href="/credits">{t.headerNavLinks.consumerLoan}</Link>
                   </div>
                   <div className="toggleSubMenu">
                     <Link className="header-nav-link" href="/contacts">{t.headerNavLinks.equityLoan}</Link>
