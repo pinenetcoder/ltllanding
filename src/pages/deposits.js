@@ -137,7 +137,7 @@ export default function Deposit() {
               </div>
             </div>
           </section>
-          <section id="calculator" className={styles.depositSection}>
+          <section id="calculator" className={styles.calculatorSection}>
             <h2>{t.termDeposit.calcBlock.title}</h2>
             <div className={styles.calculatorWrapper}>
               <div className={styles.calculatorBlock}>
