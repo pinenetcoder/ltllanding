@@ -439,6 +439,86 @@ export default {
     },
     article: "To apply for the loan, please send us a copy of the annual report, balance sheet and profit (loss) statement of the previous financial year, as well as similar reports of the last quarter to info@ltlku.lt"
   },
+  equityLoan: {
+    heroBlock: {
+      title: "Equity loan: You don‘t have to be big to get a loan",
+      description: "Looking for a loan to leverage the value of your property? Our customised loan is perfect for those who want to use the equity in their property to secure financing.",
+      bullet1: "We can help finance up to 85% of the value of your assets",
+      bullet2: "Get your initial offer within 24 hours",
+      bullet3: "Repayment schedule tailored specifically to your needs",
+      bullet4: "Low fees for early loan repayment",
+      bullet5: "Loan terms of up to 30 years are available",
+      bullet6: "Interest rates starting from 3.50%",
+    },
+    innerLinkBlock: {
+      benefits: "Benefits",
+      interestRates: "Interest rates",
+      process: "Process",
+      priceList: "Price List",
+      clientSuport: "Client Support",
+      faq: "FAQ"
+    },
+    benefitsArticle: {
+      article1: {
+        title: "Investment and expenses financing",
+        description: "Our loan offers endless possibilities - invest in real estate, start a business, or fund any other creative project you have in mind."
+      },
+      article2: {
+        title: "Individual customer service",
+        description: "At our bank, we prioritize individual customer service, which means we guide you through the equity loan process and help you find the loan conditions that match your specific needs and abilities."
+      },
+      article3: {
+        title: "Flexible repayment schedule",
+        description: "Our equity loan comes with a range of repayment options that can be tailored to your individual needs, so you can stay focused on your personal investments. Also, you can defer loan payments for free, if needed."
+      },
+      article4: {
+        title: "Quick initial offer",
+        description: "Quick and easy application process is available with our consumer loan, so you can get approved faster."
+      }
+    },
+    stepProcess: {
+      title: "Loan application process:",
+      step1: {
+        title: "Fill in a loan application form and give the consent",
+        description: "Please fill in the application and signed the consent to enable us to perform an initial assessment"
+      },
+      step2: {
+        title: "Identify yourself and give the consent",
+        description: " You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+      },
+      step3: {
+        title: "Get an initial loan offer",
+        description: "We will reach you within 24 hours with our initial proposal"
+      },
+      step4: {
+        title: "Submit the documents",
+        subTitle: "Since we agree on initial terms and conditions, please send us:",
+        bulletBlock: {
+          bullet1: "Copy of passport, ID or residence permit",
+          bullet2: "Application to join the union",
+          bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)"
+        }
+      }, 
+      step5: {
+        title: "Get the final credit decision and sign the agreement",
+        description: "Once the credit decision to issue the credit is reached, we will invite you to sign the account agreement and other relevant terms and conditions."
+      },
+      step6: {
+        title: "Sign the pledge agreement in the notary office ",
+        description: "We will schedule a notary appointment at a mutually convenient time to finalize the mortgage arrangements."
+      },
+      step7: {
+        title: "Loan disbursement",
+        description: "The credit funds will be disbursed within one business day of completing the pledge."
+      }
+    },
+    clientSuport: {
+      title: "Client support",
+      description: "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt."
+    },
+    faq: "FAQ"
+  },
+
   mortgageLoan: {
     heroBlock: {
       title: "Mortage Loan:You don‘t have to be big to get a loan.",

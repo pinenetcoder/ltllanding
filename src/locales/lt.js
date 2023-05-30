@@ -499,6 +499,85 @@ export default {
       }
     }
   },
+  equityLoan: {
+    heroBlock: {
+      title: "Paskola įkeičiant nuosavą turtą: Jūs neturite būti didelis, kad gautumėte paskolą",
+      description: "Ieškote paskolos, kad dar labiau padidintumėte savo turto vertę? Mūsų paskola įkeičiant nuosavą turtą puikiai tinka tiems, kurie nori panaudoti nuosavą turtą papildomam finansavimui užtikrinti.",
+      bullet1: "Padedame finansuoti iki 85% jūsų nuosavo turto vertės",
+      bullet2: "Gaukite pradinį pasiūlymą per 24 valandas",
+      bullet3: "Specialiai jūsų poreikiams pritaikytas paskolos grąžinimo grafikas",
+      bullet4: "Jokių mokesčių už išankstinį paskolos grąžinimą",
+      bullet5: "Paskolos terminas iki 30 metų",
+      bullet6: "Paskolos palūkanos nuo 3.50%"
+    },
+    innerLinkBlock: {
+      benefits: "Privalumai",
+      process: "Procesas",
+      priceList: "Kainoraštis",
+      clientSuport: "Klientų palaikymas",
+      faq: "D.U.K."
+    },
+    benefitsArticle: {
+      article1: {
+        title: "Investicijų ir išlaidų finansavimas",
+        description: "Mūsų paskola suteikia begalines galimybes – investuokite į nekilnojamąjį turtą, pradėkite verslą ar finansuokite bet kurį jūsų kuriamą projektą."
+      },
+      article2: {
+        title: "Individualus klientų aptarnavimas",
+        description: "Mes teikiame prioritetą individualaus klientų aptarnavimui, kuris padės jums geriau orientuotis paskolos suteikimo procese bei užtikrinti geriausias paskolos sąlygas pagal jūsų poreikius ir galimybes."
+      },
+      article3: {
+        title: "Lankstus paskolos grąžinimo grafikas",
+        description: "Mūsų paskola įkeičiant nekilnojamąjį turtą apima daugybę grąžinimo galimybių, kurios gali būti pritaikytos jūsų individualiems poreikiams, kad galėtumėte susifokusuoti ties savo asmeninę investiciją. Taip pat, galite nemokamai atidėti paskolos grąžinimo mokėjimus, jei to prireiktų."
+      },
+      article4: {
+        title: "Greitas paskolos sprendimas",
+        description: "Greitas ir paprastas paraiškos pateikimo procesas leistų greičiau gauti paskolos patvirtinimą."
+      }
+    },
+    stepProcess: {
+      title: "Loan application process:",
+      step1: {
+        title: "Užpildykite sąskaitos atidarymo formą",
+        description: "Užpildykite paraišką"
+      },
+      step2: {
+        title: "Identifikuokite save",
+        description: " Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+      },
+      step3: {
+        title: "Get an initial loan offer",
+        description: "We will reach you within 24 hours with our initial proposal"
+      },
+      step4: {
+        title: "Pateikite dokumentus",
+        subTitle: "Prašome atsiųsti mums:",
+        bulletBlock: {
+          bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
+          bullet2: "Prašymas įstoti į kredito uniją",
+          bullet3: "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+        }
+      }, 
+      step5: {
+        title: "Get the final credit decision and sign the agreement",
+        description: "Once the credit decision to issue the credit is reached, we will invite you to sign the account agreement and other relevant terms and conditions."
+      },
+      step6: {
+        title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
+        description: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+      },
+      step7: {
+        title: "Loan disbursement",
+        description: "The credit funds will be disbursed within one business day of completing the pledge."
+      }
+    },
+    clientSuport: {
+      title: "Pagalba klientams",
+      description: "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt."
+    },
+    faq: "D.U.K."
+  },
+
   partnership: {
     pageTitle: "Tapkime partneriais",
     description: "Nebereikia būti dideliam, kad būtume partneriais.",
