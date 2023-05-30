@@ -17,13 +17,13 @@ function Header() {
 
   const toggleSubMenu = (type, parentLink) => {
     if (parentLink == 'payment') {
-      if (type === 'open') setPaymentSubMenuShow(true);
-      else setPaymentSubMenuShow(false);
+      if (type === 'open') setPaymentSubMenu(true);
+      else setPaymentSubMenu(false);
       return
     }
 
-    if (type === 'open') setCreditSubMenuShow(true);
-    else setCreditSubMenuShow(false);
+    if (type === 'open') setCreditSubMenu(true);
+    else setCreditSubMenu(false);
     
   }
   

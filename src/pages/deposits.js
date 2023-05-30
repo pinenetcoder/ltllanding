@@ -58,7 +58,7 @@ export default function Deposit() {
           <section className={styles.depositPageWrapper}>
             <div className={styles.depositPageList}>
               <div className={styles.depositHeroItem}>
-                <h1 className={styles.depositTitle}>{t.termDeposit.pageTitle}</h1>
+                <h1 className={styles.depositTitle}>{t.termDeposit.heroBlock.title}</h1>
                 <div className={styles.depositPageDescription}>
                   <p>
                     {t.termDeposit.heroBlock.description}
@@ -72,20 +72,72 @@ export default function Deposit() {
                     <li>{t.termDeposit.heroBlock.bullet6}</li>
                   </ul>
                 </div>
-                <div>
-                  <Link className="light-green-action-button long" href="/">{t.termDeposit.heroBlock.button}</Link>
-                </div>
               </div>
             </div>
           </section>
-          <section className={styles.innerNavigationBlock}>
+          <section className={styles.innerNavigationSection}>
             <div className={styles.innerNavigationLinkList}>
-              <Link className={styles.innerNavLink} href="#calculator">{t.termDeposit.innerLinkBlock.calculator}</Link>
+              <Link className={styles.innerNavLink} href="#benefits">{t.termDeposit.innerLinkBlock.benefits}</Link>
               <Link className={styles.innerNavLink} href="#interestRate">{t.termDeposit.innerLinkBlock.interestRates}</Link>
+              <Link className={styles.innerNavLink} href="#calculator">{t.termDeposit.innerLinkBlock.calculator}</Link>
+              <Link className={styles.innerNavLink} href="#process">{t.termDeposit.innerLinkBlock.process}</Link>
+              <Link className={styles.innerNavLink} href="#clientSuport">{t.termDeposit.innerLinkBlock.clientSuport}</Link>
               <Link className={styles.innerNavLink} href="#faq">{t.termDeposit.faq}</Link>
             </div>
           </section>
-          <section id="calculator" className={styles.depositSection}>
+          <section id="benefits" className={styles.depositBenefitsSection}>
+            <div className={styles.depositBenefitsWrapper}>
+              <div className={styles.depositBenefitsBlock}>
+                <h2>{t.termDeposit.benefitsArticle.article1.title}</h2>
+                <p>{t.termDeposit.benefitsArticle.article1.description}</p>
+              </div>
+              <div className={styles.depositBenefitsBlock}>
+                <h2>{t.termDeposit.benefitsArticle.article2.title}</h2>
+                <p>{t.termDeposit.benefitsArticle.article2.description}</p>
+              </div>
+              <div className={styles.depositBenefitsBlock}>
+                <h2>{t.termDeposit.benefitsArticle.article3.title}</h2>
+                <p>{t.termDeposit.benefitsArticle.article3.description}</p>
+              </div>
+            </div>
+          </section>
+          <section id="interestRate" className={styles.ratesTableSection}>
+            <div className={styles.ratesTableWrapper}>
+              <h3>{t.termDeposit.interestRatesArticle.title}</h3>
+              <p>{t.termDeposit.interestRatesArticle.description}</p>
+              <div className={styles.tableHeading}>
+                <div className={[styles.tableHeadingCell, styles.column1].join(' ')}>Period</div>
+                <div className={[styles.tableHeadingCell, styles.column2].join(' ')}>Interest rate (EUR)</div>
+                <div className={[styles.tableHeadingCell, styles.column3].join(' ')}>Interest rate (USD)</div>
+              </div>
+              <div className={styles.tableDataLine}>
+                <div className={[styles.tableDataCell, styles.column1].join(' ')}>1 month</div>
+                <div className={[styles.tableDataCell, styles.column2].join(' ')}>1.00%</div>
+                <div className={[styles.tableDataCell, styles.column3].join(' ')}>1.00%</div>
+              </div>
+              <div className={styles.tableDataLine}>
+                <div className={[styles.tableDataCell, styles.column1].join(' ')}>3 month</div>
+                <div className={[styles.tableDataCell, styles.column2].join(' ')}>1.75%</div>
+                <div className={[styles.tableDataCell, styles.column3].join(' ')}>1.75%</div>
+              </div>
+              <div className={styles.tableDataLine}>
+                <div className={[styles.tableDataCell, styles.column1].join(' ')}>6 month</div>
+                <div className={[styles.tableDataCell, styles.column2].join(' ')}>2.00%</div>
+                <div className={[styles.tableDataCell, styles.column3].join(' ')}>2.00%</div>
+              </div>
+              <div className={styles.tableDataLine}>
+                <div className={[styles.tableDataCell, styles.column1].join(' ')}>12 month</div>
+                <div className={[styles.tableDataCell, styles.column2].join(' ')}>2.50%</div>
+                <div className={[styles.tableDataCell, styles.column3].join(' ')}>3.00%</div>
+              </div>
+              <div className={styles.tableDataLine}>
+                <div className={[styles.tableDataCell, styles.column1].join(' ')}>18 month</div>
+                <div className={[styles.tableDataCell, styles.column2].join(' ')}>3.10%</div>
+                <div className={[styles.tableDataCell, styles.column3].join(' ')}>3.00%</div>
+              </div>
+            </div>
+          </section>
+          <section id="calculator" className={styles.calculatorSection}>
             <h2>{t.termDeposit.calcBlock.title}</h2>
             <div className={styles.calculatorWrapper}>
               <div className={styles.calculatorBlock}>
@@ -122,39 +174,70 @@ export default function Deposit() {
               <Link className="light-green-action-button long" href="/">{t.termDeposit.calcBlock.button}</Link>
             </div>
           </section>
-          <section id="interestRate" className={styles.ratesTableSection}>
-            <div className={styles.ratesTableWrapper}>
-              <h3>Rates</h3>
-              <div className={styles.tableHeading}>
-                <div className={[styles.tableHeadingCell, styles.column1].join(' ')}>Period</div>
-                <div className={[styles.tableHeadingCell, styles.column2].join(' ')}>Interest rate (EUR)</div>
-                <div className={[styles.tableHeadingCell, styles.column3].join(' ')}>Interest rate (USD)</div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>1 month</div>
-                <div className={[styles.tableDataCell, styles.column2].join(' ')}>1.00%</div>
-                <div className={[styles.tableDataCell, styles.column3].join(' ')}>1.00%</div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>3 month</div>
-                <div className={[styles.tableDataCell, styles.column2].join(' ')}>1.75%</div>
-                <div className={[styles.tableDataCell, styles.column3].join(' ')}>1.75%</div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>6 month</div>
-                <div className={[styles.tableDataCell, styles.column2].join(' ')}>2.00%</div>
-                <div className={[styles.tableDataCell, styles.column3].join(' ')}>2.00%</div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>12 month</div>
-                <div className={[styles.tableDataCell, styles.column2].join(' ')}>2.50%</div>
-                <div className={[styles.tableDataCell, styles.column3].join(' ')}>3.00%</div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>18 month</div>
-                <div className={[styles.tableDataCell, styles.column2].join(' ')}>3.10%</div>
-                <div className={[styles.tableDataCell, styles.column3].join(' ')}>3.00%</div>
-              </div>
+          <section id="process" className={styles.depositsStepsSection}>
+            <div className={styles.depositsStepsWrapper}>
+                <div className={styles.stepsHeader}>
+                  <h3>{t.termDeposit.stepProcess.title}</h3>
+                </div>
+                <div className={styles.stepsList}>
+                  <div className={styles.stepsItem}>
+                      <div className={styles.stepsNumber}>1</div>
+                      <div className={styles.stepsText}>
+                        <h2 className={styles.stepsTitle}>{t.termDeposit.stepProcess.step1.title}</h2>
+                        <div className={styles.stepsDescription}>
+                            {t.termDeposit.stepProcess.step1.text}
+                        </div>
+                      </div>
+                  </div>
+                  <div className={styles.stepsItem}>
+                      <div className={styles.stepsNumber}>2</div>
+                      <div className={styles.stepsText}>
+                        <h2 className={styles.stepsTitle}>{t.termDeposit.stepProcess.step2.title}</h2>
+                        <div className={styles.stepsDescription}>
+                            {t.termDeposit.stepProcess.step2.text}
+                        </div>
+                      </div>
+                  </div>
+                  <div className={styles.stepsItem}>
+                      <div className={styles.stepsNumber}>3</div>
+                      <div className={styles.stepsText}>
+                        <h2 className={styles.stepsTitle}>{t.termDeposit.stepProcess.step3.title}</h2>
+                        <div className={styles.stepsDescription}>
+                            <ul>
+                              <li>{t.termDeposit.stepProcess.step3.bulletBlock.bullet1}</li>
+                              <li>{t.termDeposit.stepProcess.step3.bulletBlock.bullet2}</li>
+                              <li>{t.termDeposit.stepProcess.step3.bulletBlock.bullet3}</li>
+                            </ul>
+                        </div>
+                      </div>
+                  </div>
+                  <div className={styles.stepsItem}>
+                      <div className={styles.stepsNumber}>4</div>
+                      <div className={styles.stepsText}>
+                        <h2 className={styles.stepsTitle}>{t.termDeposit.stepProcess.step4.title}</h2>
+                        <div className={styles.stepsDescription}>
+                            {t.termDeposit.stepProcess.step4.text}
+                        </div>
+                      </div>
+                  </div>
+                  <div className={styles.stepsItem}>
+                      <div className={styles.stepsNumber}>5</div>
+                      <div className={styles.stepsText}>
+                        <h2 className={styles.stepsTitle}>{t.termDeposit.stepProcess.step5.title}</h2>
+                        <div className={styles.stepsDescription}>
+                            {t.termDeposit.stepProcess.step5.text}
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </section>
+          <section id="clientSuport" className={styles.clientSuportSection}>
+            <div className={styles.clientSuportWrapper}>
+                <h3 className={styles.clientSuportHeader}>{t.privetCurrentAccount.clientSuport.title}</h3>
+                <div className={styles.clientSuportDescription}>
+                  {t.privetCurrentAccount.clientSuport.description}
+                </div>
             </div>
           </section>
           <section id="faq" className={styles.faqSection}>

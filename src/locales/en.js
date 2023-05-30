@@ -98,9 +98,8 @@ export default {
     },
   },
   termDeposit: {
-    pageTitle: "Term deposit",
-    description: "You don‘t have to be big to make a fortune/your fortune grow",
     heroBlock: {
+      title: "Term deposit: You don‘t have to be big to make a fortune/your fortune grow",
       description: "Save your own money and watch your wealth grow — free is now more powerful than ever!",
       bullet1: "Get the best (top) interest rates on the market",
       bullet2: "Your deposits are protected by deposit insurance. Learn more",
@@ -111,8 +110,57 @@ export default {
       button: "Submit a deposit application"
     },
     innerLinkBlock: {
-      calculator: "Calculator",
+      benefits: "Benefits",
       interestRates: "Interest rates",
+      calculator: "Calculator",
+      process: "Process",
+      clientSuport: "Client Support",
+      faq: "FAQ"
+    },
+    benefitsArticle: {
+      article1: {
+        title: "Term deposit",
+        description: "A term deposit is a type of deposit where you agree to keep your money with our financial institution for a set period. During this time, you earn a fixed interest rate (link) that is determined by the length of the deposit. You can choose to receive interest payments monthly, quarterly, semi-annually, annually or at the end of the term. Please note that opting for monthly payments may slightly reduce the interest rate by 0.3% from stated interest rates."
+      },
+      article2: {
+        title: "Deposit insurance",
+        description: "You can make deposits with confidence, knowing that your funds are maximally secure. Our participation in the deposit insurance system of the Republic of Lithuania means that your deposits up to EUR 100 000 are insured. Take a closer look at the deposit insurance terms and conditions."
+      },
+      article3: {
+        title: "Loyalty rewards and benefits",
+        description: "Get more out of your commitment with our exceptional loyalty programs. We offer attractive rewards and special pricing to show our appreciation for your loyalty. We value your long-term partnership and thank you for choosing us."
+      }
+    },
+    interestRatesArticle: {
+      title: "Interest rates",
+      description: "Maximize your savings with our term deposit options! Enjoy attractive interest rates that guarantee you a fixed return on your investment. Invest with us today and start earning more. Don't miss out on our interest rate offers."
+    },
+    stepProcess: {
+      title: "Term deposit opening processs",
+      step1: {
+        title: "Fill in an account opening form",
+        text: "Please fill in the application"
+      },
+      step2: {
+        title: "Identify yourself",
+        text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+      },
+      step3: {
+        title: "Submit the documents",
+        bulletBlock: {
+          bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
+          bullet2: "Prašymas įstoti į kredito uniją",
+          bullet3: "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+        }
+      }, 
+      step4: {
+        title: "Sign the bank account agreement",
+        text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+      },
+      step5: {
+        title: "Start using our payment services",
+        text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+      }
     },
     calcBlock: {
       title: "Use our tool to calculate the interest you'll earn",

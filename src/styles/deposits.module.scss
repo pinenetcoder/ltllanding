@@ -11,6 +11,8 @@
 
       .depositTitle {
          font-size: 30px;
+         font-weight: 700;
+         line-height: 38px;
          margin-bottom: 35px;
       }
    }
@@ -18,10 +20,12 @@
    .depositPageDescription {
       font-weight: 400;
       font-size: 18px;
+      line-height: 24px;
       color: #000000;
       margin-bottom: 35px;
 
       li {
+         font-weight: 300;
          list-style-type: none;
          padding-left: 26px;
          background: url(/assets/images/check2.svg) no-repeat left center;
@@ -40,7 +44,6 @@
          font-weight: 300;
          font-size: 16px;
       }
-
    }
 
    .actionButtonBlock {
@@ -58,9 +61,14 @@
       text-decoration: none;
    }
 }
-.innerNavigationBlock {
-   padding: 30px 0 45px 0;
- 
+
+.innerNavigationSection {
+   padding: 44px 0 34px 0;
+   position: sticky;
+   top: 100px;
+   background-color: var(--main-background);
+   z-index: 11;
+
    .innerNavigationLinkList {
      display: flex;
      justify-content: center;
@@ -87,8 +95,37 @@
    }
  }
 
- .depositSection {
-   padding: 45px 0 64px 0;
+ .depositBenefitsSection {
+   padding: 100px 0 54px 0;
+
+   .depositBenefitsWrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 15px 0 15px;
+      display: flex;
+      gap: 64px;
+   }
+
+   .depositBenefitsBlock {
+      max-width: 274px;
+
+      h2 {
+         font-size: 20px;
+         font-weight: 700;
+         line-height: 25px;
+         margin-bottom: 34px;
+      }
+
+      p {
+         font-size: 17px;
+         font-weight: 300;
+         line-height: 22px;
+      }
+   }
+ }
+
+ .calculatorSection {
+   padding: 50px 0 64px 0;
    .calculatorWrapper {
       width: 790px;
       margin: 0 auto;
@@ -132,7 +169,6 @@
       }
    }
    
-
    .calculatorLine {
       display: flex;
       gap: 40px;
@@ -174,14 +210,15 @@
    .select {
       width: 198px;
       background: url(/assets/images/men.svg) no-repeat right center;
-      &::after {
-         content: "";
-         display: block;
-         position: relative;
-         height: 1px;
-         background-color: var(--theme-color4);
-         margin-top: 6px;
-      }
+      
+         &::after {
+            content: "";
+            display: block;
+            position: relative;
+            height: 1px;
+            background-color: var(--theme-color4);
+            margin-top: 6px;
+         }
 
       select {
          border: none;
@@ -259,6 +296,14 @@
       margin-bottom: 56px;
    }
 
+   p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 22px;
+      margin-bottom: 56px;
+      text-align: center;
+   }
+
    .tableHeading {
       display: flex;
       border-top: solid 1px var(--table-border-color);
@@ -272,8 +317,6 @@
 
    .tableDataCell {
       font-weight: 300;
-
-      
    }
    .column1 {
       width: 228px;
@@ -294,6 +337,87 @@
       }
    }
 }
+
+.depositsStepsSection {
+   padding: 66px 0 56px 0;
+ 
+   .depositsStepsWrapper {
+     max-width: 765px;
+     padding: 0 15px 0 15px;
+     margin: 0 auto;
+ 
+     .stepsHeader {
+       font-family: Lexend;
+       font-size: 25px;
+       font-weight: 700;
+       text-align: center;
+       margin-bottom: 54px;
+     }
+ 
+     .stepsItem {
+       display: flex;
+       gap: 60px;
+       margin-bottom: 49px;
+ 
+       .stepsNumber {
+         background-color: var(--theme-color1);
+         color: var(--white-text-color);
+         font-size: 23px;
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 51px;
+         height: 51px;
+       }
+ 
+       .stepsText {
+         display: flex;
+         flex-direction: column;
+ 
+         .stepsTitle {
+           font-weight: 700;
+           font-size: 20px;
+           line-height: 25px;
+           margin-bottom: 20px;
+         }
+ 
+         .stepsDescription {
+           font-size: 17px;
+           font-weight: 300;
+           line-height: 21px;
+           width: 624px;
+         }
+       }
+     }
+   }
+ }
+
+ .clientSuportSection {
+   padding: 56px 0 22px 0;
+ 
+   .clientSuportWrapper {
+     max-width: 890px;
+     margin: 0 auto;
+     padding: 0 15px 0 15px;
+ 
+     .clientSuportHeader {
+       font-size: 25px;
+       font-weight: 700;
+       line-height: 31px;
+       text-align: center;
+       margin-bottom: 60px;
+     }
+ 
+     .clientSuportDescription {
+       font-size: 17px;
+       font-weight: 300;
+       line-height: 21px;
+       text-align: center;
+     }
+   }
+ }
+ 
 .faqSection {
    padding: 58px 0 108px 0;
  

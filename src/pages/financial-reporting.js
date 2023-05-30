@@ -123,13 +123,13 @@ export default function FinancialReporting() {
                            <div key={idx} className={styles.quarterItem}>
                               <h4>{quater.quarterName}</h4>
                               <div className={styles.linkList}>
-                                 {quater.quarterLinks.map((link, idx) => {
+                                 {quater.quarterLinks.map((link, index) => {
                                     return (
-                                       <div className={styles.linksItem}>
+                                       <div className={styles.linksItem}  key={index}>
                                           <div className={styles.iconImg}>
                                              <img src="/assets/images/Pdficon.svg" alt="Pdf IFile" />
                                           </div>
-                                             <Link key={idx} href={link.linkUrl}>{link.linkName}</Link>
+                                             <Link href={link.linkUrl}>{link.linkName}</Link>
                                        </div>
                                     )
                                  })}
@@ -189,11 +189,11 @@ export default function FinancialReporting() {
                            <div key={idx} className={styles.quarterItem}>
                               <h4>{quater.quarterName}</h4>
                               <div className={styles.linkList}>
-                                 {quater.quarterLinks.map((link, idx) => {
+                                 {quater.quarterLinks.map((link, index) => {
                                     return (
-                                       <div className={styles.linksItem}>
+                                       <div className={styles.linksItem} key={index}>
                                           <img className={styles.iconImg} src="/assets/images/Pdficon.svg" alt="Pdf File" />
-                                          <Link key={idx} href={link.linkUrl}>{link.linkName}</Link>
+                                          <Link href={link.linkUrl}>{link.linkName}</Link>
                                        </div>
                                     )
                                  })}
