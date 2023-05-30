@@ -112,7 +112,6 @@ export default {
     innerLinkBlock: {
       benefits: "Benefits",
       interestRates: "Interest rates",
-      calculator: "Calculator",
       process: "Process",
       clientSuport: "Client Support",
       faq: "FAQ"
@@ -147,10 +146,11 @@ export default {
       },
       step3: {
         title: "Submit the documents",
+        subTitle: "Please send us:",
         bulletBlock: {
-          bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-          bullet2: "Prašymas įstoti į kredito uniją",
-          bullet3: "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+          bullet1: "Copy of passport, ID or residence permit",
+          bullet2: "Application to join the union",
+          bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
         }
       }, 
       step4: {
@@ -380,16 +380,23 @@ export default {
     },
     article: "To apply for the loan, please send us a copy of the annual report, balance sheet and profit (loss) statement of the previous financial year, as well as similar reports of the last quarter to info@ltlku.lt"
   },
-  housingLoan: {
-    pageTitle: "Housing loan",
-    subTitle: "You don‘t have to be big to get a loan.",
+  mortgageLoan: {
     heroBlock: {
+      title: "Mortage Loan:You don‘t have to be big to get a loan.",
       description: "Get the same great loan options as the big guys, without the hassle! Our mortgage loan product is designed to give everyone an equal chance at homeownership, regardless of their size. With competitive rates and flexible repayment options, there's no better choice for your mortgage needs.",
       bullet1: "We can help finance up to 85% of the value of your dream home",
       bullet2: "Get your initial offer within 24 hours",
       bullet3: "Postpone loan repayment for free if needed",
       bullet4: "No fees for early loan repayment",
-      bullet5: "Loan terms of up to 30 years are available"
+      bullet5: "Loan terms of up to 30 years are available",
+      bullet6: "Loan interest from 3.50%"
+    },
+    innerLinkBlock: {
+      benefits: "Benefits",
+      process: "Process",
+      priceList: "Price List",
+      clientSuport: "Client Support",
+      faq: "FAQ"
     },
     articleBlock: {
       article1: {
@@ -397,22 +404,46 @@ export default {
         text: "Whether you are looking to purchase a home, construct a new property, or renovate an existing one, a mortgage loan product can provide the necessary funds."
       },
       article2: {
-        title: "Quick initial offer",
-        text: "Quick and easy application process is available with our housing loan, so you can get approved faster. We offer a quick and easy application process, so you can get approved for your housing loan faster. We offer a quick initial offer for our housing loan product, so you can get an idea of what you qualify for in just a matter of minutes."
-      },
-      article3: {
         title: "Individual customer service",
         text: "At our bank, we prioritize individual customer service, which means we guide you through the home loan process and help you find the loan conditions that match your specific needs and abilities."
       },
-      article4: {
+      article3: {
         title: "Flexible repayment schedule",
         text: "Our housing loan comes with a range of repayment options that can be tailored to your individual needs, so you can enjoy a stress-free homeownership experience. Also, you can defer loan payments for free, if needed."
       },
-      article5: {
-        title: "Rates",
-        text: "Competitive interest rates are offered with our housing loan product, allowing you to save money over the life of the loan. We offer competitive interest rates and personalized customer service to ensure that you get the best possible deal on your housing loan."
+      article4: {
+        title: "Quick initial offer",
+        text: "Quick and easy application process is available with our housing loan, so you can get approved faster."
+      },
+    },
+    stepProcess: {
+      title: "Loan application process:",
+      step1: {
+        title: "Fill in an account opening form",
+        text: "Please fill in the application"
+      },
+      step2: {
+        title: "Identify yourself",
+        text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+      },
+      step3: {
+        title: "Submit the documents",
+        subTitle: "Please send us:",
+        bulletBlock: {
+          bullet1: "Copy of passport, ID or residence permit",
+          bullet2: "Application to join the union",
+          bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+        }
+      }, 
+      step4: {
+        title: "Sign the bank account agreement",
+        text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+      },
+      step5: {
+        title: "Start using our payment services",
+        text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
       }
-    }
+    },
   },
   partnership: {
     pageTitle: "Partnership",
