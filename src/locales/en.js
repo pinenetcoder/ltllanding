@@ -132,7 +132,10 @@ export default {
     },
     interestRatesArticle: {
       title: "Interest rates",
-      description: "Maximize your savings with our term deposit options! Enjoy attractive interest rates that guarantee you a fixed return on your investment. Invest with us today and start earning more. Don't miss out on our interest rate offers."
+      description: "Maximize your savings with our term deposit options! Enjoy attractive interest rates that guarantee you a fixed return on your investment. Invest with us today and start earning more. Don't miss out on our interest rate offers.",
+      period: "Period",
+      interestRate: "Interest rate",
+      month: "month",
     },
     stepProcess: {
       title: "Term deposit opening processs",
@@ -171,6 +174,11 @@ export default {
       amountOfInterest: "Amount of interest",
       button: "Submit a deposit application"
     },
+    clientSuport: {
+      title: "Client support",
+      description: "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt."
+    },
+
     faq: "FAQ"
   },
   openBanking: {

@@ -119,34 +119,38 @@ export default {
     },
     benefitsArticle: {
       article1: {
-        title: "Term deposit",
-        description: "A term deposit is a type of deposit where you agree to keep your money with our financial institution for a set period. During this time, you earn a fixed interest rate (link) that is determined by the length of the deposit. You can choose to receive interest payments monthly, quarterly, semi-annually, annually or at the end of the term. Please note that opting for monthly payments may slightly reduce the interest rate by 0.3% from stated interest rates."
+        title: "Terminuotas indėlis",
+        description: "Terminuotasis indėlis – tai indėlio rūšis, kai sutinkate savo pinigus mūsų finansų įstaigoje laikyti tam tikrą laikotarpį. Per šį laiką jūs uždirbsite fiksuotą palūkanų normą (nuorodą), kuri nustatoma pagal indėlio trukmę. Palūkanas galite gauti kas mėnesį, kas ketvirtį, pusmetį, kasmet arba termino pabaigoje. Atkreipkite dėmesį, kad pasirinkus mėnesines įmokas, palūkanų norma gali šiek tiek mažėti (0,3%) nuo nurodytų palūkanų normų."
       },
       article2: {
-        title: "Deposit insurance",
-        description: "You can make deposits with confidence, knowing that your funds are maximally secure. Our participation in the deposit insurance system of the Republic of Lithuania means that your deposits up to EUR 100 000 are insured. Take a closer look at the deposit insurance terms and conditions."
+        title: "Indėlių apsauga",
+        description: "Galite drąsiai deponuoti lėšas, žinodami, kad jūsų lėšos yra maksimaliai apsaugotos. Mūsų dalyvavimas Lietuvos Respublikos indėlių draudimo sistemoje reiškia, kad Jūsų indėliai iki 100 000 EUR yra apdrausti. Kviečiame jus išsamiau susipažinti su indėlių draudimo sąlygomis (link)."
       },
       article3: {
-        title: "Loyalty rewards and benefits",
-        description: "Get more out of your commitment with our exceptional loyalty programs. We offer attractive rewards and special pricing to show our appreciation for your loyalty. We value your long-term partnership and thank you for choosing us."
+        title: "Lojalumo atlygis",
+        description: "Išnaudokite daugiau galimybių naudodamiesi mūsų išskirtinėmis lojalumo programomis. Siūlome patrauklius atlygius ir specialias palūkanas, kaip dėkingumą už jūsų lojalumą. Vertiname ilgalaikę partnerystę ir dėkojame, kad pasirinkote mus."
       }
     },
     interestRatesArticle: {
-      title: "Interest rates",
-      description: "Maximize your savings with our term deposit options! Enjoy attractive interest rates that guarantee you a fixed return on your investment. Invest with us today and start earning more. Don't miss out on our interest rate offers."
+      title: "Indėlių palūkanos",
+      description: "Sutaupykite maksimaliai naudodamiesi mūsų terminuoto indėlio galimybėmis! Mėgaukitės patraukliomis palūkanų normomis, kurios garantuoja jums fiksuotą investicijų grąžą. Investuokite su mumis ir pradėkite uždirbti daugiau jau šiandien. Nepraleiskite mūsų palūkanų normų pasiūlymų.",
+      period: "Laikotarpis",
+      interestRate: "Palūkanų norma",
+      month: "mėn.",
     },
     stepProcess: {
-      title: "Term deposit opening processs",
+      title: "Terminuoto indėlio sąskaitos atidarymo procesas",
       step1: {
-        title: "Fill in an account opening form",
-        text: "Please fill in the application"
+        title: "Užpildykite sąskaitos atidarymo form",
+        text: "Užpildykite paraišką"
       },
       step2: {
-        title: "Identify yourself",
-        text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+        title: "Identifikuokite save",
+        text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
       },
       step3: {
-        title: "Submit the documents",
+        title: "Pateikite dokumentus",
+        subTitle: "Prašome atsiųsti mums:",
         bulletBlock: {
           bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
           bullet2: "Prašymas įstoti į kredito uniją",
@@ -154,12 +158,12 @@ export default {
         }
       }, 
       step4: {
-        title: "Sign the bank account agreement",
-        text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+        title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
+        text: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
       },
       step5: {
-        title: "Start using our payment services",
-        text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+        title: "Valdykite savo terminuoto indėlio sąskaitą",
+        text: "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
       }
     },
     calcBlock: {
@@ -170,6 +174,10 @@ export default {
       altogether: "Iš viso",
       amountOfInterest: "Palūkanų suma",
       button: "Pateikti indėlio paraišką"
+    },
+    clientSuport: {
+      title: "Pagalba klientams",
+      description: "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt."
     },
     faq: "D.U.K."
   },

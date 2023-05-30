@@ -106,32 +106,32 @@ export default function Deposit() {
               <h3>{t.termDeposit.interestRatesArticle.title}</h3>
               <p>{t.termDeposit.interestRatesArticle.description}</p>
               <div className={styles.tableHeading}>
-                <div className={[styles.tableHeadingCell, styles.column1].join(' ')}>Period</div>
-                <div className={[styles.tableHeadingCell, styles.column2].join(' ')}>Interest rate (EUR)</div>
-                <div className={[styles.tableHeadingCell, styles.column3].join(' ')}>Interest rate (USD)</div>
+                <div className={[styles.tableHeadingCell, styles.column1].join(' ')}>{t.termDeposit.interestRatesArticle.period}</div>
+                <div className={[styles.tableHeadingCell, styles.column2].join(' ')}>{t.termDeposit.interestRatesArticle.interestRate} (EUR)</div>
+                <div className={[styles.tableHeadingCell, styles.column3].join(' ')}>{t.termDeposit.interestRatesArticle.interestRate} (USD)</div>
               </div>
               <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>1 month</div>
+                <div className={[styles.tableDataCell, styles.column1].join(' ')}>1 {t.termDeposit.interestRatesArticle.month}</div>
                 <div className={[styles.tableDataCell, styles.column2].join(' ')}>1.00%</div>
                 <div className={[styles.tableDataCell, styles.column3].join(' ')}>1.00%</div>
               </div>
               <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>3 month</div>
+                <div className={[styles.tableDataCell, styles.column1].join(' ')}>3 {t.termDeposit.interestRatesArticle.month}</div>
                 <div className={[styles.tableDataCell, styles.column2].join(' ')}>1.75%</div>
                 <div className={[styles.tableDataCell, styles.column3].join(' ')}>1.75%</div>
               </div>
               <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>6 month</div>
+                <div className={[styles.tableDataCell, styles.column1].join(' ')}>6 {t.termDeposit.interestRatesArticle.month}</div>
                 <div className={[styles.tableDataCell, styles.column2].join(' ')}>2.00%</div>
                 <div className={[styles.tableDataCell, styles.column3].join(' ')}>2.00%</div>
               </div>
               <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>12 month</div>
+                <div className={[styles.tableDataCell, styles.column1].join(' ')}>12 {t.termDeposit.interestRatesArticle.month}</div>
                 <div className={[styles.tableDataCell, styles.column2].join(' ')}>2.50%</div>
                 <div className={[styles.tableDataCell, styles.column3].join(' ')}>3.00%</div>
               </div>
               <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>18 month</div>
+                <div className={[styles.tableDataCell, styles.column1].join(' ')}>18 {t.termDeposit.interestRatesArticle.month}</div>
                 <div className={[styles.tableDataCell, styles.column2].join(' ')}>3.10%</div>
                 <div className={[styles.tableDataCell, styles.column3].join(' ')}>3.00%</div>
               </div>
@@ -202,6 +202,7 @@ export default function Deposit() {
                       <div className={styles.stepsNumber}>3</div>
                       <div className={styles.stepsText}>
                         <h2 className={styles.stepsTitle}>{t.termDeposit.stepProcess.step3.title}</h2>
+                        <p>{t.termDeposit.stepProcess.step3.subTitle}</p>
                         <div className={styles.stepsDescription}>
                             <ul>
                               <li>{t.termDeposit.stepProcess.step3.bulletBlock.bullet1}</li>
@@ -234,9 +235,9 @@ export default function Deposit() {
           </section>
           <section id="clientSuport" className={styles.clientSuportSection}>
             <div className={styles.clientSuportWrapper}>
-                <h3 className={styles.clientSuportHeader}>{t.privetCurrentAccount.clientSuport.title}</h3>
+                <h3 className={styles.clientSuportHeader}>{t.termDeposit.clientSuport.title}</h3>
                 <div className={styles.clientSuportDescription}>
-                  {t.privetCurrentAccount.clientSuport.description}
+                  {t.termDeposit.clientSuport.description}
                 </div>
             </div>
           </section>
