@@ -79,7 +79,7 @@ function Header() {
                 creditSubMenu &&
                 <div className="dropDownCredit">
                   <div className="toggleSubMenu">
-                    <Link className="header-nav-link" href="/credits">{t.headerNavLinks.mortgageLoan}</Link>
+                    <Link className="header-nav-link" href="/credits/mortgage">{t.headerNavLinks.mortgageLoan}</Link>
                   </div>
                   <div className="toggleSubMenu">
                     <Link className="header-nav-link" href="/credits">{t.headerNavLinks.consumerLoan}</Link>

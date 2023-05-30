@@ -376,10 +376,9 @@ export default {
     },
     article: "Norėdami pateikti paskolos paraišką, atsiųskite mums praėjusių finansinių metų metinės ataskaitos, balanso ir pelno (nuostolių) ataskaitos kopiją bei analogiškas pastarojo ketvirčio ataskaitas adresu info@ltlku.lt"
   },
-  housingLoan: {
-    pageTitle: "Būsto paskola",
-    subTitle: "Nebereikia būti dideliam, kad gautumėte paskolą.",
+  mortgageLoan: {
     heroBlock: {
+      title: "BŪSTO PASKOLA:Nebereikia būti dideliam, kad gautumėte paskolą.",
       description: "Gaukite tuos pačius puikius būsto paskolos sprendimus, kaip ir dideli vaikinai, be vargo! Mūsų būsto paskola skirta suteikti visiems vienodas galimybes įsigyti būstą, nepaisant jų pajamų dydžio. Dėl konkurencingų palūkanų normų ir lanksčių grąžinimo galimybių nėra geresnio pasirinkimo jūsų individualiems poreikiams patenkinti.",
       bullet1: "Padedame finansuoti iki 85% jūsų svajonių būsto vertės",
       bullet2: "Gaukite pradinį pasiūlymą per 24 valandas",
@@ -388,26 +387,57 @@ export default {
       bullet5: "Paskolos terminas iki 30 metų",
       bullet6: "Paskolos palūkanos nuo 3.50%"
     },
+    innerLinkBlock: {
+      benefits: "Privalumai",
+      process: "Procesas",
+      priceList: "Kainoraštis",
+      clientSuport: "Klientų palaikymas",
+      faq: "D.U.K."
+    },
     articleBlock: {
       article1: {
         title: "Būsto finansavimas",
         text: "Būsto kreditas yra skirtas jūsų svajonių būsto įsigijimui. Taip pat naudojant kredito lėšas jus galite pasistatyti naują namą arba atnaujinti jau turimą būstą."
       },
       article2: {
-        title: "Greitas paskolos sprendimas",
-        text: "Greitas ir paprastas paraiškos pateikimo procesas vyksta su mūsų būsto paskola, todėl galite greičiau gauti patvirtinimą."
-      },
-      article3: {
         title: "Individualus klientų aptarnavimas",
         text: "Mes teikiame prioritetą individualaus klientų aptarnavimui, kuris padės jums geriau orientuotis būsto paskolos procese bei užtikrinti geriausias paskolos sąlygas pagal jūsų poreikius ir galimybes."
       },
-      article4: {
+      article3: {
         title: "Lankstus paskolos grąžinimo grafikas",
         text: "Mūsų būsto paskola apima daugybę grąžinimo galimybių, kurios gali būti pritaikytos jūsų individualiems poreikiams, kad galėtumėte mėgautis būstu be streso. Taip pat, galite nemokamai atidėti paskolos grąžinimo mokėjimus, jei to prireiktų."
       },
-      article5: {
-        title: "Tarifai",
-        text: "Su mūsų būsto paskolos produktu siūlomos konkurencingos palūkanų normos, leidžiančios sutaupyti pinigų per visą paskolos laikotarpį. Siūlome konkurencingas palūkanas ir individualų klientų aptarnavimą, kad gautumėte geriausią įmanomą būsto paskolos pasiūlymą."
+      article4: {
+        title: "Greitas paskolos sprendimas",
+        text: "Greitas ir paprastas paraiškos pateikimo procesas vyksta su mūsų būsto paskola, todėl galite greičiau gauti patvirtinimą."
+      },
+    },
+    stepProcess: {
+      title: "Paskolos paraiškos pateikimo tvarka",
+      step1: {
+        title: "Užpildykite sąskaitos atidarymo formą",
+        text: "Užpildykite paraišką"
+      },
+      step2: {
+        title: "Identifikuokite save",
+        text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+      },
+      step3: {
+        title: "Pateikite dokumentus",
+        subTitle: "Prašome atsiųsti mums:",
+        bulletBlock: {
+          bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
+          bullet2: "Prašymas įstoti į kredito uniją",
+          bullet3: "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+        }
+      }, 
+      step4: {
+        title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
+        text: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+      },
+      step5: {
+        title: "Valdykite savo terminuoto indėlio sąskaitą",
+        text: "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
       }
     }
   },
