@@ -82,7 +82,7 @@ function Header() {
                     <Link className="header-nav-link" href="/credits/mortgage">{t.headerNavLinks.mortgageLoan}</Link>
                   </div>
                   <div className="toggleSubMenu">
-                    <Link className="header-nav-link" href="/credits">{t.headerNavLinks.consumerLoan}</Link>
+                    <Link className="header-nav-link" href="/credits/consumer-loan">{t.headerNavLinks.consumerLoan}</Link>
                   </div>
                   <div className="toggleSubMenu">
                     <Link className="header-nav-link" href="/contacts">{t.headerNavLinks.equityLoan}</Link>
