@@ -341,17 +341,76 @@ export default {
     },
   },
   consumerLoan: {
-    heroBlockTitle: "Consumer loan",
     heroBlock: {
+      title: "Credit: You don‘t have to be big to get a loan",
       description: "Decide how you use the extra funds with your consumer loan",
-      bullet1: "Whether you want to purchase a car, furniture, computer, travel, get education, invest in start up or just pay off bills our loan is designed to give you the financial freedom you need",
+      bullet1: "Whether you want to purchase a car, furniture, computer, travel, get education, invest in startup or just pay off bills our loan is designed to give you the financial freedom you need",
       bullet2: "No waiting around - we get back to your inquiries ASAP",
       bullet3: "No collateral and insurance required",
       bullet4: "Fixed instalments",
       bullet5: "No fees for early loan repayment",
       bullet6: "Loan terms of up to 84 months are available",
-      bullet7: "Interest rates starting from 3.50%"
+      bullet7: "Interest rates starting from 9.00%",
     },
+    innerLinkBlock: {
+      benefits: "Benefits",
+      interestRates: "Interest rates",
+      process: "Process",
+      priceList: "Price List",
+      clientSuport: "Client Support",
+      faq: "FAQ"
+    },
+    benefitsArticle: {
+      article1: {
+        title: "Consumer loan",
+        description: "Whether you want to purchase a car, furniture, computer, travel, get education, invest in startup or just pay off bills our loan is designed to give you the financial freedom you need."
+      },
+      article2: {
+        title: "Individual customer service",
+        description: "At our bank, we prioritize individual customer service, which means we guide you through the consumer loan process and help you find the loan conditions that match your specific needs and abilities."
+      },
+      article3: {
+        title: "Simple repayment schedule",
+        description: "Our consumer loan repayment schedule is simple: fixed monthly payments. Based on your individual needs, a loan repayment schedule can be tailored to your individual needs. Also, you can postpone loan repayments for free, if needed."
+      },
+      article4: {
+        title: "Quick initial offer",
+        description: "Quick and easy application process is available with our consumer loan, so you can get approved faster."
+      }
+    },
+    stepProcess: {
+      title: "Loan application process:",
+      step1: {
+        title: "Fill in an account opening form",
+        description: "Please fill in the application"
+      },
+      step2: {
+        title: "Identify yourself",
+        description: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+      },
+      step3: {
+        title: "Submit the documents",
+        subTitle: "Please send us:",
+        bulletBlock: {
+          bullet1: "Copy of passport, ID or residence permit",
+          bullet2: "Application to join the union",
+          bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+        }
+      }, 
+      step4: {
+        title: "Sign the bank account agreement",
+        description: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+      },
+      step5: {
+        title: "Start using our payment services",
+        description: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+      }
+    },
+    clientSuport: {
+      title: "Client support",
+      description: "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt."
+    },
+    faq: "FAQ"
   },
   investmentLoan: {
     pageTitle: "Investment loan",

@@ -262,7 +262,7 @@ export default {
       title: "Pagalba klientams",
       description: "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt."
     },
-    faq: "DUK"
+    faq: "D.U.K."
   },
   businessCurrentAccount: {
     heroBlock: {
@@ -337,8 +337,8 @@ export default {
     }
   },
   consumerLoan: {
-    heroBlockTitle: "Vartojimo paskola",
     heroBlock: {
+      title: "Kreditas: Jūs neturite būti didelis, kad gautumėte paskolą",
       description: "Jūs turite nuspręsti, kaip panaudosite vartojimo paskolos lėšas",
       bullet1: "Nesvarbu, ar norite įsigyti automobilį, baldus, kompiuterį, keliauti, įgyti išsilavinimą, investuoti į veiklos pradžią ar tiesiog apmokėti sąskaitas, mūsų paskola skirta suteikti jums reikalingą finansinę laisvę",
       bullet2: "Nereikia ilgai laukti, atsakysime į jūsų užklausą nedelsiant",
@@ -346,8 +346,66 @@ export default {
       bullet4: "Fiksuotos įmokos",
       bullet5: "Jokių mokesčių už išankstinį paskolos grąžinimą",
       bullet6: "Paskolos terminas iki 84 mėnesių",
-      bullet7: "Paskolos palūkanos nuo 3.50%"
+      bullet7: "Paskolos palūkanos nuo 9.00%"
     },
+    innerLinkBlock: {
+      benefits: "Privalumai",
+      process: "Procesas",
+      priceList: "Kainoraštis",
+      clientSuport: "Klientų palaikymas",
+      faq: "D.U.K."
+    },
+    benefitsArticle: {
+      article1: {
+        title: "Vartojimo paskola",
+        description: "Nesvarbu, ar norite įsigyti automobilį, baldus, kompiuterį, keliauti, apmokėti mokslus, investuoti į verslo pradžią ar tiesiog apmokėti sąskaitas, mūsų vartojimo paskola suteiks jums reikalingą finansinę laisvę."
+      },
+      article2: {
+        title: "Individualus klientų aptarnavimas ",
+        description: "Mes teikiame prioritetą individualaus klientų aptarnavimui, kuris padės jums geriau orientuotis vartojimo paskolos suteikimo procese bei užtikrinti geriausias paskolos sąlygas pagal jūsų poreikius ir galimybes."
+      },
+      article3: {
+        title: "Parastas paskolos grąžinimo grafikas",
+        description: "Mūsų vartojimo paskolos grąžinimo grafikas yra paprastas: fiksuotos mėnesio įmokos. Esant jūsų individualiems poreikiams kartu surasime lankstesnių jums tinkamų paskolos grąžinimo galimybių. Taip pat, galite nemokamai atidėti paskolos grąžinimo mokėjimus, jei to prireiktų."
+      },
+      article4: {
+        title: "Greitas paskolos sprendimas",
+        description: "Greitas ir paprastas paraiškos pateikimo procesas leistų greičiau gauti vartojimo paskolos patvirtinimą."
+      }
+    },
+    stepProcess: {
+      title: "Paskolos paraiškos pateikimo tvarka",
+      step1: {
+        title: "Užpildykite sąskaitos atidarymo formą",
+        description: "Užpildykite paraišką"
+      },
+      step2: {
+        title: "Identifikuokite save",
+        description: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+      },
+      step3: {
+        title: "Pateikite dokumentus",
+        subTitle: "Prašome atsiųsti mums:",
+        bulletBlock: {
+          bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
+          bullet2: "Prašymas įstoti į kredito uniją",
+          bullet3: "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+        }
+      }, 
+      step4: {
+        title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
+        description: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+      },
+      step5: {
+        title: "Valdykite savo terminuoto indėlio sąskaitą",
+        description: "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
+      }
+    },
+    clientSuport: {
+      title: "Pagalba klientams",
+      description: "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt."
+    },
+    faq: "D.U.K."
   },
   investmentLoan: {
     pageTitle: "Investicinė paskola",
