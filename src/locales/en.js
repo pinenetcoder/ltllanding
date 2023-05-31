@@ -264,82 +264,6 @@ export default {
     },
     faq: "FAQ"
   },
-  businessCurrentAccount: {
-    heroBlock: {
-      title: "Current account: You don‘t have to be big to be international",
-      description: "Open IBAN account with us, make and receive payments from all over Euro area",
-      bullet1: "Bank on-the-go with our 24/7 online banking services",
-      bullet2: "Move your inbound and outbound funds effortlessly",
-      bullet3: "Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring"
-    },
-    articleBlock: {
-      article1: {
-        title: "Open account",
-        text: "We welcome customers with Lithuanian passports, ID cards, or residence permits issued by the Lithuanian government to open an account with us. You also need to become a member of a credit union to open an account. Please to the process provided below.",
-      },
-      article2: {
-        title: "Log in",
-        text: "Upon opening an account, we will grant you access to our internet banking platform. The most useful way to access your account is to use digital signature (mobile-ID). In case you don’t have the digital ID we can also issue you an unique code.",
-      },
-      article3: {
-        title: "Payments",
-        text: "Open banking makes it possible for companies to design smart, intuitive apps that connect directly to your bank account, making banking easier than ever. With our open banking interface, you can create cutting-edge applications that integrate seamlessly with banking services, providing customers with a superior user experience. API interface makes it possible for users to access their account information and initiate payments conveniently and securely."
-      }
-    },
-    accOpeningProcess: {
-      step1: {
-        title: "Fill in an account opening form",
-        text: "Please fill in the application"
-      },
-      step2: {
-        title: "Identify yourself",
-        text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
-      },
-      step3: {
-        title: "Submit the documents",
-        text: "Please send us: Copy of passport, ID or residence permit Application to join the union A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)"
-      },
-      step4: {
-        title: "Sign the bank account agreement",
-        text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
-      },
-      step5: {
-        title: "Start using our payment services",
-        text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
-      }
-    },
-    articleBlock2: {
-      title: "After you have opened an account",
-      article1: {
-        title: "For private individual",
-        description: "1. Open a personal bank account with us and enjoy zero monthly fees and unlimited transactions.\n 2. Save more with our high-interest personal bank account.3. Bank on-the-go with our 24/7 online and mobile banking services. 4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring. 5. Get a cash bonus of up to $200 when you open a personal bank account with us today."
-      },
-      article2: {
-        title: "For corporate accounts",
-        description: "1. Take your business to the next level with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Access exclusive banking services and account management tools tailored to your business needs.\n4. Enjoy advanced security features such as two-factor authentication and fraud monitoring to keep your account safe.\n5. Open a corporate bank account with us today and receive a cash bonus of up to $500."
-      },
-      article3: {
-        title: "For personal checking accounts",
-        description: "1. Get the most out of your money with our personal checking account, featuring no monthly fees and unlimited transactions.\n 2. Earn high interest on your savings with our premium personal checking account.\n3. Enjoy convenient access to your money with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal checking account with us today and receive a cash bonus of up to $200."
-      },
-      article4: {
-        title: "For business checking accounts",
-        description: "1. Simplify your business finances with our business checking account, featuring easy online management and no monthly fees.\n2. Access exclusive banking services and account management tools tailored to your business needs.\n3. Stay on top of your finances with 24/7 online banking services.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a business checking account with us today and receive a cash bonus of up to $500."
-      },
-      article5: {
-        title: "For corporate accounts",
-        description: "1. Streamline your business finances with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Get access to exclusive banking services and account management tools tailored to your business needs.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
-      },
-      article6: {
-        title: "For corporate accounts",
-        description: "1. Enjoy no monthly fees and unlimited transactions with our bank account product.\n2. Earn high interest rates on your savings with our premium bank account product.\n3. Our bank account product offers convenient access to your money with 24/7 online banking and mobile app.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
-      },
-    },
-    clientSuport: {
-      title: "Client support",
-      description: "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt."
-    },
-  },
   consumerLoan: {
     heroBlock: {
       title: "Credit: You don‘t have to be big to get a loan",
@@ -518,7 +442,6 @@ export default {
     },
     faq: "FAQ"
   },
-
   mortgageLoan: {
     heroBlock: {
       title: "Mortage Loan:You don‘t have to be big to get a loan.",
@@ -636,5 +559,166 @@ export default {
     namePlaceholder: "Name",
     emailPlaceholder: "E-mail address",
     button: "Send"
+  },
+  business: {
+    termDeposit: {
+      heroBlock: {
+        title: "Business - Term deposit: You don‘t have to be big to make a fortune/your fortune grow",
+        description: "Save your own money and watch your wealth grow — free is now more powerful than ever!",
+        bullet1: "Get the best (top) interest rates on the market",
+        bullet2: "Your deposits are protected by deposit insurance. Learn more",
+        bullet3: "Attractive loyalty rewards and benefits",
+        bullet4: "Get individual offers",
+        bullet5: "Deposit terms from 3 to 60 months are available",
+        bullet6: "Interest rates up to 3.95%",
+      },
+      innerLinkBlock: {
+        benefits: "Benefits",
+        interestRates: "Interest rates",
+        calculator: "Calculator",
+        process: "Process",
+        clientSuport: "Client Support",
+        faq: "FAQ"
+      },
+      benefitsArticle: {
+        article1: {
+          title: "Term deposit",
+          description: "A term deposit is a type of deposit where you agree to keep your money with our financial institution for a set period. During this time, you earn a fixed interest rate (link) that is determined by the length of the deposit. You can choose to receive interest payments monthly, quarterly, semi-annually, annually or at the end of the term. Please note that opting for monthly payments may slightly reduce the interest rate by 0.3% from stated interest rates."
+        },
+        article2: {
+          title: "Deposit insurance",
+          description: "You can make deposits with confidence, knowing that your funds are maximally secure. Our participation in the deposit insurance system of the Republic of Lithuania means that your deposits up to EUR 100 000 are insured. Take a closer look at the deposit insurance terms and conditions."
+        },
+        article3: {
+          title: "Loyalty rewards and benefits",
+          description: "Get more out of your commitment with our exceptional loyalty programs. We offer attractive rewards and special pricing to show our appreciation for your loyalty. We value your long-term partnership and thank you for choosing us."
+        }
+      },
+      interestRatesArticle: {
+        title: "Interest rates",
+        description: "Maximize your savings with our term deposit options! Enjoy attractive interest rates that guarantee you a fixed return on your investment. Invest with us today and start earning more. Don't miss out on our interest rate offers.",
+        period: "Period",
+        interestRate: "Interest rate",
+        month: "month",     
+       },
+      stepProcess: {
+        title: "Term deposit opening processs",
+        step1: {
+          title: "Fill in an account opening form",
+          text: "Please fill in the application"
+        },
+        step2: {
+          title: "Identify yourself",
+          text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+        },
+        step3: {
+          title: "Submit the documents",
+          subTitle: "Please send us:",
+          bulletBlock: {
+            bullet1: "Copy of passport, ID or residence permit",
+            bullet2: "Application to join the union",
+            bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+          }
+        }, 
+        step4: {
+          title: "Sign the bank account agreement",
+          text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+        },
+        step5: {
+          title: "Start using our payment services",
+          text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+        }
+      },
+      calcBlock: {
+        title: "Use our tool to calculate the interest you'll earn",
+        ammoutOfDeposit: "Amount of deposit",
+        term: "Term of Deposit",
+        interestRate: "Interest rate",
+        altogether: "Altogether",
+        amountOfInterest: "Amount of interest",
+        button: "Submit a deposit application"
+      },
+      clientSuport: {
+        title: "Client support",
+        description: "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt."
+      },
+      faq: "FAQ"
+    },
+    currentAccount: {
+      heroBlock: {
+        title: "Current account: You don‘t have to be big to be international",
+        description: "Open IBAN account with us, make and receive payments from all over Euro area",
+        bullet1: "Bank on-the-go with our 24/7 online banking services",
+        bullet2: "Move your inbound and outbound funds effortlessly",
+        bullet3: "Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring"
+      },
+      articleBlock: {
+        article1: {
+          title: "Open account",
+          text: "We welcome customers with Lithuanian passports, ID cards, or residence permits issued by the Lithuanian government to open an account with us. You also need to become a member of a credit union to open an account. Please to the process provided below.",
+        },
+        article2: {
+          title: "Log in",
+          text: "Upon opening an account, we will grant you access to our internet banking platform. The most useful way to access your account is to use digital signature (mobile-ID). In case you don’t have the digital ID we can also issue you an unique code.",
+        },
+        article3: {
+          title: "Payments",
+          text: "Open banking makes it possible for companies to design smart, intuitive apps that connect directly to your bank account, making banking easier than ever. With our open banking interface, you can create cutting-edge applications that integrate seamlessly with banking services, providing customers with a superior user experience. API interface makes it possible for users to access their account information and initiate payments conveniently and securely."
+        }
+      },
+      accOpeningProcess: {
+        step1: {
+          title: "Fill in an account opening form",
+          text: "Please fill in the application"
+        },
+        step2: {
+          title: "Identify yourself",
+          text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+        },
+        step3: {
+          title: "Submit the documents",
+          text: "Please send us: Copy of passport, ID or residence permit Application to join the union A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)"
+        },
+        step4: {
+          title: "Sign the bank account agreement",
+          text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+        },
+        step5: {
+          title: "Start using our payment services",
+          text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+        }
+      },
+      articleBlock2: {
+        title: "After you have opened an account",
+        article1: {
+          title: "For private individual",
+          description: "1. Open a personal bank account with us and enjoy zero monthly fees and unlimited transactions.\n 2. Save more with our high-interest personal bank account.3. Bank on-the-go with our 24/7 online and mobile banking services. 4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring. 5. Get a cash bonus of up to $200 when you open a personal bank account with us today."
+        },
+        article2: {
+          title: "For corporate accounts",
+          description: "1. Take your business to the next level with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Access exclusive banking services and account management tools tailored to your business needs.\n4. Enjoy advanced security features such as two-factor authentication and fraud monitoring to keep your account safe.\n5. Open a corporate bank account with us today and receive a cash bonus of up to $500."
+        },
+        article3: {
+          title: "For personal checking accounts",
+          description: "1. Get the most out of your money with our personal checking account, featuring no monthly fees and unlimited transactions.\n 2. Earn high interest on your savings with our premium personal checking account.\n3. Enjoy convenient access to your money with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal checking account with us today and receive a cash bonus of up to $200."
+        },
+        article4: {
+          title: "For business checking accounts",
+          description: "1. Simplify your business finances with our business checking account, featuring easy online management and no monthly fees.\n2. Access exclusive banking services and account management tools tailored to your business needs.\n3. Stay on top of your finances with 24/7 online banking services.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a business checking account with us today and receive a cash bonus of up to $500."
+        },
+        article5: {
+          title: "For corporate accounts",
+          description: "1. Streamline your business finances with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Get access to exclusive banking services and account management tools tailored to your business needs.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
+        },
+        article6: {
+          title: "For corporate accounts",
+          description: "1. Enjoy no monthly fees and unlimited transactions with our bank account product.\n2. Earn high interest rates on your savings with our premium bank account product.\n3. Our bank account product offers convenient access to your money with 24/7 online banking and mobile app.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
+        },
+      },
+      clientSuport: {
+        title: "Client support",
+        description: "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt."
+      },
+    },
   }
 }

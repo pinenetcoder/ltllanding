@@ -264,78 +264,6 @@ export default {
     },
     faq: "D.U.K."
   },
-  businessCurrentAccount: {
-    heroBlock: {
-      title: "Einamoji sąskaita: Nebereikia būti dideliam, kad ... ",
-      description: "Atidarykite IBAN sąskaitą pas mus, atlikite ir gaukite mokėjimus iš visos Euro zonos",
-      bullet1: "24/7 internetinė bankininkystė jūsų paslaugoms",
-      bullet2: "Lengvai siųskite ir gaukite jūsų lėšas",
-      bullet3: "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
-    },
-    articleBlock: {
-      article1: {
-        title: "Banko sąskaitos atidarymas",
-        text: "Pas mus galite atsidaryti sąskaitą, jei turite Lietuvos Respublikos pasą, asmens tapatybės kortelę arba Lietuvos Respublikos Vyriausybės išduotą leidimą gyventi. Taip pat norint atidaryti sąskaitą, reikia tapti kredito unijos nariu. Peržiūrėkite toliau pateiktą procesą.",
-      },
-      article2: {
-        title: "Prisijungimas prie sąskaitos",
-        text: "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos...",
-      },
-      article3: {
-        title: "Mokėjimai",
-        text: "Mūsų atvirosios bankininkystės API yra standartizuota sąsaja, leidžianti trečiųjų šalių kūrėjams saugiai ir patogiai pasiekti finansinius duomenis ir paslaugas iš bankų ir finansų įstaigų. API galia leidžia klientams inicijuoti operacijas per trečiųjų šalių programas vos keliais paspaudimais, nereikia prisijungti prie savo internetinės bankininkystės sąskaitos ar apsilankyti fiziniame banko skyriuje. Mūsų API buvo sukurta kaip RESTful API, kuri naudoja HTTP protokolą ir JSON duomenų formatą, ir sukurta remiantis Berlin Group standartu, išlaikant aukščiausią saugumo lygį."
-      }
-    },
-    accOpeningProcess: {
-      step1: {
-        title: "Užpildykite sąskaitos atidarymo formą",
-        text: "Užpildykite paraišką"
-      },
-      steap2: {
-        title: "Identifikuokite save",
-        text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
-      },
-      step4: {
-        title: "Pasirašykite banko sąskaitos sutartį",
-        text: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti sąskaitos sutartį ir susipažinti su bendrosiomis sąskaitos naudojimo sąlygomis."
-      },
-      step5: {
-        title: "Pradėkite naudotis mūsų mokėjimo paslaugomis",
-        text: "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, kurioje galėsite naudotis mūsų mokėjimo paslaugomis, tvarkyti terminuotųjų indėlių sutartis, peržiūrėti informaciją apie savo kreditus (jei taikoma) ir kt."
-      }
-    },
-    articleBlock2: {
-      title: "After you have opened an account",
-      article1: {
-        title: "For private individual",
-        description: "1. Open a personal bank account with us and enjoy zero monthly fees and unlimited transactions.\n 2. Save more with our high-interest personal bank account.3. Bank on-the-go with our 24/7 online and mobile banking services. 4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring. 5. Get a cash bonus of up to $200 when you open a personal bank account with us today."
-      },
-      article2: {
-        title: "For corporate accounts",
-        description: "1. Take your business to the next level with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Access exclusive banking services and account management tools tailored to your business needs.\n4. Enjoy advanced security features such as two-factor authentication and fraud monitoring to keep your account safe.\n5. Open a corporate bank account with us today and receive a cash bonus of up to $500."
-      },
-      article3: {
-        title: "For personal checking accounts",
-        description: "1. Get the most out of your money with our personal checking account, featuring no monthly fees and unlimited transactions.\n 2. Earn high interest on your savings with our premium personal checking account.\n3. Enjoy convenient access to your money with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal checking account with us today and receive a cash bonus of up to $200."
-      },
-      article4: {
-        title: "For business checking accounts",
-        description: "1. Simplify your business finances with our business checking account, featuring easy online management and no monthly fees.\n2. Access exclusive banking services and account management tools tailored to your business needs.\n3. Stay on top of your finances with 24/7 online banking services.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a business checking account with us today and receive a cash bonus of up to $500."
-      },
-      article5: {
-        title: "For corporate accounts",
-        description: "1. Streamline your business finances with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Get access to exclusive banking services and account management tools tailored to your business needs.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
-      },
-      article6: {
-        title: "For corporate accounts",
-        description: "1. Enjoy no monthly fees and unlimited transactions with our bank account product.\n2. Earn high interest rates on your savings with our premium bank account product.\n3. Our bank account product offers convenient access to your money with 24/7 online banking and mobile app.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
-      },
-    },
-    clientSuport: {
-      title: "Pagalba klientams",
-      description: "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt."
-    }
-  },
   consumerLoan: {
     heroBlock: {
       title: "Kreditas: Jūs neturite būti didelis, kad gautumėte paskolą",
@@ -577,7 +505,6 @@ export default {
     },
     faq: "D.U.K."
   },
-
   partnership: {
     pageTitle: "Tapkime partneriais",
     description: "Nebereikia būti dideliam, kad būtume partneriais.",
@@ -630,5 +557,162 @@ export default {
     namePlaceholder: "Vardas",
     emailPlaceholder: "Elektroninio pašto adresas",
     button: "Siųsti"
+  },
+  business: {
+    termDeposit: {
+      heroBlock: {
+        title: "Verslo - Terminuotas indėlis: Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
+        description: "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas – nemokama dabar yra galingesnė nei bet kada anksčiau",
+        bullet1: "Gaukite geriausias palūkanų normas rinkoje",
+        bullet2: "Jūsų indėliai yra apsaugoti indėlių draudimu. Sužinokite daugiau",
+        bullet3: "Patrauklus lojalumo atlygis ir nauda",
+        bullet4: "Gaukite individualius pasiūlymus",
+        bullet5: "Indėlių terminas nuo 3 iki 60 mėnesių",
+        bullet6: "Paskolos palūkanos nuo 3.50%",
+      },
+      innerLinkBlock: {
+        benefits: "Privalumai",
+        interestRates: "Palūkanų normos",
+        calculator: "Skaičiuoklė",
+        process: "Procesas",
+        clientSuport: "Klientų palaikymas",
+        faq: "D.U.K."
+      },
+      benefitsArticle: {
+        article1: {
+          title: "Terminuotas indėlis",
+          description: "Terminuotasis indėlis – tai indėlio rūšis, kai sutinkate savo pinigus mūsų finansų įstaigoje laikyti tam tikrą laikotarpį. Per šį laiką jūs uždirbsite fiksuotą palūkanų normą (nuorodą), kuri nustatoma pagal indėlio trukmę. Palūkanas galite gauti kas mėnesį, kas ketvirtį, pusmetį, kasmet arba termino pabaigoje. Atkreipkite dėmesį, kad pasirinkus mėnesines įmokas, palūkanų norma gali šiek tiek mažėti (0,3%) nuo nurodytų palūkanų normų."
+        },
+        article2: {
+          title: "Indėlių apsauga",
+          description: "Galite drąsiai deponuoti lėšas, žinodami, kad jūsų lėšos yra maksimaliai apsaugotos. Mūsų dalyvavimas Lietuvos Respublikos indėlių draudimo sistemoje reiškia, kad Jūsų indėliai iki 100 000 EUR yra apdrausti. Kviečiame jus išsamiau susipažinti su indėlių draudimo sąlygomis (link)."
+        },
+        article3: {
+          title: "Lojalumo atlygis",
+          description: "Išnaudokite daugiau galimybių naudodamiesi mūsų išskirtinėmis lojalumo programomis. Siūlome patrauklius atlygius ir specialias palūkanas, kaip dėkingumą už jūsų lojalumą. Vertiname ilgalaikę partnerystę ir dėkojame, kad pasirinkote mus."
+        }
+      },
+      interestRatesArticle: {
+        title: "Indėlių palūkanos",
+        description: "Sutaupykite maksimaliai naudodamiesi mūsų terminuoto indėlio galimybėmis! Mėgaukitės patraukliomis palūkanų normomis, kurios garantuoja jums fiksuotą investicijų grąžą. Investuokite su mumis ir pradėkite uždirbti daugiau jau šiandien. Nepraleiskite mūsų palūkanų normų pasiūlymų.",
+        period: "Laikotarpis",
+        interestRate: "Palūkanų norma",
+        month: "mėn.",      
+      },
+      stepProcess: {
+        title: "Terminuoto indėlio sąskaitos atidarymo procesas",
+        step1: {
+          title: "Užpildykite sąskaitos atidarymo formą",
+          text: "Užpildykite paraišką"
+        },
+        step2: {
+          title: "Identifikuokite save",
+          text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+        },
+        step3: {
+          title: "Pateikite dokumentus",
+          subTitle: "Prašome atsiųsti mums:",
+          bulletBlock: {
+            bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
+            bullet2: "Prašymas įstoti į kredito uniją",
+            bullet3: "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+          }
+        }, 
+        step4: {
+          title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
+          text: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+        },
+        step5: {
+          title: "Valdykite savo terminuoto indėlio sąskaitą",
+          text: "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
+        }
+      },
+      calcBlock: {
+        title: "Naudokite mūsų įrankį, kad apskaičiuotumėte palūkanas, kurias uždirbsite",
+        ammoutOfDeposit: "Indėlio dydis",
+        term: "Indelio terminas",
+        interestRate: "Palūkanų norma",
+        altogether: "Iš viso",
+        amountOfInterest: "Palūkanų suma",
+        button: "Pateikti indėlio paraišką"
+      },
+      clientSuport: {
+        title: "Pagalba klientams",
+        description: "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt."
+      },
+      faq: "D.U.K."
+    },
+    currentAccount: {
+      heroBlock: {
+        title: "Einamoji sąskaita: Nebereikia būti dideliam, kad ... ",
+        description: "Atidarykite IBAN sąskaitą pas mus, atlikite ir gaukite mokėjimus iš visos Euro zonos",
+        bullet1: "24/7 internetinė bankininkystė jūsų paslaugoms",
+        bullet2: "Lengvai siųskite ir gaukite jūsų lėšas",
+        bullet3: "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
+      },
+      articleBlock: {
+        article1: {
+          title: "Banko sąskaitos atidarymas",
+          text: "Pas mus galite atsidaryti sąskaitą, jei turite Lietuvos Respublikos pasą, asmens tapatybės kortelę arba Lietuvos Respublikos Vyriausybės išduotą leidimą gyventi. Taip pat norint atidaryti sąskaitą, reikia tapti kredito unijos nariu. Peržiūrėkite toliau pateiktą procesą.",
+        },
+        article2: {
+          title: "Prisijungimas prie sąskaitos",
+          text: "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos...",
+        },
+        article3: {
+          title: "Mokėjimai",
+          text: "Mūsų atvirosios bankininkystės API yra standartizuota sąsaja, leidžianti trečiųjų šalių kūrėjams saugiai ir patogiai pasiekti finansinius duomenis ir paslaugas iš bankų ir finansų įstaigų. API galia leidžia klientams inicijuoti operacijas per trečiųjų šalių programas vos keliais paspaudimais, nereikia prisijungti prie savo internetinės bankininkystės sąskaitos ar apsilankyti fiziniame banko skyriuje. Mūsų API buvo sukurta kaip RESTful API, kuri naudoja HTTP protokolą ir JSON duomenų formatą, ir sukurta remiantis Berlin Group standartu, išlaikant aukščiausią saugumo lygį."
+        }
+      },
+      accOpeningProcess: {
+        step1: {
+          title: "Užpildykite sąskaitos atidarymo formą",
+          text: "Užpildykite paraišką"
+        },
+        steap2: {
+          title: "Identifikuokite save",
+          text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+        },
+        step4: {
+          title: "Pasirašykite banko sąskaitos sutartį",
+          text: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti sąskaitos sutartį ir susipažinti su bendrosiomis sąskaitos naudojimo sąlygomis."
+        },
+        step5: {
+          title: "Pradėkite naudotis mūsų mokėjimo paslaugomis",
+          text: "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, kurioje galėsite naudotis mūsų mokėjimo paslaugomis, tvarkyti terminuotųjų indėlių sutartis, peržiūrėti informaciją apie savo kreditus (jei taikoma) ir kt."
+        }
+      },
+      articleBlock2: {
+        title: "After you have opened an account",
+        article1: {
+          title: "For private individual",
+          description: "1. Open a personal bank account with us and enjoy zero monthly fees and unlimited transactions.\n 2. Save more with our high-interest personal bank account.3. Bank on-the-go with our 24/7 online and mobile banking services. 4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring. 5. Get a cash bonus of up to $200 when you open a personal bank account with us today."
+        },
+        article2: {
+          title: "For corporate accounts",
+          description: "1. Take your business to the next level with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Access exclusive banking services and account management tools tailored to your business needs.\n4. Enjoy advanced security features such as two-factor authentication and fraud monitoring to keep your account safe.\n5. Open a corporate bank account with us today and receive a cash bonus of up to $500."
+        },
+        article3: {
+          title: "For personal checking accounts",
+          description: "1. Get the most out of your money with our personal checking account, featuring no monthly fees and unlimited transactions.\n 2. Earn high interest on your savings with our premium personal checking account.\n3. Enjoy convenient access to your money with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal checking account with us today and receive a cash bonus of up to $200."
+        },
+        article4: {
+          title: "For business checking accounts",
+          description: "1. Simplify your business finances with our business checking account, featuring easy online management and no monthly fees.\n2. Access exclusive banking services and account management tools tailored to your business needs.\n3. Stay on top of your finances with 24/7 online banking services.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a business checking account with us today and receive a cash bonus of up to $500."
+        },
+        article5: {
+          title: "For corporate accounts",
+          description: "1. Streamline your business finances with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Get access to exclusive banking services and account management tools tailored to your business needs.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
+        },
+        article6: {
+          title: "For corporate accounts",
+          description: "1. Enjoy no monthly fees and unlimited transactions with our bank account product.\n2. Earn high interest rates on your savings with our premium bank account product.\n3. Our bank account product offers convenient access to your money with 24/7 online banking and mobile app.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
+        },
+      },
+      clientSuport: {
+        title: "Pagalba klientams",
+        description: "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt."
+      }
+    },
   }
 }
