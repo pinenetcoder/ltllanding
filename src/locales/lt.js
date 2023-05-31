@@ -348,20 +348,6 @@ export default {
       bullet6: "Paskolos palūkanos nuo 3.50%"
     }
   },
-  workingCapitalLoan: {
-    pageTitle: "Paskola apyvartiniam kapitalui",
-    description: "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
-    heroBlock: {
-      description: "Naudodamiesi mūsų apyvartinių lėšų paskola, galite gauti lėšų, kurių jums reikia trumpalaikėms investicijoms ar išlaidoms, taip padedant užtikrintai plėsti verslą.",
-      bullet1: "Padedame finansuoti iki 85% jūsų investicijų vertės",
-      bullet2: "Gaukite pradinį pasiūlymą per 48 valandas",
-      bullet3: "Specialiai jūsų poreikiams pritaikytas paskolos grąžinimo grafikas",
-      bullet4: "Maži mokesčiai už išankstinį paskolos grąžinimą",
-      bullet5: "Paskolos terminas iki 20 metų",
-      bullet6: "Paskolos palūkanos nuo 3.50%"
-    },
-    article: "Norėdami pateikti paskolos paraišką, atsiųskite mums praėjusių finansinių metų metinės ataskaitos, balanso ir pelno (nuostolių) ataskaitos kopiją bei analogiškas pastarojo ketvirčio ataskaitas adresu info@ltlku.lt"
-  },
   mortgageLoan: {
     heroBlock: {
       title: "BŪSTO PASKOLA:Nebereikia būti dideliam, kad gautumėte paskolą.",
@@ -644,75 +630,259 @@ export default {
     },
     currentAccount: {
       heroBlock: {
-        title: "Einamoji sąskaita: Nebereikia būti dideliam, kad ... ",
+        title: "Business - Kreditas: Jūs neturite būti didelis, kad gautumėte paskolą",
         description: "Atidarykite IBAN sąskaitą pas mus, atlikite ir gaukite mokėjimus iš visos Euro zonos",
         bullet1: "24/7 internetinė bankininkystė jūsų paslaugoms",
         bullet2: "Lengvai siųskite ir gaukite jūsų lėšas",
         bullet3: "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
       },
-      articleBlock: {
+      innerLinkBlock: {
+        benefits: "Privalumai",
+        process: "Procesas",
+        priceList: "Kainoraštis",
+        clientSuport: "Klientų palaikymas",
+        faq: "D.U.K."
+      },
+      benefitsArticle: {
         article1: {
-          title: "Banko sąskaitos atidarymas",
-          text: "Pas mus galite atsidaryti sąskaitą, jei turite Lietuvos Respublikos pasą, asmens tapatybės kortelę arba Lietuvos Respublikos Vyriausybės išduotą leidimą gyventi. Taip pat norint atidaryti sąskaitą, reikia tapti kredito unijos nariu. Peržiūrėkite toliau pateiktą procesą.",
+          title: "Vartojimo paskola",
+          description: "Nesvarbu, ar norite įsigyti automobilį, baldus, kompiuterį, keliauti, apmokėti mokslus, investuoti į verslo pradžią ar tiesiog apmokėti sąskaitas, mūsų vartojimo paskola suteiks jums reikalingą finansinę laisvę."
         },
         article2: {
-          title: "Prisijungimas prie sąskaitos",
-          text: "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos...",
+          title: "Individualus klientų aptarnavimas ",
+          description: "Mes teikiame prioritetą individualaus klientų aptarnavimui, kuris padės jums geriau orientuotis vartojimo paskolos suteikimo procese bei užtikrinti geriausias paskolos sąlygas pagal jūsų poreikius ir galimybes."
         },
         article3: {
-          title: "Mokėjimai",
-          text: "Mūsų atvirosios bankininkystės API yra standartizuota sąsaja, leidžianti trečiųjų šalių kūrėjams saugiai ir patogiai pasiekti finansinius duomenis ir paslaugas iš bankų ir finansų įstaigų. API galia leidžia klientams inicijuoti operacijas per trečiųjų šalių programas vos keliais paspaudimais, nereikia prisijungti prie savo internetinės bankininkystės sąskaitos ar apsilankyti fiziniame banko skyriuje. Mūsų API buvo sukurta kaip RESTful API, kuri naudoja HTTP protokolą ir JSON duomenų formatą, ir sukurta remiantis Berlin Group standartu, išlaikant aukščiausią saugumo lygį."
+          title: "Parastas paskolos grąžinimo grafikas",
+          description: "Mūsų vartojimo paskolos grąžinimo grafikas yra paprastas: fiksuotos mėnesio įmokos. Esant jūsų individualiems poreikiams kartu surasime lankstesnių jums tinkamų paskolos grąžinimo galimybių. Taip pat, galite nemokamai atidėti paskolos grąžinimo mokėjimus, jei to prireiktų."
+        },
+        article4: {
+          title: "Greitas paskolos sprendimas",
+          description: "Greitas ir paprastas paraiškos pateikimo procesas leistų greičiau gauti vartojimo paskolos patvirtinimą."
         }
       },
-      accOpeningProcess: {
-        step1: {
-          title: "Užpildykite sąskaitos atidarymo formą",
-          text: "Užpildykite paraišką"
-        },
-        steap2: {
-          title: "Identifikuokite save",
-          text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
-        },
-        step4: {
-          title: "Pasirašykite banko sąskaitos sutartį",
-          text: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti sąskaitos sutartį ir susipažinti su bendrosiomis sąskaitos naudojimo sąlygomis."
-        },
-        step5: {
-          title: "Pradėkite naudotis mūsų mokėjimo paslaugomis",
-          text: "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, kurioje galėsite naudotis mūsų mokėjimo paslaugomis, tvarkyti terminuotųjų indėlių sutartis, peržiūrėti informaciją apie savo kreditus (jei taikoma) ir kt."
-        }
-      },
-      articleBlock2: {
-        title: "After you have opened an account",
+      afterArticle: {
         article1: {
-          title: "For private individual",
-          description: "1. Open a personal bank account with us and enjoy zero monthly fees and unlimited transactions.\n 2. Save more with our high-interest personal bank account.3. Bank on-the-go with our 24/7 online and mobile banking services. 4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring. 5. Get a cash bonus of up to $200 when you open a personal bank account with us today."
+          title: "For private individuals:",
+          description: "1. Open a personal bank account with us and enjoy zero monthly fees and unlimited transactions.\n2. Save more with our high-interest personal bank account.\n3. Bank on-the-go with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Get a cash bonus of up to $200 when you open a personal bank account with us today."
         },
         article2: {
-          title: "For corporate accounts",
+          title: "For corporate accounts:",
           description: "1. Take your business to the next level with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Access exclusive banking services and account management tools tailored to your business needs.\n4. Enjoy advanced security features such as two-factor authentication and fraud monitoring to keep your account safe.\n5. Open a corporate bank account with us today and receive a cash bonus of up to $500."
         },
         article3: {
-          title: "For personal checking accounts",
-          description: "1. Get the most out of your money with our personal checking account, featuring no monthly fees and unlimited transactions.\n 2. Earn high interest on your savings with our premium personal checking account.\n3. Enjoy convenient access to your money with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal checking account with us today and receive a cash bonus of up to $200."
+          title: "For personal checking accounts:",
+          description: "1. Get the most out of your money with our personal checking account, featuring no monthly fees and unlimited transactions.\n2. Earn high interest on your savings with our premium personal checking account.\n3. Enjoy convenient access to your money with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal checking account with us today and receive a cash bonus of up to $200."
         },
         article4: {
-          title: "For business checking accounts",
+          title: "For business checking accounts:",
           description: "1. Simplify your business finances with our business checking account, featuring easy online management and no monthly fees.\n2. Access exclusive banking services and account management tools tailored to your business needs.\n3. Stay on top of your finances with 24/7 online banking services.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a business checking account with us today and receive a cash bonus of up to $500."
         },
         article5: {
-          title: "For corporate accounts",
-          description: "1. Streamline your business finances with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Get access to exclusive banking services and account management tools tailored to your business needs.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
+          title: "For private individuals:",
+          description: "1. Enjoy no monthly fees and unlimited transactions with our personal bank account.\n2. Earn high interest rates on your savings with our premium personal bank account.\n3. Our personal bank account offers convenient access to your money with 24/7 online banking and mobile app.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal bank account with us today and receive a cash bonus of up to $200."
         },
         article6: {
-          title: "For corporate accounts",
-          description: "1. Enjoy no monthly fees and unlimited transactions with our bank account product.\n2. Earn high interest rates on your savings with our premium bank account product.\n3. Our bank account product offers convenient access to your money with 24/7 online banking and mobile app.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
+          title: "For corporate accounts:",
+          description: "1. Streamline your business finances with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Get access to exclusive banking services and account management tools tailored to your business needs.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
         },
+      },
+      stepProcess: {
+        title: "Paskolos paraiškos pateikimo tvarka",
+        step1: {
+          title: "Užpildykite sąskaitos atidarymo formą",
+          description: "Užpildykite paraišką"
+        },
+        step2: {
+          title: "Identifikuokite save",
+          description: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+        },
+        step3: {
+          title: "Pateikite dokumentus",
+          subTitle: "Prašome atsiųsti mums:",
+          bulletBlock: {
+            bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
+            bullet2: "Prašymas įstoti į kredito uniją",
+            bullet3: "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+          }
+        }, 
+        step4: {
+          title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
+          description: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+        },
+        step5: {
+          title: "Valdykite savo terminuoto indėlio sąskaitą",
+          description: "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
+        }
       },
       clientSuport: {
         title: "Pagalba klientams",
         description: "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt."
-      }
+      },
+      faq: "D.U.K."
     },
+    capitalLoan: {
+      heroBlock: {
+        title: "Paskola apyvartiniam kapitalui: Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
+        description: "Naudodamiesi mūsų apyvartinių lėšų paskola, galite gauti lėšų, kurių jums reikia trumpalaikėms investicijoms ar išlaidoms, taip padedant užtikrintai plėsti verslą.",
+        bullet1: "Padedame finansuoti iki 70% jūsų investicijų ar veiklos išlaidų, tokių kaip įrangos pirkimas, inventorius ar kitos einamosios išlaidos",
+        bullet2: "Gaukite pradinį pasiūlymą per 48 valandas",
+        bullet3: "Paskolos grąžinimas termino pabaigoje arba specialiai jūsų poreikiams pritaikytas paskolos grąžinimo grafikas",
+        bullet4: "Maži mokesčiai už išankstinį paskolos grąžinimą",
+        bullet5: "Paskolos terminas iki 36 mėnesių",
+        bullet6: "Paskolos palūkanos nuo 5.00%"
+      },
+      innerLinkBlock: {
+        benefits: "Privalumai",
+        process: "Procesas",
+        priceList: "Kainoraštis",
+        clientSuport: "Klientų palaikymas",
+        faq: "D.U.K."
+      },
+      benefitsArticle: {
+        article1: {
+          title: "Paskola apyvartinėms lėšoms",
+          description: "Reikia finansavimo jūsų verslo išlaidoms, tokioms kaip inventorius, rinkodara, smulkesnė įranga ar kitos veiklos išlaidos? Mūsų paskolos suteikia jums lanksčias apyvartinio kapitalo finansavimo galimybes. Padėsime pasirinkti jums tinkamą finansavimo būdą: greitąją paskolą su grąžinimu pasibaigus terminui arba kredito liniją, leidžiančią atsiimti ir grąžinti lėšas pagal poreikį neviršijant suteikto kredito limito."
+        },
+        article2: {
+          title: "Individualus klientų aptarnavimas",
+          description: "Mes teikiame prioritetą individualaus klientų aptarnavimui, kuris padės jums geriau orientuotis paskolos suteikimo procese bei užtikrinti geriausias paskolos sąlygas pagal jūsų poreikius ir galimybes."
+        },
+        article3: {
+          title: "Lankstus paskolos grąžinimo grafikas",
+          description: "Mūsų paskolos suteikia įvairias grąžinimo galimybių, kurios gali būti pritaikytos individualiems jūsų verslo poreikiams, kad galėtumėte susifokusuoti ties prioritetinių verslo tikslų siekimo. Taip pat galite atidėti paskolos grąžinimo įmokas, jei jums reikia susidoroti su pinigų srautų svyravimais."
+        },
+        article4: {
+          title: "Greitas paskolos sprendimas",
+          description: "Greitas ir paprastas paraiškos pateikimo procesas leistų greičiau gauti verslo paskolos patvirtinimą."
+        }
+      },
+      stepProcess: {
+        title: "Paskolos paraiškos pateikimo procesas:",
+        step1: {
+          title: "Užpildykite paskolos paraiškos formą, pateikite finansines ataskaitas ir duokite sutikimą",
+          description: "Prašome užpildyti paraišką bei atsiųsti mums praėjusių finansinių metų metinės ataskaitos, balanso ir pelno (nuostolių) ataskaitas, taip pat analogiškų pastarojo ketvirčio ataskaitų kopijas adresu info@ltlku.lt. Taip pat paprašysime direktoriaus ir akcininko sutikimus dėl duomenų patikros registruose, kad mes galėtume atlikti pirminį paraiškos vertinimą. Paso, asmens tapatybės dokumento arba leidimo gyventi kopija Vadovo paso, asmens tapatybės dokumento arba leidimo gyventi kopija"
+        },
+        step2: {
+          title: "Identifikuokite save",
+          description: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+        },
+        step3: {
+          title: "Gaukite pradinį paskolos pasiūlymą",
+          description: "Su jumis susisieksime per 48 valandas ir pateiksime pradinį pasiūlymą. Esant klausimams, galime paprašyti patikslinti esamą arba pateikti papildomą informaciją."
+        },
+        step4: {
+          title: "Pateikite dokumentus",
+          subTitle: "Kadangi sutariame dėl pradinių sąlygų, prašome pateikti mums:",
+          bulletBlock: {
+            bullet1: "Prašymas įstoti į Kredito uniją",
+            bullet2: "Įmonės registracijos pažymėjimą",
+            bullet3: "Steigėjų sutartis ir įstatai",
+            bullet4: "Įmonės steigimo sutartį ir įstatus",
+            bullet5: "Vadovo paskyrimo dokumentą",
+            bullet6: "Turto vertinimo ataskaitas"
+          }
+        }, 
+        step5: {
+          title: "Gaukite galutinį sprendimą dėl kredito ir pasirašykite sutartį",
+          description: "Priėmus sprendimą išduoti kreditą, pakviesime pasirašyti kredito sutartį ir kitus su kreditu susijusius dokumentus."
+        },
+        step6: {
+          title: "Pasirašykite įkeitimo sutartį notarų biure",
+          description: "Suplanuosime susitikimą su notaro abiem pusėms patogiu laiku, kad būtų galima užbaigti įkeitimo sandorį (jei toks numatytas pagal kredito sutartį)."
+        },
+        step7: {
+          title: "Paskolos išmokėjimas",
+          description: "Kredito lėšos bus išmokamos per vieną darbo dieną, kai įvykdomos visos kredito sutarties sąlygos."
+        }
+      },
+      clientSuport: {
+        title: "Pagalba klientams",
+        description: "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt."
+      },
+      faq: "D.U.K."
+    },
+    investmentLoan: {
+      heroBlock: {
+        title: "Investicinė paskola: Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
+        description: "Mūsų investicinė paskola leidžia pasinaudoti daugybe investavimo galimybių, nesvarbu, ar ieškote trumpalaikio pelno, ar ilgalaikio augimo.",
+        bullet1: "Padedame finansuoti iki 85% jūsų investicijų vertės",
+        bullet2: "Gaukite pradinį pasiūlymą per 48 valandas",
+        bullet3: "Specialiai jūsų poreikiams pritaikytas paskolos grąžinimo grafikas",
+        bullet4: "Maži mokesčiai už išankstinį paskolos grąžinimą",
+        bullet5: "Paskolos terminas iki 20 metų",
+        bullet6: "Paskolos palūkanos nuo 5.00%"
+      },
+      innerLinkBlock: {
+        benefits: "Privalumai",
+        process: "Procesas",
+        priceList: "Kainoraštis",
+        clientSuport: "Klientų palaikymas",
+        faq: "D.U.K."
+      },
+      benefitsArticle: {
+        article1: {
+          title: "Investicinė paskola",
+          description: "Verslo dydis neturi reikšmės, kai reikia pasinaudoti galimybėmis. Suteiksime jums finansavimą, kuris padės jums pasiekti verslo tikslus. Nesvarbu, ar norite plėsti rinkos dalį, investuoti į naujas technologijas, nekilnojamąjį turtą ar kitą turtą, mūsų investicinė paskola užtikrins jūsų veiklai reikalingas lėšas bei suteiks jūsų veiklai lankstumą realizuojant jūsų verslo idėjas."
+        },
+        article2: {
+          title: "Individualus klientų aptarnavimas",
+          description: "Mes teikiame prioritetą individualaus klientų aptarnavimui, kuris padės jums geriau orientuotis paskolos suteikimo procese bei užtikrinti geriausias paskolos sąlygas pagal jūsų poreikius ir galimybes."
+        },
+        article3: {
+          title: "Lankstus paskolos grąžinimo grafikas",
+          description: "Mūsų paskolos suteikia įvairias grąžinimo galimybių, kurios gali būti pritaikytos individualiems jūsų verslo poreikiams, kad galėtumėte susifokusuoti ties prioritetinių verslo tikslų siekimo. Taip pat galite atidėti paskolos grąžinimo įmokas, jei jums reikia susidoroti su pinigų srautų svyravimais."
+        },
+        article4: {
+          title: "Greitas paskolos sprendimas",
+          description: "Greitas ir paprastas paraiškos pateikimo procesas leistų greičiau gauti verslo paskolos patvirtinimą."
+        }
+      },
+      stepProcess: {
+        title: "Paskolos paraiškos pateikimo procesas:",
+        step1: {
+          title: "Užpildykite paskolos paraiškos formą, pateikite finansines ataskaitas ir duokite sutikimą",
+          description: "Prašome užpildyti paraišką bei atsiųsti mums praėjusių finansinių metų metinės ataskaitos, balanso ir pelno (nuostolių) ataskaitas, taip pat analogiškų pastarojo ketvirčio ataskaitų kopijas adresu info@ltlku.lt. Taip pat paprašysime direktoriaus ir akcininko sutikimus dėl duomenų patikros registruose, kad mes galėtume atlikti pirminį paraiškos vertinimą. Paso, asmens tapatybės dokumento arba leidimo gyventi kopija Vadovo paso, asmens tapatybės dokumento arba leidimo gyventi kopija"
+        },
+        step2: {
+          title: "Identifikuokite save",
+          description: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+        },
+        step3: {
+          title: "Gaukite pradinį paskolos pasiūlymą",
+          description: "Su jumis susisieksime per 48 valandas ir pateiksime pradinį pasiūlymą. Esant klausimams, galime paprašyti patikslinti esamą arba pateikti papildomą informaciją."
+        },
+        step4: {
+          title: "Pateikite dokumentus",
+          subTitle: "Kadangi sutariame dėl pradinių sąlygų, prašome pateikti mums:",
+          bulletBlock: {
+            bullet1: "Prašymas įstoti į Kredito uniją",
+            bullet2: "Įmonės registracijos pažymėjimą",
+            bullet3: "Steigėjų sutartis ir įstatai",
+            bullet4: "Įmonės steigimo sutartį ir įstatus",
+            bullet5: "Vadovo paskyrimo dokumentą",
+            bullet6: "Turto vertinimo ataskaitas"
+          }
+        }, 
+        step5: {
+          title: "Gaukite galutinį sprendimą dėl kredito ir pasirašykite sutartį",
+          description: "Priėmus sprendimą išduoti kreditą, pakviesime pasirašyti kredito sutartį ir kitus su kreditu susijusius dokumentus."
+        },
+        step6: {
+          title: "Pasirašykite įkeitimo sutartį notarų biure",
+          description: "Suplanuosime susitikimą su notaro abiem pusėms patogiu laiku, kad būtų galima užbaigti įkeitimo sandorį (jei toks numatytas pagal kredito sutartį)."
+        },
+        step7: {
+          title: "Paskolos išmokėjimas",
+          description: "Kredito lėšos bus išmokamos per vieną darbo dieną, kai įvykdomos visos kredito sutarties sąlygos."
+        }
+      },
+      clientSuport: {
+        title: "Pagalba klientams",
+        description: "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt."
+      },
+      faq: "D.U.K."
+    }
+
   }
 }

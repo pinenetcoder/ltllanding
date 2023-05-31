@@ -13,13 +13,12 @@ export default function Payments() {
    return (
       <>
          <IndexLayout>
-            <main className={styles.paymentsPage}>
-               <section className={styles.paymentsPageWrapper}>
-                  <div className={styles.paymentsPageList}>
-                     <div className={styles.paymentsHeroItem}>
-                        <h1 className={styles.paymentsTitle}>{t.privetCurrentAccount.pageTitle}</h1>
-
-                        <div className={styles.paymentsPageDescription}>
+            <main className={styles.currentAccountPage}>
+               <section className={styles.currentAccountPageWrapper}>
+                  <div className={styles.currentAccountPageList}>
+                     <div className={styles.currentAccountHeroItem}>
+                        <h1 className={styles.currentAccountTitle}>{t.privetCurrentAccount.pageTitle}</h1>
+                        <div className={styles.currentAccountPageDescription}>
                            <p>{t.privetCurrentAccount.heroBlock.description}</p>
                            <ul>
                               <li>{t.privetCurrentAccount.heroBlock.bullet1}</li>
@@ -30,7 +29,7 @@ export default function Payments() {
                      </div>
                   </div>
                </section>
-               <section className={styles.innerNavigationBlock}>
+               <section className={styles.innerNavigationSection}>
                   <div className={styles.innerNavigationLinkList}>
                      <Link className={styles.innerNavLink} href="#privetClient">{t.privetCurrentAccount.innerLinkBlock.privateClient}</Link>
                      <Link className={styles.innerNavLink} href="#steps">{t.privetCurrentAccount.innerLinkBlock.steps}</Link>
@@ -40,32 +39,32 @@ export default function Payments() {
                      <Link className={styles.innerNavLink} href="#faq">{t.privetCurrentAccount.innerLinkBlock.faq}</Link>
                   </div>
                </section>
-               <section id="privetClient" className={styles.privateClientSection}>
-                  <div className={styles.motyvationWrapper}>
-                     <div className={styles.motyvationList}>
-                        <div className={styles.motyvationItem}>
-                           <h2 className={styles.motyvationItemTitle}>{t.privetCurrentAccount.articleBlock.article1.title}</h2>
-                           <div className={styles.motyvationItemDescription}>
+               <section id="privetClient" className={styles.articleSection}>
+                  <div className={styles.articleWrapper}>
+                     <div className={styles.articleList}>
+                        <div className={styles.articleItem}>
+                           <h2 className={styles.articleItemTitle}>{t.privetCurrentAccount.articleBlock.article1.title}</h2>
+                           <div className={styles.articleItemDescription}>
                               {t.privetCurrentAccount.articleBlock.article1.text}
                            </div>
                         </div>
-                        <div className={styles.motyvationItem}>
-                           <h2 className={styles.motyvationItemTitle}>{t.privetCurrentAccount.articleBlock.article2.title}</h2>
-                           <div className={styles.motyvationItemDescription}>
+                        <div className={styles.articleItem}>
+                           <h2 className={styles.articleItemTitle}>{t.privetCurrentAccount.articleBlock.article2.title}</h2>
+                           <div className={styles.articleItemDescription}>
                               {t.privetCurrentAccount.articleBlock.article2.text}   
                            </div>
                         </div>
-                        <div className={styles.motyvationItem}>
-                           <h2 className={styles.motyvationItemTitle}>{t.privetCurrentAccount.articleBlock.article3.title}</h2>
-                           <div className={styles.motyvationItemDescription}>
+                        <div className={styles.articleItem}>
+                           <h2 className={styles.articleItemTitle}>{t.privetCurrentAccount.articleBlock.article3.title}</h2>
+                           <div className={styles.articleItemDescription}>
                               {t.privetCurrentAccount.articleBlock.article3.text}
                            </div>
                         </div>
                      </div>
                   </div>
                </section>
-               <section id="steps" className={styles.paymentStepsSection}>
-                  <div className={styles.paymentsStepsWrapper}>
+               <section id="steps" className={styles.stepsSection}>
+                  <div className={styles.stepsWrapper}>
                      <div className={styles.stepsHeader}>
                         <h3>{t.privetCurrentAccount.accOpeningProcess.blockTitle}</h3>
                      </div>
@@ -121,8 +120,6 @@ export default function Payments() {
                         </div>
                      </div>
                   </div>
-
-
                </section>
                <section id="after" className={styles.infoSection}>
                   <div className={styles.infoWrapper}>

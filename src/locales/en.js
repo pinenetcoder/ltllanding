@@ -349,20 +349,6 @@ export default {
       bullet6: "Interest rates starting from 3.50%"
     }
   },
-  workingCapitalLoan: {
-    pageTitle: "Working capital loan",
-    description: "You don‘t have to be big to get a loan/to boost sales",
-    heroBlock: {
-      description: "With our working capital loan, you can access the funds you need for short-term investments or operational expenditures, helping you grow your business with confidence.",
-      bullet1: "We can help finance up to 85% of the value of your investments",
-      bullet2: "Get your initial offer within 48 hours",
-      bullet3: "Repayment schedule tailored specifically to your needs",
-      bullet4: "Low fees for early loan repayment",
-      bullet5: "Loan terms of up to 20 years are available",
-      bullet6: "Interest rates starting from 3.50%"
-    },
-    article: "To apply for the loan, please send us a copy of the annual report, balance sheet and profit (loss) statement of the previous financial year, as well as similar reports of the last quarter to info@ltlku.lt"
-  },
   equityLoan: {
     heroBlock: {
       title: "Equity loan: You don‘t have to be big to get a loan",
@@ -646,79 +632,262 @@ export default {
     },
     currentAccount: {
       heroBlock: {
-        title: "Current account: You don‘t have to be big to be international",
+        title: "Business - Credit: You don‘t have to be big to get a loan",
         description: "Open IBAN account with us, make and receive payments from all over Euro area",
         bullet1: "Bank on-the-go with our 24/7 online banking services",
         bullet2: "Move your inbound and outbound funds effortlessly",
         bullet3: "Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring"
       },
-      articleBlock: {
+      innerLinkBlock: {
+        benefits: "Benefits",
+        interestRates: "Interest rates",
+        process: "Process",
+        priceList: "Price List",
+        clientSuport: "Client Support",
+        faq: "FAQ"
+      },
+      benefitsArticle: {
         article1: {
-          title: "Open account",
-          text: "We welcome customers with Lithuanian passports, ID cards, or residence permits issued by the Lithuanian government to open an account with us. You also need to become a member of a credit union to open an account. Please to the process provided below.",
+          title: "Consumer loan",
+          description: "Whether you want to purchase a car, furniture, computer, travel, get education, invest in startup or just pay off bills our loan is designed to give you the financial freedom you need."
         },
         article2: {
-          title: "Log in",
-          text: "Upon opening an account, we will grant you access to our internet banking platform. The most useful way to access your account is to use digital signature (mobile-ID). In case you don’t have the digital ID we can also issue you an unique code.",
+          title: "Individual customer service",
+          description: "At our bank, we prioritize individual customer service, which means we guide you through the consumer loan process and help you find the loan conditions that match your specific needs and abilities."
         },
         article3: {
-          title: "Payments",
-          text: "Open banking makes it possible for companies to design smart, intuitive apps that connect directly to your bank account, making banking easier than ever. With our open banking interface, you can create cutting-edge applications that integrate seamlessly with banking services, providing customers with a superior user experience. API interface makes it possible for users to access their account information and initiate payments conveniently and securely."
+          title: "Simple repayment schedule",
+          description: "Our consumer loan repayment schedule is simple: fixed monthly payments. Based on your individual needs, a loan repayment schedule can be tailored to your individual needs. Also, you can postpone loan repayments for free, if needed."
+        },
+        article4: {
+          title: "Quick initial offer",
+          description: "Quick and easy application process is available with our consumer loan, so you can get approved faster."
         }
       },
-      accOpeningProcess: {
-        step1: {
-          title: "Fill in an account opening form",
-          text: "Please fill in the application"
-        },
-        step2: {
-          title: "Identify yourself",
-          text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
-        },
-        step3: {
-          title: "Submit the documents",
-          text: "Please send us: Copy of passport, ID or residence permit Application to join the union A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)"
-        },
-        step4: {
-          title: "Sign the bank account agreement",
-          text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
-        },
-        step5: {
-          title: "Start using our payment services",
-          text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
-        }
-      },
-      articleBlock2: {
-        title: "After you have opened an account",
+      afterArticle: {
         article1: {
-          title: "For private individual",
-          description: "1. Open a personal bank account with us and enjoy zero monthly fees and unlimited transactions.\n 2. Save more with our high-interest personal bank account.3. Bank on-the-go with our 24/7 online and mobile banking services. 4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring. 5. Get a cash bonus of up to $200 when you open a personal bank account with us today."
+          title: "For private individuals:",
+          description: "1. Open a personal bank account with us and enjoy zero monthly fees and unlimited transactions.\n2. Save more with our high-interest personal bank account.\n3. Bank on-the-go with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Get a cash bonus of up to $200 when you open a personal bank account with us today."
         },
         article2: {
-          title: "For corporate accounts",
+          title: "For corporate accounts:",
           description: "1. Take your business to the next level with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Access exclusive banking services and account management tools tailored to your business needs.\n4. Enjoy advanced security features such as two-factor authentication and fraud monitoring to keep your account safe.\n5. Open a corporate bank account with us today and receive a cash bonus of up to $500."
         },
         article3: {
-          title: "For personal checking accounts",
-          description: "1. Get the most out of your money with our personal checking account, featuring no monthly fees and unlimited transactions.\n 2. Earn high interest on your savings with our premium personal checking account.\n3. Enjoy convenient access to your money with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal checking account with us today and receive a cash bonus of up to $200."
+          title: "For personal checking accounts:",
+          description: "1. Get the most out of your money with our personal checking account, featuring no monthly fees and unlimited transactions.\n2. Earn high interest on your savings with our premium personal checking account.\n3. Enjoy convenient access to your money with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal checking account with us today and receive a cash bonus of up to $200."
         },
         article4: {
-          title: "For business checking accounts",
+          title: "For business checking accounts:",
           description: "1. Simplify your business finances with our business checking account, featuring easy online management and no monthly fees.\n2. Access exclusive banking services and account management tools tailored to your business needs.\n3. Stay on top of your finances with 24/7 online banking services.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a business checking account with us today and receive a cash bonus of up to $500."
         },
         article5: {
-          title: "For corporate accounts",
-          description: "1. Streamline your business finances with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Get access to exclusive banking services and account management tools tailored to your business needs.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
+          title: "For private individuals:",
+          description: "1. Enjoy no monthly fees and unlimited transactions with our personal bank account.\n2. Earn high interest rates on your savings with our premium personal bank account.\n3. Our personal bank account offers convenient access to your money with 24/7 online banking and mobile app.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal bank account with us today and receive a cash bonus of up to $200."
         },
         article6: {
-          title: "For corporate accounts",
-          description: "1. Enjoy no monthly fees and unlimited transactions with our bank account product.\n2. Earn high interest rates on your savings with our premium bank account product.\n3. Our bank account product offers convenient access to your money with 24/7 online banking and mobile app.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
+          title: "For corporate accounts:",
+          description: "1. Streamline your business finances with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Get access to exclusive banking services and account management tools tailored to your business needs.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring."
         },
+      },
+      stepProcess: {
+        title: "Loan application process:",
+        step1: {
+          title: "Fill in an account opening form",
+          description: "Please fill in the application"
+        },
+        step2: {
+          title: "Identify yourself",
+          description: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+        },
+        step3: {
+          title: "Submit the documents",
+          subTitle: "Please send us:",
+          bulletBlock: {
+            bullet1: "Copy of passport, ID or residence permit",
+            bullet2: "Application to join the union",
+            bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+          }
+        }, 
+        step4: {
+          title: "Sign the bank account agreement",
+          description: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+        },
+        step5: {
+          title: "Start using our payment services",
+          description: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+        }
       },
       clientSuport: {
         title: "Client support",
         description: "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt."
       },
+      faq: "FAQ"
     },
+    capitalLoan: {
+      heroBlock: {
+        title: "Working capital loan:You don‘t have to be big to get a loan/to boost sales",
+        description: "With our working capital loan, you can access the funds you need for short-term investments or operational expenditures, helping you grow your business with confidence.",
+        bullet1: "We can help finance up to 70% of the value of your capital or operational expenditures such as equipment purchases, inventory or other running costs",
+        bullet2: "Get your initial offer within 48 hours",
+        bullet3: "Bullet loan or repayment schedule tailored specifically to your needs",
+        bullet4: "Low fees for early loan repayment",
+        bullet5: "Loan terms of up to 36 months are available",
+        bullet6: "Interest rates starting from 5.00%"
+      },
+      innerLinkBlock: {
+        benefits: "Benefits",
+        interestRates: "Interest rates",
+        process: "Process",
+        priceList: "Price List",
+        clientSuport: "Client Support",
+        faq: "FAQ"
+      },
+      benefitsArticle: {
+        article1: {
+          title: "Working capital loan",
+          description: "Need financing for your business expenses like inventory, marketing, smaller equipment or other running costs? Our loans offer flexible options, including bullet loans with repayment at the maturity or credit lines that allow you to withdraw and repay funds as needed within a specific credit limit."
+        },
+        article2: {
+          title: "Individual customer service",
+          description: "At our bank, we prioritize individual customer service, which means we guide you through the equity loan process and help you find the loan conditions that match your specific needs and abilities."
+        },
+        article3: {
+          title: "Flexible repayment schedule",
+          description: "Our loan comes with a range of repayment options that can be tailored to your individual needs, so you can stay focused on your business development. Also, you can defer loan payments, if you need to deal with the cash flow fluctuations."
+        },
+        article4: {
+          title: "Quick initial offer",
+          description: "Quick and easy application process is available with our corporate loan, so you can get approved faster."
+        }
+      },
+      stepProcess: {
+        title: "Loan application process:",
+        step1: {
+          title: "Fill in a loan application form, present financial statements and give the consent",
+          description: "Please fill in the application and send us a copy of the annual report, balance sheet and profit (loss) statement of the previous financial year, as well as similar reports of the recent quarter to info@ltlku.lt. We also ask CEO and UBO to provide consents for checking the data in the registers so that we can carry out the initial assessment of the application."
+        },
+        step2: {
+          title: "Identify yourself",
+          description: " You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+        },
+        step3: {
+          title: "Get an initial loan offer",
+          description: "We will reach you within 48 hours with our initial proposal. We may request further of the details."
+        },
+        step4: {
+          title: "Submit the documents",
+          subTitle: " Since we agree on initial terms and conditions, please send us:",
+          bulletBlock: {
+            bullet1: "Application to join the union",
+            bullet2: "Company registration certificate",
+            bullet3: "Founders’ agreement and Articles of Association",
+            bullet4: "CEO appointment document",
+            bullet5: "Copy of passport, ID or residence permit of CEO of the company",
+            bullet6: "Property valuation reports"
+          }
+        }, 
+        step5: {
+          title: "Get the final credit decision and sign the agreement",
+          description: "Once the credit decision to issue the credit is reached, we will invite you to sign the credit agreement and other relevant terms and conditions."
+        },
+        step6: {
+          title: "Sign the pledge agreement in the notary office",
+          description: " We will schedule a notary appointment at a mutually convenient time to finalize the pledge arrangements (if any)."
+        },
+        step7: {
+          title: "Loan disbursement",
+          description: "The credit funds will be disbursed within one business day since all terms and conditions of the credit agreement are fulfilled."
+        }
+      },
+      clientSuport: {
+        title: "Client support",
+        description: "If you need any assistance applying for a corporate loan, signing the agreements, performing loan repayments or any other credit related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt."
+      },
+      faq: "D.U.K."
+    },
+    investmentLoan: {
+      heroBlock: {
+        title: "Investment loan: You don‘t have to be big to get a loan/to boost sales",
+        description: "Our investment loan lets you take advantage of a wide range of investment opportunities, whether you're looking for short-term gains or long-term growth.",
+        bullet1: "We can help finance up to 85% of the value of your investments",
+        bullet2: "Get your initial offer within 48 hours",
+        bullet3: "Repayment schedule tailored specifically to your needs",
+        bullet4: "Low fees for early loan repayment",
+        bullet5: "Loan terms of up to 20 years are available",
+        bullet6: "Interest rates starting from 5.00%"
+      },
+      innerLinkBlock: {
+        benefits: "Benefits",
+        interestRates: "Interest rates",
+        process: "Process",
+        priceList: "Price List",
+        clientSuport: "Client Support",
+        faq: "FAQ"
+      },
+      benefitsArticle: {
+        article1: {
+          title: "Investment loan",
+          description: "Business size doesn't matter when it comes to taking advantage of opportunities. Get the support you need to achieve your business goals with our investment loan. Whether you’re looking to expand, invest in new technologies, real estate or other property, our business loan offers the funding and flexibility to make it happen."
+        },
+        article2: {
+          title: "Individual customer service",
+          description: "At our bank, we prioritize individual customer service, which means we guide you through the equity loan process and help you find the loan conditions that match your specific needs and abilities."
+        },
+        article3: {
+          title: "Flexible repayment schedule",
+          description: "Our loan comes with a range of repayment options that can be tailored to your individual needs, so you can stay focused on your business development. Also, you can defer loan payments, if you need to deal with the cash flow fluctuations."
+        },
+        article4: {
+          title: "Quick initial offer",
+          description: "Quick and easy application process is available with our corporate loan, so you can get approved faster."
+        }
+      },
+      stepProcess: {
+        title: "Loan application process:",
+        step1: {
+          title: "Fill in a loan application form, present financial statements and give the consent",
+          description: "Please fill in the application and send us a copy of the annual report, balance sheet and profit (loss) statement of the previous financial year, as well as similar reports of the recent quarter to info@ltlku.lt. We also ask CEO and UBO to provide consents for checking the data in the registers so that we can carry out the initial assessment of the application."
+        },
+        step2: {
+          title: "Identify yourself",
+          description: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+        },
+        step3: {
+          title: "Get an initial loan offer",
+          description: "We will reach you within 48 hours with our initial proposal. We may request further of the details."
+        },
+        step4: {
+          title: "Submit the documents",
+          subTitle: "Since we agree on initial terms and conditions, please send us:",
+          bulletBlock: {
+            bullet1: "Application to join the union",
+            bullet2: "Company registration certificate",
+            bullet3: "Founders’ agreement and Articles of Association",
+            bullet4: "CEO appointment document",
+            bullet5: "Copy of passport, ID or residence permit of CEO of the company",
+            bullet6: "Property valuation reports"
+          }
+        }, 
+        step5: {
+          title: "Get the final credit decision and sign the agreement",
+          description: "Once the credit decision to issue the credit is reached, we will invite you to sign the credit agreement and other relevant terms and conditions."
+        },
+        step6: {
+          title: "Sign the pledge agreement in the notary office",
+          description: "We will schedule a notary appointment at a mutually convenient time to finalize the pledge arrangements (if any)."
+        },
+        step7: {
+          title: "Loan disbursement",
+          description: "The credit funds will be disbursed within one business day since all terms and conditions of the credit agreement are fulfilled."
+        }
+      },
+      clientSuport: {
+        title: "Client support",
+        description: "If you need any assistance applying for a corporate loan, signing the agreements, performing loan repayments or any other credit related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt."
+      },
+      faq: "D.U.K."
+    }
+
   }
 }
