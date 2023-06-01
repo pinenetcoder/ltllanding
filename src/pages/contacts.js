@@ -4,10 +4,23 @@ import ContactForm from "@/components/ContactForm"
 import { useRouter } from "next/router"
 import lt from '@/locales/lt'
 import en from '@/locales/en'
+import Gmap from "@/components/Gmap"
+import {useJsApiLoader} from '@react-google-maps/api'
 
 export default function Contacts() {
    const router = useRouter();
    const t = router.locale === 'lt' ? lt : en
+
+   const API_KEY = process.env.REACT_APP_API_KEY;
+   const defaultCenter = {
+    lat: 54.694700,
+    lng: 25.298190
+  };
+
+   const { isLoaded: gmapIsLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: API_KEY
+   })
    
    return (
       <IndexLayout>
@@ -27,6 +40,7 @@ export default function Contacts() {
                 </div>
               </div>
             </div>
+            {gmapIsLoaded ? <Gmap center={defaultCenter}/> : <h2>Is Loading</h2>}
           </section>
           <section className={styles.contactsCustomerServiceSection}>
             <div className={styles.contactsCustomerServiceWrapper}>
