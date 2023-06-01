@@ -1,23 +1,23 @@
 //  Product PAGE
 
-.paymentsPageWrapper {
+.currentAccountPageWrapper {
   padding: 66px 0 78px 0;
   background-color: var(--ligh-grey-background);
 
-  .paymentsPageList {
+  .currentAccountPageList {
     padding-left: 312px;
 
-    .paymentsHeroItem {
+    .currentAccountHeroItem {
       width: 474px;
     }
 
-    .paymentsTitle {
+    .currentAccountTitle {
       font-size: 30px;
       margin-bottom: 35px;
     }
   }
 
-  .paymentsPageDescription {
+  .currentAccountPageDescription {
     font-weight: 400;
     font-size: 18px;
     color: #000000;
@@ -44,8 +44,12 @@
   }
 }
 
-.innerNavigationBlock {
-  padding: 30px 0 48px 0;
+.innerNavigationSection {
+  padding: 44px 0 34px 0;
+  position: sticky;
+  top: 100px;
+  background-color: var(--main-background);
+  z-index: 8;
 
   .innerNavigationLinkList {
     display: flex;
@@ -54,7 +58,7 @@
   }
 
   .innerNavLink {
-    font-family: 'Lexend';
+    font-family: "Lexend";
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -73,32 +77,33 @@
   }
 }
 
-.privateClientSection {
+
+.articleSection {
   padding: 48px 0 66px 0;
 
-  .motyvationWrapper {
+  .articleWrapper {
     max-width: 1060px;
     padding: 0 15px 0 15px;
     margin: 0 auto;
 
-    .motyvationList {
+    .articleList {
       display: flex;
       justify-content: center;
       gap: 46px;
     }
 
-    .motyvationItem {
+    .articleItem {
       flex: 1;
     }
 
-    .motyvationItemTitle {
+    .articleItemTitle {
       font-family: Lexend;
       font-weight: 700;
       font-size: 20px;
       margin-bottom: 34px;
     }
 
-    .motyvationItemDescription {
+    .articleItemDescription {
       font-family: Lexend;
       font-weight: 300;
       font-size: 17px;
@@ -106,10 +111,10 @@
   }
 }
 
-.paymentStepsSection {
+.stepsSection {
   padding: 66px 0 54px 0;
 
-  .paymentsStepsWrapper {
+  .stepsWrapper {
     max-width: 765px;
     padding: 0 15px 0 15px;
     margin: 0 auto;
@@ -180,25 +185,25 @@
     .infoList {
       display: flex;
       gap: 46px;
+    }
 
-      .infoTitle {
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 25px;
-        margin-bottom: 34px;
-      }
+    .infoTitle {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25px;
+      margin-bottom: 34px;
+    }
 
-      .infoDescription {
-        font-size: 17px;
-        font-weight: 300;
-        line-height: 21px;
-      }
+    .infoDescription {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 21px;
     }
   }
 }
 
 .priceListSection {
-  padding: 40px 0 80px 0;
+  padding: 50px 0 80px 0;
 
   .priceWrapper {
     max-width: 850px;

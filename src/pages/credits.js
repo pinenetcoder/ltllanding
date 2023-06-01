@@ -21,7 +21,7 @@ export default function Credits() {
                <section className={styles.creditsPageWrapper}>
                   <div className={styles.creditsPageList}>
                      <div className={styles.creditsHeroItem}>
-                        <h2>{t.consumerLoan.heroBlockTitle}</h2>
+                        <h2>{t.consumerLoan.heroBlock.title}</h2>
                         <div className={styles.creditsPageDescription}>
                            <p>
                               {t.consumerLoan.heroBlock.description}

@@ -1,0 +1,43 @@
+
+
+.infoSection {
+  padding: 54px 0 80px 0;
+
+  .infoWrapper {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+
+    .infoHeader {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 30px;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .infoList {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 46px;
+    }
+    .infoItem {
+      width: 300px;
+    }
+
+    .infoTitle {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25px;
+      margin-bottom: 34px;
+    }
+
+    .infoDescription {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 21px;
+      white-space: pre-line;
+    }
+  }
+}
