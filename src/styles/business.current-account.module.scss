@@ -1,3 +1,56 @@
+.currentAccountPageWrapper {
+  padding: 66px 0 78px 0;
+  background-color: var(--businness-background);
+  background-image: url("/assets/images/business_currentAccPage_heroBlock.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 74px) calc(100% - 50px);
+
+  .currentAccountPageList {
+    padding-left: 312px;
+
+
+
+    .currentAccountHeroItem {
+      width: 500px;
+    }
+
+    .currentAccountTitle {
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .currentAccountPageDescription {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+
+    li {
+      list-style-type: none;
+      padding-left: 26px;
+      background: url(/assets/images/check2.svg) no-repeat left center;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    .CheckText {
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+
+
 
 
 .infoSection {
