@@ -6,9 +6,6 @@ import IndexLayout from "@/Layouts/IndexLayout"
 import Link from "next/link"
 import lt from '@/locales/lt'
 import en from '@/locales/en'
-import "./firebase"
-
-
 
 export default function TemrsAndConditions() {
 

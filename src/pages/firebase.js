@@ -1,7 +1,5 @@
 import { initializeApp } from "firebase/app";
 
-
-
 const firebaseConfig = {
     apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
     authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
@@ -11,4 +9,4 @@ const firebaseConfig = {
     appId: process.env.NEXT_PUBLIC_FIREBASE__APP_ID,
     measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASSUREMENT_ID
   };
- const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
