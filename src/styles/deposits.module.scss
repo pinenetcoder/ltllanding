@@ -1,14 +1,12 @@
 .depositPageWrapper {
    padding: 66px 0 46px 0;
    background-color: var(--light-creame-background);
-   background-image: url("/assets/images/deposit_heroBlock.svg");
-   background-repeat: no-repeat;
-   background-position: calc(100% - 110px);
-   background-size: 25%;
-
 
    .depositPageList {
       padding-left: 312px;
+      background-image: url("/assets/images/deposit_heroBlock.svg");
+      background-repeat: no-repeat;
+      background-position: calc(100% - 110px);
 
       .depositHeroItem {
          max-width: 600px;
