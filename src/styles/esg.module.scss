@@ -4,62 +4,42 @@
 }
 
 .esgHeroPage {
-   padding: 100px 0 44px 0;
-   
-   .esgHeroBlock {
-      display: flex;
-      gap: 70px;
+   padding: 66px 0 78px 0;
+   background-color: var(--theme-color5);
+   background-image: url("/assets/images/homePage_heroBlock.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: calc(100% - 90px) 0;  
+
+   .esgPageList {
+     padding-left: 250px;
    }
-   
-   .egsHeroTitle {
-         font-size: 50px;
-         font-weight: 700;
-         line-height: 62px;
-         text-align: center;
-         margin-bottom: 90px;
+ 
+   .Description {
+     font-weight: 400;
+     font-size: 18px;
+     color: #000000;
+     white-space: pre-line;
    }
-   
-   .esgHeroMission {
-      width: 280px;
-   }
-   
-   .missionTitle {
-      font-size: 25px;
-      font-weight: 700;
-      line-height: 32px;
-      margin-bottom: 20px;
-   }
-   
-   .missionDescription {
-      font-size: 25px;
-      font-weight: 300;
-      line-height: 32px;
-   }
-   
-   .esgHeroVision {
+
+   .esgHeroItem {
       width: 474px;
-   }
-   
-   .visionTitle {
-      font-size: 25px;
+    }
+
+    .esgTitle {
+      font-size: 30px;
       font-weight: 700;
-      line-height: 32px;
-      margin-bottom: 20px;
-   }
-   
-   .visionDescription {
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 20px;
-   }
-}
+      line-height: 38px;
+      margin-bottom: 35px;
+     }
+ }
 
 .innerNavigationSection {
-   padding: 44px 0 54px 0;
+   padding: 44px 0 24px 0;
    position: sticky;
    top: 100px;
    background-color: var(--main-background);
-   z-index: 11;
+   z-index: 8;
 
    .innerNavigationLinkList {
      display: flex;
@@ -88,12 +68,13 @@
  }
 
  .enviromentalProtectionSection {
-   padding: 54px 0 54px 0;
+   padding: 100px 0 54px 0;
 
    .enviromentalProtectionBlock {
       display: flex;
       gap: 98px;
-      margin-bottom: 88px;
+      margin-bottom: 48px;
+      padding-top: 40px;
 
       &:last-child {
          margin-bottom: 0;
@@ -103,7 +84,8 @@
    .enviromentalProtectionImg {
       width: 326px;
       height: 295px;
-      background-color: var(--theme-color1);
+      background-color: inherit;
+      position: relative;
    }
 
    .enviromentalProtectionArticle {

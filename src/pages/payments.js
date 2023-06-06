@@ -15,7 +15,6 @@ export default function Payments() {
                         <CurrencyConverter />
                      </div>
                   </div>
-
                </section>
                <section className={styles.paymentsArticeWrapper}>
                   <div className={styles.paymentsArticleBlock}>
