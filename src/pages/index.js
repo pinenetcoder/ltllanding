@@ -17,7 +17,7 @@ export default function Home() {
             <article className={styles.beneficialArticle}>
               <div className={styles.imageBlock}>
                 <Image 
-                  src="assets/images/homePage_article1.svg"
+                  src="assets/images/article1.svg"
                   fill={true}
                   alt="Image"
                 />
@@ -40,7 +40,7 @@ export default function Home() {
             <article className={styles.beneficialArticleMirror}>
               <div className={styles.imageBlock}>
                 <Image 
-                    src="assets/images/homePage_article2.svg"
+                    src="assets/images/article2.svg"
                     fill={true}
                     alt="Image"
                   />
@@ -62,7 +62,7 @@ export default function Home() {
             <article className={styles.beneficialArticle}>
               <div className={styles.imageBlock}>
                 <Image 
-                    src="assets/images/homePage_article3.svg"
+                    src="assets/images/article3.svg"
                     fill={true}
                     alt="Image"
                   />
