@@ -1,0 +1,50 @@
+.pageWrapper {
+    padding: 66px 0 46px 0;
+    background-color: var(--businness-background);
+  
+    .pageList {
+      padding-left: 312px;
+      background-image: url("/assets/images/business_investLoanPage_heroBlock.svg");
+      background-repeat: no-repeat;
+      background-position: calc(100% - 90px) bottom;
+  
+      .heroItem {
+        max-width: 600px;
+      }
+  
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 38px;
+        margin-bottom: 35px;
+      }
+    }
+  
+    .heroDescription {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 35px;
+  
+      li {
+        font-weight: 300;
+        list-style-type: none;
+        padding-left: 26px;
+        background: url(/assets/images/check2.svg) no-repeat left center;
+        margin-bottom: 8px;
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+  
+      p {
+        margin-bottom: 30px;
+      }
+  
+      .CheckText {
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+  }
