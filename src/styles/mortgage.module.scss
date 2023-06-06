@@ -1,12 +1,15 @@
 .mortgagePageWrapper {
   padding: 66px 0 46px 0;
-  background-color: var(--ligh-grey-background);
+  background-color: var(--light-creame-background);
 
   .mortgagePageList {
     padding-left: 312px;
+    background-image: url("/assets/images/mortgagePage_heroBlock.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 110px) bottom;
 
     .mortgageHeroItem {
-      max-width: 840px;
+      max-width: 800px;
     }
 
     .mortgageTitle {

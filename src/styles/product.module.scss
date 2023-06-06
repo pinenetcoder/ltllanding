@@ -2,10 +2,14 @@
 
 .currentAccountPageWrapper {
   padding: 66px 0 78px 0;
-  background-color: var(--ligh-grey-background);
+  background-color: var(--light-creame-background);
 
   .currentAccountPageList {
     padding-left: 312px;
+    background-image: url("/assets/images/productPage_heroBlock.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 110px);
+
 
     .currentAccountHeroItem {
       width: 474px;
