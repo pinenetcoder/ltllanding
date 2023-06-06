@@ -1,12 +1,31 @@
+import { useEffect, useState } from "react"
+import { useRouter } from "next/router"
+import { getFirestore, collection, getDocs } from "firebase/firestore";
 import styles from "@/styles/termsAndConditions.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Link from "next/link"
-import { useEffect, useState } from "react"
-import { useRouter } from "next/router"
 import lt from '@/locales/lt'
 import en from '@/locales/en'
+import "./firebase"
+
+
 
 export default function TemrsAndConditions() {
+
+   const db = getFirestore();
+   const colRef = collection(db, "tnc")
+   getDocs(colRef)
+   .then((snapshot) => {
+      let tncList = []
+      snapshot.docs.forEach((tab) => {
+         tncList.push({ ...tab.data(), id: tab.id })
+      })
+      console.log(tncList)
+   })
+   .catch((err) => {
+      console.log(err.message)
+   })
+
    const router = useRouter();
    const t = router.locale === 'lt' ? lt : en
 
