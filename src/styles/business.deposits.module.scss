@@ -1,0 +1,67 @@
+.depositPageWrapper {
+    padding: 66px 0 46px 0;
+    background-color: var(--businness-background);
+ 
+    .depositPageList {
+       padding-left: 312px;
+       background-image: url("/assets/images/business_depositPage_heroBlock.svg");
+       background-repeat: no-repeat;
+       background-position: calc(100% - 110px) bottom;
+ 
+       .depositHeroItem {
+          max-width: 600px;
+       }
+ 
+       .depositTitle {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 38px;
+          margin-bottom: 35px;
+       }
+    }
+ 
+    .depositPageDescription {
+       font-weight: 400;
+       font-size: 18px;
+       line-height: 24px;
+       color: #000000;
+       margin-bottom: 35px;
+ 
+       li {
+          font-weight: 300;
+          list-style-type: none;
+          padding-left: 26px;
+          background: url(/assets/images/check2.svg) no-repeat left center;
+          margin-bottom: 8px;
+ 
+          &:last-child {
+             margin-bottom: 0;
+          }
+       }
+ 
+       p {
+          margin-bottom: 30px;
+       }
+ 
+       .CheckText {
+          font-weight: 300;
+          font-size: 16px;
+       }
+    }
+ 
+    .actionButtonBlock {
+       width: 251px;
+       height: 42px;
+       background: var(--theme-color2);
+       border-radius: 33px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-weight: 600;
+       font-size: 16px;
+       line-height: 24px;
+       color: var(--white-text-color);
+       text-decoration: none;
+    }
+ }
+ 
