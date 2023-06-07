@@ -202,7 +202,7 @@ export default {
     }
   },
   privetCurrentAccount: {
-    pageTitle: "Current Account",
+    pageTitle: "Current account: You don‘t have to be big to be international",
     heroBlock: {
       description: "Open IBAN account with us, make and receive payments from all over Euro area",
       bullet1: "Bank on-the-go with our 24/7 online banking services",

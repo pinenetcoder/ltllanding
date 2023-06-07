@@ -202,7 +202,7 @@ export default {
     }
   },
   privetCurrentAccount: {
-    pageTitle: "Einamoji sąskaita",
+    pageTitle: "Einamoji sąskaita: Nebereikia būti dideliam, kad ... ",
     heroBlock: {
       description: "Atidarykite IBAN sąskaitą pas mus, atlikite ir gaukite mokėjimus iš visos Euro zonos",
       bullet1: "24/7 internetinė bankininkystė jūsų paslaugoms",

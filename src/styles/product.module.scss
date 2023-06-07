@@ -3,12 +3,13 @@
 .currentAccountPageWrapper {
   padding: 66px 0 78px 0;
   background-color: var(--light-creame-background);
+  background-image: url("/assets/images/productPage_heroBlock.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 110px);
 
   .currentAccountPageList {
     padding-left: 312px;
-    background-image: url("/assets/images/productPage_heroBlock.svg");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 110px);
+  
 
 
     .currentAccountHeroItem {
