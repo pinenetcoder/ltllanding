@@ -523,7 +523,7 @@ export default {
       },
       article2: {
         title: "Ginčų sprendimas",
-        description: "Jeigu po mūsų tarpusavio aptarimo dėl iškilusių atvirų klausimų vis dar manote, kad mes nepasiekėme interesų balanso ir mes pažeidžiame jūsų teises ar teisėtus interesus, rekomenduojame jums kreiptis į Lietuvos banką, kuris nagrinėja vartotojų ir finansų rinkos dalyvių ginčus, kylančius iš finansinių paslaugų teikimo. Išsamesnę informaciją galėtumėte rasti spusteldami šią nuorodą: https://www.lb.lt/lt/vartotoju-ir-finansu-rinkos-dalyviu-gincai"
+        description: "Jeigu po mūsų tarpusavio aptarimo dėl iškilusių atvirų klausimų vis dar manote, kad mes nepasiekėme interesų balanso ir mes pažeidžiame jūsų teises ar teisėtus interesus, rekomenduojame jums kreiptis į Lietuvos banką, kuris nagrinėja vartotojų ir finansų rinkos dalyvių ginčus, kylančius iš finansinių paslaugų teikimo. Išsamesnę informaciją galėtumėte rasti spusteldami šią nuorodą:"
       }
     },
     readMore: "Skaityti daugiau",
