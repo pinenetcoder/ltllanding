@@ -6,7 +6,7 @@ export const links = [
       links: [
          {
             linkName: "1General provisions",
-            linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
+            linkUrl: "https://storage.cloud.google.com/llp_bucket-1/test_Pdf.pdf",
          },
          {
             linkName: "2Identification and representation",

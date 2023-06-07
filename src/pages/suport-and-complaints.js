@@ -16,13 +16,18 @@ export default function SuportAndComplaints() {
          <main>
             <section className={styles.SuportAndComplaintsHeroPage}>
                <div className={styles.SuportAndComplaintsHeroTitle}>
-                  <h1 className="page-title">{t.suportsComplaints.pageTitle}</h1>
+                  <h1>{t.suportsComplaints.pageTitle}</h1>
                </div>
-               <div className={styles.SuportAndComplaintsHeroBlock}>
-                  <div className={styles.imgBlock}>img</div>
-                  <div className={styles.SuportAndComplaintsHeroBlockCredencials}>
-                     <p>{t.suportsComplaints.heroBlock.description}</p>
-                     <Link href="/">{t.suportsComplaints.readMore} &gt;</Link>
+            </section>
+            <section className={styles.settlementSection}>
+               <div className={styles.settlementsWrapper}>
+                  <div className={styles.settlementBlock}>
+                     <h3>{t.suportsComplaints.articleBlock.article1.title}</h3>
+                     <p>{t.suportsComplaints.articleBlock.article1.description}</p>
+                  </div>
+                  <div className={styles.settlementBlock}>
+                     <h3>{t.suportsComplaints.articleBlock.article2.title}</h3>
+                     <p>{t.suportsComplaints.articleBlock.article2.description}<Link href="https://www.lb.lt/lt/vartotoju-ir-finansu-rinkos-dalyviu-gincai"> https://www.lb.lt/lt/vartotoju-ir-finansu-rinkos-dalyviu-gincai</Link></p>
                   </div>
                </div>
             </section>
@@ -31,19 +36,6 @@ export default function SuportAndComplaints() {
                      <ContactForm formTitle={true}
                      />
                   </div>
-            </section>
-            <section className={styles.settlementSection}>
-               <h1>{t.suportsComplaints.pageTitle}</h1>
-               <div className={styles.settlementsWrapper}>
-                  <div className={styles.settlementBlock}>
-                     <h3>{t.suportsComplaints.articleBlock.article1.title}</h3>
-                     <p>{t.suportsComplaints.articleBlock.article1.description}</p>
-                  </div>
-                  <div className={styles.settlementBlock}>
-                     <h3>{t.suportsComplaints.articleBlock.article2.title}</h3>
-                     <p>{t.suportsComplaints.articleBlock.article2.description}</p>
-                  </div>
-               </div>
             </section>
             <section id="faq" className={styles.faqSection}>
             <div className={styles.faqWrapper}>

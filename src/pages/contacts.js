@@ -11,7 +11,7 @@ export default function Contacts() {
    const router = useRouter();
    const t = router.locale === 'lt' ? lt : en
 
-   const API_KEY = process.env.REACT_APP_API_KEY;
+   const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
    const defaultCenter = {
     lat: 54.694700,
     lng: 25.298190
@@ -21,7 +21,7 @@ export default function Contacts() {
     id: 'google-map-script',
     googleMapsApiKey: API_KEY
    })
-   
+  
    return (
       <IndexLayout>
          <main>
