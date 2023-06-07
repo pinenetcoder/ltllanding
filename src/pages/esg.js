@@ -61,7 +61,7 @@ export default function Esg() {
           <section className={styles.enviromentalProtectionSection}>
             <div className={styles.container}>
                <div id="enviromentalProtection" className={styles.enviromentalProtectionBlock}>
-                  <div className={styles.enviromentalProtectionImg}>
+                  <div className={[styles.enviromentalProtectionImg, styles.imgMargin].join(' ')}>
                      <Image 
                      src="/assets/images/article1.svg"
                      width={429}
@@ -94,9 +94,8 @@ export default function Esg() {
                      />
                   </div>
                </div>
-              
                <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
-                  <div className={styles.enviromentalProtectionImg}>
+                  <div className={[styles.enviromentalProtectionImg, styles.imgMargin].join(' ')}>
                      <Image 
                      src="/assets/images/article3.svg"
                      width={429}

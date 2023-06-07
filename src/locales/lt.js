@@ -56,7 +56,7 @@ export default {
       },
       article2: {
         title: "Socialiniai principai",
-        text: "Mes gerbiame socialinius principus, įtvirtintus pagrindinėse Tarptautinės darbo organizacijos konvencijose ir Europos Sąjungos Pagrindinių teisių chartijoje. Mes visiškai netoleruojame visų formų priverstinio ir privalomojo darbo, bet kokių vaikų darbo formų, taip pat laikomės asociacijų laisvės ir kolektyvinių derybų teisės. Skatiname lygias galimybes ir siekiame sukurti aplinką, kurioje visi darbuotojai galėtų realizuoti savo potencialą, pagrįstą bendromis vertybėmis, kultūrų įvairove, lytimi, rase ir kita lygybe. Norėdami sužinoti daugiau, peržiūrėkite mūsų Lygių galimybių politiką (nuoroda)."
+        text: "Mes gerbiame socialinius principus, įtvirtintus pagrindinėse Tarptautinės darbo organizacijos konvencijose ir Europos Sąjungos Pagrindinių teisių chartijoje. Mes visiškai netoleruojame visų formų priverstinio ir privalomojo darbo, bet kokių vaikų darbo formų, taip pat laikomės asociacijų laisvės ir kolektyvinių derybų teisės. Skatiname lygias galimybes ir siekiame sukurti aplinką, kurioje visi darbuotojai galėtų realizuoti savo potencialą, pagrįstą bendromis vertybėmis, kultūrų įvairove, lytimi, rase ir kita lygybe.\nNorėdami sužinoti daugiau, peržiūrėkite mūsų Lygių galimybių politiką (nuoroda)."
       },
       article3: {
         title: "Gero korporatyvinio valdymo principai",

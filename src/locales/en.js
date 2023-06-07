@@ -56,7 +56,7 @@ export default {
       },
       article2: {
         title: "Social principles",
-        text: "We follow the social principles of the International Labour Organisation and the European Union's Charter of Fundamental Rights. We strongly oppose forced and child labor, and we support freedom of association and collective bargaining. We promote equal opportunities and an inclusive environment where all employees can thrive.To explore further, please take a look at our Equal Opportunities Policy (link)."
+        text: "We follow the social principles of the International Labour Organisation and the European Union's Charter of Fundamental Rights. We strongly oppose forced and child labor, and we support freedom of association and collective bargaining. We promote equal opportunities and an inclusive environment where all employees can thrive.\nTo explore further, please take a look at our Equal Opportunities Policy (link)."
       },
       article3: {
         title: "Good corporate governance principles",

@@ -18,16 +18,13 @@
 .beneficialArticleMirror {
   .imageBlock {
     order: 1;
-    position: relative;
   }
 }
 
 .imageBlock {
   min-width: 429px;
   height: 429px;
-  background: var(--theme-color5);
   color: var(--main-text-color);
-  position: relative;
 }
 
 .articleBlock {
