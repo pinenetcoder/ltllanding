@@ -18,7 +18,8 @@ export default function Home() {
               <div className={styles.imageBlock}>
                 <Image 
                   src="assets/images/article1.svg"
-                  fill={true}
+                  width={429}
+                  height={429}
                   alt="Image"
                 />
               </div>
@@ -41,7 +42,8 @@ export default function Home() {
               <div className={styles.imageBlock}>
                 <Image 
                     src="assets/images/article2.svg"
-                    fill={true}
+                    width={429}
+                    height={429}
                     alt="Image"
                   />
               </div>
@@ -63,7 +65,8 @@ export default function Home() {
               <div className={styles.imageBlock}>
                 <Image 
                     src="assets/images/article3.svg"
-                    fill={true}
+                    width={429}
+                    height={429}
                     alt="Image"
                   />
               </div>

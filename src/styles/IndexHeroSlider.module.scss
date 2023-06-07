@@ -2,10 +2,9 @@
   .slickSlide {
     height: 580px;
     background-color: var(--theme-color5);
-    background-image: url("/assets/images/homePage_heroBlock.svg");
-    background-size: cover;
+    background-image: url(/assets/images/homePage_heroBlock.svg);
     background-repeat: no-repeat;
-    background-position: calc(100% - 90px) 0;
+    background-position: 0 58px;
   }
 
   .slideContent {
