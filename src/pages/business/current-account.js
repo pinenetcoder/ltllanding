@@ -13,12 +13,12 @@ export default function Mortgage() {
 
     return (
       <IndexLayout>
-        <main className={styles.currentAccountPage}>
-            <section className={styles.currentAccountPageWrapper}>
-              <div className={styles.currentAccountPageList}>
-                  <div className={styles.currentAccountHeroItem}>
-                    <h1 className={styles.currentAccountTitle}>{t.business.currentAccount.heroBlock.title}</h1>
-                    <div className={styles.currentAccountPageDescription}>
+        <main className={businessStyle.currentAccountPage}>
+            <section className={businessStyle.currentAccountPageWrapper}>
+              <div className={businessStyle.currentAccountPageList}>
+                  <div className={businessStyle.currentAccountHeroItem}>
+                    <h1 className={businessStyle.currentAccountTitle}>{t.business.currentAccount.heroBlock.title}</h1>
+                    <div className={businessStyle.currentAccountPageDescription}>
                         <p>{t.business.currentAccount.heroBlock.description}</p>
                         <ul>
                           <li>{t.privetCurrentAccount.heroBlock.bullet1}</li>

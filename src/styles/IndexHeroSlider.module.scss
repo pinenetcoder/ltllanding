@@ -1,10 +1,10 @@
 .indexPageSlider {
   .slickSlide {
     height: 580px;
-    background-color: var(--theme-color1);
-    background-image: url("/assets/images/sliderBgShape.png");
+    background-color: var(--theme-color5);
+    background-image: url(/assets/images/homePage_heroBlock.svg);
     background-repeat: no-repeat;
-    background-position: calc(100% - 90px) 0;
+    background-position: 0 58px;
   }
 
   .slideContent {
@@ -14,7 +14,7 @@
       font-weight: 800;
       font-size: 60px;
       line-height: 72px;
-      color: #FFFFFF;
+      color: var(--main-text-color);
       margin-bottom: 44px;
       max-width: 680px;
     }
@@ -23,7 +23,7 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;
-      color: #FFFFFF;  
+      color: var(--main-text-color);  
       max-width: 470px;
       margin-bottom: 44px;
     }

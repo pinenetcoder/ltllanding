@@ -1,6 +1,7 @@
 import styles from "@/styles/payments.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import CurrencyConverter from "@/components/CurrencyConverter"
+import Image from "next/image"
 
 export default function Payments() {
    return (
@@ -10,11 +11,10 @@ export default function Payments() {
                <section className={styles.paymentsHeroSection}>
                   <div className={styles.paymentsHeroWrapper}>
                      <div className={styles.paymentsHeroList}>
-                        <div className={styles.paymentsImg}>IMG</div>
+                        <div className={styles.paymentsImg}></div>
                         <CurrencyConverter />
                      </div>
                   </div>
-
                </section>
                <section className={styles.paymentsArticeWrapper}>
                   <div className={styles.paymentsArticleBlock}>

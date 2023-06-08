@@ -1,6 +1,4 @@
 // INDEX PAGE
-
-
 .beneficialArticles {
   background: #F4F4F4;
   padding: 154px 0 164px 0;
@@ -26,7 +24,6 @@
 .imageBlock {
   min-width: 429px;
   height: 429px;
-  background: #08173E;
   color: var(--main-text-color);
 }
 
@@ -46,18 +43,15 @@
   }
 }
 
-
-
-
 .bulletPoints {
   padding: 120px 0;
-  background: var(--theme-color1) url('/assets/images/shape2.png') no-repeat calc(100% - 120px) 72px;
+  background: var(--theme-color5) url('/assets/images/homePage_bulletPoints.svg') no-repeat calc(100% - 120px) 45px;
 
   h2 {
     font-weight: 700;
     font-size: 50px;
     line-height: 62px;
-    color: #FFFFFF;
+    color: var(--main-text-color);
     max-width: 390px; 
     margin-bottom: 40px;
   }
@@ -72,7 +66,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
-      color: #FFFFFF;
+      color: var(--main-text-color);
 
       &::marker {
         position: relative;
@@ -85,8 +79,6 @@
     }
   }
 }
-
-
 
 .newsSection {
   background: #F4F4F4;

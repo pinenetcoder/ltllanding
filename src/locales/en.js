@@ -45,40 +45,32 @@ export default {
     }
   },
   esg: {
-    pageTitle: "ESG Policy",
     heroBlock: {
-      title1: "Mission",
-      description1: "You don‘t have to be big to be responsible.",
-      title2: "Vision",
-      description2: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing."
+      title: "ESG Policy",
+      description1: "Our organization is dedicated to supporting the global goals set by the United Nations. These goals focus on sustainable development, aiming for prosperity and peace for everyone and the planet. We are creating a responsible organization that cares about the environment and society.  We practice good ethics, improve our governance, and uphold the United Nations Global Compact (UNGC).\n\nFor a detailed insight into our ESG Policy please follow the link.",
     },
     articleBlock: {
       article1: {
-        title: "ESG Policy",
-        text: "Our organization is dedicated to supporting the global goals set by the United Nations. These goals focus on sustainable development, aiming for prosperity and peace for everyone and the planet. We are creating a responsible organization that cares about the environment and society.  We practice good ethics, improve our governance, and uphold the United Nations Global Compact (UNGC). For a detailed insight into our ESG Policy please follow the link."
-      },
-      article2: {
         title: "Environmental principles",
         text: "We take actions to promote environmental responsibility and awareness among employees. This includes using resources more efficiently in our daily operations. Our goal is to have a positive impact and not harm the environmental objectives set by the Paris Agreement and European Union Green Deal. These objectives aim to make Europe climate neutral by 2050. Please discover more about our Environmental Policy (link) principles by clicking on the provided link."
       },
-      article3: {
+      article2: {
         title: "Social principles",
-        text: "We follow the social principles of the International Labour Organisation and the European Union's Charter of Fundamental Rights. We strongly oppose forced and child labor, and we support freedom of association and collective bargaining. We promote equal opportunities and an inclusive environment where all employees can thrive. To explore further, please take a look at our Equal Opportunities Policy (link)."
+        text: "We follow the social principles of the International Labour Organisation and the European Union's Charter of Fundamental Rights. We strongly oppose forced and child labor, and we support freedom of association and collective bargaining. We promote equal opportunities and an inclusive environment where all employees can thrive.\nTo explore further, please take a look at our Equal Opportunities Policy (link)."
       },
-      article4: {
+      article3: {
         title: "Good corporate governance principles",
-        text: "Our aim is to run a responsible business and maintain positive relationships with our customers and partners. This involves prioritizing data security and being transparent in our operations.  We strongly oppose corruption, bribery, fraud, and money laundering. Our commitment extends to fair tax practices and providing user-friendly services. Responsible lending and unwavering integrity guide our actions.  For further information, kindly refer to our Code of Ethics (link)."
+        text: "Our aim is to run a responsible business and maintain positive relationships with our customers and partners. This involves prioritizing data security and being transparent in our operations.  We strongly oppose corruption, bribery, fraud, and money laundering. Our commitment extends to fair tax practices and providing user-friendly services. Responsible lending and unwavering integrity guide our actions. For further information, kindly refer to our Code of Ethics (link)."
       }
     },
     annualEsgReport: {
       title: "Annual ESG reports"
     },
     innerLinkBlock: {
-      link1: "Environmental principles",
-      link2: "Social principles",
-      link3: "Management",
-      link4: "ESG Policy",
-      link5: "ESG Reports"
+      link1: "Environmental",
+      link2: "Social",
+      link3: "Corporate Governance",
+      link4: "ESG Reports"
     },
     learnMoreButton: "Learn More"
   },
@@ -210,7 +202,7 @@ export default {
     }
   },
   privetCurrentAccount: {
-    pageTitle: "Current Account",
+    pageTitle: "Current account: You don‘t have to be big to be international",
     heroBlock: {
       description: "Open IBAN account with us, make and receive payments from all over Euro area",
       bullet1: "Bank on-the-go with our 24/7 online banking services",
