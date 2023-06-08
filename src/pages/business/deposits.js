@@ -85,93 +85,78 @@ export default function Deposit() {
               <Link className={styles.innerNavLink} href="#faq">{t.business.termDeposit.faq}</Link>
             </div>
           </section>
-          <section id="calculator" className={styles.calculatorSection}>
+          <section id="benefits" className={busynessStyle.benefitsSection}>
+            <div className={busynessStyle.benefitsWrapper}>
+              <div className={busynessStyle.benefitsBlock}>
+                <h3 className={busynessStyle.benefitsTitle}>
+                  {t.business.termDeposit.benefitsArticle.article1.title}
+                </h3>
+                <div className={busynessStyle.benefitsDescription}>
+                  {t.business.termDeposit.benefitsArticle.article1.description}
+                </div>
+              </div>
+              <div className={busynessStyle.benefitsBlock}>
+                <h3 className={busynessStyle.benefitsTitle}>
+                  {t.business.termDeposit.benefitsArticle.article2.title}
+                </h3>
+                <div className={busynessStyle.benefitsDescription}>
+                  {t.business.termDeposit.benefitsArticle.article2.description}
+                </div>
+              </div>
+              <div className={busynessStyle.benefitsBlock}>
+                <h3 className={busynessStyle.benefitsTitle}>
+                  {t.business.termDeposit.benefitsArticle.article3.title}
+                </h3>
+                <div className={busynessStyle.benefitsDescription}>
+                  {t.business.termDeposit.benefitsArticle.article3.description}
+                </div>
+              </div>
+              <div className={busynessStyle.benefitsBlock}>
+                <h3 className={busynessStyle.benefitsTitle}>
+                  {t.business.termDeposit.benefitsArticle.article4.title}
+                </h3>
+                <div className={busynessStyle.benefitsDescription}>
+                  {t.business.termDeposit.benefitsArticle.article4.description}
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="calculator" className={busynessStyle.calculatorSection}>
             <h2>{t.business.termDeposit.calcBlock.title}</h2>
-            <div className={styles.calculatorWrapper}>
-              <div className={styles.calculatorBlock}>
-                <div className={styles.borderCorner}></div>
-                <div className={styles.calculatorLine}>
-                  <div className={styles.label}>{t.business.termDeposit.calcBlock.ammoutOfDeposit}</div>
+            <p>{t.business.termDeposit.calcBlock.subTitle}</p>
+            <div className={busynessStyle.calculatorWrapper}>
+              <div className={busynessStyle.calculatorBlock}>
+                <div className={busynessStyle.borderCorner}></div>
+                <div className={busynessStyle.calculatorLine}>
+                  <div className={busynessStyle.label}>{t.business.termDeposit.calcBlock.ammoutOfDeposit}</div>
                   <input type="text" value={calc.amount} pattern="[0-9\.\-]*"  onChange={(e) => {amountHandler(e)}} placeholder="Enter amount" />
                 </div>
-                <div className={styles.calculatorLine}>
-                  <div className={styles.label}>{t.business.termDeposit.calcBlock.term}</div>
-                  <div className={styles.select}>
+                <div className={busynessStyle.calculatorLine}>
+                  <div className={busynessStyle.label}>{t.business.termDeposit.calcBlock.term}</div>
+                  <div className={busynessStyle.select}>
                     <select value={calc.term} onChange={(e) => { selectTerm(e) }}>{createSelectOptions()}</select>
                   </div>
                 </div>
               </div>
-              <div className={styles.resultBlock}>
-                <div className={styles.resultBlockList}>
-                  <div className={styles.resultBlockItem}>
-                    <div className={styles.left}>{t.business.termDeposit.calcBlock.interestRate}:</div>
-                    <div className={styles.right}>{calc.selectedRate}%</div>
+              <div className={busynessStyle.resultBlock}>
+                <div className={busynessStyle.resultBlockList}>
+                  <div className={busynessStyle.resultBlockItem}>
+                    <div className={busynessStyle.left}>{t.business.termDeposit.calcBlock.interestRate}:</div>
+                    <div className={busynessStyle.right}>{calc.selectedRate}%</div>
                   </div>
-                  <div className={styles.resultBlockItem}>
-                    <div className={styles.left}>{t.business.termDeposit.calcBlock.altogether}:</div>
-                    <div className={styles.right}>{(+calc.amount / 100 * +calc.selectedRate / 12 * calc.term + calc.amount).toFixed(2)}€</div>
+                  <div className={busynessStyle.resultBlockItem}>
+                    <div className={busynessStyle.left}>{t.business.termDeposit.calcBlock.altogether}:</div>
+                    <div className={busynessStyle.right}>{(+calc.amount / 100 * +calc.selectedRate / 12 * calc.term + calc.amount).toFixed(2)}€</div>
                   </div>
-                  <div className={styles.resultBlockItem}>
-                    <div className={styles.left}>{t.business.termDeposit.calcBlock.amountOfInterest}:</div>
-                    <div className={styles.right}>{(+calc.amount / 100 * +calc.selectedRate / 12 * calc.term).toFixed(2)}€</div>
+                  <div className={busynessStyle.resultBlockItem}>
+                    <div className={busynessStyle.left}>{t.business.termDeposit.calcBlock.amountOfInterest}:</div>
+                    <div className={busynessStyle.right}>{(+calc.amount / 100 * +calc.selectedRate / 12 * calc.term).toFixed(2)}€</div>
                   </div>
-                </div>business.
+                </div>
               </div>
             </div>
-            <div className={styles.depositSectionButton}>
+            <div className={busynessStyle.depositSectionButton}>
               <Link className="light-green-action-button long" href="/">{t.business.termDeposit.calcBlock.button}</Link>
-            </div>
-          </section>
-          <section id="benefits" className={styles.depositBenefitsSection}>
-            <div className={styles.depositBenefitsWrapper}>
-              <div className={styles.depositBenefitsBlock}>
-                <h2>{t.business.termDeposit.benefitsArticle.article1.title}</h2>
-                <p>{t.business.termDeposit.benefitsArticle.article1.description}</p>
-              </div>
-              <div className={styles.depositBenefitsBlock}>
-                <h2>{t.business.termDeposit.benefitsArticle.article2.title}</h2>
-                <p>{t.business.termDeposit.benefitsArticle.article2.description}</p>
-              </div>
-              <div className={styles.depositBenefitsBlock}>
-                <h2>{t.business.termDeposit.benefitsArticle.article3.title}</h2>
-                <p>{t.business.termDeposit.benefitsArticle.article3.description}</p>
-              </div>
-            </div>
-          </section>
-          <section id="interestRate" className={styles.ratesTableSection}>
-            <div className={styles.ratesTableWrapper}>
-              <h3>{t.business.termDeposit.interestRatesArticle.title}</h3>
-              <p>{t.business.termDeposit.interestRatesArticle.description}</p>
-              <div className={styles.tableHeading}>
-                <div className={[styles.tableHeadingCell, styles.column1].join(' ')}>{t.business.termDeposit.interestRatesArticle.period}</div>
-                <div className={[styles.tableHeadingCell, styles.column2].join(' ')}>{t.business.termDeposit.interestRatesArticle.interestRate} (EUR)</div>
-                <div className={[styles.tableHeadingCell, styles.column3].join(' ')}>{t.business.termDeposit.interestRatesArticle.interestRate} (USD)</div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>1 {t.business.termDeposit.interestRatesArticle.month}</div>
-                <div className={[styles.tableDataCell, styles.column2].join(' ')}>1.00%</div>
-                <div className={[styles.tableDataCell, styles.column3].join(' ')}>1.00%</div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>3 {t.business.termDeposit.interestRatesArticle.month}</div>
-                <div className={[styles.tableDataCell, styles.column2].join(' ')}>1.75%</div>
-                <div className={[styles.tableDataCell, styles.column3].join(' ')}>1.75%</div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>6 {t.business.termDeposit.interestRatesArticle.month}</div>
-                <div className={[styles.tableDataCell, styles.column2].join(' ')}>2.00%</div>
-                <div className={[styles.tableDataCell, styles.column3].join(' ')}>2.00%</div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>12 {t.business.termDeposit.interestRatesArticle.month}</div>
-                <div className={[styles.tableDataCell, styles.column2].join(' ')}>2.50%</div>
-                <div className={[styles.tableDataCell, styles.column3].join(' ')}>3.00%</div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div className={[styles.tableDataCell, styles.column1].join(' ')}>18 {t.business.termDeposit.interestRatesArticle.month}</div>
-                <div className={[styles.tableDataCell, styles.column2].join(' ')}>3.10%</div>
-                <div className={[styles.tableDataCell, styles.column3].join(' ')}>3.00%</div>
-              </div>
             </div>
           </section>
           <section id="process" className={styles.depositsStepsSection}>
