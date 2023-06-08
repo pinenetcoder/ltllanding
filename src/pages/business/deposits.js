@@ -56,11 +56,11 @@ export default function Deposit() {
     <>
       <IndexLayout>
         <main>
-          <section className={styles.depositPageWrapper}>
-            <div className={styles.depositPageList}>
-              <div className={styles.depositHeroItem}>
-                <h1 className={styles.depositTitle}>{t.business.termDeposit.heroBlock.title}</h1>
-                <div className={styles.depositPageDescription}>
+          <section className={busynessStyle.depositPageWrapper}>
+            <div className={busynessStyle.depositPageList}>
+              <div className={busynessStyle.depositHeroItem}>
+                <h1 className={busynessStyle.depositTitle}>{t.business.termDeposit.heroBlock.title}</h1>
+                <div className={busynessStyle.depositPageDescription}>
                   <p>
                     {t.business.termDeposit.heroBlock.description}
                   </p>

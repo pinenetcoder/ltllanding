@@ -3,7 +3,7 @@ import SimpleSlider from "@/components/IndexHeroSlider"
 import IndexNews from "@/components/IndexNews"
 import Link from "next/link"
 import styles from '@/styles/Home.module.scss'
-
+import Image from 'next/image'
 export default function Home() {
   return (
     <>
@@ -15,7 +15,14 @@ export default function Home() {
         <section className={styles.beneficialArticles}>
           <div className="container">
             <article className={styles.beneficialArticle}>
-              <div className={styles.imageBlock}></div>
+              <div className={styles.imageBlock}>
+                <Image 
+                  src="assets/images/article1.svg"
+                  width={429}
+                  height={429}
+                  alt="Image"
+                />
+              </div>
               <div className={styles.articleBlock}>
                 <h2>Pabodo laiką leisti banko skyriuose?</h2>
                 <p>
@@ -32,7 +39,14 @@ export default function Home() {
             </article>
 
             <article className={styles.beneficialArticleMirror}>
-              <div className={styles.imageBlock}></div>
+              <div className={styles.imageBlock}>
+                <Image 
+                    src="assets/images/article2.svg"
+                    width={429}
+                    height={429}
+                    alt="Image"
+                  />
+              </div>
               <div className={styles.articleBlock}>
                 <h2>Pabodo laiką leisti banko skyriuose?</h2>
                 <p>
@@ -48,7 +62,14 @@ export default function Home() {
               </div>
             </article>     
             <article className={styles.beneficialArticle}>
-              <div className={styles.imageBlock}></div>
+              <div className={styles.imageBlock}>
+                <Image 
+                    src="assets/images/article3.svg"
+                    width={429}
+                    height={429}
+                    alt="Image"
+                  />
+              </div>
               <div className={styles.articleBlock}>
                 <h2>Pabodo laiką leisti banko skyriuose?</h2>
                 <p>

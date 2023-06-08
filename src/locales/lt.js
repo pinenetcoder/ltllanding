@@ -45,27 +45,20 @@ export default {
     }
   },
   esg: {
-    pageTitle: "ESG politika",
     heroBlock: {
-      title1: "Misija",
-      description1: "Nebereikia būti dideliam, kad būtum atsakingas/-u",
-      title2: "Vizija",
-      description2: "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansinę įtrauktį, suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės."
+      title: "ESG politika",
+      description1: "Mūsų organizacija yra įsipareigojusi prisidėti prie Jungtinių Tautų Generalinės Asamblėjos patvirtintų pasaulinių tikslų darnaus vystymosi srityse, kad būtų pasiekta klestėjimas ir taika žmonėms ir planetai. Kuriame ekologiškai ir socialiai atsakingą organizaciją, kuri laikosi aukšto etiško verslo praktikos, nuosekliai tobulina įmonės valdymo praktiką ir laikosi Jungtinių Tautų Pasaulinio Susitarimo principų.\n\nNorėdami sužinoti daugiau apie mūsų ESG politiką, spustelėkite nuorodą.",
     },
     articleBlock: {
       article1: {
-        title: "ESG Politika",
-        text: "Mūsų organizacija yra įsipareigojusi prisidėti prie Jungtinių Tautų Generalinės Asamblėjos patvirtintų pasaulinių tikslų darnaus vystymosi srityse, kad būtų pasiekta klestėjimas ir taika žmonėms ir planetai. Kuriame ekologiškai ir socialiai atsakingą organizaciją, kuri laikosi aukšto etiško verslo praktikos, nuosekliai tobulina įmonės valdymo praktiką ir laikosi Jungtinių Tautų Pasaulinio Susitarimo principų."
+        title: "Aplinkosaugos principai",
+        text: "Mes imamės iniciatyvų, siekdami skatinti didesnę darbuotojų atsakomybę aplinkai ir aplinkosauginį sąmoningumą, įskaitant efektyvesnį išteklių naudojimą savo kasdienėje veikloje. Siekiame teigiamai prisidėti ir bent jau nepakenkti aplinkosaugos tikslams, iškeltiems pagal Paryžiaus susitarimą ir Europos Sąjungos Žaliąjį susitarimą, kuriuo siekiama iki 2050 m. sukurti klimatui neutralų Europos žemyną.Daugiau apie mūsų Aplinkosaugos politikos (nuoroda) principus sužinokite paspaudę nuorodą."
       },
       article2: {
-        title: "Aplinkosaugos principai",
-        text: "Mes imamės iniciatyvų, siekdami skatinti didesnę darbuotojų atsakomybę aplinkai ir aplinkosauginį sąmoningumą, įskaitant efektyvesnį išteklių naudojimą savo kasdienėje veikloje. Siekiame teigiamai prisidėti ir bent jau nepakenkti aplinkosaugos tikslams, iškeltiems pagal Paryžiaus susitarimą ir Europos Sąjungos Žaliąjį susitarimą, kuriuo siekiama iki 2050 m. sukurti klimatui neutralų Europos žemyną. Daugiau apie mūsų Aplinkosaugos politikos (nuoroda) principus sužinokite paspaudę nuorodą."
+        title: "Socialiniai principai",
+        text: "Mes gerbiame socialinius principus, įtvirtintus pagrindinėse Tarptautinės darbo organizacijos konvencijose ir Europos Sąjungos Pagrindinių teisių chartijoje. Mes visiškai netoleruojame visų formų priverstinio ir privalomojo darbo, bet kokių vaikų darbo formų, taip pat laikomės asociacijų laisvės ir kolektyvinių derybų teisės. Skatiname lygias galimybes ir siekiame sukurti aplinką, kurioje visi darbuotojai galėtų realizuoti savo potencialą, pagrįstą bendromis vertybėmis, kultūrų įvairove, lytimi, rase ir kita lygybe.\nNorėdami sužinoti daugiau, peržiūrėkite mūsų Lygių galimybių politiką (nuoroda)."
       },
       article3: {
-        title: "Socialiniai principai",
-        text: "Mes gerbiame socialinius principus, įtvirtintus pagrindinėse Tarptautinės darbo organizacijos konvencijose ir Europos Sąjungos Pagrindinių teisių chartijoje. Mes visiškai netoleruojame visų formų priverstinio ir privalomojo darbo, bet kokių vaikų darbo formų, taip pat laikomės asociacijų laisvės ir kolektyvinių derybų teisės. Skatiname lygias galimybes ir siekiame sukurti aplinką, kurioje visi darbuotojai galėtų realizuoti savo potencialą, pagrįstą bendromis vertybėmis, kultūrų įvairove, lytimi, rase ir kita lygybe. Norėdami sužinoti daugiau, peržiūrėkite mūsų Lygių galimybių politiką (nuoroda)."
-      },
-      article4: {
         title: "Gero korporatyvinio valdymo principai",
         text: "Siekiame įgyvendinti gero korporatyvinio valdymo principus, kurie galėtų sustiprinti mūsų verslo atsparumą gerinant rizikos valdymą, abipusiu pasitikėjimu pagrįstą verslą bei santykius su klientais. Šie principai apima mūsų rūpinimąsi privatumu ir duomenų saugumu, verslo skaidrumo skatinimą, bet kokių korupcijos, kyšininkavimo, turto prievartavimo, sukčiavimo ir pinigų plovimo formų netoleravimą, sąžiningos ir skaidrios mokesčių praktikos laikymąsi, mūsų paslaugų prieinamumą, atsakingo skolinimo praktika, o taip pat aukščiausių etiško elgesio standartų įgyvendinimą. Kviečiame išsamiau susipažinti su mūsų Etikos kodeksu (nuoroda)."
       }
@@ -77,8 +70,7 @@ export default {
       link1: "Aplinkosauga",
       link2: "Socialine politika",
       link3: "Valdymas",
-      link4: "ESG Politika",
-      link5: "ESG ataskaitos"
+      link4: "ESG ataskaitos"
     },
     learnMoreButton: "Sužinokite daugiau"
   },
@@ -210,7 +202,7 @@ export default {
     }
   },
   privetCurrentAccount: {
-    pageTitle: "Einamoji sąskaita",
+    pageTitle: "Einamoji sąskaita: Nebereikia būti dideliam, kad ... ",
     heroBlock: {
       description: "Atidarykite IBAN sąskaitą pas mus, atlikite ir gaukite mokėjimus iš visos Euro zonos",
       bullet1: "24/7 internetinė bankininkystė jūsų paslaugoms",

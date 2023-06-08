@@ -14,13 +14,13 @@ export default function Mortgage() {
     return (
       <IndexLayout>
         <main>
-          <section className={styles.pageWrapper}>
-            <div className={styles.pageList}>
-              <div className={styles.heroItem}>
-                <h1 className={styles.title}>
+          <section className={businessStyle.pageWrapper}>
+            <div className={businessStyle.pageList}>
+              <div className={businessStyle.heroItem}>
+                <h1 className={businessStyle.title}>
                   {t.business.investmentLoan.heroBlock.title}
                 </h1>
-                <div className={styles.heroDescription}>
+                <div className={businessStyle.heroDescription}>
                   <p>{t.business.investmentLoan.heroBlock.description}</p>
                   <ul>
                     <li>{t.business.investmentLoan.heroBlock.bullet1}</li>
