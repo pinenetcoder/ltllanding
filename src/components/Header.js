@@ -102,11 +102,10 @@ function Header() {
                     }
                   </div>
                   {
-                    !isBusiness ? 
+                    !isBusiness && 
                     <div className="toggleSubMenu">
                       <Link className="header-nav-link" href="/credits/consumer-loan">{t.headerNavLinks.consumerLoan}</Link>
                     </div>
-                    : ""
                   }
                   <div className="toggleSubMenu">
                     {
