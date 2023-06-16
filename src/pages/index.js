@@ -4,7 +4,9 @@ import IndexNews from "@/components/IndexNews"
 import Link from "next/link"
 import styles from '@/styles/Home.module.scss'
 import Image from 'next/image'
+
 export default function Home() {
+  
   return (
     <>
     <IndexLayout>
@@ -97,7 +99,6 @@ export default function Home() {
             </ul>
           </div>
         </section>
-
         <section id='news' className={styles.newsSection}>
           <IndexNews/>
         </section>
