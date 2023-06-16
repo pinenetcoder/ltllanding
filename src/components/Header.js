@@ -9,6 +9,9 @@ function Header() {
   const [langBtnState, setLangBtnState] = useState('ENG');
 
   const router = useRouter();
+  const isBusiness = router.pathname.includes('/business')
+
+  console.log(router)
   const { locale } = router;
   const t = locale === 'lt' ? lt : en;
 
@@ -21,10 +24,8 @@ function Header() {
       else setPaymentSubMenu(false);
       return
     }
-
     if (type === 'open') setCreditSubMenu(true);
     else setCreditSubMenu(false);
-    
   }
   
   useEffect(()=> {
@@ -54,8 +55,12 @@ function Header() {
           </Link>
         </div>
         <div className="bussiness-type-block">
-          <Link className="header-bussinness-type-nav-link" href="/About">{t.headerNavLinks.private}</Link>
-          <Link className="header-bussinness-type-nav-link" href="/About">{t.headerNavLinks.business}</Link>
+          {
+            isBusiness ? 
+            <Link className="header-bussinness-type-nav-link" href="/">{t.headerNavLinks.private}</Link>
+            :
+            <Link className="header-bussinness-type-nav-link" href="/business">{t.headerNavLinks.business}</Link>
+          }
         </div>
         <div className="menubar">
           <nav className="header-navigation">
@@ -63,12 +68,22 @@ function Header() {
               {t.headerNavLinks.payments}
               {
                 paymentSubMenu &&
-                <div className="dropDownPayments">
+                <div className="dropDownMenu">
                   <div className="toggleSubMenu">
+                  {
+                    isBusiness ? 
+                    <Link className="header-nav-link" href="/business/current-account">{t.headerNavLinks.currentAccount}</Link>
+                    :
                     <Link className="header-nav-link" href="/product">{t.headerNavLinks.currentAccount}</Link>
+                  } 
                   </div>
                   <div className="toggleSubMenu">
-                    <Link className="header-nav-link" href="/payments">{t.headerNavLinks.payments}</Link>
+                    {
+                      isBusiness ? 
+                      <Link className="header-nav-link" href="/business/payments">{t.headerNavLinks.payments}</Link>
+                      :
+                      <Link className="header-nav-link" href="/payments">{t.headerNavLinks.payments}</Link>
+                    } 
                   </div>
                 </div>
               }
@@ -77,15 +92,29 @@ function Header() {
               { t.headerNavLinks.credit }
               {
                 creditSubMenu &&
-                <div className="dropDownCredit">
+                <div className="dropDownMenu">
                   <div className="toggleSubMenu">
-                    <Link className="header-nav-link" href="/credits/mortgage">{t.headerNavLinks.mortgageLoan}</Link>
+                    {
+                      isBusiness ? 
+                      <Link className="header-nav-link" href="/business/investment-loan">{t.headerNavLinks.investmentLoan}</Link>
+                      :
+                      <Link className="header-nav-link" href="/credits/mortgage">{t.headerNavLinks.mortgageLoan}</Link>
+                    }
                   </div>
+                  {
+                    !isBusiness ? 
+                    <div className="toggleSubMenu">
+                      <Link className="header-nav-link" href="/credits/consumer-loan">{t.headerNavLinks.consumerLoan}</Link>
+                    </div>
+                    : ""
+                  }
                   <div className="toggleSubMenu">
-                    <Link className="header-nav-link" href="/credits/consumer-loan">{t.headerNavLinks.consumerLoan}</Link>
-                  </div>
-                  <div className="toggleSubMenu">
-                    <Link className="header-nav-link" href="/credits/equity-loan">{t.headerNavLinks.equityLoan}</Link>
+                    {
+                      isBusiness ? 
+                      <Link className="header-nav-link" href="/business/capital-loan">{t.headerNavLinks.capitalLoan}</Link>
+                      :
+                      <Link className="header-nav-link" href="/credits/equity-loan">{t.headerNavLinks.equityLoan}</Link>
+                    }
                   </div>
                 </div>
               }

@@ -12,7 +12,9 @@ export default {
     deposit: 'Indėliai',
     contacts: 'Kontaktai',
     login: 'Prisijungti',
-    openAccount: 'Atidaryti sąskaitą'
+    openAccount: 'Atidaryti sąskaitą',
+    investmentLoan: 'Investicinė paskola',
+    capitalLoan: 'Paskola apyvartiniam kapitalui',
   },
   footerNavLinks: {
     usefulLinks: 'Useful links',

@@ -125,32 +125,7 @@ header {
   .menubar {
     position: relative;
 
-    .dropDownPayments {
-      width: 160px;
-      background-color: #F4F4F4;
-      padding: 10px;
-      box-shadow: 3px 10px 5px -4px rgba(0,0,0,0.75);
-      opacity: 1;
-      position: absolute;
-      top: 40px;
-      left: -10px;
-      z-index: 9;
-      transition: 250ms ease-in-out;
-
-      .toggleSubMenu {
-        margin-bottom: 5px;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        a:hover {
-          color: var(--theme-color2);
-        }
-      }
-    }
-
-    .dropDownCredit {
+    .dropDownMenu {
       width: 270px;
       background-color: #F4F4F4;
       padding: 10px;
@@ -160,7 +135,7 @@ header {
       top: 40px;
       left: -10px;
       z-index: 9;
-      transition: 2050ms ease-in-out;
+      transition: 250ms ease-in-out;
 
       .toggleSubMenu {
         margin-bottom: 5px;
