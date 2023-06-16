@@ -580,15 +580,12 @@ export default {
         article3: {
           title: "Loyalty rewards and benefits",
           description: "Get more out of your commitment with our exceptional loyalty programs. We offer attractive rewards and special pricing to show our appreciation for your loyalty. We value your long-term partnership and thank you for choosing us."
+        },
+        article4: {
+          title: "Interest rates",
+          description: "Maximize your savings with our term deposit options! Enjoy attractive interest rates that guarantee you a fixed return on your investment. Invest with us today and start earning more. Don't miss out on our interest rate offers."
         }
       },
-      interestRatesArticle: {
-        title: "Interest rates",
-        description: "Maximize your savings with our term deposit options! Enjoy attractive interest rates that guarantee you a fixed return on your investment. Invest with us today and start earning more. Don't miss out on our interest rate offers.",
-        period: "Period",
-        interestRate: "Interest rate",
-        month: "month",     
-       },
       stepProcess: {
         title: "Term deposit opening processs",
         step1: {
@@ -618,7 +615,8 @@ export default {
         }
       },
       calcBlock: {
-        title: "Use our tool to calculate the interest you'll earn",
+        title: "Calculate",
+        subTitle: "Use our tool to calculate the interest you'll earn",
         ammoutOfDeposit: "Amount of deposit",
         term: "Term of Deposit",
         interestRate: "Interest rate",

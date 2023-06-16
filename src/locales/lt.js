@@ -578,14 +578,11 @@ export default {
         article3: {
           title: "Lojalumo atlygis",
           description: "Išnaudokite daugiau galimybių naudodamiesi mūsų išskirtinėmis lojalumo programomis. Siūlome patrauklius atlygius ir specialias palūkanas, kaip dėkingumą už jūsų lojalumą. Vertiname ilgalaikę partnerystę ir dėkojame, kad pasirinkote mus."
+        },
+        article4: {
+          title: "Indėlių palūkanos",
+          description: "Sutaupykite maksimaliai naudodamiesi mūsų terminuoto indėlio galimybėmis! Mėgaukitės patraukliomis palūkanų normomis, kurios garantuoja jums fiksuotą investicijų grąžą. Investuokite su mumis ir pradėkite uždirbti daugiau jau šiandien. Nepraleiskite mūsų palūkanų normų pasiūlymų."
         }
-      },
-      interestRatesArticle: {
-        title: "Indėlių palūkanos",
-        description: "Sutaupykite maksimaliai naudodamiesi mūsų terminuoto indėlio galimybėmis! Mėgaukitės patraukliomis palūkanų normomis, kurios garantuoja jums fiksuotą investicijų grąžą. Investuokite su mumis ir pradėkite uždirbti daugiau jau šiandien. Nepraleiskite mūsų palūkanų normų pasiūlymų.",
-        period: "Laikotarpis",
-        interestRate: "Palūkanų norma",
-        month: "mėn.",      
       },
       stepProcess: {
         title: "Terminuoto indėlio sąskaitos atidarymo procesas",
@@ -616,7 +613,8 @@ export default {
         }
       },
       calcBlock: {
-        title: "Naudokite mūsų įrankį, kad apskaičiuotumėte palūkanas, kurias uždirbsite",
+        title: "Apskaičiuoti",
+        subTitle: "Naudokite mūsų įrankį, kad apskaičiuotumėte palūkanas, kurias uždirbsite",
         ammoutOfDeposit: "Indėlio dydis",
         term: "Indelio terminas",
         interestRate: "Palūkanų norma",

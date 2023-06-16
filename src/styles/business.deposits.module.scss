@@ -1,3 +1,205 @@
+.benefitsSection {
+    padding: 80px 0 64px 0;
+  
+    .benefitsWrapper {
+      max-width: 750px;
+      padding: 0 15px 0 15px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+    }
+  
+    .benefitsBlock {
+      width: 330px;
+  
+      .benefitsTitle {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        margin-bottom: 34px;
+      }
+  
+      .benefitsDescription {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 22px;
+  
+        li {
+          list-style-position: inside;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+
+  .calculatorSection {
+    padding: 50px 0 64px 0;
+    .calculatorWrapper {
+       width: 790px;
+       margin: 0 auto;
+       padding: 0 15px 0 15px;
+       display: flex;
+       gap: 46px;
+       margin-bottom: 35px;
+    }
+ 
+    h2 {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+ 
+    .calculatorBlock {
+       width: 416px;
+       border-right: solid 1px var(--theme-color4);
+       padding-right: 49px;
+       padding-top: 42px;
+    }
+    
+    .resultBlockItem {
+       width: 270px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom: 20px;
+ 
+       .left {
+          font-size-adjust: 16px;
+          font-weight: 300;
+          line-height: 20px;
+          color: var(--black-text-color);
+          text-align: center;
+          padding-right: 20px;
+       }
+ 
+       .right {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 38px;
+          color: var(--black-text-color);
+          text-align: center;
+       }
+    }
+    
+    .calculatorLine {
+       display: flex;
+       gap: 40px;
+       margin-bottom: 15px;
+    }
+ 
+    .label {
+       width: 132px;
+       display: flex;
+       align-items: center;
+       justify-content: right;
+       text-align: right;
+       font-size: 16px;
+       font-weight: 300;
+       line-height: 20px;
+       color: var(--theme-color4);
+    }
+ 
+    input {
+       width: 198px;
+       height: 30px;
+       background: url(/assets/images/euro.svg) no-repeat right center;
+       border: none;
+       border-bottom: 1px solid #939096;
+       color: var(--black-text-color);
+       padding-right: 20px;
+       font-size: 16px;
+       font-weight: 300;
+       line-height: 20px;
+ 
+       &:focus {
+          outline: none;
+       }
+ 
+       &::placeholder {
+          color: var(--black-text-color);
+       }
+    }
+ 
+    .select {
+       width: 198px;
+       background: url(/assets/images/men.svg) no-repeat right center;
+       
+          &::after {
+             content: "";
+             display: block;
+             position: relative;
+             height: 1px;
+             background-color: var(--theme-color4);
+             margin-top: 6px;
+          }
+ 
+       select {
+          border: none;
+          background: transparent;
+          cursor: pointer;
+          padding-right: 20px;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 20px;
+ 
+          &:focus {
+             outline: none;
+          }
+       }
+    }
+ 
+    h3 {
+       font-size: 16px;
+       font-weight: 300;
+       line-height: 20px;
+       margin-bottom: 8px;
+    }
+ 
+    .resultBlock {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding-top: 10px;
+    }
+ 
+    .resultBlockTitle {
+       font-size: 40px;
+       font-weight: 700;
+       line-height: 50px;
+       margin-bottom: 30px;
+    }
+ 
+    .borderCorner {
+       width: 15px;
+       height: 15px;
+       z-index: 1;
+       border-top: solid 1px var(--theme-color4);
+       border-right: solid 1px var(--theme-color4);
+       background-color: var(--main-background);
+       transform: rotate(45deg) translate(319px, -258px);
+    }
+    .depositSectionButton {
+       margin: 0 auto;
+       padding: 0 15px 0 15px;
+       display: flex;
+       justify-content: center;
+    }
+ }
+ 
+
+  
 .depositPageWrapper {
     padding: 66px 0 46px 0;
     background-color: var(--businness-background);
