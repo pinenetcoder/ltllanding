@@ -1,23 +1,22 @@
 :root {
-  --main-text-color: #0D222E;
+  --main-text-color: #0d222e;
   --light-color: #535353;
   --black-text-color: #000000;
   --white-text-color: #ffffff;
 
-  --main-background: #F4F4F4;
-  --creame-background: #D7D7D7;
+  --main-background: #f4f4f4;
+  --creame-background: #d7d7d7;
   --white-background: #ffffff;
   --ligh-grey-background: rgba(217, 217, 217, 0.49);
   --light-creame-background: rgba(233, 179, 23, 0.1);
-  --businness-background:rgba(194, 205, 225, 0.3);
-  --table-border-color: #ACACAC;
+  --businness-background: rgba(194, 205, 225, 0.3);
+  --table-border-color: #acacac;
 
-  --theme-color1: #08173E;
-  --theme-color2: #12D8E4;
+  --theme-color1: #08173e;
+  --theme-color2: #12d8e4;
   --theme-color3: rgba(217, 217, 217, 0.49);
   --theme-color4: #939096;
-  --theme-color5: #EEEEE9;
-
+  --theme-color5: #eeeee9;
 }
 html {
   scroll-padding: 150px;
@@ -29,13 +28,12 @@ body {
   background: var(--main-background);
 
   * {
-    font-family: 'Lexend', sans-serif;
+    font-family: "Lexend", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 }
-
 
 .main-layout {
   position: relative;
@@ -62,7 +60,6 @@ header {
     margin-right: 90px;
     height: 46px;
   }
-
 
   .bussiness-type-block {
     margin-right: 48px;
@@ -104,7 +101,7 @@ header {
     }
 
     .header-nav-link {
-      font-family: 'Lexend';
+      font-family: "Lexend";
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
@@ -127,9 +124,9 @@ header {
 
     .dropDownPayments {
       width: 160px;
-      background-color: #F4F4F4;
+      background-color: #f4f4f4;
       padding: 10px;
-      box-shadow: 3px 10px 5px -4px rgba(0,0,0,0.75);
+      box-shadow: 3px 10px 5px -4px rgba(0, 0, 0, 0.75);
       opacity: 1;
       position: absolute;
       top: 40px;
@@ -152,9 +149,9 @@ header {
 
     .dropDownCredit {
       width: 270px;
-      background-color: #F4F4F4;
+      background-color: #f4f4f4;
       padding: 10px;
-      box-shadow: 3px 10px 5px -4px rgba(0,0,0,0.75);
+      box-shadow: 3px 10px 5px -4px rgba(0, 0, 0, 0.75);
       opacity: 1;
       position: absolute;
       top: 40px;
@@ -187,7 +184,7 @@ header {
       align-items: center;
       width: 154px;
       height: 42px;
-      background: #0D222E;
+      background: #0d222e;
       border-radius: 5px;
       text-decoration: none;
       color: #ffffff;
@@ -205,6 +202,129 @@ header {
     }
   }
 }
+// ----- Media queries -----
+
+@media (max-width: 1920px) {
+  .burger-menu-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .main-layout  {
+
+    header {
+      padding: 40px 15px 37px 15px;
+    }
+  
+    .logo-block {
+      margin-right: 50px;
+      height: 46px;
+    }
+  
+    .bussiness-type-block {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .header-action-buttons-block {
+      display: flex;
+      flex-direction: column;
+
+      .header-action-button {
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .main-layout {
+   header {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+    .logo-block {
+      margin-right: 30px;
+    }
+
+    .bussiness-type-block {
+      margin-right: 20px;
+    }
+
+  
+   
+  }
+}
+
+// @media (max-width: 720px) {
+
+// }
+
+// @media (max-width: 570px) {
+
+// }
+
+// @media (max-width: 320px) {
+//   .burger-menu-toggle {
+//     display: block;
+//     position: fixed;
+//     top: 58px;
+//     right: 40px;
+//     z-index: 12;
+//     // cursor: pointer;
+
+//     input {
+//       display: none;
+//     }
+
+//     span {
+//       display: block;
+//       width: 30px;
+//       height: 3px;
+//       margin-bottom: 5px;
+//       background-color: #333;
+//       transition: transform 0.3s ease-in-out;
+//     }
+
+//     ul {
+//       list-style-type: none;
+//       margin: 0;
+//       padding: 0;
+//       background-color: #f2f2f2;
+//       position: fixed;
+//       top: 0;
+//       right: 0;
+//       width: 200px;
+//       height: 100%;
+//       overflow: hidden;
+//       transform: translateX(100%);
+//       transition: transform 0.3s ease-in-out;
+//     }
+
+//     ul li {
+//       padding: 20px;
+//     }
+
+//     input:checked ~ ul {
+//       transform: translateX(0%);
+
+//       & ~ span:nth-child(1) {
+//         transform: rotate(-45deg) translate(-5px, 6px);
+//       }
+
+//       & ~ span:nth-child(2) {
+//         opacity: 0;
+//       }
+
+//       & ~ span:nth-child(3) {
+//         transform: rotate(45deg) translate(-5px, -6px);
+//       }
+//     }
+//   }
+
+// }
 
 footer {
   display: flex;
@@ -223,14 +343,14 @@ footer {
       font-weight: 700;
       font-size: 16px;
       line-height: 24px;
-      color: #FFFFFF;
+      color: #ffffff;
     }
 
     .footer-navigation-link {
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
-      color: #FFFFFF;
+      color: #ffffff;
       text-decoration: none;
     }
 
@@ -240,7 +360,6 @@ footer {
     }
   }
 }
-
 
 .container {
   max-width: 1130px;
@@ -258,7 +377,7 @@ footer {
 .light-green-action-button {
   width: 194px;
   height: 42px;
-  background: #12D8E4;
+  background: #12d8e4;
   border-radius: 33px;
   display: flex;
   justify-content: center;
@@ -266,7 +385,7 @@ footer {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 
   &.long {
@@ -274,22 +393,21 @@ footer {
   }
 }
 
-.slick-active>.index-page-hero-slider-dot {
-  background: #B5B5B5 !important;
+.slick-active > .index-page-hero-slider-dot {
+  background: #b5b5b5 !important;
 }
 
 .slick-dots {
   bottom: -56px !important;
 }
 
-
 //  Accordion Component
 .accordionWrapper {
-  border-top: 1px solid #ACACAC;
+  border-top: 1px solid #acacac;
 
   .ac {
     padding: 16px 0;
-    border-bottom: 1px solid #ACACAC;
+    border-bottom: 1px solid #acacac;
   }
 
   .acHeader {
@@ -333,14 +451,13 @@ footer {
     }
   }
 
-
   &.muiltiLevel {
     .acHeader .accHeaderTitle {
       font-size: 18px;
       text-transform: uppercase;
     }
 
-    &>.ac>.acPanel>.ac {
+    & > .ac > .acPanel > .ac {
       padding: 16px 0 16px 42px;
 
       &:last-child {
@@ -364,6 +481,6 @@ footer {
   font-size: 50px;
   line-height: 62px;
   text-align: center;
-  color: #0D222E;
+  color: #0d222e;
   margin-bottom: 60px;
 }

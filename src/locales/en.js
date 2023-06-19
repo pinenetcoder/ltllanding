@@ -2,7 +2,7 @@
 export default {
   headerNavLinks: {
     private: 'Private',
-    business: 'For Business',
+    business: 'Business',
     payments: 'Payment',
     currentAccount : "Current account",
     credit: 'Credit',
