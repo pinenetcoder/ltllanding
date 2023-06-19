@@ -11,7 +11,6 @@ function Header() {
   const router = useRouter();
   const isBusiness = router.pathname.includes('/business')
 
-  console.log(router)
   const { locale } = router;
   const t = locale === 'lt' ? lt : en;
 
