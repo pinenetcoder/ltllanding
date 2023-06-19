@@ -12,7 +12,9 @@ export default {
     deposit: 'Deposit',
     contacts: 'Contacts',
     login: 'Log In',
-    openAccount: 'Open account'
+    openAccount: 'Open account',
+    investmentLoan: 'investment loan',
+    capitalLoan: 'Capital loan',
   },
   footerNavLinks: {
     usefulLinks: 'Useful links',
