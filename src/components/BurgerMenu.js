@@ -4,8 +4,6 @@ import styles from "@/styles/BurgerMenu.module.scss"
 
 function BurgerMenu() {
  
- 
-  
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
 
