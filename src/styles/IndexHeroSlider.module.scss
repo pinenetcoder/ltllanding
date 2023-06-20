@@ -91,7 +91,6 @@
 }
 @media (max-width: 1024px) {
   .indexPageSlider {
-    // padding: 0 15px 0 15px;
 
     .slickSlide {
       height: 500px;
@@ -133,20 +132,18 @@
 }
 @media (max-width: 768px) {
   .indexPageSlider {
-    // padding: 0 15px 0 15px;
-
     .slickSlide {
       height: 500px;
       background-color: var(--theme-color5);
       background-image: url(/assets/images/homePage_heroBlock.svg);
       background-repeat: no-repeat;
-      background-position: calc(100% - -50px) bottom;
+      background-position: calc(100% - -28px) bottom;
       background-size: 80%;
     }
 
     .slideContent {
       padding-left: 0;
-      padding-top: 80px;
+      padding-top: 40px;
       display: flex;
       flex-direction: column;
       justify-content: center;
