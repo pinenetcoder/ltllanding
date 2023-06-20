@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import lt from '@/locales/lt';
 import en from '@/locales/en';
+import BurgerMenu from "./BurgerMenu";
 
 function Header() {
   const [langBtnState, setLangBtnState] = useState('ENG');
@@ -41,7 +42,6 @@ function Header() {
   }
 
   return (
-    <>
       <header>
         <div className="logo-block">
           <Link href="/">
@@ -126,8 +126,8 @@ function Header() {
           <Link className="header-action-button" href="/login">{ t.headerNavLinks.login }</Link>
           <Link className="header-action-button" href="/open-account">{ t.headerNavLinks.openAccount }</Link>          
         </div>
+        <BurgerMenu />
       </header>
-    </>
   )
 }
 

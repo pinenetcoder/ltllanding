@@ -25,7 +25,7 @@ export default function IndexNews() {
 
   return (
     <div className="container">
-      <h2>Naujienos</h2>
+      <h2 className={styles.newsTitle}>Naujienos</h2>
       <div className={styles.newsBlock}>
         {elNewsList}
       </div>

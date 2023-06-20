@@ -53,7 +53,7 @@ function Footer() {
         </div>
       </div>  
 
-      <div className="footer-navigation-section">
+      <div className="footer-navigation-section footer-img">
         <Link className="social-link" href="/">
           <Image
             src="/assets/images/ltl-logo-white.svg"
