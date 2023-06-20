@@ -23,13 +23,13 @@ function Footer() {
         <Link className="footer-navigation-link" href="/management">{t.footerNavLinks.management}</Link>
         <Link className="footer-navigation-link" href="/share-holders">{t.footerNavLinks.shareholders}</Link>
         <Link className="footer-navigation-link" href="/news">{t.footerNavLinks.news}</Link>
+        <Link className="footer-navigation-link" href="/licence">{t.footerNavLinks.license}</Link>
       </div>
 
       <div className="footer-navigation-section">
         <h4 className="footer-navigation-section-title">{t.footerNavLinks.accountability}</h4>
         <Link className="footer-navigation-link" href="/financial-reporting">{t.footerNavLinks.financialAccountability}</Link>
         <Link className="footer-navigation-link" href="/esg">{t.footerNavLinks.esg}</Link>
-        <Link className="footer-navigation-link" href="/licence">{t.footerNavLinks.license}</Link>
         <Link className="footer-navigation-link" href="/money-loundrying">{t.footerNavLinks.moneyLoundering}</Link>
       </div>     
 
