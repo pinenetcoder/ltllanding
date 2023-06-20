@@ -29,3 +29,148 @@
     }
   }
 }
+@media (max-width: 1460px) {
+  .indexPageSlider {
+
+    .slickSlide {
+      height: 580px;
+      background-color: var(--theme-color5);
+      background-image: url(/assets/images/homePage_heroBlock.svg);
+      background-repeat: no-repeat;
+      background-position: -107px bottom;
+      background-size: 101%;
+    }
+
+    .slideContent {
+      padding-top: 80px;
+  
+      h1 {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 62px;
+        color: var(--main-text-color);
+        margin-bottom: 44px;
+      }
+  
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--main-text-color);  
+        max-width: 470px;
+        margin-bottom: 44px;
+      }
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .indexPageSlider {
+
+    .slideContent {
+      padding-left: 30px;
+      padding-top: 80px;
+  
+      h1 {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 62px;
+        color: var(--main-text-color);
+        margin-bottom: 44px;
+      }
+  
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--main-text-color);  
+        max-width: 470px;
+        margin-bottom: 44px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .indexPageSlider {
+    // padding: 0 15px 0 15px;
+
+    .slickSlide {
+      height: 500px;
+      background-color: var(--theme-color5);
+      background-image: url(/assets/images/homePage_heroBlock.svg);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: 70%;
+    }
+
+    .slideContent {
+      padding-left: 0;
+      padding-top: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      h1 {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 52px;
+        color: var(--main-text-color);
+        margin-bottom: 44px;
+        text-align: center;
+        max-width: 680px;
+      }
+  
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--main-text-color);  
+        max-width: 470px;
+        margin-bottom: 44px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .indexPageSlider {
+    // padding: 0 15px 0 15px;
+
+    .slickSlide {
+      height: 500px;
+      background-color: var(--theme-color5);
+      background-image: url(/assets/images/homePage_heroBlock.svg);
+      background-repeat: no-repeat;
+      background-position: calc(100% - -50px) bottom;
+      background-size: 80%;
+    }
+
+    .slideContent {
+      padding-left: 0;
+      padding-top: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      h1 {
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 42px;
+        color: var(--main-text-color);
+        margin-bottom: 44px;
+        text-align: center;
+        max-width: 680px;
+      }
+  
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--main-text-color);  
+        max-width: 470px;
+        margin-bottom: 44px;
+      }
+    }
+  }
+}
+

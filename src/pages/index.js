@@ -18,7 +18,7 @@ export default function Home() {
           <div className="container">
             <article className={styles.beneficialArticle}>
               <div className={styles.imageBlock}>
-                <Image 
+                <Image
                   src="assets/images/article1.svg"
                   width={429}
                   height={429}
@@ -39,7 +39,6 @@ export default function Home() {
                 </div>
               </div>
             </article>
-
             <article className={styles.beneficialArticleMirror}>
               <div className={styles.imageBlock}>
                 <Image 
