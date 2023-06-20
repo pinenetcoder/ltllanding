@@ -117,7 +117,12 @@ function Header() {
                 </div>
               }
             </div>
-            <Link className="header-nav-link" href="/deposits">{ t.headerNavLinks.deposit }</Link>
+            {
+              isBusiness ? 
+              <Link className="header-nav-link" href="/business/deposits">{ t.headerNavLinks.deposit }</Link>
+              :
+              <Link className="header-nav-link" href="/deposits">{ t.headerNavLinks.deposit }</Link>
+            }
             <Link className="header-nav-link" href="/contacts">{ t.headerNavLinks.contacts }</Link>
             <span className="header-nav-link change-language-link" onClick={setLanguage} href="/eng">{langBtnState}</span>
           </nav>
