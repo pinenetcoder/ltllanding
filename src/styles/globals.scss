@@ -214,7 +214,7 @@ footer {
 }
 
 // ----- Media queries -----
-@media (max-width: 5000px) {
+@media (min-width: 1024px) {
   .burger-menu-toggle {
     display: none;
   }
