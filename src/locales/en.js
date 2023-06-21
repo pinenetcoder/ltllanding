@@ -106,6 +106,7 @@ export default {
     innerLinkBlock: {
       benefits: "Benefits",
       interestRates: "Interest rates",
+      calculator: "Calculator",
       process: "Process",
       clientSuport: "Client Support",
       faq: "FAQ"
