@@ -392,7 +392,6 @@
          align-items: center;
          width: 51px;
          height: 51px;
-         scale: 80%;
        }
  
        .stepsText {
@@ -550,13 +549,14 @@
             gap: 25px;
 
             .stepsNumber {
-               width: 80px;
-               height: 80px;
+               width: 70px;
+               height: 70px;
                flex: none;
             }
 
             .stepsText {
                text-align: center;
+               
                .stepsDescription {
                   text-align: justify;
                   font-size: 14px;
@@ -578,6 +578,7 @@
       padding: 38px 0 50px 0;
 
       .faqWrapper {
+
          .faqList {
             padding: 30px 50px 30px 50px;
          }
@@ -588,6 +589,7 @@
 @media (max-width: 768px) {
    .depositPageWrapper {
       padding: 36px 36px 36px 0;
+      
       .depositPageList {
          padding-left: 40px;
          background-image: none;
