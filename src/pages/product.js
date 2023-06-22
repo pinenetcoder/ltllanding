@@ -43,7 +43,6 @@ export default function Payments() {
         description: `${t.privetCurrentAccount.stepProcess.step5.description}`
       }
     ]
-  
 
    return (
       <>

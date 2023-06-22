@@ -189,130 +189,89 @@
 // ----- Media queries -----
 @media (max-width: 1390px) {
   .mortgagePageWrapper {
-     
-     .mortgagePageList {
-        padding-left: 280px;
-        background-position: calc(100% - 50px) bottom;
-        background-size: 350px;
-      }
+    .mortgagePageList {
+      padding-left: 280px;
+      background-position: calc(100% - 50px) bottom;
+      background-size: 350px;
+    }
   }
 }
 
 @media (max-width: 1250px) {
   .mortgagePageWrapper {
-     
-     .mortgagePageList {
-        padding-left: 50px;
-        background-position: calc(100% - 40px) bottom;
-     }
+    .mortgagePageList {
+      padding-left: 50px;
+      background-position: calc(100% - 40px) bottom;
+    }
   }
 }
 
 @media (max-width: 974px) {
   .mortgagePageWrapper {
-     
-     .mortgagePageList {
-        padding-left: 40px;
-        background-position: calc(100% - 20px) bottom;
-        background-size: 200px;
-     }
+    .mortgagePageList {
+      padding-left: 40px;
+      background-position: calc(100% - 20px) bottom;
+      background-size: 200px;
+    }
   }
 }
 
 @media (max-width: 780px) {
-//   .mortgageStepsSection {
-//     padding: 36px 0 10px 0;
+  .clientSuportSection {
+    padding: 20px 0 15px 0;
+  }
 
-//     .mortgageStepsWrapper {
-//        padding: 0 25px 0 15px;
+  .faqSection {
+    padding: 38px 0 50px 0;
 
-//        .stepsItem {
-//           display: flex;
-//           flex-direction: column;
-//           align-items: center;
-//           gap: 25px;
-
-//           .stepsNumber {
-//              width: 70px;
-//              height: 70px;
-//              flex: none;
-//           }
-
-//           .stepsText {
-//              text-align: center;
-
-//              .stepsDescription {
-//                 text-align: justify;
-//                 font-size: 14px;
-//              }
-
-//              p {
-//               text-align: left;
-//            }
-//           }
-//        }
-//     }
-//  }
-
- .clientSuportSection {
-  padding: 20px 0 15px 0;
-}
-
-.faqSection {
-  padding: 38px 0 50px 0;
-
-  .faqWrapper {
-     .faqList {
+    .faqWrapper {
+      .faqList {
         padding: 30px 50px 30px 50px;
       }
     }
-  } 
+  }
 }
 
 @media (max-width: 768px) {
   .mortgagePageWrapper {
-     padding: 36px 36px 36px 0;
+    padding: 36px 36px 36px 0;
 
-     .mortgagePageList {
-        padding-left: 40px;
-        background-image: none;
-     }
+    .mortgagePageList {
+      padding-left: 40px;
+      background-image: none;
+    }
   }
 
   .innerNavigationSection {
-
     .innerNavigationLinkList {
-       display: flex;
-       justify-content: flex-start;
-       padding: 0 30px;
-       gap: 10px;
-    }
- }
-
- .benefitsSection {
-
-  .benefitsWrapper {
-
-    .benefitsBlock {
-       max-width: 490px;
-       text-align: center;
-
-       .benefitsDescription {
-        text-align: justify;
-       }
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 30px;
+      gap: 10px;
     }
   }
-}
+
+  .benefitsSection {
+    .benefitsWrapper {
+      .benefitsBlock {
+        max-width: 490px;
+        text-align: center;
+
+        .benefitsDescription {
+          text-align: justify;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 686px) {
   .innerNavigationSection {
-
-     .innerNavigationLinkList {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 80px;
-        gap: 10px;
-     }
+    .innerNavigationLinkList {
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 80px;
+      gap: 10px;
+    }
   }
 }
