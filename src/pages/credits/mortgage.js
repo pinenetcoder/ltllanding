@@ -31,13 +31,28 @@ export default function Mortgage() {
       {
         number: "4",
         title: `${t.mortgageLoan.stepProcess.step4.title}`,
-        description: `${t.mortgageLoan.stepProcess.step4.text}`
+        description: `${t.mortgageLoan.stepProcess.step4.subTitle}`,
+        bulletBlock: [
+           `${t.mortgageLoan.stepProcess.step4.bulletBlock.bullet1}`,
+           `${t.mortgageLoan.stepProcess.step4.bulletBlock.bullet2}`,
+           `${t.mortgageLoan.stepProcess.step4.bulletBlock.bullet3}`
+        ]
       },
       {
         number: "5",
         title: `${t.mortgageLoan.stepProcess.step5.title}`,
         description: `${t.mortgageLoan.stepProcess.step5.text}`
       },
+      {
+        number: "6",
+        title: `${t.mortgageLoan.stepProcess.step6.title}`,
+        description: `${t.mortgageLoan.stepProcess.step6.text}`
+      },
+      {
+        number: "7",
+        title: `${t.mortgageLoan.stepProcess.step7.title}`,
+        description: `${t.mortgageLoan.stepProcess.step7.text}`
+      }
     ]
 
     return (
@@ -124,58 +139,6 @@ export default function Mortgage() {
                   <h3>{t.mortgageLoan.stepProcess.title}</h3>
                 </div>
                 <Steper steperData={mortgageSteperData}/>
-                {/* <div className={styles.stepsList}>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>1</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.mortgageLoan.stepProcess.step1.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.mortgageLoan.stepProcess.step1.text}
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>2</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.mortgageLoan.stepProcess.step2.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.mortgageLoan.stepProcess.step2.text}
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>3</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.mortgageLoan.stepProcess.step3.title}</h2>
-                        <p>{t.mortgageLoan.stepProcess.step3.subTitle}</p>
-                        <div className={styles.stepsDescription}>
-                            <ul>
-                              <li>{t.mortgageLoan.stepProcess.step3.bulletBlock.bullet1}</li>
-                              <li>{t.mortgageLoan.stepProcess.step3.bulletBlock.bullet2}</li>
-                              <li>{t.mortgageLoan.stepProcess.step3.bulletBlock.bullet3}</li>
-                            </ul>
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>4</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.mortgageLoan.stepProcess.step4.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.mortgageLoan.stepProcess.step4.text}
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>5</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.mortgageLoan.stepProcess.step5.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.mortgageLoan.stepProcess.step5.text}
-                        </div>
-                      </div>
-                  </div>
-                </div> */}
             </div>
           </section>
           <section id="clientSuport" className={styles.clientSuportSection}>
