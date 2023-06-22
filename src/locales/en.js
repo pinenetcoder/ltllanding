@@ -234,7 +234,7 @@ export default {
         text: "Open banking makes it possible for companies to design smart, intuitive apps that connect directly to your bank account, making banking easier than ever. With our open banking interface, you can create cutting-edge applications that integrate seamlessly with banking services, providing customers with a superior user experience. API interface makes it possible for users to access their account information and initiate payments conveniently and securely."
       }
     },
-    accOpeningProcess: {
+    stepProcess: {
       blockTitle: "Steps",
       step1: {
         title: "Fill in an account opening form",

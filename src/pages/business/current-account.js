@@ -81,30 +81,30 @@ export default function Mortgage() {
                     <div className={styles.stepsItem}>
                         <div className={styles.stepsNumber}>1</div>
                         <div className={styles.stepsText}>
-                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step1.title}</h2>
+                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.stepProcess.step1.title}</h2>
                           <div className={styles.stepsDescription}>
-                              {t.privetCurrentAccount.accOpeningProcess.step1.text}
+                              {t.privetCurrentAccount.stepProcess.step1.description}
                           </div>
                         </div>
                     </div>
                     <div className={styles.stepsItem}>
                         <div className={styles.stepsNumber}>2</div>
                         <div className={styles.stepsText}>
-                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step2.title}</h2>
+                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.stepProcess.step2.title}</h2>
                           <div className={styles.stepsDescription}>
-                              {t.privetCurrentAccount.accOpeningProcess.step2.text}
+                              {t.privetCurrentAccount.stepProcess.step2.description}
                           </div>
                         </div>
                     </div>
                     <div className={styles.stepsItem}>
                         <div className={styles.stepsNumber}>3</div>
                         <div className={styles.stepsText}>
-                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step3.title}</h2>
+                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.stepProcess.step3.title}</h2>
                           <div className={styles.stepsDescription}>
                               <ul>
-                                <li>{t.privetCurrentAccount.accOpeningProcess.step3.bulletBlock.bullet1}</li>
-                                <li>{t.privetCurrentAccount.accOpeningProcess.step3.bulletBlock.bullet2}</li>
-                                <li>{t.privetCurrentAccount.accOpeningProcess.step3.bulletBlock.bullet3}</li>
+                                <li>{t.privetCurrentAccount.stepProcess.step3.bulletBlock.bullet1}</li>
+                                <li>{t.privetCurrentAccount.stepProcess.step3.bulletBlock.bullet2}</li>
+                                <li>{t.privetCurrentAccount.stepProcess.step3.bulletBlock.bullet3}</li>
                               </ul>
                           </div>
                         </div>
@@ -112,18 +112,18 @@ export default function Mortgage() {
                     <div className={styles.stepsItem}>
                         <div className={styles.stepsNumber}>4</div>
                         <div className={styles.stepsText}>
-                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step4.title}</h2>
+                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.stepProcess.step4.title}</h2>
                           <div className={styles.stepsDescription}>
-                              {t.privetCurrentAccount.accOpeningProcess.step4.text}
+                              {t.privetCurrentAccount.stepProcess.step4.description}
                           </div>
                         </div>
                     </div>
                     <div className={styles.stepsItem}>
                         <div className={styles.stepsNumber}>5</div>
                         <div className={styles.stepsText}>
-                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step5.title}</h2>
+                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.stepProcess.step5.title}</h2>
                           <div className={styles.stepsDescription}>
-                              {t.privetCurrentAccount.accOpeningProcess.step5.text}
+                              {t.privetCurrentAccount.stepProcess.step5.description}
                           </div>
                         </div>
                     </div>
