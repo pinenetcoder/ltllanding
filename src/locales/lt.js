@@ -136,11 +136,11 @@ export default {
       title: "Terminuoto indėlio sąskaitos atidarymo procesas",
       step1: {
         title: "Užpildykite sąskaitos atidarymo form",
-        text: "Užpildykite paraišką"
+        description: "Užpildykite paraišką"
       },
       step2: {
         title: "Identifikuokite save",
-        text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+        description: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
       },
       step3: {
         title: "Pateikite dokumentus",
@@ -153,11 +153,11 @@ export default {
       }, 
       step4: {
         title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
-        text: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+        description: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
       },
       step5: {
         title: "Valdykite savo terminuoto indėlio sąskaitą",
-        text: "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
+        description: "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
       }
     },
     calcBlock: {
@@ -233,15 +233,15 @@ export default {
         text: "Mūsų atvirosios bankininkystės API yra standartizuota sąsaja, leidžianti trečiųjų šalių kūrėjams saugiai ir patogiai pasiekti finansinius duomenis ir paslaugas iš bankų ir finansų įstaigų. API galia leidžia klientams inicijuoti operacijas per trečiųjų šalių programas vos keliais paspaudimais, nereikia prisijungti prie savo internetinės bankininkystės sąskaitos ar apsilankyti fiziniame banko skyriuje. Mūsų API buvo sukurta kaip RESTful API, kuri naudoja HTTP protokolą ir JSON duomenų formatą, ir sukurta remiantis Berlin Group standartu, išlaikant aukščiausią saugumo lygį."
       }
     },
-    accOpeningProcess: {
+    stepProcess: {
       blockTitle: "Žingsniai",
       step1: {
         title: "Užpildykite sąskaitos atidarymo formą",
-        text: "Užpildykite paraišką"
+        description: "Užpildykite paraišką"
       },
       step2: {
         title: "Identifikuokite save",
-        text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+        description: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
       },
       step3: {
         title: "Pateikite dokumentus",
@@ -253,11 +253,11 @@ export default {
       },
       step4: {
         title: "Pasirašykite banko sąskaitos sutartį",
-        text: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti sąskaitos sutartį ir susipažinti su bendrosiomis sąskaitos naudojimo sąlygomis."
+        description: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti sąskaitos sutartį ir susipažinti su bendrosiomis sąskaitos naudojimo sąlygomis."
       },
       step5: {
         title: "Pradėkite naudotis mūsų mokėjimo paslaugomis",
-        text: "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, kurioje galėsite naudotis mūsų mokėjimo paslaugomis, tvarkyti terminuotųjų indėlių sutartis, peržiūrėti informaciją apie savo kreditus (jei taikoma) ir kt."
+        description: "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, kurioje galėsite naudotis mūsų mokėjimo paslaugomis, tvarkyti terminuotųjų indėlių sutartis, peržiūrėti informaciją apie savo kreditus (jei taikoma) ir kt."
       }
     },
     clientSuport: {

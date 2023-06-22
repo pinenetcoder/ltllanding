@@ -136,11 +136,11 @@ export default {
       title: "Term deposit opening processs",
       step1: {
         title: "Fill in an account opening form",
-        text: "Please fill in the application"
+        description: "Please fill in the application"
       },
       step2: {
         title: "Identify yourself",
-        text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+        description: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
       },
       step3: {
         title: "Submit the documents",
@@ -153,11 +153,11 @@ export default {
       }, 
       step4: {
         title: "Sign the bank account agreement",
-        text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+        description: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
       },
       step5: {
         title: "Start using our payment services",
-        text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+        description: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
       }
     },
     calcBlock: {
@@ -238,11 +238,11 @@ export default {
       blockTitle: "Steps",
       step1: {
         title: "Fill in an account opening form",
-        text: "Please fill in the application"
+        description: "Please fill in the application"
       },
       step2: {
         title: "Identify yourself",
-        text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+        description: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
       },
       step3: {
         title: "Submit the documents",
@@ -254,11 +254,11 @@ export default {
       }, 
       step4: {
         title: "Sign the bank account agreement",
-        text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+        description: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
       },
       step5: {
         title: "Start using our payment services",
-        text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+        description: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
       }
     },
     clientSuport: {

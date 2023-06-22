@@ -1,6 +1,7 @@
 import styles from "@/styles/equity-loan.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Accordion from "@/components/Accordion"
+import Steper from "@/components/Steper"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import lt from '@/locales/lt'
@@ -9,6 +10,39 @@ import en from '@/locales/en'
 export default function Mortgage() {
     const router = useRouter();
     const t = router.locale === 'lt' ? lt : en
+
+    const equityLoanSteperData = [
+      {
+        number: "1",
+        title: `${t.equityLoan.stepProcess.step1.title}`,
+        description: "Please fill in the application"
+      },
+      {
+        number: "2",
+        title: `${t.equityLoan.stepProcess.step2.title}`,
+        description: `${t.equityLoan.stepProcess.step2.description}`
+      },
+      {
+        number: "3",
+        title: `${t.equityLoan.stepProcess.step4.title}`,
+        description: `${t.equityLoan.stepProcess.step3.description}`
+      },
+      {
+        number: "4",
+        title: `${t.equityLoan.stepProcess.step4.title}`,
+        description: `${t.equityLoan.stepProcess.step4.subTitle}`,
+        bulletBlock: [
+           `${t.equityLoan.stepProcess.step4.bulletBlock.bullet1}`,
+           `${t.equityLoan.stepProcess.step4.bulletBlock.bullet2}`,
+           `${t.equityLoan.stepProcess.step4.bulletBlock.bullet3}`
+        ]
+      },
+      {
+        number: "5",
+        title: `${t.equityLoan.stepProcess.step5.title}`,
+        description: `${t.equityLoan.stepProcess.step5.description}`
+      }
+    ]
 
     return (
       <IndexLayout>
@@ -93,76 +127,7 @@ export default function Mortgage() {
                 <div className={styles.stepsHeader}>
                   <h3>{t.equityLoan.stepProcess.title}</h3>
                 </div>
-                <div className={styles.stepsList}>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>1</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.equityLoan.stepProcess.step1.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.equityLoan.stepProcess.step1.description}
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>2</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.equityLoan.stepProcess.step2.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.equityLoan.stepProcess.step2.description}
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>3</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.equityLoan.stepProcess.step3.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.equityLoan.stepProcess.step3.description}
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>4</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.equityLoan.stepProcess.step4.title}</h2>
-                        <p>{t.equityLoan.stepProcess.step4.subTitle}</p>
-                        <div className={styles.stepsDescription}>
-                            <ul>
-                              <li>{t.equityLoan.stepProcess.step4.bulletBlock.bullet1}</li>
-                              <li>{t.equityLoan.stepProcess.step4.bulletBlock.bullet2}</li>
-                              <li>{t.equityLoan.stepProcess.step4.bulletBlock.bullet3}</li>
-                            </ul>
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>5</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.equityLoan.stepProcess.step5.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.equityLoan.stepProcess.step5.description}
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>6</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.equityLoan.stepProcess.step6.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.equityLoan.stepProcess.step6.description}
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>7</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.equityLoan.stepProcess.step7.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.equityLoan.stepProcess.step7.description}
-                        </div>
-                      </div>
-                  </div>
-                </div>
+                <Steper steperData={equityLoanSteperData}/>
             </div>
           </section>
           <section id="clientSuport" className={styles.clientSuportSection}>
