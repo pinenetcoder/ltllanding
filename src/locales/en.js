@@ -535,6 +535,10 @@ export default {
     readMore: "Skaityti daugiau",
     faq: "FAQ"
   },
+  moneyLoundering: {
+    title: "Anti-money laundering, terrorist financing prevention, international sanctions",
+    description: "Our commitment lies in the fight against financial crime and terrorist financing (AML/CTF) activities, as well as the enforcement of international sanctions. To tackle these concerns, we have implemented an internal policy focused on AML/CTF and sanctions. This policy aims to prevent any misuse of our products and services, such as money laundering, terrorist financing, or sanctions evasion. It serves as a foundation for establishing clear procedures and instructions in the AML/CTF and sanctions area, which our employees must follow in their day-to-day activities. \n\n Our objective is to identify, assess, and understand the financial crime risks we encounter and implement appropriate control measures in line with those risks. Whether it pertains to individual customers or our overall business processes, we strive to determine the suitable risk level for each scenario. We acknowledge that effectively addressing AML/CTF and sanctions issues may require additional time and effort from our customers and partners. To ensure a smooth and efficient process, we have embraced a risk-based approach that allows for tailored actions based on individual risk profiles. \n\n As part of our customer acceptance process, we have defined our risk appetite as a crucial element. This entails setting the boundaries for the risks we are willing to accept. Please take a moment to review our provided Risk Appetite Statement (link) below."
+  },
   contacts: {
     heroBlock: {
       contactsTitle: "Contacts", 
