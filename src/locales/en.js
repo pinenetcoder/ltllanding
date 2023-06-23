@@ -246,6 +246,7 @@ export default {
       },
       step3: {
         title: "Submit the documents",
+        subTitle: "Please send us:", 
         bulletBlock: {
           bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
           bullet2: "Prašymas įstoti į kredito uniją",

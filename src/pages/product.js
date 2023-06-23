@@ -15,7 +15,7 @@ export default function Payments() {
       {
         number: "1",
         title: `${t.privetCurrentAccount.stepProcess.step1.title}`,
-        description: "Please fill in the application"
+        description: `${t.privetCurrentAccount.stepProcess.step1.description}`,
       },
       {
         number: "2",
