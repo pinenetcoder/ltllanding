@@ -597,11 +597,11 @@ export default {
         title: "Terminuoto indėlio sąskaitos atidarymo procesas",
         step1: {
           title: "Užpildykite sąskaitos atidarymo formą",
-          text: "Užpildykite paraišką"
+          description: "Užpildykite paraišką"
         },
         step2: {
           title: "Identifikuokite save",
-          text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+          description: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
         },
         step3: {
           title: "Pateikite dokumentus",
@@ -614,11 +614,11 @@ export default {
         }, 
         step4: {
           title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
-          text: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+          description: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
         },
         step5: {
           title: "Valdykite savo terminuoto indėlio sąskaitą",
-          text: "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
+          description: "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
         }
       },
       calcBlock: {

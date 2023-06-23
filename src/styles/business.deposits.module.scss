@@ -1,269 +1,358 @@
 .benefitsSection {
-    padding: 80px 0 64px 0;
-  
-    .benefitsWrapper {
-      max-width: 750px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 60px;
+  padding: 80px 0 64px 0;
+
+  .benefitsWrapper {
+    max-width: 750px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .benefitsBlock {
+    max-width: 330px;
+
+    .benefitsTitle {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25px;
+      margin-bottom: 34px;
     }
-  
-    .benefitsBlock {
-      width: 330px;
-  
-      .benefitsTitle {
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 25px;
-        margin-bottom: 34px;
+
+    .benefitsDescription {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 22px;
+
+      li {
+        list-style-position: inside;
+        padding-left: 15px;
       }
-  
-      .benefitsDescription {
-        font-size: 17px;
-        font-weight: 300;
-        line-height: 22px;
-  
-        li {
-          list-style-position: inside;
-          padding-left: 15px;
-        }
+    }
+  }
+}
+
+.calculatorSection {
+  padding: 50px 0 64px 0;
+
+  .calculatorWrapper {
+    max-width: 790px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 46px;
+    margin-bottom: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .calculatorBlock {
+    width: 416px;
+    border-right: solid 1px var(--theme-color4);
+    padding-right: 49px;
+    padding-top: 42px;
+  }
+
+  .resultBlockItem {
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .left {
+      font-size-adjust: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      color: var(--black-text-color);
+      text-align: center;
+      padding-right: 20px;
+    }
+
+    .right {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 38px;
+      color: var(--black-text-color);
+      text-align: center;
+    }
+  }
+
+  .calculatorLine {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 15px;
+  }
+
+  .label {
+    width: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: var(--theme-color4);
+  }
+
+  input {
+    width: 198px;
+    height: 30px;
+    background: url(/assets/images/euro.svg) no-repeat right center;
+    border: none;
+    border-bottom: 1px solid #939096;
+    color: var(--black-text-color);
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--black-text-color);
+    }
+  }
+
+  .select {
+    width: 198px;
+    background: url(/assets/images/men.svg) no-repeat right center;
+
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      height: 1px;
+      background-color: var(--theme-color4);
+      margin-top: 6px;
+    }
+
+    select {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding-right: 20px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+
+      &:focus {
+        outline: none;
       }
     }
   }
 
-  .calculatorSection {
-    padding: 50px 0 64px 0;
-    .calculatorWrapper {
-       width: 790px;
-       margin: 0 auto;
-       padding: 0 15px 0 15px;
-       display: flex;
-       gap: 46px;
-       margin-bottom: 35px;
+  h3 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+
+  .resultBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .resultBlockTitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .borderCorner {
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    border-top: solid 1px var(--theme-color4);
+    border-right: solid 1px var(--theme-color4);
+    background-color: var(--main-background);
+    transform: rotate(45deg) translate(319px, -258px);
+  }
+
+  .depositSectionButton {
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.depositPageWrapper {
+  padding: 66px 0 46px 0;
+  background-color: var(--businness-background);
+
+  .depositPageList {
+    padding-left: 312px;
+    background-image: url("/assets/images/business_depositPage_heroBlock.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 110px) bottom;
+
+    .depositHeroItem {
+      max-width: 600px;
     }
- 
-    h2 {
-        font-size: 25px;
-        font-weight: 700;
-        line-height: 32px;
-        text-align: center;
-        margin-bottom: 35px;
+
+    .depositTitle {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 38px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .depositPageDescription {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 35px;
+
+    li {
+      font-weight: 300;
+      list-style-type: none;
+      padding-left: 26px;
+      background: url(/assets/images/check2.svg) no-repeat left center;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     p {
-        font-size: 17px;
-        font-weight: 300;
-        line-height: 22px;
-        text-align: center;
-        margin-bottom: 35px;
+      margin-bottom: 30px;
     }
- 
-    .calculatorBlock {
-       width: 416px;
-       border-right: solid 1px var(--theme-color4);
-       padding-right: 49px;
-       padding-top: 42px;
-    }
-    
-    .resultBlockItem {
-       width: 270px;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       margin-bottom: 20px;
- 
-       .left {
-          font-size-adjust: 16px;
-          font-weight: 300;
-          line-height: 20px;
-          color: var(--black-text-color);
-          text-align: center;
-          padding-right: 20px;
-       }
- 
-       .right {
-          font-size: 30px;
-          font-weight: 700;
-          line-height: 38px;
-          color: var(--black-text-color);
-          text-align: center;
-       }
-    }
-    
-    .calculatorLine {
-       display: flex;
-       gap: 40px;
-       margin-bottom: 15px;
-    }
- 
-    .label {
-       width: 132px;
-       display: flex;
-       align-items: center;
-       justify-content: right;
-       text-align: right;
-       font-size: 16px;
-       font-weight: 300;
-       line-height: 20px;
-       color: var(--theme-color4);
-    }
- 
-    input {
-       width: 198px;
-       height: 30px;
-       background: url(/assets/images/euro.svg) no-repeat right center;
-       border: none;
-       border-bottom: 1px solid #939096;
-       color: var(--black-text-color);
-       padding-right: 20px;
-       font-size: 16px;
-       font-weight: 300;
-       line-height: 20px;
- 
-       &:focus {
-          outline: none;
-       }
- 
-       &::placeholder {
-          color: var(--black-text-color);
-       }
-    }
- 
-    .select {
-       width: 198px;
-       background: url(/assets/images/men.svg) no-repeat right center;
-       
-          &::after {
-             content: "";
-             display: block;
-             position: relative;
-             height: 1px;
-             background-color: var(--theme-color4);
-             margin-top: 6px;
-          }
- 
-       select {
-          border: none;
-          background: transparent;
-          cursor: pointer;
-          padding-right: 20px;
-          font-size: 16px;
-          font-weight: 300;
-          line-height: 20px;
- 
-          &:focus {
-             outline: none;
-          }
-       }
-    }
- 
-    h3 {
-       font-size: 16px;
-       font-weight: 300;
-       line-height: 20px;
-       margin-bottom: 8px;
-    }
- 
-    .resultBlock {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       padding-top: 10px;
-    }
- 
-    .resultBlockTitle {
-       font-size: 40px;
-       font-weight: 700;
-       line-height: 50px;
-       margin-bottom: 30px;
-    }
- 
-    .borderCorner {
-       width: 15px;
-       height: 15px;
-       z-index: 1;
-       border-top: solid 1px var(--theme-color4);
-       border-right: solid 1px var(--theme-color4);
-       background-color: var(--main-background);
-       transform: rotate(45deg) translate(319px, -258px);
-    }
-    .depositSectionButton {
-       margin: 0 auto;
-       padding: 0 15px 0 15px;
-       display: flex;
-       justify-content: center;
-    }
- }
- 
 
-  
-.depositPageWrapper {
-    padding: 66px 0 46px 0;
-    background-color: var(--businness-background);
- 
+    .CheckText {
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+
+  .actionButtonBlock {
+    width: 251px;
+    height: 42px;
+    background: var(--theme-color2);
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white-text-color);
+    text-decoration: none;
+  }
+}
+// ----- Media queries -----
+@media (max-width: 1320px) {
+  .depositPageWrapper {
     .depositPageList {
-       padding-left: 312px;
-       background-image: url("/assets/images/business_depositPage_heroBlock.svg");
-       background-repeat: no-repeat;
-       background-position: calc(100% - 110px) bottom;
- 
-       .depositHeroItem {
-          max-width: 600px;
-       }
- 
-       .depositTitle {
-          font-size: 30px;
-          font-weight: 700;
-          line-height: 38px;
-          margin-bottom: 35px;
-       }
+      padding-left: 280px;
+      background-position: calc(100% - 50px) bottom;
     }
- 
-    .depositPageDescription {
-       font-weight: 400;
-       font-size: 18px;
-       line-height: 24px;
-       color: #000000;
-       margin-bottom: 35px;
- 
-       li {
-          font-weight: 300;
-          list-style-type: none;
-          padding-left: 26px;
-          background: url(/assets/images/check2.svg) no-repeat left center;
-          margin-bottom: 8px;
- 
-          &:last-child {
-             margin-bottom: 0;
-          }
-       }
- 
-       p {
-          margin-bottom: 30px;
-       }
- 
-       .CheckText {
-          font-weight: 300;
-          font-size: 16px;
-       }
+  }
+}
+
+@media (max-width: 1250px) {
+  .depositPageWrapper {
+    .depositPageList {
+      padding-left: 50px;
+      background-position: calc(100% - 40px) bottom;
     }
- 
-    .actionButtonBlock {
-       width: 251px;
-       height: 42px;
-       background: var(--theme-color2);
-       border-radius: 33px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       font-weight: 600;
-       font-size: 16px;
-       line-height: 24px;
-       color: var(--white-text-color);
-       text-decoration: none;
+  }
+}
+
+@media (max-width: 974px) {
+  .depositPageWrapper {
+    .depositPageList {
+      padding-left: 40px;
+      background-position: calc(100% - 20px) bottom;
+      background-size: 200px;
     }
- }
- 
+  }
+}
+
+@media (max-width: 780px) {
+  .depositPageWrapper {
+    padding: 36px 36px 36px 0;
+
+    .depositPageList {
+      padding-left: 40px;
+      background-image: none;
+    }
+  }
+
+  .calculatorSection {
+    padding: 30px 0 30px 0;
+
+    .calculatorWrapper {
+      margin-bottom: 10px;
+
+      .calculatorBlock {
+        width: 416px;
+        border-right: none;
+        border-bottom: solid 1px var(--theme-color4);
+        padding-right: 49px;
+        padding-top: 42px;
+        padding-bottom: 30px;
+      }
+
+      .resultBlockItem {
+        .right {
+          font-size: 20px;
+        }
+      }
+
+      .borderCorner {
+        width: 15px;
+        height: 15px;
+        z-index: 1;
+        border-top: solid 1px var(--theme-color4);
+        border-right: solid 1px var(--theme-color4);
+        background-color: var(--main-background);
+        transform: rotate(133deg) translate(-40px, -244px);
+      }
+    }
+  }
+
+  .benefitsSection {
+    padding: 50px 0 24px 0;
+    .benefitsWrapper {
+      .benefitsBlock {
+        max-width: unset;
+        .benefitsTitle {
+          text-align: center;
+        }
+
+        .benefitsDescription {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
