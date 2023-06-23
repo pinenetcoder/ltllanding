@@ -1,6 +1,7 @@
 import styles from "@/styles/deposits.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Accordion from "@/components/Accordion"
+import Steper from "@/components/Steper"
 import Link from "next/link"
 import { useState } from "react"
 import { useRouter } from "next/router"
@@ -11,11 +12,45 @@ export default function Deposit() {
   const router = useRouter();
   const t = router.locale === 'lt' ? lt : en
 
+  const termDepositSteperData = [
+    {
+      number: "1",
+      title: `${t.termDeposit.stepProcess.step1.title}`,
+      description: "Please fill in the application"
+    },
+    {
+      number: "2",
+      title: `${t.termDeposit.stepProcess.step2.title}`,
+      description: `${t.termDeposit.stepProcess.step2.description}`
+    },
+    {
+      number: "3",
+      title: `${t.termDeposit.stepProcess.step3.title}`,
+      description: `${t.termDeposit.stepProcess.step3.subTitle}`,
+      bulletBlock: [
+         `${t.termDeposit.stepProcess.step3.bulletBlock.bullet1}`,
+         `${t.termDeposit.stepProcess.step3.bulletBlock.bullet2}`,
+         `${t.termDeposit.stepProcess.step3.bulletBlock.bullet3}`
+      ]
+    },
+    {
+      number: "4",
+      title: `${t.termDeposit.stepProcess.step4.title}`,
+      description: `${t.termDeposit.stepProcess.step4.description}`
+    },
+    {
+      number: "5",
+      title: `${t.termDeposit.stepProcess.step5.title}`,
+      description: `${t.termDeposit.stepProcess.step5.description}`
+    }
+  ]
+
   const [calc, setCalc] = useState({
     amount: 10000,
     term: 3,
     selectedRate: 1.75
   })
+
   let ratesList = [
     {
       term: 1,
@@ -38,6 +73,7 @@ export default function Deposit() {
       rate: 3.10,
     },            
   ]
+
   function createSelectOptions() {
     return ratesList.map((el, idx) => <option data-rate={el.rate} key={idx}>{el.term}</option>)
   }
@@ -174,63 +210,12 @@ export default function Deposit() {
               <Link className="light-green-action-button long" href="/">{t.termDeposit.calcBlock.button}</Link>
             </div>
           </section>
-          <section id="process" className={styles.depositsStepsSection}>
-            <div className={styles.depositsStepsWrapper}>
+          <section id="process" className={styles.stepsSection}>
+            <div className={styles.stepsWrapper}>
                 <div className={styles.stepsHeader}>
                   <h3>{t.termDeposit.stepProcess.title}</h3>
                 </div>
-                <div className={styles.stepsList}>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>1</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.termDeposit.stepProcess.step1.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.termDeposit.stepProcess.step1.text}
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>2</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.termDeposit.stepProcess.step2.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.termDeposit.stepProcess.step2.text}
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>3</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.termDeposit.stepProcess.step3.title}</h2>
-                        <p>{t.termDeposit.stepProcess.step3.subTitle}</p>
-                        <div className={styles.stepsDescription}>
-                            <ul>
-                              <li>{t.termDeposit.stepProcess.step3.bulletBlock.bullet1}</li>
-                              <li>{t.termDeposit.stepProcess.step3.bulletBlock.bullet2}</li>
-                              <li>{t.termDeposit.stepProcess.step3.bulletBlock.bullet3}</li>
-                            </ul>
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>4</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.termDeposit.stepProcess.step4.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.termDeposit.stepProcess.step4.text}
-                        </div>
-                      </div>
-                  </div>
-                  <div className={styles.stepsItem}>
-                      <div className={styles.stepsNumber}>5</div>
-                      <div className={styles.stepsText}>
-                        <h2 className={styles.stepsTitle}>{t.termDeposit.stepProcess.step5.title}</h2>
-                        <div className={styles.stepsDescription}>
-                            {t.termDeposit.stepProcess.step5.text}
-                        </div>
-                      </div>
-                  </div>
-                </div>
+                <Steper steperData={termDepositSteperData}/>
             </div>
           </section>
           <section id="clientSuport" className={styles.clientSuportSection}>

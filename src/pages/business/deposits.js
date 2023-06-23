@@ -159,8 +159,8 @@ export default function Deposit() {
               <Link className="light-green-action-button long" href="/">{t.business.termDeposit.calcBlock.button}</Link>
             </div>
           </section>
-          <section id="process" className={styles.depositsStepsSection}>
-            <div className={styles.depositsStepsWrapper}>
+          <section id="process" className={styles.stepsSection}>
+            <div className={styles.stepsWrapper}>
                 <div className={styles.stepsHeader}>
                   <h3>{t.business.termDeposit.stepProcess.title}</h3>
                 </div>
@@ -179,7 +179,7 @@ export default function Deposit() {
                       <div className={styles.stepsText}>
                         <h2 className={styles.stepsTitle}>{t.business.termDeposit.stepProcess.step2.title}</h2>
                         <div className={styles.stepsDescription}>
-                            {t.termDeposit.stepProcess.step2.text}
+                            {t.business.termDeposit.stepProcess.step2.text}
                         </div>
                       </div>
                   </div>

@@ -136,11 +136,11 @@ export default {
       title: "Term deposit opening processs",
       step1: {
         title: "Fill in an account opening form",
-        text: "Please fill in the application"
+        description: "Please fill in the application"
       },
       step2: {
         title: "Identify yourself",
-        text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+        description: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
       },
       step3: {
         title: "Submit the documents",
@@ -153,11 +153,11 @@ export default {
       }, 
       step4: {
         title: "Sign the bank account agreement",
-        text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+        description: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
       },
       step5: {
         title: "Start using our payment services",
-        text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+        description: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
       }
     },
     calcBlock: {
@@ -234,18 +234,19 @@ export default {
         text: "Open banking makes it possible for companies to design smart, intuitive apps that connect directly to your bank account, making banking easier than ever. With our open banking interface, you can create cutting-edge applications that integrate seamlessly with banking services, providing customers with a superior user experience. API interface makes it possible for users to access their account information and initiate payments conveniently and securely."
       }
     },
-    accOpeningProcess: {
+    stepProcess: {
       blockTitle: "Steps",
       step1: {
         title: "Fill in an account opening form",
-        text: "Please fill in the application"
+        description: "Please fill in the application"
       },
       step2: {
         title: "Identify yourself",
-        text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+        description: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
       },
       step3: {
         title: "Submit the documents",
+        subTitle: "Please send us:", 
         bulletBlock: {
           bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
           bullet2: "Prašymas įstoti į kredito uniją",
@@ -254,11 +255,11 @@ export default {
       }, 
       step4: {
         title: "Sign the bank account agreement",
-        text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+        description: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
       },
       step5: {
         title: "Start using our payment services",
-        text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+        description: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
       }
     },
     clientSuport: {
@@ -470,29 +471,37 @@ export default {
     stepProcess: {
       title: "Loan application process:",
       step1: {
-        title: "Fill in an account opening form",
-        text: "Please fill in the application"
+        title: "Fill in a loan application form and give the consent",
+        text: "Please fill in the application and signed the consent to enable us to perform an initial assessment"
       },
       step2: {
-        title: "Identify yourself",
+        title: "Identify yourself and give the consen",
         text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
       },
       step3: {
+        title: "Get an initial loan offer",
+        text: "We will reach you within 24 hours with our initial proposal"
+      },
+      step4: {
         title: "Submit the documents",
-        subTitle: "Please send us:",
+        subTitle: "Since we agree on initial terms and conditions, please send us:",
         bulletBlock: {
           bullet1: "Copy of passport, ID or residence permit",
           bullet2: "Application to join the union",
           bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
         }
       }, 
-      step4: {
-        title: "Sign the bank account agreement",
-        text: "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
-      },
       step5: {
-        title: "Start using our payment services",
-        text: "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+        title: "Get the final credit decision and sign the agreement",
+        text: "Once the credit decision to issue the credit is reached, we will invite you to sign the account agreement and other relevant terms and conditions."
+      }, 
+      step6: {
+        title: "Sign the pledge agreement in the notary office",
+        text: "We will schedule a notary appointment at a mutually convenient time to finalize the mortgage arrangements."
+      }, 
+      step7: {
+        title: "Loan disbursement",
+        text: "The credit funds will be disbursed within one business day of completing the pledge."
       }
     },
   },

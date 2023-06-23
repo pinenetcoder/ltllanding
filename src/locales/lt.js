@@ -136,11 +136,11 @@ export default {
       title: "Terminuoto indėlio sąskaitos atidarymo procesas",
       step1: {
         title: "Užpildykite sąskaitos atidarymo form",
-        text: "Užpildykite paraišką"
+        description: "Užpildykite paraišką"
       },
       step2: {
         title: "Identifikuokite save",
-        text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+        description: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
       },
       step3: {
         title: "Pateikite dokumentus",
@@ -153,11 +153,11 @@ export default {
       }, 
       step4: {
         title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
-        text: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+        description: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
       },
       step5: {
         title: "Valdykite savo terminuoto indėlio sąskaitą",
-        text: "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
+        description: "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
       }
     },
     calcBlock: {
@@ -233,18 +233,19 @@ export default {
         text: "Mūsų atvirosios bankininkystės API yra standartizuota sąsaja, leidžianti trečiųjų šalių kūrėjams saugiai ir patogiai pasiekti finansinius duomenis ir paslaugas iš bankų ir finansų įstaigų. API galia leidžia klientams inicijuoti operacijas per trečiųjų šalių programas vos keliais paspaudimais, nereikia prisijungti prie savo internetinės bankininkystės sąskaitos ar apsilankyti fiziniame banko skyriuje. Mūsų API buvo sukurta kaip RESTful API, kuri naudoja HTTP protokolą ir JSON duomenų formatą, ir sukurta remiantis Berlin Group standartu, išlaikant aukščiausią saugumo lygį."
       }
     },
-    accOpeningProcess: {
+    stepProcess: {
       blockTitle: "Žingsniai",
       step1: {
         title: "Užpildykite sąskaitos atidarymo formą",
-        text: "Užpildykite paraišką"
+        description: "Užpildykite paraišką"
       },
       step2: {
         title: "Identifikuokite save",
-        text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+        description: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
       },
       step3: {
         title: "Pateikite dokumentus",
+        subTitle: "Prašome atsiųsti mums:",
         bulletBlock: {
           bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
           bullet2: "Prašymas įstoti į kredito uniją",
@@ -253,11 +254,11 @@ export default {
       },
       step4: {
         title: "Pasirašykite banko sąskaitos sutartį",
-        text: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti sąskaitos sutartį ir susipažinti su bendrosiomis sąskaitos naudojimo sąlygomis."
+        description: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti sąskaitos sutartį ir susipažinti su bendrosiomis sąskaitos naudojimo sąlygomis."
       },
       step5: {
         title: "Pradėkite naudotis mūsų mokėjimo paslaugomis",
-        text: "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, kurioje galėsite naudotis mūsų mokėjimo paslaugomis, tvarkyti terminuotųjų indėlių sutartis, peržiūrėti informaciją apie savo kreditus (jei taikoma) ir kt."
+        description: "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, kurioje galėsite naudotis mūsų mokėjimo paslaugomis, tvarkyti terminuotųjų indėlių sutartis, peržiūrėti informaciją apie savo kreditus (jei taikoma) ir kt."
       }
     },
     clientSuport: {
@@ -387,31 +388,39 @@ export default {
       },
     },
     stepProcess: {
-      title: "Paskolos paraiškos pateikimo tvarka",
+      title: "Loan application process:",
       step1: {
-        title: "Užpildykite sąskaitos atidarymo formą",
-        text: "Užpildykite paraišką"
+        title: "Fill in a loan application form and give the consent",
+        text: "Please fill in the application and signed the consent to enable us to perform an initial assessment"
       },
       step2: {
-        title: "Identifikuokite save",
-        text: "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+        title: "Identify yourself and give the consen",
+        text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
       },
       step3: {
-        title: "Pateikite dokumentus",
-        subTitle: "Prašome atsiųsti mums:",
+        title: "Get an initial loan offer",
+        text: "We will reach you within 24 hours with our initial proposal"
+      },
+      step4: {
+        title: "Submit the documents",
+        subTitle: "Since we agree on initial terms and conditions, please send us:",
         bulletBlock: {
-          bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-          bullet2: "Prašymas įstoti į kredito uniją",
-          bullet3: "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+          bullet1: "Copy of passport, ID or residence permit",
+          bullet2: "Application to join the union",
+          bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
         }
       }, 
-      step4: {
-        title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
-        text: "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
-      },
       step5: {
-        title: "Valdykite savo terminuoto indėlio sąskaitą",
-        text: "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
+        title: "Get the final credit decision and sign the agreement",
+        text: "Once the credit decision to issue the credit is reached, we will invite you to sign the account agreement and other relevant terms and conditions."
+      }, 
+      step6: {
+        title: "Sign the pledge agreement in the notary office",
+        text: "We will schedule a notary appointment at a mutually convenient time to finalize the mortgage arrangements."
+      }, 
+      step7: {
+        title: "Loan disbursement",
+        text: "The credit funds will be disbursed within one business day of completing the pledge."
       }
     }
   },

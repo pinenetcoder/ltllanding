@@ -1,5 +1,6 @@
 import styles from "@/styles/product.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
+import Steper from "@/components/Steper"
 import Link from "next/link"
 import Accordion from "@/components/Accordion"
 import { useRouter } from "next/router"
@@ -9,6 +10,39 @@ import en from '@/locales/en'
 export default function Payments() {
    const router = useRouter();
    const t = router.locale === 'lt' ? lt : en
+
+   const privetCurrentAccountSteperData = [
+      {
+        number: "1",
+        title: `${t.privetCurrentAccount.stepProcess.step1.title}`,
+        description: `${t.privetCurrentAccount.stepProcess.step1.description}`,
+      },
+      {
+        number: "2",
+        title: `${t.privetCurrentAccount.stepProcess.step2.title}`,
+        description: `${t.privetCurrentAccount.stepProcess.step2.description}`
+      },
+      {
+        number: "3",
+        title: `${t.privetCurrentAccount.stepProcess.step3.title}`,
+        description: `${t.privetCurrentAccount.stepProcess.step3.subTitle}`,
+        bulletBlock: [
+           `${t.privetCurrentAccount.stepProcess.step3.bulletBlock.bullet1}`,
+           `${t.privetCurrentAccount.stepProcess.step3.bulletBlock.bullet2}`,
+           `${t.privetCurrentAccount.stepProcess.step3.bulletBlock.bullet3}`
+        ]
+      },
+      {
+        number: "4",
+        title: `${t.privetCurrentAccount.stepProcess.step4.title}`,
+        description: `${t.privetCurrentAccount.stepProcess.step4.description}`
+      },
+      {
+        number: "5",
+        title: `${t.privetCurrentAccount.stepProcess.step5.title}`,
+        description: `${t.privetCurrentAccount.stepProcess.step5.description}`
+      }
+    ]
 
    return (
       <>
@@ -66,59 +100,9 @@ export default function Payments() {
                <section id="steps" className={styles.stepsSection}>
                   <div className={styles.stepsWrapper}>
                      <div className={styles.stepsHeader}>
-                        <h3>{t.privetCurrentAccount.accOpeningProcess.blockTitle}</h3>
+                        <h3>{t.privetCurrentAccount.stepProcess.blockTitle}</h3>
                      </div>
-                     <div className={styles.stepsList}>
-                        <div className={styles.stepsItem}>
-                           <div className={styles.stepsNumber}>1</div>
-                           <div className={styles.stepsText}>
-                              <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step1.title}</h2>
-                              <div className={styles.stepsDescription}>
-                                 {t.privetCurrentAccount.accOpeningProcess.step1.text}
-                              </div>
-                           </div>
-                        </div>
-                        <div className={styles.stepsItem}>
-                           <div className={styles.stepsNumber}>2</div>
-                           <div className={styles.stepsText}>
-                              <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step2.title}</h2>
-                              <div className={styles.stepsDescription}>
-                                 {t.privetCurrentAccount.accOpeningProcess.step2.text}
-                              </div>
-                           </div>
-                        </div>
-                        <div className={styles.stepsItem}>
-                           <div className={styles.stepsNumber}>3</div>
-                           <div className={styles.stepsText}>
-                              <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step3.title}</h2>
-                              <div className={styles.stepsDescription}>
-                                 <ul>
-                                    <li>{t.privetCurrentAccount.accOpeningProcess.step3.bulletBlock.bullet1}</li>
-                                    <li>{t.privetCurrentAccount.accOpeningProcess.step3.bulletBlock.bullet2}</li>
-                                    <li>{t.privetCurrentAccount.accOpeningProcess.step3.bulletBlock.bullet3}</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div className={styles.stepsItem}>
-                           <div className={styles.stepsNumber}>4</div>
-                           <div className={styles.stepsText}>
-                              <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step4.title}</h2>
-                              <div className={styles.stepsDescription}>
-                                 {t.privetCurrentAccount.accOpeningProcess.step4.text}
-                              </div>
-                           </div>
-                        </div>
-                        <div className={styles.stepsItem}>
-                           <div className={styles.stepsNumber}>5</div>
-                           <div className={styles.stepsText}>
-                              <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.accOpeningProcess.step5.title}</h2>
-                              <div className={styles.stepsDescription}>
-                                 {t.privetCurrentAccount.accOpeningProcess.step5.text}
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                     <Steper steperData={privetCurrentAccountSteperData}/>
                   </div>
                </section>
                <section id="after" className={styles.infoSection}>
