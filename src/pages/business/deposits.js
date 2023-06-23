@@ -46,8 +46,6 @@ export default function Deposit() {
     }
   ]
 
-
-
   const [calc, setCalc] = useState({
     amount: 10000,
     term: 3,
