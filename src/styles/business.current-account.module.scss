@@ -1,17 +1,17 @@
 .currentAccountPageWrapper {
   padding: 66px 0 78px 0;
   background-color: var(--businness-background);
-  background-image: url("/assets/images/business_currentAccPage_heroBlock.svg");
-  background-repeat: no-repeat;
-  background-position: calc(100% - 74px) calc(100% - 50px);
+
 
   .currentAccountPageList {
     padding-left: 312px;
-
-
+    background-image: url("/assets/images/business_currentAccPage_heroBlock.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 74px) bottom;
+    background-size: 28%;
 
     .currentAccountHeroItem {
-      width: 500px;
+      max-width: 500px;
     }
 
     .currentAccountTitle {
@@ -51,12 +51,6 @@
   }
 }
 
-
-
-
-
-
-
 .infoSection {
   padding: 54px 0 80px 0;
 
@@ -80,7 +74,7 @@
       gap: 46px;
     }
     .infoItem {
-      width: 300px;
+      max-width: 300px;
     }
 
     .infoTitle {
@@ -97,4 +91,64 @@
       white-space: pre-line;
     }
   }
+}
+// ----- Media queries -----
+@media (max-width: 1320px) {
+  .currentAccountPageWrapper {
+     
+     .currentAccountPageList {
+        padding-left: 280px;
+        background-position: calc(100% - 50px) bottom;
+     }
+  }
+}
+
+@media (max-width: 1250px) {
+  .currentAccountPageWrapper {
+     
+     .currentAccountPageList {
+        padding-left: 50px;
+        background-position: calc(100% - 40px) bottom;
+     }
+  }
+}
+
+@media (max-width: 974px) {
+  .currentAccountPageWrapper {
+     
+     .currentAccountPageList {
+        padding-left: 40px;
+        background-position: calc(100% - 20px) bottom;
+        background-size: 200px;
+     }
+  }
+}
+
+@media (max-width: 768px) {
+  .currentAccountPageWrapper {
+     padding: 36px 36px 36px 0;
+     
+     .currentAccountPageList {
+        padding-left: 40px;
+        background-image: none;
+     }
+  }
+}
+
+@media (max-width: 700px) {
+  .infoSection {
+    .infoWrapper {
+
+      .infoTitle {
+        text-align: center;
+      }
+    
+      .infoItem {
+        max-width: unset;
+        text-align: justify;
+      }
+    }
+  }
+
+
 }
