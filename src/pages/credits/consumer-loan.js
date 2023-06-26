@@ -2,6 +2,7 @@ import styles from "@/styles/consumer-loan.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Accordion from "@/components/Accordion";
 import Steper from "@/components/Steper"
+import { consumerSteperData } from "@/pages/api/data/stepersData"
 import Link from "next/link";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
@@ -10,39 +11,6 @@ import en from "@/locales/en";
 export default function Mortgage() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
-
-  const consumerSteperData = [
-    {
-      number: "1",
-      title: `${t.consumerLoan.stepProcess.step1.title}`,
-      description: "Please fill in the application"
-    },
-    {
-      number: "2",
-      title: `${t.consumerLoan.stepProcess.step2.title}`,
-      description: `${t.consumerLoan.stepProcess.step2.description}`
-    },
-    {
-      number: "3",
-      title: `${t.consumerLoan.stepProcess.step3.title}`,
-      description: `${t.consumerLoan.stepProcess.step3.subTitle}`,
-      bulletBlock: [
-         `${t.consumerLoan.stepProcess.step3.bulletBlock.bullet1}`,
-         `${t.consumerLoan.stepProcess.step3.bulletBlock.bullet2}`,
-         `${t.consumerLoan.stepProcess.step3.bulletBlock.bullet3}`
-      ]
-    },
-    {
-      number: "4",
-      title: `${t.consumerLoan.stepProcess.step4.title}`,
-      description: `${t.consumerLoan.stepProcess.step4.description}`
-    },
-    {
-      number: "5",
-      title: `${t.consumerLoan.stepProcess.step5.title}`,
-      description: `${t.consumerLoan.stepProcess.step5.description}`
-    }
-  ]
 
   return (
     <IndexLayout>
@@ -128,7 +96,6 @@ export default function Mortgage() {
               <h3>{t.consumerLoan.stepProcess.title}</h3>
             </div>
             <Steper steperData={consumerSteperData}/>
-
           </div>
         </section>
         <section id="clientSuport" className={styles.clientSuportSection}>

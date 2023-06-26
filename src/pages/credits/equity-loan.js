@@ -2,6 +2,7 @@ import styles from "@/styles/equity-loan.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Accordion from "@/components/Accordion"
 import Steper from "@/components/Steper"
+import { equityLoanSteperData } from "@/pages/api/data/stepersData"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import lt from '@/locales/lt'
@@ -10,39 +11,6 @@ import en from '@/locales/en'
 export default function Mortgage() {
     const router = useRouter();
     const t = router.locale === 'lt' ? lt : en
-
-    const equityLoanSteperData = [
-      {
-        number: "1",
-        title: `${t.equityLoan.stepProcess.step1.title}`,
-        description: "Please fill in the application"
-      },
-      {
-        number: "2",
-        title: `${t.equityLoan.stepProcess.step2.title}`,
-        description: `${t.equityLoan.stepProcess.step2.description}`
-      },
-      {
-        number: "3",
-        title: `${t.equityLoan.stepProcess.step4.title}`,
-        description: `${t.equityLoan.stepProcess.step3.description}`
-      },
-      {
-        number: "4",
-        title: `${t.equityLoan.stepProcess.step4.title}`,
-        description: `${t.equityLoan.stepProcess.step4.subTitle}`,
-        bulletBlock: [
-           `${t.equityLoan.stepProcess.step4.bulletBlock.bullet1}`,
-           `${t.equityLoan.stepProcess.step4.bulletBlock.bullet2}`,
-           `${t.equityLoan.stepProcess.step4.bulletBlock.bullet3}`
-        ]
-      },
-      {
-        number: "5",
-        title: `${t.equityLoan.stepProcess.step5.title}`,
-        description: `${t.equityLoan.stepProcess.step5.description}`
-      }
-    ]
 
     return (
       <IndexLayout>
