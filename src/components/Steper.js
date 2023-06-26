@@ -9,11 +9,7 @@ const Steper = ({ steperData }) => {
 
   const router = useRouter();
   const t = router.locale === 'lt' ? lt : en
-
-  console.log(t)
-  console.log(steperData)
-
-
+  
   const stepperTConverter = (path) => {
     if (!!path) {
       const pathArr = path.split('.');

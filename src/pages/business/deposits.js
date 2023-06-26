@@ -14,7 +14,6 @@ export default function Deposit() {
   const router = useRouter();
   const t = router.locale === 'lt' ? lt : en
   
-  
   const [calc, setCalc] = useState({
     amount: 10000,
     term: 3,
