@@ -2,6 +2,8 @@ import styles from "@/styles/product.module.scss"
 import businessStyle from "@/styles/business.current-account.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Accordion from "@/components/Accordion"
+import Steper from "@/components/Steper"
+import { currentAccountSteperData } from "@/pages/api/data/stepersData"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import lt from '@/locales/lt'
@@ -10,7 +12,7 @@ import en from '@/locales/en'
 export default function Mortgage() {
     const router = useRouter();
     const t = router.locale === 'lt' ? lt : en
-
+    
     return (
       <IndexLayout>
         <main className={businessStyle.currentAccountPage}>
@@ -77,57 +79,7 @@ export default function Mortgage() {
                   <div className={styles.stepsHeader}>
                     <h3>{t.business.currentAccount.stepProcess.title}</h3>
                   </div>
-                  <div className={styles.stepsList}>
-                    <div className={styles.stepsItem}>
-                        <div className={styles.stepsNumber}>1</div>
-                        <div className={styles.stepsText}>
-                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.stepProcess.step1.title}</h2>
-                          <div className={styles.stepsDescription}>
-                              {t.privetCurrentAccount.stepProcess.step1.description}
-                          </div>
-                        </div>
-                    </div>
-                    <div className={styles.stepsItem}>
-                        <div className={styles.stepsNumber}>2</div>
-                        <div className={styles.stepsText}>
-                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.stepProcess.step2.title}</h2>
-                          <div className={styles.stepsDescription}>
-                              {t.privetCurrentAccount.stepProcess.step2.description}
-                          </div>
-                        </div>
-                    </div>
-                    <div className={styles.stepsItem}>
-                        <div className={styles.stepsNumber}>3</div>
-                        <div className={styles.stepsText}>
-                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.stepProcess.step3.title}</h2>
-                          <div className={styles.stepsDescription}>
-                              <ul>
-                                <li>{t.privetCurrentAccount.stepProcess.step3.bulletBlock.bullet1}</li>
-                                <li>{t.privetCurrentAccount.stepProcess.step3.bulletBlock.bullet2}</li>
-                                <li>{t.privetCurrentAccount.stepProcess.step3.bulletBlock.bullet3}</li>
-                              </ul>
-                          </div>
-                        </div>
-                    </div>
-                    <div className={styles.stepsItem}>
-                        <div className={styles.stepsNumber}>4</div>
-                        <div className={styles.stepsText}>
-                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.stepProcess.step4.title}</h2>
-                          <div className={styles.stepsDescription}>
-                              {t.privetCurrentAccount.stepProcess.step4.description}
-                          </div>
-                        </div>
-                    </div>
-                    <div className={styles.stepsItem}>
-                        <div className={styles.stepsNumber}>5</div>
-                        <div className={styles.stepsText}>
-                          <h2 className={styles.stepsTitle}>{t.privetCurrentAccount.stepProcess.step5.title}</h2>
-                          <div className={styles.stepsDescription}>
-                              {t.privetCurrentAccount.stepProcess.step5.description}
-                          </div>
-                        </div>
-                    </div>
-                  </div>
+                  <Steper steperData={currentAccountSteperData}/>
               </div>
             </section>
             <section id="after" className={businessStyle.infoSection}>

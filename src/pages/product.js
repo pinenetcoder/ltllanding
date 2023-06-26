@@ -1,6 +1,7 @@
 import styles from "@/styles/product.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Steper from "@/components/Steper"
+import { privetCurrentAccountSteperData } from "@/pages/api/data/stepersData"
 import Link from "next/link"
 import Accordion from "@/components/Accordion"
 import { useRouter } from "next/router"
@@ -10,39 +11,6 @@ import en from '@/locales/en'
 export default function Payments() {
    const router = useRouter();
    const t = router.locale === 'lt' ? lt : en
-
-   const privetCurrentAccountSteperData = [
-      {
-        number: "1",
-        title: `${t.privetCurrentAccount.stepProcess.step1.title}`,
-        description: `${t.privetCurrentAccount.stepProcess.step1.description}`,
-      },
-      {
-        number: "2",
-        title: `${t.privetCurrentAccount.stepProcess.step2.title}`,
-        description: `${t.privetCurrentAccount.stepProcess.step2.description}`
-      },
-      {
-        number: "3",
-        title: `${t.privetCurrentAccount.stepProcess.step3.title}`,
-        description: `${t.privetCurrentAccount.stepProcess.step3.subTitle}`,
-        bulletBlock: [
-           `${t.privetCurrentAccount.stepProcess.step3.bulletBlock.bullet1}`,
-           `${t.privetCurrentAccount.stepProcess.step3.bulletBlock.bullet2}`,
-           `${t.privetCurrentAccount.stepProcess.step3.bulletBlock.bullet3}`
-        ]
-      },
-      {
-        number: "4",
-        title: `${t.privetCurrentAccount.stepProcess.step4.title}`,
-        description: `${t.privetCurrentAccount.stepProcess.step4.description}`
-      },
-      {
-        number: "5",
-        title: `${t.privetCurrentAccount.stepProcess.step5.title}`,
-        description: `${t.privetCurrentAccount.stepProcess.step5.description}`
-      }
-    ]
 
    return (
       <>
