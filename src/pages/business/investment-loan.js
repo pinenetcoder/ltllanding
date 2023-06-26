@@ -3,6 +3,7 @@ import businessStyle from "@/styles/business.investment-loan.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Accordion from "@/components/Accordion"
 import Steper from "@/components/Steper"
+import { investmentLoanSteperData } from "@/pages/api/data/stepersData"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import lt from '@/locales/lt'
@@ -11,52 +12,6 @@ import en from '@/locales/en'
 export default function Mortgage() {
     const router = useRouter();
     const t = router.locale === 'lt' ? lt : en
-
-    const investmentLoanSteperData = [
-      {
-        number: "1",
-        title: `${t.business.investmentLoan.stepProcess.step1.title}`,
-        description: `${t.business.investmentLoan.stepProcess.step1.description}`,
-      },
-      {
-        number: "2",
-        title: `${t.business.investmentLoan.stepProcess.step2.title}`,
-        description: `${t.business.investmentLoan.stepProcess.step2.description}`
-      },
-      {
-        number: "3",
-        title: `${t.business.investmentLoan.stepProcess.step3.title}`,
-        description: `${t.business.investmentLoan.stepProcess.step3.description}`
-      },
-      {
-        number: "4",
-        title: `${t.business.investmentLoan.stepProcess.step4.title}`,
-        description: `${t.business.investmentLoan.stepProcess.step4.subTitle}`,
-        bulletBlock: [
-           `${t.business.investmentLoan.stepProcess.step4.bulletBlock.bullet1}`,
-           `${t.business.investmentLoan.stepProcess.step4.bulletBlock.bullet2}`,
-           `${t.business.investmentLoan.stepProcess.step4.bulletBlock.bullet3}`,
-           `${t.business.investmentLoan.stepProcess.step4.bulletBlock.bullet4}`,
-           `${t.business.investmentLoan.stepProcess.step4.bulletBlock.bullet5}`,
-           `${t.business.investmentLoan.stepProcess.step4.bulletBlock.bullet6}`
-        ]
-      },
-      {
-        number: "5",
-        title: `${t.business.investmentLoan.stepProcess.step5.title}`,
-        description: `${t.business.investmentLoan.stepProcess.step5.description}`
-      },
-      {
-        number: "6",
-        title: `${t.business.investmentLoan.stepProcess.step6.title}`,
-        description: `${t.business.investmentLoan.stepProcess.step6.description}`
-      },
-      {
-        number: "7",
-        title: `${t.business.investmentLoan.stepProcess.step7.title}`,
-        description: `${t.business.investmentLoan.stepProcess.step7.description}`
-      },
-    ]
 
     return (
       <IndexLayout>

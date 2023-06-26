@@ -3,6 +3,7 @@ import businessStyle from "@/styles/business.current-account.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Accordion from "@/components/Accordion"
 import Steper from "@/components/Steper"
+import { currentAccountSteperData } from "@/pages/api/data/stepersData"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import lt from '@/locales/lt'
@@ -11,40 +12,7 @@ import en from '@/locales/en'
 export default function Mortgage() {
     const router = useRouter();
     const t = router.locale === 'lt' ? lt : en
-
-    const currentAccountSteperData = [
-      {
-        number: "1",
-        title: `${t.business.currentAccount.stepProcess.step1.title}`,
-        description: `${t.business.currentAccount.stepProcess.step1.description}`,
-      },
-      {
-        number: "2",
-        title: `${t.business.currentAccount.stepProcess.step2.title}`,
-        description: `${t.business.currentAccount.stepProcess.step2.description}`
-      },
-      {
-        number: "3",
-        title: `${t.business.currentAccount.stepProcess.step3.title}`,
-        description: `${t.business.currentAccount.stepProcess.step3.subTitle}`,
-        bulletBlock: [
-           `${t.business.currentAccount.stepProcess.step3.bulletBlock.bullet1}`,
-           `${t.business.currentAccount.stepProcess.step3.bulletBlock.bullet2}`,
-           `${t.business.currentAccount.stepProcess.step3.bulletBlock.bullet3}`
-        ]
-      },
-      {
-        number: "4",
-        title: `${t.business.currentAccount.stepProcess.step4.title}`,
-        description: `${t.business.currentAccount.stepProcess.step4.description}`
-      },
-      {
-        number: "5",
-        title: `${t.business.currentAccount.stepProcess.step5.title}`,
-        description: `${t.business.currentAccount.stepProcess.step5.description}`
-      }
-    ]
-
+    
     return (
       <IndexLayout>
         <main className={businessStyle.currentAccountPage}>

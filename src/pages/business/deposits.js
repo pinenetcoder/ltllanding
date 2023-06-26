@@ -3,6 +3,7 @@ import busynessStyle from "@/styles/business.deposits.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Accordion from "@/components/Accordion"
 import Steper from "@/components/Steper"
+import { termDepositSteperData } from "@/pages/api/data/stepersData"
 import Link from "next/link"
 import { useState } from "react"
 import { useRouter } from "next/router"
@@ -12,40 +13,8 @@ import en from '@/locales/en'
 export default function Deposit() {
   const router = useRouter();
   const t = router.locale === 'lt' ? lt : en
-
-  const termDepositSteperData = [
-    {
-      number: "1",
-      title: `${t.business.termDeposit.stepProcess.step1.title}`,
-      description: `${t.business.termDeposit.stepProcess.step2.description}`,
-    },
-    {
-      number: "2",
-      title: `${t.business.termDeposit.stepProcess.step2.title}`,
-      description: `${t.business.termDeposit.stepProcess.step2.description}`
-    },
-    {
-      number: "3",
-      title: `${t.business.termDeposit.stepProcess.step3.title}`,
-      description: `${t.business.termDeposit.stepProcess.step3.subTitle}`,
-      bulletBlock: [
-         `${t.business.termDeposit.stepProcess.step3.bulletBlock.bullet1}`,
-         `${t.business.termDeposit.stepProcess.step3.bulletBlock.bullet2}`,
-         `${t.business.termDeposit.stepProcess.step3.bulletBlock.bullet3}`
-      ]
-    },
-    {
-      number: "4",
-      title: `${t.business.termDeposit.stepProcess.step4.title}`,
-      description: `${t.business.termDeposit.stepProcess.step4.description}`
-    },
-    {
-      number: "5",
-      title: `${t.business.termDeposit.stepProcess.step5.title}`,
-      description: `${t.business.termDeposit.stepProcess.step5.description}`
-    }
-  ]
-
+  
+  
   const [calc, setCalc] = useState({
     amount: 10000,
     term: 3,

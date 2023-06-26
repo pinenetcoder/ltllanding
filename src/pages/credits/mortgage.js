@@ -2,6 +2,7 @@ import styles from "@/styles/mortgage.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Accordion from "@/components/Accordion"
 import Steper from "@/components/Steper"
+import { mortgageSteperData } from "@/pages/api/data/stepersData"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import lt from '@/locales/lt'
@@ -12,48 +13,7 @@ export default function Mortgage() {
     const router = useRouter();
     const t = router.locale === 'lt' ? lt : en
 
-    const mortgageSteperData = [
-      {
-        number: "1",
-        title: `${t.mortgageLoan.stepProcess.step1.title}`,
-        description: "Please fill in the application"
-      },
-      {
-        number: "2",
-        title: `${t.mortgageLoan.stepProcess.step2.title}`,
-        description: `${t.mortgageLoan.stepProcess.step2.text}`
-      },
-      {
-        number: "3",
-        title: `${t.mortgageLoan.stepProcess.step3.title}`,
-        description: `${t.mortgageLoan.stepProcess.step3.text}`
-      },
-      {
-        number: "4",
-        title: `${t.mortgageLoan.stepProcess.step4.title}`,
-        description: `${t.mortgageLoan.stepProcess.step4.subTitle}`,
-        bulletBlock: [
-           `${t.mortgageLoan.stepProcess.step4.bulletBlock.bullet1}`,
-           `${t.mortgageLoan.stepProcess.step4.bulletBlock.bullet2}`,
-           `${t.mortgageLoan.stepProcess.step4.bulletBlock.bullet3}`
-        ]
-      },
-      {
-        number: "5",
-        title: `${t.mortgageLoan.stepProcess.step5.title}`,
-        description: `${t.mortgageLoan.stepProcess.step5.text}`
-      },
-      {
-        number: "6",
-        title: `${t.mortgageLoan.stepProcess.step6.title}`,
-        description: `${t.mortgageLoan.stepProcess.step6.text}`
-      },
-      {
-        number: "7",
-        title: `${t.mortgageLoan.stepProcess.step7.title}`,
-        description: `${t.mortgageLoan.stepProcess.step7.text}`
-      }
-    ]
+    
 
     return (
       <IndexLayout>

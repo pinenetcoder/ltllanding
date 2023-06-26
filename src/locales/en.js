@@ -145,11 +145,11 @@ export default {
       step3: {
         title: "Submit the documents",
         subTitle: "Please send us:",
-        bulletBlock: {
-          bullet1: "Copy of passport, ID or residence permit",
-          bullet2: "Application to join the union",
-          bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
-        }
+        bulletBlock: [
+          "Copy of passport, ID or residence permit",
+          "Application to join the union",
+          "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+        ]
       }, 
       step4: {
         title: "Sign the bank account agreement",
@@ -247,11 +247,11 @@ export default {
       step3: {
         title: "Submit the documents",
         subTitle: "Please send us:", 
-        bulletBlock: {
-          bullet1: "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-          bullet2: "Prašymas įstoti į kredito uniją",
-          bullet3: "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
-        }
+        bulletBlock: [
+          "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
+          "Prašymas įstoti į kredito uniją",
+          "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+        ]
       }, 
       step4: {
         title: "Sign the bank account agreement",
@@ -319,11 +319,11 @@ export default {
       step3: {
         title: "Submit the documents",
         subTitle: "Please send us:",
-        bulletBlock: {
-          bullet1: "Copy of passport, ID or residence permit",
-          bullet2: "Application to join the union",
-          bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
-        }
+        bulletBlock: [
+          "Copy of passport, ID or residence permit",
+          "Application to join the union",
+          "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+        ]
       }, 
       step4: {
         title: "Sign the bank account agreement",
@@ -407,11 +407,11 @@ export default {
       step4: {
         title: "Submit the documents",
         subTitle: "Since we agree on initial terms and conditions, please send us:",
-        bulletBlock: {
-          bullet1: "Copy of passport, ID or residence permit",
-          bullet2: "Application to join the union",
-          bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)"
-        }
+        bulletBlock: [
+          "Copy of passport, ID or residence permit",
+          "Application to join the union",
+          "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)"
+        ]
       }, 
       step5: {
         title: "Get the final credit decision and sign the agreement",
@@ -472,36 +472,36 @@ export default {
       title: "Loan application process:",
       step1: {
         title: "Fill in a loan application form and give the consent",
-        text: "Please fill in the application and signed the consent to enable us to perform an initial assessment"
+        description: "Please fill in the application and signed the consent to enable us to perform an initial assessment"
       },
       step2: {
         title: "Identify yourself and give the consen",
-        text: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+        description: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
       },
       step3: {
         title: "Get an initial loan offer",
-        text: "We will reach you within 24 hours with our initial proposal"
+        description: "We will reach you within 24 hours with our initial proposal"
       },
       step4: {
         title: "Submit the documents",
         subTitle: "Since we agree on initial terms and conditions, please send us:",
-        bulletBlock: {
-          bullet1: "Copy of passport, ID or residence permit",
-          bullet2: "Application to join the union",
-          bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
-        }
+        bulletBlock: [
+          "Copy of passport, ID or residence permit",
+          "Application to join the union",
+          "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+        ]
       }, 
       step5: {
         title: "Get the final credit decision and sign the agreement",
-        text: "Once the credit decision to issue the credit is reached, we will invite you to sign the account agreement and other relevant terms and conditions."
+        description: "Once the credit decision to issue the credit is reached, we will invite you to sign the account agreement and other relevant terms and conditions."
       }, 
       step6: {
         title: "Sign the pledge agreement in the notary office",
-        text: "We will schedule a notary appointment at a mutually convenient time to finalize the mortgage arrangements."
+        description: "We will schedule a notary appointment at a mutually convenient time to finalize the mortgage arrangements."
       }, 
       step7: {
         title: "Loan disbursement",
-        text: "The credit funds will be disbursed within one business day of completing the pledge."
+        description: "The credit funds will be disbursed within one business day of completing the pledge."
       }
     },
   },
@@ -609,11 +609,11 @@ export default {
         step3: {
           title: "Submit the documents",
           subTitle: "Please send us:",
-          bulletBlock: {
-            bullet1: "Copy of passport, ID or residence permit",
-            bullet2: "Application to join the union",
-            bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
-          }
+          bulletBlock: [
+            "Copy of passport, ID or residence permit",
+            "Application to join the union",
+            "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+          ]
         }, 
         step4: {
           title: "Sign the bank account agreement",
@@ -713,11 +713,11 @@ export default {
         step3: {
           title: "Submit the documents",
           subTitle: "Please send us:",
-          bulletBlock: {
-            bullet1: "Copy of passport, ID or residence permit",
-            bullet2: "Application to join the union",
-            bullet3: "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
-          }
+          bulletBlock: [
+            "Copy of passport, ID or residence permit",
+            "Application to join the union",
+            "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+          ]
         }, 
         step4: {
           title: "Sign the bank account agreement",
@@ -772,14 +772,14 @@ export default {
         }
       },
       stepProcess: {
-        title: "Loan application process:",
+        title: "Loan application process",
         step1: {
           title: "Fill in a loan application form, present financial statements and give the consent",
           description: "Please fill in the application and send us a copy of the annual report, balance sheet and profit (loss) statement of the previous financial year, as well as similar reports of the recent quarter to info@ltlku.lt. We also ask CEO and UBO to provide consents for checking the data in the registers so that we can carry out the initial assessment of the application."
         },
         step2: {
           title: "Identify yourself",
-          description: " You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+          description: "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
         },
         step3: {
           title: "Get an initial loan offer",
@@ -787,15 +787,15 @@ export default {
         },
         step4: {
           title: "Submit the documents",
-          subTitle: " Since we agree on initial terms and conditions, please send us:",
-          bulletBlock: {
-            bullet1: "Application to join the union",
-            bullet2: "Company registration certificate",
-            bullet3: "Founders’ agreement and Articles of Association",
-            bullet4: "CEO appointment document",
-            bullet5: "Copy of passport, ID or residence permit of CEO of the company",
-            bullet6: "Property valuation reports"
-          }
+          subTitle: "Since we agree on initial terms and conditions, please send us:",
+          bulletBlock: [
+            "Application to join the union",
+            "Company registration certificate",
+            "Founders’ agreement and Articles of Association",
+            "CEO appointment document",
+            "Copy of passport, ID or residence permit of CEO of the company",
+            "Property valuation reports",
+          ]
         }, 
         step5: {
           title: "Get the final credit decision and sign the agreement",
@@ -870,14 +870,14 @@ export default {
         step4: {
           title: "Submit the documents",
           subTitle: "Since we agree on initial terms and conditions, please send us:",
-          bulletBlock: {
-            bullet1: "Application to join the union",
-            bullet2: "Company registration certificate",
-            bullet3: "Founders’ agreement and Articles of Association",
-            bullet4: "CEO appointment document",
-            bullet5: "Copy of passport, ID or residence permit of CEO of the company",
-            bullet6: "Property valuation reports"
-          }
+          bulletBlock: [
+            "Application to join the union",
+            "Company registration certificate",
+            "Founders’ agreement and Articles of Association",
+            "CEO appointment document",
+            "Copy of passport, ID or residence permit of CEO of the company",
+            "Property valuation reports"
+          ]
         }, 
         step5: {
           title: "Get the final credit decision and sign the agreement",
