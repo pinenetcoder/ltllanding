@@ -10,6 +10,7 @@ function Footer() {
   return (
     <footer id="footer">
       <div className="footer-navigation-section">
+            
         <h4 className="footer-navigation-section-title">{t.footerNavLinks.usefulLinks}</h4>
         <Link className="footer-navigation-link" href="/pricelist">{t.footerNavLinks.priceList}</Link>
         <Link className="footer-navigation-link" href="/terms-and-conditions">{t.footerNavLinks.termsAndCond}</Link>
