@@ -6,7 +6,7 @@
 .esgHeroPage {
    padding: 66px 0 78px 0;
    background-color: var(--theme-color5);
-   background-image: url("/assets/images/homePage_heroBlock.svg");
+   background-image: url("/assets/images/esg_heroBlock.svg");
    background-size: contain;
    background-repeat: no-repeat;
    background-position: calc(100% - 90px) 0;  
@@ -176,4 +176,39 @@
       }
     }
  }
- 
+ //------ Media queries --------
+ @media (max-width: 1460px) {
+   .esgHeroPage {
+     max-width: 1200px;
+     margin: 0 auto;
+     background-image: url("/assets/images/esg_heroBlock.svg");
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: bottom right;  
+   }
+   .esgPageList {
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+ }
+
+ @media (max-width: 1250px) {
+   .esgHeroPage {
+      background-position: bottom;
+
+      .esgPageList {
+         padding-left: 50px;
+      }
+   }
+ }
+
+ @media (max-width: 670px) {
+   .esgHeroPage {
+      background-image: none;
+
+      .esgPageList {
+         padding: 0 15px 0 15px;
+         text-align: center;
+      }
+   }
+ }
